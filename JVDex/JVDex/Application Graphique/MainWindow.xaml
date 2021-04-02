@@ -15,7 +15,7 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
-        <Image Height="150" Width="150" Source="D:\Cours\CSharp-XAML\PROJP4-CPOO\JVDex\Resources\logotest.png"/>
+        <Image Height="150" Width="150" Source="Resources\logotest.png"/>
         <ListView Grid.Row="1" Background="#3D3C3C">
             <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF14CB14" TextWrapping="Wrap">The Legend Of Zelda</TextBlock>
             <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FFE40F0F">Mario</TextBlock>
@@ -23,7 +23,7 @@
             <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="22" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF8D6121" TextWrapping="Wrap">Professeur Layton</TextBlock>
             <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF40A9F1" TextWrapping="Wrap">Dragon Quest</TextBlock>
         </ListView>
-        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="D:\Cours\CSharp-XAML\PROJP4-CPOO\JVDex\Resources\fav-logo.png" Margin="0,0,10,0" />
+        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
 
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
