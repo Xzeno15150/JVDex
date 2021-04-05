@@ -1,11 +1,11 @@
-﻿<Window x:Class="Application_Graphique.Zelda"
+﻿<Window x:Class="Application_Graphique.Pokemon"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
         mc:Ignorable="d"
-        Title="JVdex" Height="720" Width="1080">
+        Title="Pokemon" Height="720" Width="1080">
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
@@ -16,7 +16,7 @@
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
         <Image Height="150" Width="150" Source="Resources\logotest.png"/>
-        <Image Grid.Column="1" Grid.Row="1" Source="Resources/Jeux/Zelda/background.jpg"/>
+        <Image Grid.Column="1" Grid.Row="1" Source="Resources/Jeux/Pokemon/fondPokemon2.jpg"/>
         <ListView Grid.Row="1" Background="#3D3C3C">
             <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF14CB14" TextWrapping="Wrap">The Legend Of Zelda</TextBlock>
             <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FFE40F0F">Mario</TextBlock>
@@ -26,28 +26,8 @@
         </ListView>
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic">The Legend Of Zelda</TextBlock>
-        
-         <!--Test de grid pour l'affichage des différents jeux de la licence-->
-        
-        <Grid Grid.Column="1" Grid.Row="1" Margin="20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic">Pokemon</TextBlock>
 
-            <StackPanel Margin="20,10" Background="#3D3C3C">
-                <Image Source="Resources/Jeux/Zelda/pochette-jeu.jpg" Margin="5"/>
-                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Breath of the Wild</TextBlock>
-            </StackPanel>
         </Grid>
-        
-        
-    </Grid>
+
 </Window>
