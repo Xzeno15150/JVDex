@@ -11,6 +11,10 @@
     <None Remove="Resources\fav-logo.png" />
     <None Remove="Resources\heart-plein.png" />
     <None Remove="Resources\heart-vide.png" />
+    <None Remove="Resources\Jeux\DragonQuest\fondDragon2.png" />
+    <None Remove="Resources\Jeux\Layton\fondLayton.jpg" />
+    <None Remove="Resources\Jeux\Mario\fondMario.png" />
+    <None Remove="Resources\Jeux\Pokemon\fondPokemon2.jpg" />
     <None Remove="Resources\Jeux\Zelda\background.jpg" />
     <None Remove="Resources\Jeux\Zelda\pochette-jeu.jpg" />
     <None Remove="Resources\left-arrow.png" />
@@ -21,6 +25,10 @@
     <Resource Include="Resources\fav-logo.png" />
     <Resource Include="Resources\heart-plein.png" />
     <Resource Include="Resources\heart-vide.png" />
+    <Resource Include="Resources\Jeux\DragonQuest\fondDragon2.png" />
+    <Resource Include="Resources\Jeux\Layton\fondLayton.jpg" />
+    <Resource Include="Resources\Jeux\Mario\fondMario.png" />
+    <Resource Include="Resources\Jeux\Pokemon\fondPokemon2.jpg" />
     <Resource Include="Resources\Jeux\Zelda\background.jpg" />
     <Resource Include="Resources\Jeux\Zelda\pochette-jeu.jpg" />
     <Resource Include="Resources\left-arrow.png" />

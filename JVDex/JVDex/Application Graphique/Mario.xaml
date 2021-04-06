@@ -18,11 +18,11 @@
         <Image Height="150" Width="150" Source="Resources\logotest.png"/>
         <Image Grid.Column="1" Grid.Row="1" Source="Resources/Jeux/Mario/fondMario.png"/>
         <ListView Grid.Row="1" Background="#3D3C3C">
-            <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF14CB14" TextWrapping="Wrap">The Legend Of Zelda</TextBlock>
-            <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FFE40F0F">Mario</TextBlock>
-            <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FFFFE800">Pokemon</TextBlock>
-            <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="22" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF8D6121" TextWrapping="Wrap">Professeur Layton</TextBlock>
-            <TextBlock HorizontalAlignment="Center" Width="135" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF40A9F1" TextWrapping="Wrap">Dragon Quest</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Padding="0,5" Background="#FF14CB14" TextWrapping="Wrap">The Legend Of Zelda</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Padding="0,30" Background="#FFE40F0F">Mario</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Padding="0,30" Background="#FFFFE800">Pokemon</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="22" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center"  Padding="0,25" Background="#FF8D6121" TextWrapping="Wrap">Professeur Layton</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Padding="0,25" Background="#FF40A9F1" TextWrapping="Wrap">Dragon Quest</TextBlock>
         </ListView>
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
