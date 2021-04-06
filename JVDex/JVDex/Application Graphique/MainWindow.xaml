@@ -13,8 +13,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="190.667"/>
-            <ColumnDefinition Width="739.333"/>
+            <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
         <Image Height="150" Width="150" Source="Resources\logotest.png" />
         <ListView Grid.Row="1" Background="#3D3C3C">
@@ -24,9 +23,9 @@
             <TextBlock HorizontalAlignment="Center" Width="135" Height="100" Foreground="White" FontSize="22" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF8D6121" TextWrapping="Wrap">Professeur Layton</TextBlock>
             <TextBlock HorizontalAlignment="Center" Width="135"  Height="100" Foreground="White" FontSize="25" FontWeight="Bold" FontFamily="Arial Black" TextAlignment="Center" Background="#FF40A9F1" TextWrapping="Wrap">Dragon Quest</TextBlock>
         </ListView>
-        <Image Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
+        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
 
-        <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+        <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
@@ -52,6 +51,6 @@
             <TextBlock HorizontalAlignment="Left" Height="50" Margin="700,70,0,0" Grid.RowSpan="1" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="30" Foreground="White" FontWeight="Bold">Créateur</TextBlock>
 
         </Grid>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
     </Grid>
 </Window>
