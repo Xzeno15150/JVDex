@@ -37,5 +37,58 @@
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic">Dragon Quest</TextBlock>
+
+        <ScrollBar HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Height="530" Margin="900,10,10,0"/>
+        <Grid Grid.Column="1" Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C">
+               <!-- <Image Source="" Margin="5"/> -->
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest I</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest II</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="2">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest III</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest IV</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest V</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest VI</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="2">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest VII</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest VIII</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Dragon Quest IX</TextBlock>
+            </StackPanel>
+
+
+        </Grid>
     </Grid>
 </Window>

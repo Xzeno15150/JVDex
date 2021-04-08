@@ -37,10 +37,15 @@
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic">The Legend Of Zelda</TextBlock>
+
+        <!--Test de grid pour l'affichage des différents jeux de la licence--> 
         
-         <!--Test de grid pour l'affichage des différents jeux de la licence-->
-        
+        <!-- j'ai essayé de mettre une scroll barre mais bon ça fonctionne pas vraiment-->
+
+        <ScrollBar HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Height="530" Margin="900,10,10,0"/>
         <Grid Grid.Column="1" Grid.Row="1" Margin="20">
+          
+           
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -51,13 +56,59 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+            
 
             <StackPanel Margin="20,10" Background="#3D3C3C">
                 <Image Source="Resources/Jeux/Zelda/pochette-jeu.jpg" Margin="5"/>
                 <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Breath of the Wild</TextBlock>
             </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Majora's mask</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="2">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Ocarina of Time</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Twilight Princess</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Phantom Hourglass</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Spirit Track</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="2">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Between World</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="1">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Breath of the Wild</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Wind Walker</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Wind Walker</TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="20,10" Background="#3D3C3C" Grid.Row="1" Grid.Column="3">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Wind Walker</TextBlock>
+            </StackPanel>
+            
+
         </Grid>
-        
-        
+
+       <!-- Margin="893,10,10,0"-->
+
+
+
     </Grid>
 </Window>
