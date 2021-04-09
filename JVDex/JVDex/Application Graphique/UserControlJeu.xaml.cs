@@ -14,13 +14,29 @@ using System.Windows.Shapes;
 namespace Application_Graphique
 {
     /// <summary>
-    /// Logique d'interaction pour UserControlFranchise.xaml
+    /// Logique d'interaction pour UserControlJeu.xaml
     /// </summary>
-    public partial class UserControlFranchise : UserControl
+    public partial class UserControlJeu : UserControl
     {
-        public UserControlFranchise()
+        public UserControlJeu()
         {
             InitializeComponent();
+        }
+
+        public string ImagePath
+        {
+            set
+            {
+                ImageJeu.Source = new BitmapImage(new Uri(value, UriKind.Relative));
+            }
+        }
+
+        public string NomJeu
+        {
+            set
+            {
+                NomDuJeu.Text = value;
+            }
         }
     }
 }

@@ -13,6 +13,9 @@
     <Compile Update="EssaiUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FenetreTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Franchises_Favoris.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,13 +34,10 @@
     <Compile Update="ProfesseurLayton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Theorie.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="UserControlFond.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlFranchise.xaml.cs">
+    <Compile Update="UserControlJeu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControlTheorie.xaml.cs">
@@ -55,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EssaiUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FenetreTest.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Franchises_Favoris.xaml">
@@ -78,13 +81,10 @@
     <Page Update="ProfesseurLayton.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Theorie.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="UserControlFond.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserControlFranchise.xaml">
+    <Page Update="UserControlJeu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlTheorie.xaml">

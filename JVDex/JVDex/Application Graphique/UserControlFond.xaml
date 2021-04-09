@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
-             d:DesignHeight="720" d:DesignWidth="1800">
+             d:DesignHeight="720" d:DesignWidth="1080">
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
@@ -35,7 +35,7 @@
         </ListView>
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
 
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="Texte à modifier" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="Texte à modifier" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic" Name="Title"/>
 
     </Grid>
     

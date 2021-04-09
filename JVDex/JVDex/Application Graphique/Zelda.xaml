@@ -103,9 +103,6 @@
                 <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Wind Walker</TextBlock>
             </StackPanel>
             -->
-   <ContentControl Grid.Row="1" Grid.Column="1">
-            <local:UserControlFranchise/>
-        </ContentControl>
             
         </Grid>
 

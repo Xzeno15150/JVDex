@@ -47,8 +47,6 @@
             <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold">Musiques</ListBoxItem>
             <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold">Théories</ListBoxItem>
         </ListBox>
-        <ContentControl Grid.Row="1" Grid.Column="1">
-            <local:Informations/>
-        </ContentControl>
+        
     </Grid>
 </Window>
