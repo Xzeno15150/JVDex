@@ -10,6 +10,9 @@
     <Compile Update="DragonQuest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EssaiUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Franchises_Favoris.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,12 +31,30 @@
     <Compile Update="ProfesseurLayton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Theorie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlFond.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlFranchise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlTheorie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlVisuel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Zelda.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="DragonQuest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EssaiUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Franchises_Favoris.xaml">
@@ -55,6 +76,21 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProfesseurLayton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theorie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlFond.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlFranchise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlTheorie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlVisuel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Zelda.xaml">
