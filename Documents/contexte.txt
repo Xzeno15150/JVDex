@@ -1,0 +1,17 @@
+Contexte application
+
+Le concept de cette application est de créer une bibliothèque de jeux vidéo dans laquelle se trouvent toutes les informations essentielles du jeu: synopsis, date de création, compatibilité avec les consoles…
+
+L’application a pour but de stocker des informations sur des jeux vidéo pour que l’utilisateur trouve un jeu auquel jouer. De plus, il a accès à d’autres informations comme des théories, des visuels et des musiques  associées à ce dernier.
+
+C’est une application tout public. La personne voulant se lancer dans la pratique du jeu vidéo peut avoir les informations qu’elle souhaite sur les différents jeux présents sur le marché. Elle peut donc choisir un jeu en fonction de ses préférences pour débuter. De plus, une personne jouant déjà peut tout aussi bien utiliser l’application pour enrichir sa culture sur une franchise ou un jeu en particulier. C’est aussi une application pour des jeunes utilisateurs puisque nous voulons parler de jeux souvent accessibles à un jeune public. Toutefois dans la description des jeux il y aura bien évidemment l’âge conseillé pour jouer.
+Les jeux seraient triés par franchise. L’utilisateur peut tout d’abord chercher le jeu qu’il souhaite avec une barre de recherche. En outre, les jeux peuvent être triés par ordre alphabétique, date, créateur pour simplifier la recherche de l’utilisateur.
+A gauche de cette recherche, nous trouvons la liste des franchises présentes sur notre application: 
+Mario
+The Legend of Zelda
+Professeur Layton
+Dragon Quest
+Pokemon
+Lorsque nous cliquons sur l’une d’elle, cela nous amène sur une autre page de l’application où l’on retrouve les vignettes de chaque jeu de cette licence. Quand on sélectionne l’un des jeux, cela nous amène de nouveau sur une autre page de l’application. Sur cette dernière page nous avons toutes les informations nécessaires pour décrire le jeu. Il y a quatre onglets en tout: un pour la présentation du jeu, un autre qui montre des images du jeu, un troisième qui présente les théories du jeu et un dernier pour les musiques . Cela se fera par lecteur de musique intégré. 
+Il est possible de mettre des jeux en favoris pour les retrouver plus tard. L’onglet favoris est accessible depuis le petit cœur situé en haut à droite de l’application.
+Pour ajouter un jeu aux favoris il est possible  d’appuyer sur la petite étoile qui se trouve à gauche de la liste de la page d’accueil, ou alors en haut à droite de l’image du jeu lorsque l’on a choisi une franchise, il en est de même quand on est sur les informations du jeu.

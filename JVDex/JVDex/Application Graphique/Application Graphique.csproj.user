@@ -13,9 +13,6 @@
     <Compile Update="EssaiUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="FenetreTest.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Franchises_Favoris.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,9 +52,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EssaiUser.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="FenetreTest.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Franchises_Favoris.xaml">
