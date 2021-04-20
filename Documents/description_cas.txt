@@ -1,0 +1,14 @@
+Cas "rechercher un jeu"
+	Nom: rechercher un jeu
+	objectif: trouver un jeu en fonction de son nom
+	Acteurs principaux: utilisateur ?
+	Acteurs secondaires: utilisateur ?
+	conditions initiale: l'utilisateur doit ouvrir l'application
+	scénarios d'utilisation: -il doit ouvrir l'application
+				- écrire le nom du jeu qu'il recherche
+				- la recherche aboutit alors on l'affiche
+				-si la recherche n'aboutit pas il y a un message 
+d'erreur, renvoie à la page principale
+
+	condition de fin: 1) l'affichage du jeu recherché
+			2) message d'erreur, retour à la page principale
