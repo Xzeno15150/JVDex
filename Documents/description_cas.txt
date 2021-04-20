@@ -1,4 +1,4 @@
-Cas "rechercher un jeu"
+*/Cas "rechercher un jeu"
 	Nom: rechercher un jeu
 	objectif: trouver un jeu en fonction de son nom
 	Acteurs principaux: utilisateur ?
@@ -12,3 +12,171 @@ d'erreur, renvoie à la page principale
 
 	condition de fin: 1) l'affichage du jeu recherché
 			2) message d'erreur, retour à la page principale
+
+trier jeu
+
+afficher les détails d'un jeu
+
+ajouter au favoris
+
+afficher les jeux d'une licence
+
+écouter les musiques d'un jeu /*
+
+
+	Nom: rechercher un jeu
+	Objectif: pourvoir rechercher un jeu spécifique
+	Acteurs: utilisateurs
+	Cas inclus: /
+	Conditions initiale: l'utilisateur doit ouvrir l'application
+	Scénario nominal:	1: écrire le nom du jeu que l'utilisateur recherche
+				1.1: le jeu est existant
+				1.2: affichage du jeu
+	Scénario altérnatif:	2: le jeu rechercher n'est pas existant dans l'application
+				2.1: affichage message d'erreur
+				2.2: retour à la page principale
+	Condition de fin:	1) la recherche aboutit alors affichage jeu
+				2) retour page principal
+
+
+
+
+
+	Nom: trier les jeux
+	Objectif: trier les jeux pour les rechercher plus facilement et répondre aux critères des utilisateurs
+	Acteurs: utilisateurs
+	Cas inclus: /
+	Conditions initiale: être sur la page d'accueil
+	Scénario nominal:	1: séléctionner le type de tri voulu
+				1.2: affichage des jeux en fonction du tri
+	Scénario altérnatif:	2: //je sais pas quoi mettre
+	Condition de fin: 	1) affichage des jeux trié
+				2) //je ne sais pas quoi mettre
+
+
+
+
+	Nom: afficher le détail d'un jeu
+	Objectif: afficher les informations d'un jeu
+	Acteurs: utilisateurs
+	Cas inclus: /
+	Conditions initiale: ouvrir l'application
+	Scénario nominal:	1: séléctionner le jeux voulu
+				1.1: possibilité d'aller sur différents onglets:	-informations
+											-visuels
+											-théories
+											-musiques
+	Scénario altérnatif:	2: faire une recherche
+				2.1: sectionner le jeu voulu
+				2.2: possibilité d'aller sur différents onglets:	-informations
+											-visuels
+											-théories
+											-musiques
+				3:faire un tri
+				3.1: séléctionner le jeux voulu
+				3.2: possibilité d'aller sur différents onglets:	-informations
+											-visuels
+											-théories
+											-musiques
+
+				4:séléctionner une franchise de jeu
+				4.1: séléctionner le jeux voulu
+				4.2: possibilité d'aller sur différents onglets:	-informations
+											-visuels
+											-théories
+											-musiques
+				5) aller dans les favoris
+				5.1: séléctionner le jeux voulu
+				5.2: possibilité d'aller sur différents onglets:	-informations
+											-visuels
+											-théories
+											-musiques
+
+	Condition de fin: 	1) affichage des informations
+				2) affichage des informations
+				3) affichage des informations
+				4) affichage des informations
+				5) affichage des informations
+				
+
+
+
+
+	Nom: ajouter aux favoris
+	Objectif: mettre certains jeux en favoris pour que l'utilisateur puisse avoir accès à l'information de ses jeux préférés plus rapidement
+	Acteurs: utilisateur
+	Cas inclus: /
+	Conditions initiale: ouvrir l'application
+	Scénario nominal: 	1: séléctionner un jeu
+				1.2: cliquer sur le petit icône "favoris" en forme de coeur	
+	Scénario altérnatif:	2: ouvrir le détail d'un jeu
+				2.1: cliquer sur le petit icône "favoris" en forme de coeur
+				3:  appuyer sur une franchise
+				3.2: cliquer sur le petit icône "favoris" en forme de coeur
+				4: faire une recherche
+				4.2: cliquer sur le petit icône "favoris" en forme de coeur
+				5: faire un tri
+				5.2: cliquer sur le petit icône "favoris" en forme de coeur
+	Condition de fin:	1)
+				2)
+				3)
+				4)
+				5)
+
+
+
+
+
+	Nom: afficher les jeux d'une licence
+	Objectif: afficher la liste des jeux d'un franchise
+	Acteurs:
+	Cas inclus: /
+	Conditions initiale: être sur la page principale
+	Scénario nominal:	1: selectionner une franchise
+				1.1: cliquer sur la franchise choisie
+				1.2: affichage des jeux
+	Scénario altérnatif:
+	Condition de fin: 	1) affichage des jeux
+
+
+
+
+
+	Nom: écouter une musique
+	Objectif: écouter les musiques d'un jeu spécifique pour prendre connaissance de l'univers du jeu
+	Acteurs: utilisateur
+	Cas inclus: afficher les détails d'un jeu
+	Conditions initiale: avoir affiché le détail des jeux
+	Scénario nominal:	1: être dans l'onglet musique
+				1.1: cliquer sur l'icône de lecture de la musique
+	Scénario altérnatif:	2: mettre sur pause
+				2.1remttre la musique		
+				3: arrêter la musique
+	Condition de fin: 	1) fin de la musique
+				2) fin de la musique
+				3) arrêt volontaire de la musique en court d'écoute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
