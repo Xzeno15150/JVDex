@@ -55,9 +55,9 @@ afficher les jeux d'une licence
 	Conditions initiale: être sur la page d'accueil
 	Scénario nominal:	1: séléctionner le type de tri voulu
 				1.2: affichage des jeux en fonction du tri
-	Scénario altérnatif:	2: //je sais pas quoi mettre
+	Scénario altérnatif:	
 	Condition de fin: 	1) affichage des jeux trié
-				2) //je ne sais pas quoi mettre
+				
 
 
 
@@ -123,11 +123,11 @@ afficher les jeux d'une licence
 				4.2: cliquer sur le petit icône "favoris" en forme de coeur
 				5: faire un tri
 				5.2: cliquer sur le petit icône "favoris" en forme de coeur
-	Condition de fin:	1)
-				2)
-				3)
-				4)
-				5)
+	Condition de fin:	1) jeu dans les favoris 
+				2) jeu dans les favoris
+				3) jeu dans les favoris
+				4) jeu dans les favoris
+				5) jeu dans les favoris
 
 
 
