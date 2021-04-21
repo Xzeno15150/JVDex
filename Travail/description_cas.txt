@@ -54,7 +54,7 @@ afficher les jeux d'une licence
 	Cas inclus: /
 	Conditions initiale: être sur la page d'accueil
 	Scénario nominal:	1: séléctionner le type de tri voulu
-				1.2: affichage des jeux en fonction du tri
+				1.1: affichage des jeux en fonction du tri
 	Scénario altérnatif:	
 	Condition de fin: 	1) affichage des jeux trié
 				
@@ -114,20 +114,38 @@ afficher les jeux d'une licence
 	Cas inclus: /
 	Conditions initiale: ouvrir l'application
 	Scénario nominal: 	1: séléctionner un jeu
-				1.2: cliquer sur le petit icône "favoris" en forme de coeur	
+				1.1: cliquer sur le petit icône "favoris" en forme de coeur	
 	Scénario altérnatif:	2: ouvrir le détail d'un jeu
 				2.1: cliquer sur le petit icône "favoris" en forme de coeur
 				3:  appuyer sur une franchise
-				3.2: cliquer sur le petit icône "favoris" en forme de coeur
+				3.1: cliquer sur le petit icône "favoris" en forme de coeur
 				4: faire une recherche
-				4.2: cliquer sur le petit icône "favoris" en forme de coeur
+				4.1: cliquer sur le petit icône "favoris" en forme de coeur
 				5: faire un tri
-				5.2: cliquer sur le petit icône "favoris" en forme de coeur
+				5.1: cliquer sur le petit icône "favoris" en forme de coeur
 	Condition de fin:	1) jeu dans les favoris 
 				2) jeu dans les favoris
 				3) jeu dans les favoris
 				4) jeu dans les favoris
 				5) jeu dans les favoris
+
+	Note: extends sur tous les cas 
+
+
+	
+
+
+
+	Nom: consulter les favoris
+	Objectif: permet à l'utilisateur de consulter les jeux qu'il a mis en favoris
+	Acteurs: utilisateur
+	Cas inclu: /
+	Condition initiale: ouvrir l'application
+	Scénario initiale: 	1: cliquer sur l'icône
+				1.1: affichage de la liste des jeux
+	Scénario altérnatif: /
+	Condition de fin:	1)affichage des favoris
+	Note: extends sur tous les cas 
 
 
 
