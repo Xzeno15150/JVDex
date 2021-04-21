@@ -13,5 +13,5 @@ Professeur Layton
 Dragon Quest
 Pokemon
 Lorsque nous cliquons sur l’une d’elle, cela nous amène sur une autre page de l’application où l’on retrouve les vignettes de chaque jeu de cette licence. Quand on sélectionne l’un des jeux, cela nous amène de nouveau sur une autre page de l’application. Sur cette dernière page nous avons toutes les informations nécessaires pour décrire le jeu. Il y a quatre onglets en tout: un pour la présentation du jeu, un autre qui montre des images du jeu, un troisième qui présente les théories du jeu et un dernier pour les musiques . Cela se fera par lecteur de musique intégré. 
-Il est possible de mettre des jeux en favoris pour les retrouver plus tard. L’onglet favoris est accessible depuis le petit cœur situé en haut à droite de l’application.
+Il est possible de mettre des jeux en favoris pour les consulter plus tard. L’onglet favoris est accessible depuis le petit cœur situé en haut à droite de l’application.
 Pour ajouter un jeu aux favoris il est possible  d’appuyer sur la petite étoile qui se trouve à gauche de la liste de la page d’accueil, ou alors en haut à droite de l’image du jeu lorsque l’on a choisi une franchise, il en est de même quand on est sur les informations du jeu.
