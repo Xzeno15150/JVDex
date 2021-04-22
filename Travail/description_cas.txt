@@ -98,11 +98,7 @@ afficher les jeux d'une licence
 											-théories
 											-musiques
 
-	Condition de fin: 	1) affichage des informations
-				2) affichage des informations
-				3) affichage des informations
-				4) affichage des informations
-				5) affichage des informations
+	Condition de fin: affichage des informations
 				
 
 

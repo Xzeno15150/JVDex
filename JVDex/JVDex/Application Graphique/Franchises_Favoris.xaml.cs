@@ -21,5 +21,10 @@ namespace Application_Graphique
         {
             InitializeComponent();
         }
+
+        private void Choix_Franchises(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }
