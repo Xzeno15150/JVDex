@@ -4,10 +4,10 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-   public  class Theorie : Nommable
+    public  class Theorie : Nommable
     {
-       public string Texte { get; set; }
+        public string Texte { get; set; }
 
+        //TODO toString
     }
 }
-//faire une méthode affichage pour les théories?

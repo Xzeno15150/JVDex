@@ -7,14 +7,25 @@ namespace BibliothèqueApplication
     enum Plateformes
     {
         PC,
-        Playstation1,
-        Playstation2,
-        Playstation3,
-        Playstation4,
-        Playstation5,
+        PS1,
+        PS2,
+        PS3,
+        PS4,
+        PS5,
+        Gameboy,
+        Gameboy_Color,
+        Gameboy_Advance,
+        Gamecube,
         DS,
         Wii,
-        NitendoSwitch
+        TroisDS,
+        NitendoSwitch,
+        Xbox,
+        Xbox360,
+        XboxOne,
+        XboxSerieX,
+        IOS,
+        Android
     }
     //TODO Faire l'enum des plateformes
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application Graphique", "Application Graphique\Application Graphique.csproj", "{B87C9077-9223-4477-BCD3-30A944929327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliothèqueApplication", "BibliothèqueApplication\BibliothèqueApplication.csproj", "{3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliothèqueApplication", "BibliothèqueApplication\BibliothèqueApplication.csproj", "{3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

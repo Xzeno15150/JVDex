@@ -11,32 +11,36 @@ namespace BibliothèqueApplication
         private IList<string> lesMusiques;
         private bool isFavoris;
         private IList<Theorie> lesTheories;
+        public InformationsJeu Informations { get; set; }
+
 
         public bool GetIsFavoris()
         {
             return isFavoris;
         }
 
-        public void InverserIsFavoris()
+        public void AjouterAuxFavoris()
         {
-            isFavoris = !isFavoris;
+            isFavoris = true;
         }
 
-       /* public void AfficherEtat()
+        public void EnleverDesFavoris()
         {
-            if(isFavoris)
-            {
-                Console.WriteLine("jeu n'est pas en favoris");
-            }
-            else
-            {
-                Console.WriteLine("jeu en favoris");
-            }
+            isFavoris = false;
         }
-        */ //pour pouvoir faire un test si InverserIsFavoris fonctionne
 
+        public override string ToString()
+        {
+            //TODO afficher toutes les infos du jeu dans la console
+            string mes = $"{Informations}\n";
+            mes += "Liste des visuels : ";
+            foreach (String s in lesVisuels)
+            {
+                mes += $"\t- {s}\n";
+            }
+            return mes;
+        }
     }
 }
 
 //faut faire une propriété calculée pour faire le tri, la fonction retourne une liste triée
-//afficher un jeu peut être une méthode?
