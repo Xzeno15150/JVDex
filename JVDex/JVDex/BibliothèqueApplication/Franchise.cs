@@ -4,9 +4,8 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public abstract class Nommable
+    public class Franchise : Nommable
     {
-        public string Nom { get; set; }
-
+        private IList<Jeu> LesJeux;
     }
 }

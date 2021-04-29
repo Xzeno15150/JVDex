@@ -7,39 +7,17 @@ namespace BibliothèqueApplication
     {
         private HashSet<Genres> lesGenres;
         private HashSet<Plateformes> lesPlateformes;
-        private string nomCreateur1;
+       // private string nomCreateur1; //pourquoi tu l'as mis ici? une propriété ne suffit pas?
 
-        enum Genres
-        {
-            Plateforme,
-            RPG,
-            FPS,
-            Infiltration,
-            Espionnage,
-            Reflexe,
-            Puzzle,
-            Survival_Horror,
-            Simulation,
-            Stratégie,
-            Sport
-        }
-        //TODO Verifier qu'il ne manque pas de genres
-        enum Plateformes
-        {
-            PC,
-            Playstation1,
-            Playstation2,
-            Playstation3,
-            Playstation4,
-            Playstation5
-        }
-        //TODO Faire l'enum des plateformes
-
-        //PROPRIÉTÉS
-        public string NomCreateur { get; set; }
-        public DateTime DateCreation { get; set; }
-        public int LimiteAge { get; set; }
-        public string Sysnopsis { get; set; }
+       //PROPRIÉTÉS
+        public static string NomCreateur { get; set; }
+        public static DateTime DateCreation { get; set; }
+        public static int LimiteAge { get; set; }
+        public  string Sysnopsis { get; set; }
 
     }
 }
+// NomCreateur, DateCreation et LimiteAge en static
+
+    //il faut une class par fichier les enums je les mets ailleurs
+
