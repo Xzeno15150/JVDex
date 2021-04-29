@@ -48,7 +48,10 @@
             <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold">Théories</ListBoxItem>
         </ListBox>
 
-        <local:Informations Grid.Column="1" Grid.Row="1"></local:Informations>
+        <UserControl>
+            <local:Informations Grid.Column="1" Grid.Row="1"></local:Informations>
+        </UserControl>
+            
 
     </Grid>
 </Window>
