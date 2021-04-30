@@ -7,57 +7,90 @@ namespace BibliothèqueApplication
 {
     public class Jeu
     {
-        private HashSet<string> lesVisuels;
-        private IList<string> lesMusiques;
-        private bool isFavoris = false;
-        private IList<Theorie> lesTheories;
+        private ISet<string> lesVisuels;
+        private ISet<string> lesMusiques;
+        private ISet<Theorie> lesTheories;
 
         //Propriétés
         public InformationsJeu Informations { get; set; }
+        public bool IsFavoris { get; private set; }
 
-        public Jeu()
+        public Jeu(string nom, string nomCreateur, DateTime dateCreation, int limiteAge, string synopsis)
         {
+            Informations = new InformationsJeu(nom, nomCreateur, dateCreation, limiteAge, synopsis);
             lesVisuels = new HashSet<string>();
-            IList<string> lesMusiques = new List<string>();
-            IList<Theorie> lesTheories = new List<Theorie>();
+            lesMusiques = new HashSet<string>();
+            lesTheories = new HashSet<Theorie>();
         }
 
         //Méthodes
-        public bool GetIsFavoris()
-        {
-            return isFavoris;
-        }
-
         public void AjouterAuxFavoris()
         {
-            isFavoris = true;
+            IsFavoris = true;
         }
 
         public void EnleverDesFavoris()
         {
-            isFavoris = false;
+            IsFavoris = false;
         }
 
+        public void AjouterVisuel(string visuel)
+        {
+            if (!lesVisuels.Add(visuel))
+            {
+                throw new ArgumentException("PB: cette image est déjà dans la liste des visuels");
+            }
+        }
+        public void AjouterMusique(string musique)
+        {
+            if (!lesMusiques.Add(musique))
+            {
+                throw new ArgumentException("PB: cette musique est déjà dans la liste des musiques");
+            }
+        }
+
+        public void AjouterTheorie(Theorie theorie)
+        {
+            if (!lesTheories.Add(theorie))
+            {
+                throw new ArgumentException("PB: cette théorie est déjà dans la liste des théories.");
+            }
+        }
         public override string ToString()
         {
-            //TODO afficher toutes les infos du jeu dans la console
-            string mes = $"{Informations}\n"; // je comprends pas pourquoi on met Information et pas InformationsJeu
-            mes += "Liste des visuels : ";
-            foreach (String s in lesVisuels)
+            string mes = Informations.ToString();
+            // je comprends pas pourquoi on met Information et pas InformationsJeu
+            // on met Informations puisque ce que l'on cherche ce trouve dans la propriété (="variable", en gros) Informations, InformationsJeu est le type de cette propriété, donc rien à voir
+            // regarde en dessous, tu prend des valeurs de la liste lesVisuels, tu ne les prend pas dans le type string
+
+
+            mes += "Liste des visuels : \n";
+            foreach (string s in lesVisuels)
             {
                 mes += $"\t- {s}\n";
             } 
-            mes += "Liste des musiques : ";
-            foreach (String s in lesMusiques)
+            mes += "Liste des musiques : \n";
+            foreach (string s in lesMusiques)
             {
                 mes += $"\t- {s}\n";
             }
-            mes += "Liste des théorie :";
+            mes += "Théories : \n";
             foreach (Theorie s in lesTheories)
             {
-                mes += $"\t- {s}\n";
+                mes += $"\t- {s.Nom}\n";
             }
             return mes;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Jeu jeu &&
+                   EqualityComparer<InformationsJeu>.Default.Equals(Informations, jeu.Informations);
+        }
+
+        public override int GetHashCode()
+        {
+            return -878831966 + EqualityComparer<InformationsJeu>.Default.GetHashCode(Informations);
         }
     }
 }

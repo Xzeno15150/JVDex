@@ -16,13 +16,19 @@ namespace BibliothèqueApplication
 
         public override string ToString()
         {
-            return base.ToString();
+            return Texte;
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Theorie theorie &&
+                   Texte == theorie.Texte;
+        }
 
-
-        //TODO toString
-
+        public override int GetHashCode()
+        {
+            return 1110574089 + EqualityComparer<string>.Default.GetHashCode(Texte);
+        }
     }
 
 }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace BibliothèqueApplication
 {
-    enum Plateformes
+    public enum Plateformes
     {
         PC,
         PS1,
@@ -13,19 +14,25 @@ namespace BibliothèqueApplication
         PS4,
         PS5,
         Gameboy,
+        [EnumMember(Value = "Gameboy Color")]
         Gameboy_Color,
+        [EnumMember(Value = "Gameboy Advance")]
         Gameboy_Advance,
         Gamecube,
         DS,
         Wii,
+        [EnumMember(Value = "3DS")]
         TroisDS,
-        NitendoSwitch,
+        [EnumMember(Value = "Nintendo Switch")]
+        NintendoSwitch,
         Xbox,
+        [EnumMember(Value = "Xbox 360")]
         Xbox360,
+        [EnumMember(Value = "Xbox One")]
         XboxOne,
+        [EnumMember(Value = "Xbox Serie X")]
         XboxSerieX,
         IOS,
         Android
     }
-    //TODO Faire l'enum des plateformes
 }

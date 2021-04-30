@@ -1,23 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BibliothèqueApplication
 {
     public class Franchise : Nommable
     {
-        private IList<Jeu> lesJeux;
+        private ISet<Jeu> lesJeux;
 
-        public Franchise(string nom) :base(nom)
+        public Franchise(string nom) : base(nom)
+        {
+            lesJeux = new HashSet<Jeu>();
+        }
+           
+        public void ajouterJeu(Jeu jeu) 
+        {
+            if (!lesJeux.Add(jeu))
             {
-         IList<Jeu> lesJeux = new List<Jeu>();   //j'ai réussi à instancier en faisant un new de List et non de IList
-
+                throw new ArgumentException("PB: le jeu est déjà dans la liste des jeux");
             }
-
+        }
         public override string ToString()
         {
-            //TODO nom de franchise + liste des NOMS des jeux 
             string mes = $"Nom de la franchise :{Nom}\n";
+            mes += "Liste des jeux : \n";
             foreach (Jeu j in lesJeux)
             {
                 mes += $"\t- {j.Informations.Nom}\n";
