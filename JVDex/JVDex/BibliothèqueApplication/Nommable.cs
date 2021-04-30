@@ -8,5 +8,10 @@ namespace BibliothèqueApplication
     {
         public string Nom { get; set; }
 
+        public Nommable (string nom)
+        {
+            this.Nom = nom;
+        }
     }
+
 }
