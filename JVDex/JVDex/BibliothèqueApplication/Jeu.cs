@@ -63,7 +63,6 @@ namespace BibliothèqueApplication
             // on met Informations puisque ce que l'on cherche ce trouve dans la propriété (="variable", en gros) Informations, InformationsJeu est le type de cette propriété, donc rien à voir
             // regarde en dessous, tu prend des valeurs de la liste lesVisuels, tu ne les prend pas dans le type string
 
-
             mes += "Liste des visuels : \n";
             foreach (string s in lesVisuels)
             {

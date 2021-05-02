@@ -71,6 +71,7 @@ namespace BibliothèqueApplication
                    Sysnopsis == jeu.Sysnopsis;
         }
 
+
         public override int GetHashCode()
         {
             var hashCode = -1562044350;
