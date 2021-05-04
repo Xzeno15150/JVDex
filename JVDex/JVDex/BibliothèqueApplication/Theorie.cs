@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class Theorie : Nommable
+    public class Theorie : Nommable, IEquatable<Theorie>
     {
         //Propriétés
         public string Texte { get; set; }
@@ -21,13 +21,21 @@ namespace BibliothèqueApplication
 
         public override bool Equals(object obj)
         {
-            return obj is Theorie theorie &&
-                   Texte == theorie.Texte;
+            return Equals(obj);
         }
 
         public override int GetHashCode()
         {
             return 1110574089 + EqualityComparer<string>.Default.GetHashCode(Texte);
+        }
+
+        public bool Equals(Theorie other)
+        {
+            if (this == other) return true;
+            if (other is null) return false;
+            if (GetType() != other.GetType()) return false;
+
+            return Texte == other.Texte;
         }
     }
 

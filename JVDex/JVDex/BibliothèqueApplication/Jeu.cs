@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class Jeu
+    public class Jeu : IEquatable<Jeu>
     {
         private ISet<string> lesVisuels;
         private ISet<string> lesMusiques;
@@ -83,13 +83,22 @@ namespace BibliothèqueApplication
 
         public override bool Equals(object obj)
         {
-            return obj is Jeu jeu &&
-                   EqualityComparer<InformationsJeu>.Default.Equals(Informations, jeu.Informations);
+            if (this == obj) return true;
+            if (obj is null) return false;
+            if (GetType() != obj.GetType()) return false;
+
+            Jeu other = (Jeu)obj;
+            return Informations.Equals(other.Informations);
         }
 
         public override int GetHashCode()
         {
             return -878831966 + EqualityComparer<InformationsJeu>.Default.GetHashCode(Informations);
+        }
+
+        public bool Equals(Jeu other)
+        {
+            return Equals(other);
         }
     }
 }
