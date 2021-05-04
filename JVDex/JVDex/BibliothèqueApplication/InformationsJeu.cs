@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace BibliothèqueApplication
 {
-    public class InformationsJeu:Nommable
+    public class InformationsJeu : Nommable
     {
         private ISet<Genres> lesGenres;
         private ISet<Plateformes> lesPlateformes;
@@ -12,7 +12,7 @@ namespace BibliothèqueApplication
         public string NomCreateur { get; set; }
         public DateTime DateCreation { get; set; }
         public int LimiteAge { get; set; }
-        public string Sysnopsis { get; set; }
+        public string Synopsis { get; set; }
 
         //Constructeur
         public InformationsJeu(string nom, string nomCreateur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
@@ -20,7 +20,7 @@ namespace BibliothèqueApplication
             this.NomCreateur = nomCreateur;
             this.DateCreation = dateCreation;
             this.LimiteAge = limiteAge;
-            this.Sysnopsis = synopsis;
+            this.Synopsis = synopsis;
             lesGenres = new HashSet<Genres>();
             lesPlateformes = new HashSet<Plateformes>();
         }
@@ -46,7 +46,7 @@ namespace BibliothèqueApplication
             mes += $"Nom du créateur: {NomCreateur}\n";
             mes += $"Date de création: {DateCreation.ToString("dd/MM/yyyy")}\n";
             mes += $"Limite d'âge: {LimiteAge} ans\n";
-            mes += $"Synopsis: {Sysnopsis}\n";
+            mes += $"Synopsis: {Synopsis}\n";
             mes += "Genres : \n";
             foreach(Genres g in lesGenres)
             {
@@ -62,13 +62,18 @@ namespace BibliothèqueApplication
 
         public override bool Equals(object obj)
         {
-            return obj is InformationsJeu jeu &&
-                   EqualityComparer<ISet<Genres>>.Default.Equals(lesGenres, jeu.lesGenres) &&
-                   EqualityComparer<ISet<Plateformes>>.Default.Equals(lesPlateformes, jeu.lesPlateformes) &&
-                   NomCreateur == jeu.NomCreateur &&
-                   DateCreation == jeu.DateCreation &&
-                   LimiteAge == jeu.LimiteAge &&
-                   Sysnopsis == jeu.Sysnopsis;
+            if (this == obj) return true;
+            if (obj is null) return false;
+            if (GetType() != obj.GetType()) return false;
+
+            InformationsJeu other = (InformationsJeu) obj;
+
+            return NomCreateur == other.NomCreateur &&
+                   DateCreation == other.DateCreation &&
+                   LimiteAge == other.LimiteAge &&
+                   Synopsis == other.Synopsis &&
+                   lesGenres.SetEquals(other.lesGenres) &&
+                   lesPlateformes.SetEquals(other.lesPlateformes);
         }
 
 
@@ -80,7 +85,7 @@ namespace BibliothèqueApplication
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(NomCreateur);
             hashCode = hashCode * -1521134295 + DateCreation.GetHashCode();
             hashCode = hashCode * -1521134295 + LimiteAge.GetHashCode();
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Sysnopsis);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Synopsis);
             return hashCode;
         }
     }
