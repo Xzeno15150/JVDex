@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BibliothèqueApplication
 {
-    public class Franchise : Nommable
+    public class Franchise : Nommable, IEquatable
     {
         public ISet<Jeu> lesJeux { get; }
 
@@ -29,6 +29,31 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (this == obj) return true;
+            if (obj is null) return false;
+            if (!GetType().Equals(obj.GetType())) return false;
+
+            Franchise other = (Franchise)obj;
+            return Equals(other);
+        }
+
+        public bool Equals(Franchise other)
+        {
+            if (other is null) return false;
+            return lesJeux.SetEquals(other.lesJeux);
+        }
+
+        public override int GetHashCode()
+        {
+            var hashCode = 89;
+            var constante = 8;
+            hashCode = hashCode * lesJeux.GetHashCode() + constante;
+            return hashCode;
+        }
+        //à voir ensemble
     }
 
 }

@@ -43,7 +43,7 @@ namespace BibliothèqueApplication
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";
-            mes += $"Nom du créateur: {NomCreateur}\n";
+            mes += $"Nom du créateur: {Createur.nom}\n"; // je ne vois pas trop comment faire, il faut faire des get ? ou alors uiliser l'interface?
             mes += $"Date de création: {DateCreation.ToString("dd/MM/yyyy")}\n";
             mes += $"Limite d'âge: {LimiteAge} ans\n";
             mes += $"Synopsis: {Synopsis}\n";
