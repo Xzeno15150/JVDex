@@ -21,6 +21,7 @@
     <None Remove="Resources\logotest.png" />
   </ItemGroup>
 
+
   <ItemGroup>
     <Resource Include="Resources\fav-logo.png" />
     <Resource Include="Resources\heart-plein.png" />

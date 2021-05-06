@@ -5,7 +5,7 @@ namespace BibliothèqueApplication
 {
     public class Franchise : Nommable
     {
-        private ISet<Jeu> lesJeux;
+        public ISet<Jeu> lesJeux { get; }
 
         public Franchise(string nom) : base(nom)
         {

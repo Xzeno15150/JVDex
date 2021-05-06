@@ -15,9 +15,9 @@ namespace BibliothèqueApplication
         public InformationsJeu Informations { get; set; }
         public bool IsFavoris { get; private set; }
 
-        public Jeu(string nom, string nomCreateur, DateTime dateCreation, int limiteAge, string synopsis)
+        public Jeu(string nom, ICreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
         {
-            Informations = new InformationsJeu(nom, nomCreateur, dateCreation, limiteAge, synopsis);
+            Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis);
             lesVisuels = new HashSet<string>();
             lesMusiques = new HashSet<string>();
             lesTheories = new HashSet<Theorie>();
@@ -85,10 +85,10 @@ namespace BibliothèqueApplication
         {
             if (this == obj) return true;
             if (obj is null) return false;
-            if (GetType() != obj.GetType()) return false;
+            if (!GetType().Equals(obj.GetType())) return false;
 
             Jeu other = (Jeu)obj;
-            return Informations.Equals(other.Informations);
+            return Equals(other);
         }
 
         public override int GetHashCode()
@@ -98,9 +98,8 @@ namespace BibliothèqueApplication
 
         public bool Equals(Jeu other)
         {
-            return Equals(other);
+            if (other is null) return false;
+            return Informations.Equals(other.Informations);
         }
     }
 }
-
-//faut faire une propriété calculée pour faire le tri, la fonction retourne une liste triée

@@ -4,20 +4,20 @@ using System.Collections.Generic;
 
 namespace BibliothèqueApplication
 {
-    public class InformationsJeu : Nommable
+    public class InformationsJeu : Nommable, IEquatable<InformationsJeu>
     {
         private ISet<Genres> lesGenres;
         private ISet<Plateformes> lesPlateformes;
         //PROPRIÉTÉS
-        public string NomCreateur { get; set; }
+        public ICreateurJeu Createur { get; set; }
         public DateTime DateCreation { get; set; }
         public int LimiteAge { get; set; }
         public string Synopsis { get; set; }
 
         //Constructeur
-        public InformationsJeu(string nom, string nomCreateur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
+        public InformationsJeu(string nom, ICreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
         {
-            this.NomCreateur = nomCreateur;
+            this.Createur = createur;
             this.DateCreation = dateCreation;
             this.LimiteAge = limiteAge;
             this.Synopsis = synopsis;
@@ -64,16 +64,11 @@ namespace BibliothèqueApplication
         {
             if (this == obj) return true;
             if (obj is null) return false;
-            if (GetType() != obj.GetType()) return false;
+            if (!GetType().Equals(obj.GetType())) return false;
 
             InformationsJeu other = (InformationsJeu) obj;
 
-            return NomCreateur == other.NomCreateur &&
-                   DateCreation == other.DateCreation &&
-                   LimiteAge == other.LimiteAge &&
-                   Synopsis == other.Synopsis &&
-                   lesGenres.SetEquals(other.lesGenres) &&
-                   lesPlateformes.SetEquals(other.lesPlateformes);
+            return Equals(other);
         }
 
 
@@ -87,6 +82,17 @@ namespace BibliothèqueApplication
             hashCode = hashCode * -1521134295 + LimiteAge.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Synopsis);
             return hashCode;
+        }
+
+        public bool Equals(InformationsJeu other)
+        {
+            if (other is null) return false;
+            return NomCreateur == other.NomCreateur &&
+                   DateCreation == other.DateCreation &&
+                   LimiteAge == other.LimiteAge &&
+                   Synopsis == other.Synopsis &&
+                   lesGenres.SetEquals(other.lesGenres) &&
+                   lesPlateformes.SetEquals(other.lesPlateformes);
         }
     }
 }

@@ -21,7 +21,13 @@ namespace BibliothèqueApplication
 
         public override bool Equals(object obj)
         {
-            return Equals(obj);
+            if (this == obj) return true;
+            if (obj is null) return false;
+            if (!GetType().Equals(obj.GetType())) return false;
+
+            Theorie other = (Theorie) obj;
+
+            return Equals(other);
         }
 
         public override int GetHashCode()
@@ -31,10 +37,7 @@ namespace BibliothèqueApplication
 
         public bool Equals(Theorie other)
         {
-            if (this == other) return true;
             if (other is null) return false;
-            if (GetType() != other.GetType()) return false;
-
             return Texte == other.Texte;
         }
     }
