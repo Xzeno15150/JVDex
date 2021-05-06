@@ -48,11 +48,14 @@ namespace BibliothèqueApplication
 
         public override int GetHashCode()
         {
-            var hashCode = 89;
-            var constante = 8;
-            hashCode = hashCode * lesJeux.GetHashCode() + constante;
+            int hashCode = 1423109898;
+            hashCode = hashCode * -1521134295 + base.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Nom);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Jeu>>.Default.GetHashCode(lesJeux);
             return hashCode;
         }
+
+
         //à voir ensemble
     }
 

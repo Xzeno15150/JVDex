@@ -9,13 +9,13 @@ namespace BibliothèqueApplication
         private ISet<Genres> lesGenres;
         private ISet<Plateformes> lesPlateformes;
         //PROPRIÉTÉS
-        public ICreateurJeu Createur { get; set; }
+        public CreateurJeu Createur { get; set; }
         public DateTime DateCreation { get; set; }
         public int LimiteAge { get; set; }
         public string Synopsis { get; set; }
 
         //Constructeur
-        public InformationsJeu(string nom, ICreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
+        public InformationsJeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
         {
             this.Createur = createur;
             this.DateCreation = dateCreation;
@@ -43,7 +43,7 @@ namespace BibliothèqueApplication
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";
-            mes += $"Nom du créateur: {Createur.nom}\n"; // je ne vois pas trop comment faire, il faut faire des get ? ou alors uiliser l'interface?
+            mes += $"Nom du créateur: {Createur}\n"; // je ne vois pas trop comment faire, il faut faire des get ? ou alors uiliser l'interface?
             mes += $"Date de création: {DateCreation.ToString("dd/MM/yyyy")}\n";
             mes += $"Limite d'âge: {LimiteAge} ans\n";
             mes += $"Synopsis: {Synopsis}\n";
@@ -77,7 +77,7 @@ namespace BibliothèqueApplication
             var hashCode = -1562044350;
             hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Genres>>.Default.GetHashCode(lesGenres);
             hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Plateformes>>.Default.GetHashCode(lesPlateformes);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(NomCreateur);
+            hashCode = hashCode * -1521134295 + EqualityComparer<CreateurJeu>.Default.GetHashCode(Createur);
             hashCode = hashCode * -1521134295 + DateCreation.GetHashCode();
             hashCode = hashCode * -1521134295 + LimiteAge.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Synopsis);
@@ -87,7 +87,7 @@ namespace BibliothèqueApplication
         public bool Equals(InformationsJeu other)
         {
             if (other is null) return false;
-            return NomCreateur == other.NomCreateur &&
+            return Createur == other.Createur &&
                    DateCreation == other.DateCreation &&
                    LimiteAge == other.LimiteAge &&
                    Synopsis == other.Synopsis &&

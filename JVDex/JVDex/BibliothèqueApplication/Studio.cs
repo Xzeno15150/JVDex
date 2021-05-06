@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class Studio : Nommable, ICreateurJeu
+    public class Studio : CreateurJeu
     {
         public Studio(string nom) : base(nom)
         {

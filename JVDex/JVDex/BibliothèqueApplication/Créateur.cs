@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    class Créateur : Nommable, ICreateurJeu
+    public class Créateur : CreateurJeu
     {
         public string Prenom { get; }
         public DateTime DateNaissance { get; }
