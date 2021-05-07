@@ -6,16 +6,16 @@ namespace BibliothèqueApplication
     public class Franchise : Nommable, IEquatable<Franchise>
     {
 
-        public ISet<Jeu> lesJeux { get; }
+        public ISet<Jeu> LesJeux { get; }
 
         public Franchise(string nom) : base(nom)
         {
-            lesJeux = new HashSet<Jeu>();
+            LesJeux = new HashSet<Jeu>();
         }
            
         public void ajouterJeu(Jeu jeu) 
         {
-            if (!lesJeux.Add(jeu))
+            if (!LesJeux.Add(jeu))
             {
                 throw new ArgumentException("PB: le jeu est déjà dans la liste des jeux");
             }
@@ -24,7 +24,7 @@ namespace BibliothèqueApplication
         {
             string mes = $"Nom de la franchise :{Nom}\n";
             mes += "Liste des jeux : \n";
-            foreach (Jeu j in lesJeux)
+            foreach (Jeu j in LesJeux)
             {
                 mes += $"\t- {j.Informations.Nom}\n";
             }
@@ -45,7 +45,7 @@ namespace BibliothèqueApplication
         {
             if (other is null) return false;
             return base.Equals(other.Nom) &&
-                   lesJeux.SetEquals(other.lesJeux);
+                   LesJeux.SetEquals(other.LesJeux);
         }
 
         public override int GetHashCode()
@@ -53,7 +53,7 @@ namespace BibliothèqueApplication
             int hashCode = 1423109898;
             hashCode = hashCode * -1521134295 + base.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Nom);
-            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Jeu>>.Default.GetHashCode(lesJeux);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Jeu>>.Default.GetHashCode(LesJeux);
             return hashCode;
         }
 

@@ -7,9 +7,9 @@ namespace BibliothèqueApplication
 {
     public class Jeu : IEquatable<Jeu>
     {
-        private ISet<string> lesVisuels;
-        private ISet<string> lesMusiques;
-        private ISet<Theorie> lesTheories;
+        public ISet<string> LesVisuels { get; private set;}
+        public ISet<string> LesMusiques { get; private set; }
+        public ISet<Theorie> LesTheories { get; private set; }
 
         //Propriétés
         public InformationsJeu Informations { get; set; }
@@ -18,9 +18,9 @@ namespace BibliothèqueApplication
         public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis);
-            lesVisuels = new HashSet<string>();
-            lesMusiques = new HashSet<string>();
-            lesTheories = new HashSet<Theorie>();
+            LesVisuels = new HashSet<string>();
+            LesMusiques = new HashSet<string>();
+            LesTheories = new HashSet<Theorie>();
         }
 
         //Méthodes
@@ -36,14 +36,14 @@ namespace BibliothèqueApplication
 
         public void AjouterVisuel(string visuel)
         {
-            if (!lesVisuels.Add(visuel))
+            if (!LesVisuels.Add(visuel))
             {
                 throw new ArgumentException("PB: cette image est déjà dans la liste des visuels");
             }
         }
         public void AjouterMusique(string musique)
         {
-            if (!lesMusiques.Add(musique))
+            if (!LesMusiques.Add(musique))
             {
                 throw new ArgumentException("PB: cette musique est déjà dans la liste des musiques");
             }
@@ -51,7 +51,7 @@ namespace BibliothèqueApplication
 
         public void AjouterTheorie(Theorie theorie)
         {
-            if (!lesTheories.Add(theorie))
+            if (!LesTheories.Add(theorie))
             {
                 throw new ArgumentException("PB: cette théorie est déjà dans la liste des théories.");
             }
@@ -61,20 +61,20 @@ namespace BibliothèqueApplication
             string mes = Informations.ToString();
             // je comprends pas pourquoi on met Information et pas InformationsJeu
             // on met Informations puisque ce que l'on cherche ce trouve dans la propriété (="variable", en gros) Informations, InformationsJeu est le type de cette propriété, donc rien à voir
-            // regarde en dessous, tu prend des valeurs de la liste lesVisuels, tu ne les prend pas dans le type string
+            // regarde en dessous, tu prend des valeurs de la liste LesVisuels, tu ne les prend pas dans le type string
 
             mes += "Liste des visuels : \n";
-            foreach (string s in lesVisuels)
+            foreach (string s in LesVisuels)
             {
                 mes += $"\t- {s}\n";
             } 
             mes += "Liste des musiques : \n";
-            foreach (string s in lesMusiques)
+            foreach (string s in LesMusiques)
             {
                 mes += $"\t- {s}\n";
             }
             mes += "Théories : \n";
-            foreach (Theorie s in lesTheories)
+            foreach (Theorie s in LesTheories)
             {
                 mes += $"\t- {s.Nom}\n";
             }
