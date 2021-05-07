@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{A5A967C8-E9DF-44A3-94E8-3A93040ADBCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{12362319-D998-458A-8F76-34B1A25C6E5B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6} = {3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

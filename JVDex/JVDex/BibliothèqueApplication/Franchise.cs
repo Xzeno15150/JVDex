@@ -5,6 +5,7 @@ namespace BibliothèqueApplication
 {
     public class Franchise : Nommable, IEquatable<Franchise>
     {
+
         public ISet<Jeu> lesJeux { get; }
 
         public Franchise(string nom) : base(nom)

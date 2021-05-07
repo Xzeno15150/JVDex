@@ -5,6 +5,7 @@ using System.Text;
 namespace BibliothèqueApplication
 {
     public class Studio : CreateurJeu, IEquatable<Studio>
+
     {
         public Studio(string nom) : base(nom)
         {
@@ -23,6 +24,11 @@ namespace BibliothèqueApplication
             if (!GetType().Equals(obj.GetType())) return false;
             Studio other = obj as Studio;
             return Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public override string ToString()
