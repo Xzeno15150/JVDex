@@ -5,13 +5,13 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class MainApp
+    public static class MainApp
     {
-        public IList<Jeu> TousLesJeux { get; } = new List<Jeu>();
-        public IList<Franchise> ToutesLesFranshises { get;} = new List<Franchise>();
+        public static IList<Jeu> TousLesJeux { get; private set; } = new List<Jeu>();
+        public static IList<Franchise> ToutesLesFranchises { get; private set; } = new List<Franchise>();
 
 
-        public void AjouterJeu(Jeu jeu)
+        public static void AjouterJeu(Jeu jeu)
         {
             if (TousLesJeux.Contains(jeu))
             {
@@ -19,16 +19,16 @@ namespace BibliothèqueApplication
             }
             TousLesJeux.Add(jeu);
         }
-        public void AjouterFranshise(Franchise franchise)
+        public static void AjouterFranchise(Franchise franchise)
         {
-            if (ToutesLesFranshises.Contains(franchise))
+            if (ToutesLesFranchises.Contains(franchise))
             {
                 throw new ArgumentException("PB: cette franchise est déjà dans la liste des franchises");
             }
-            ToutesLesFranshises.Add(franchise);
+            ToutesLesFranchises.Add(franchise);
         }
 
-        public IList<Jeu> TrierLesJeuxPar(TypeTri type)
+        public static void TrierLesJeuxPar(TypeTri type)
         {
             IEnumerable<Jeu> l;
             switch (type)
@@ -48,14 +48,24 @@ namespace BibliothèqueApplication
                     break;
                 case TypeTri.NomCréateur:
                     l = TousLesJeux
-                        .OrderBy(jeu => jeu.Informations.NomCreateur)
+                        .OrderBy(jeu => jeu.Informations.Createur.Nom)
                         .ThenBy(jeu => jeu.Informations.Nom);
                     break;
                 default:
                     l = TousLesJeux.OrderBy(jeu => jeu.Informations.Nom);
                     break;
             }
-            return l as IList<Jeu>;
+            TousLesJeux = l as IList<Jeu>;
         } 
+
+        public static string AfficherTousLesJeux()
+        {
+            string mes = "Tous les jeux\n"; 
+            foreach(Jeu j in TousLesJeux) // j'ai pas eu le temps de regarder pourquoi ça marche pas
+            {
+                mes += $"\t- {j.Informations.Nom}\n";
+            }
+            return mes;
+        }
     }
 }

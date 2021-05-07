@@ -25,7 +25,7 @@ namespace BibliothèqueApplication
             if (obj is null) return false;
             if (!GetType().Equals(obj.GetType())) return false;
 
-            Theorie other = (Theorie) obj;
+            Theorie other = obj as Theorie;
 
             return Equals(other);
         }
@@ -38,7 +38,8 @@ namespace BibliothèqueApplication
         public bool Equals(Theorie other)
         {
             if (other is null) return false;
-            return Texte == other.Texte;
+            return Nom == other.Nom &&
+                   Texte.Equals(other.Texte);
         }
     }
 

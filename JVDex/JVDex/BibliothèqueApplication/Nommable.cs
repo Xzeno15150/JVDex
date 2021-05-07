@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public abstract class Nommable
+    public abstract class Nommable : IEquatable<Nommable>
     {
         public string Nom { get; set; }
 
@@ -15,13 +15,22 @@ namespace BibliothèqueApplication
 
         public override bool Equals(object obj)
         {
-            return obj is Nommable nommable &&
-                   Nom == nommable.Nom;
+            if (this == obj) return true;
+            if (obj is null) return false;
+            if (!GetType().Equals(obj.GetType())) return false;
+            Nommable other = obj as Nommable;
+            return Equals(other);
         }
 
         public override int GetHashCode()
         {
             return 217408413 + EqualityComparer<string>.Default.GetHashCode(Nom);
+        }
+
+        public bool Equals(Nommable other)
+        {
+            if (other is null) return false;
+            return Nom == other.Nom;
         }
     }
 

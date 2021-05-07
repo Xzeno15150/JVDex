@@ -15,7 +15,7 @@ namespace BibliothèqueApplication
         public InformationsJeu Informations { get; set; }
         public bool IsFavoris { get; private set; }
 
-        public Jeu(string nom, ICreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
+        public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis);
             lesVisuels = new HashSet<string>();
@@ -87,7 +87,7 @@ namespace BibliothèqueApplication
             if (obj is null) return false;
             if (!GetType().Equals(obj.GetType())) return false;
 
-            Jeu other = (Jeu)obj;
+            Jeu other = obj as Jeu;
             return Equals(other);
         }
 

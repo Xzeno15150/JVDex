@@ -6,8 +6,8 @@ namespace BibliothèqueApplication
 {
     public class InformationsJeu : Nommable, IEquatable<InformationsJeu>
     {
-        private ISet<Genres> lesGenres;
-        private ISet<Plateformes> lesPlateformes;
+        public ISet<Genres> LesGenres { get; }
+        public ISet<Plateformes> LesPlateformes { get; }
         //PROPRIÉTÉS
         public CreateurJeu Createur { get; set; }
         public DateTime DateCreation { get; set; }
@@ -21,13 +21,13 @@ namespace BibliothèqueApplication
             this.DateCreation = dateCreation;
             this.LimiteAge = limiteAge;
             this.Synopsis = synopsis;
-            lesGenres = new HashSet<Genres>();
-            lesPlateformes = new HashSet<Plateformes>();
+            LesGenres = new HashSet<Genres>();
+            LesPlateformes = new HashSet<Plateformes>();
         }
 
         public void AjouterGenre(Genres genre)
         {
-            if (!lesGenres.Add(genre))
+            if (!LesGenres.Add(genre))
             {
                 throw new ArgumentException("PB: ce genre est déjà dans la liste de genres");
             }
@@ -35,7 +35,7 @@ namespace BibliothèqueApplication
 
         public void AjouterPlateforme(Plateformes plateforme)
         {
-            if (!lesPlateformes.Add(plateforme))
+            if (!LesPlateformes.Add(plateforme))
             {
                 throw new ArgumentException("PB: cette plateforme est déjà dans la liste des plateformes");
             }
@@ -43,17 +43,17 @@ namespace BibliothèqueApplication
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";
-            mes += $"Nom du créateur: {Createur}\n"; // je ne vois pas trop comment faire, il faut faire des get ? ou alors uiliser l'interface?
+            mes += $"Nom du créateur: {Createur}\n"; 
             mes += $"Date de création: {DateCreation.ToString("dd/MM/yyyy")}\n";
             mes += $"Limite d'âge: {LimiteAge} ans\n";
             mes += $"Synopsis: {Synopsis}\n";
             mes += "Genres : \n";
-            foreach(Genres g in lesGenres)
+            foreach(Genres g in LesGenres)
             {
                 mes += $"\t- {g}\n";
             }
             mes += "Plateformes : \n";
-            foreach(Plateformes p in lesPlateformes)
+            foreach(Plateformes p in LesPlateformes)
             {
                 mes += $"\t- {p}\n";
             }
@@ -66,7 +66,7 @@ namespace BibliothèqueApplication
             if (obj is null) return false;
             if (!GetType().Equals(obj.GetType())) return false;
 
-            InformationsJeu other = (InformationsJeu) obj;
+            InformationsJeu other = obj as InformationsJeu;
 
             return Equals(other);
         }
@@ -75,8 +75,8 @@ namespace BibliothèqueApplication
         public override int GetHashCode()
         {
             var hashCode = -1562044350;
-            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Genres>>.Default.GetHashCode(lesGenres);
-            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Plateformes>>.Default.GetHashCode(lesPlateformes);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Genres>>.Default.GetHashCode(LesGenres);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Plateformes>>.Default.GetHashCode(LesPlateformes);
             hashCode = hashCode * -1521134295 + EqualityComparer<CreateurJeu>.Default.GetHashCode(Createur);
             hashCode = hashCode * -1521134295 + DateCreation.GetHashCode();
             hashCode = hashCode * -1521134295 + LimiteAge.GetHashCode();
@@ -87,16 +87,19 @@ namespace BibliothèqueApplication
         public bool Equals(InformationsJeu other)
         {
             if (other is null) return false;
-            return Createur == other.Createur &&
+            return Nom == other.Nom &&
+                   Createur.Equals(other.Createur) &&
                    DateCreation == other.DateCreation &&
-                   LimiteAge == other.LimiteAge &&
-                   Synopsis == other.Synopsis &&
-                   lesGenres.SetEquals(other.lesGenres) &&
-                   lesPlateformes.SetEquals(other.lesPlateformes);
+                   LimiteAge.Equals(other.LimiteAge) &&
+                   Synopsis.Equals(other.Synopsis) &&
+                   LesGenres.SetEquals(other.LesGenres) &&
+                   LesPlateformes.SetEquals(other.LesPlateformes);
         }
     }
 }
 // pour afficher le genre et les plateformes il faut pas d'abord faire une recherche? vu que c'est une liste il faut afficher le genre qu'on a attribué non?
+// je comprend pas la question la, on peut attribué plusieurs genres à un jeu, et ils sont stockés dans cette liste, c'est tout, comme pour les plateformes
+// la "liste" de tous les genres c'est l'enum Genres, elle est pas ici. LesGenres c'est la liste des genres attribués (parce qu'un jeu peut avoir plusieurs genres)
 
 
 
