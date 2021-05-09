@@ -16,15 +16,20 @@ namespace ConsoleTest
         {
             MainApp app = Stub.Load();
 
-            Console.WriteLine(UtilsListes.AfficherLesJeux(app.TousLesJeux, TypeTri.A_Z));
+            Console.WriteLine(UtilsListes.AfficherLesFranchises(app.ToutesLesFranchises));
             Console.WriteLine("=============================");
-            Console.WriteLine(UtilsListes.AfficherLesJeux(app.TousLesJeux, TypeTri.Z_A));
+            // Console.WriteLine(UtilsListes.AfficherLesFavoris(app.lesJeux));
+            Console.WriteLine(UtilsListes.AfficherJeux(app.TousLesJeux));
             Console.WriteLine("=============================");
-            Console.WriteLine(UtilsListes.AfficherLesJeux(app.TousLesJeux, TypeTri.NomCréateur));
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.A_Z));
             Console.WriteLine("=============================");
-            Console.WriteLine(UtilsListes.AfficherLesJeux(app.TousLesJeux, TypeTri.Premier_Anciens));
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.Z_A));
             Console.WriteLine("=============================");
-            Console.WriteLine(UtilsListes.AfficherLesJeux(app.TousLesJeux, TypeTri.Premier_Récents));
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.NomCréateur));
+            Console.WriteLine("=============================");
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.Premier_Anciens));
+            Console.WriteLine("=============================");
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.Premier_Récents));
             Console.WriteLine("=============================");
 
             Console.WriteLine(app.TousLesJeux[0]);

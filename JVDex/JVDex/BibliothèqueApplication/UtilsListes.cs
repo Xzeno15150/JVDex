@@ -7,7 +7,7 @@ namespace BibliothèqueApplication
 {
     public static class UtilsListes
     {
-        public static string AfficherLesJeux(IList<Jeu> lesJeuxNonTries, TypeTri type)
+        public static string AfficherLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
         {
             IList<Jeu> lesJeux = TrierLesJeuxPar(lesJeuxNonTries, type);
             string mes = $"Les jeux trié par {type}\n";
@@ -17,6 +17,18 @@ namespace BibliothèqueApplication
                 mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur})\n";
             }
             return mes;
+        }
+
+        public static string AfficherJeux(IList<Jeu> TousLesJeux)
+        {
+            string mes = $"La liste des jeux\n";
+
+            foreach (Jeu j in TousLesJeux) // j'ai pas eu le temps de regarder pourquoi ça marche pas 
+            {
+                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur})\n";
+            }
+            return mes;
+
         }
 
         public static string AfficherLesFranchises(IList<Franchise> lesFranchises)
@@ -45,13 +57,13 @@ namespace BibliothèqueApplication
                 case TypeTri.Z_A:
                     return lesJeux.OrderByDescending(jeu => jeu.Informations.Nom).ToList();
 
-                case TypeTri.Premier_Récents:
+                case TypeTri.Premier_Anciens:
                     return lesJeux
                        .OrderBy(jeu => jeu.Informations.DateCreation.Date)
                        .ThenBy(jeu => jeu.Informations.Nom)
                        .ToList();
 
-                case TypeTri.Premier_Anciens:
+                case TypeTri.Premier_Récents:
                     return lesJeux
                         .OrderByDescending(jeu => jeu.Informations.DateCreation.Date)
                         .ThenBy(jeu => jeu.Informations.Nom)
@@ -62,9 +74,10 @@ namespace BibliothèqueApplication
                         .ThenBy(jeu => jeu.Informations.Nom)
                         .ToList();
                 default:
-                    return lesJeux.OrderBy(jeu => jeu.Informations.Nom).ToList();
+                    return lesJeux.OrderBy(jeu => jeu.Informations.Nom).ToList(); //pour afficher les jeux sans tri?
 
             }
         }
     }
 }
+//le tri par Premier_Anciens et Premier_Récents est inversé, normalement j'ai changé à vérifier
