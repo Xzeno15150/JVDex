@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BibliothèqueApplication
 {
     public abstract class CreateurJeu : Nommable
     {
-        public CreateurJeu(string nom) : base(nom)
+        protected CreateurJeu(string nom) : base(nom)
         {
+
         }
     }
 }
+
