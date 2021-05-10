@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliothèqueApplication.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,25 +11,13 @@ namespace BibliothèqueApplication
         public static string AfficherLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
         {
             IList<Jeu> lesJeux = TrierLesJeuxPar(lesJeuxNonTries, type);
-            string mes = $"Les jeux trié par {type}\n";
+            string mes = $"Les jeux triés par {type.ToDescription()}\n";
 
-            foreach (Jeu j in lesJeux) // j'ai pas eu le temps de regarder pourquoi ça marche pas 
+            foreach (Jeu j in lesJeux)
             {
                 mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur})\n";
             }
             return mes;
-        }
-
-        public static string AfficherJeux(IList<Jeu> TousLesJeux)
-        {
-            string mes = $"La liste des jeux\n";
-
-            foreach (Jeu j in TousLesJeux) // j'ai pas eu le temps de regarder pourquoi ça marche pas 
-            {
-                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur})\n";
-            }
-            return mes;
-
         }
 
         public static string AfficherLesFranchises(IList<Franchise> lesFranchises)

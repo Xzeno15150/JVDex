@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Text;
+﻿using BibliothèqueApplication.Enums;
+
 
 namespace BibliothèqueApplication
 {
@@ -15,7 +13,7 @@ namespace BibliothèqueApplication
         Espionnage,
         Reflexe,
         Puzzle,
-        [EnumMember(Value = "Survival Horror")]
+        [EnumDescription("Survival Horror")]
         Survival_Horror,
         Simulation,
         Stratégie,

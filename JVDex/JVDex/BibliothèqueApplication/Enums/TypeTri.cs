@@ -1,0 +1,18 @@
+﻿using BibliothèqueApplication.Enums;
+
+namespace BibliothèqueApplication
+{
+    public enum TypeTri
+    {
+        [EnumDescription("ordre alphabétique")]
+        A_Z, 
+        [EnumDescription("ordre alphabétique inverse")]
+        Z_A, 
+        [EnumDescription("les plus récents d'abord")]
+        Premier_Récents, 
+        [EnumDescription("les plus anciens d'abord")]
+        Premier_Anciens, 
+        [EnumDescription("ordre alphabétique des noms de créateur")]
+        NomCréateur 
+    }
+}
