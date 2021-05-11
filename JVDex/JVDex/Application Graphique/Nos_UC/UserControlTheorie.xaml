@@ -26,12 +26,12 @@
             <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 5</TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Row="1">
-            <TextBlock Foreground="Wheat" Padding="10" FontSize="20">Théorie 1</TextBlock>
+        <ListBox Grid.Row="1" Background="Transparent">
+            <!--<TextBlock Foreground="Wheat" Padding="10" FontSize="20">Théorie 1</TextBlock>
             <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Donec ac odio tempor orci dapibus ultrices. Sed faucibus turpis in eu mi. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Venenatis lectus magna fringilla urna. Elementum facilisis leo vel fringilla. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
-            </TextBlock>
-        </StackPanel>
+            </TextBlock>-->
+        </ListBox>
 
         
         

@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Application_Graphique
+namespace Application_Graphique.Nos_UC
 {
     /// <summary>
     /// Logique d'interaction pour Informations.xaml
     /// </summary>
-    public partial class Informations : UserControl
+    public partial class UserControlInformations : UserControl
     {
-        public Informations()
+        public UserControlInformations()
         {
             InitializeComponent();
         }

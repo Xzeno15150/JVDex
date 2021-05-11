@@ -8,6 +8,6 @@
              d:DesignHeight="205" d:DesignWidth="180">
     <StackPanel Background="#3D3C3C">        
         <TextBlock Foreground="White" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" Name="NomDuJeu" TextWrapping="Wrap">Nom du jeu</TextBlock>
-        <Image Margin="10" Source="Resources\Jeux\Zelda\pochette-jeu.jpg" Name="ImageJeu"/>
+        <Image Margin="10" Source="/Resources/Jeux/Zelda/pochette-jeu.jpg" Name="ImageJeu"/>
     </StackPanel>
 </UserControl>

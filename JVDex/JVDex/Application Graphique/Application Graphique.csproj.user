@@ -10,28 +10,10 @@
     <Compile Update="Franchises_Favoris.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Information.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Informations.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Jeu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Theorie.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControlFond.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControlJeu.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControlTheorie.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControlVisuel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Visuel.xaml.cs">
@@ -42,12 +24,6 @@
     <Page Update="Franchises_Favoris.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Information.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Informations.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Jeu.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -55,18 +31,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theorie.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UserControlFond.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UserControlJeu.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UserControlTheorie.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UserControlVisuel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Visuel.xaml">
