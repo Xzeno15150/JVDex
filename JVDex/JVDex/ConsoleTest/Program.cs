@@ -10,12 +10,16 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             Test_Trier_Jeux();
+            Test_Favoris();
+            Test_Franchise();
         }
 
-        private static void Test_Trier_Jeux()
+        //test pour trier les jeux
+
+        private static void Test_Trier_Jeux() 
         {
             MainApp app = Stub.Load();
-            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.A_Z));
+            Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.A_Z)); //appel de la méthode de tri dans la class UtilsList
             Console.WriteLine("=============================");
             Console.WriteLine(UtilsListes.AfficherLesJeuxTriés(app.TousLesJeux, TypeTri.Z_A));
             Console.WriteLine("=============================");
@@ -27,9 +31,20 @@ namespace ConsoleTest
             Console.WriteLine("=============================");
         }
 
-        private static void Text_()
+        private static void Test_Favoris()
         {
+            MainApp app = Stub.Load();
+            Console.WriteLine(UtilsListes.AfficherLesFavoris(app.TousLesJeux));
+            Console.WriteLine("=============================");
+        }
+
+        private static void Test_Franchise()
+        {
+            MainApp app = Stub.Load();
+            Console.WriteLine(UtilsListes.AfficherLesFranchises(app.ToutesLesFranchises));
+            Console.WriteLine(app.ToutesLesFranchises[0]);
 
         }
+
     }
 }

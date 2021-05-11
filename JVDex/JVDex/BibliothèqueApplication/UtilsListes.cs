@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace BibliothèqueApplication
 {
@@ -15,7 +16,7 @@ namespace BibliothèqueApplication
 
             foreach (Jeu j in lesJeux)
             {
-                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur}, {j.Informations.DateCreation.})\n";
+                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur}, {j.Informations.DateCreation})\n";
             }
             return mes;
         }
@@ -67,5 +68,17 @@ namespace BibliothèqueApplication
 
             }
         }
+
+      /*  private static IList<Jeu> Rechercher(IList<Jeu> lesJeux, string jeu)
+        {
+            IList<Jeu> JeuxRecherchés = new List<Jeu>() ;
+            foreach(Jeu j in lesJeux)
+            {
+                if( lesJeux )
+            }
+            */
+
+            
+        
     }
 }
