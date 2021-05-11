@@ -51,9 +51,12 @@ namespace ConsoleTest
 
         private static void Test_Rechercher_Jeu()
         {
+            MainApp app = Stub.Load();
             Console.WriteLine("Donnez le nom à rechercher :");
-            var texte = Console.ReadLine();
+            var recherche = Console.ReadLine();
+            IList<Jeu> listeJeu = UtilsListes.RechercheDesJeuxDeLaListe(app.TousLesJeux, recherche);
 
+            Console.WriteLine(UtilsListes.GetLesJeuxTriés(listeJeu, TypeTri.A_Z));
         }
 
     }

@@ -69,14 +69,18 @@ namespace BibliothèqueApplication
             }
         }
 
-      /*  private static IList<Jeu> Rechercher(IList<Jeu> lesJeux, string jeu)
+        public static IList<Jeu> RechercheDesJeuxDeLaListe(IList<Jeu> lesJeux, string jeu)
         {
             IList<Jeu> JeuxRecherchés = new List<Jeu>() ;
             foreach(Jeu j in lesJeux)
             {
-                if( lesJeux )
+                if (j.Informations.Nom.ToLower().Contains(jeu.ToLower()))
+                {
+                    JeuxRecherchés.Add(j);
+                }
             }
-            */
+            return JeuxRecherchés;
+        }
 
             
         
