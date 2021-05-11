@@ -11,11 +11,11 @@ namespace BibliothèqueApplication
         public static string AfficherLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
         {
             IList<Jeu> lesJeux = TrierLesJeuxPar(lesJeuxNonTries, type);
-            string mes = $"Les jeux triés par {type.ToDescription()}\n";
+            string mes = $"Les jeux triés par {type.ToDescription()}\n"; 
 
             foreach (Jeu j in lesJeux)
             {
-                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur})\n";
+                mes += $"\t- {j.Informations.Nom} ({j.Informations.Createur}, {j.Informations.DateCreation.})\n";
             }
             return mes;
         }
@@ -39,7 +39,7 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
-        public static IList<Jeu> TrierLesJeuxPar(IList<Jeu> lesJeux,TypeTri type)
+        private static IList<Jeu> TrierLesJeuxPar(IList<Jeu> lesJeux,TypeTri type)
         {
             switch (type)
             {
@@ -63,10 +63,9 @@ namespace BibliothèqueApplication
                         .ThenBy(jeu => jeu.Informations.Nom)
                         .ToList();
                 default:
-                    return lesJeux.OrderBy(jeu => jeu.Informations.Nom).ToList(); //pour afficher les jeux sans tri?
+                    return lesJeux.OrderBy(jeu => jeu.Informations.Nom).ToList();
 
             }
         }
     }
 }
-//le tri par Premier_Anciens et Premier_Récents est inversé, normalement j'ai changé à vérifier

@@ -17,9 +17,8 @@ namespace BibliothèqueApplication.Enums
             {
                 object[] attrs = memInfo[0].GetCustomAttributes(typeof(EnumDescription), false);
                 if (null != attrs && attrs.Length > 0)
-                    return ((EnumDescription)attrs[0]).Text;
+                    return (attrs[0] as EnumDescription).Text;
             }
-
             return enumeration.ToString();
         }
     }

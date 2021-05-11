@@ -1,6 +1,5 @@
 ﻿using BibliothèqueApplication;
 using System;
-using System.Collections.Generic;
 
 namespace Data
 {

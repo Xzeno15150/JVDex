@@ -32,13 +32,5 @@ namespace BibliothèqueApplication
             }
             ToutesLesFranchises.Add(franchise);
         }
-
-        
-        //je comprends pas trop ta méthode de tri, IEnumerable permet de remplacer une boucle foreach pour parcourir les éléments?
-        // non pas du tout: en fait la méthode OrderBy() de LINQ renvoie un IEnumarable (sachant que IList implémente IEnumerable)
-        
-    
-        
     }
 }
-//les jeux s'affichent bien sans la méthode de tri ça doit venir de là le problème
