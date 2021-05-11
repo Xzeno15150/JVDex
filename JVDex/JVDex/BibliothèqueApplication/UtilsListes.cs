@@ -9,7 +9,7 @@ namespace BibliothèqueApplication
 {
     public static class UtilsListes
     {
-        public static string AfficherLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
+        public static string GetLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
         {
             IList<Jeu> lesJeux = TrierLesJeuxPar(lesJeuxNonTries, type);
             string mes = $"Les jeux triés par {type.ToDescription()}\n"; 
@@ -21,7 +21,7 @@ namespace BibliothèqueApplication
             return mes;
         }
 
-        public static string AfficherLesFranchises(IList<Franchise> lesFranchises)
+        public static string GetLesFranchises(IList<Franchise> lesFranchises)
         {
             string mes = "Toutes les franchises\n";
             foreach (Franchise f in lesFranchises)
@@ -31,7 +31,7 @@ namespace BibliothèqueApplication
             return mes;
         }
 
-        public static string AfficherLesFavoris(IList<Jeu> lesJeux)
+        public static string GetLesFavoris(IList<Jeu> lesJeux)
         {
             string mes = "Tous les favoris\n";
             foreach (Jeu j in lesJeux.Where(jeu => jeu.IsFavoris == true))

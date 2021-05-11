@@ -5,7 +5,7 @@ namespace BibliothèqueApplication
     public enum TypeTri
     {
         [EnumDescription("ordre alphabétique")]
-        A_Z, 
+        A_Z = 1, 
         [EnumDescription("ordre alphabétique inverse")]
         Z_A, 
         [EnumDescription("les plus récents d'abord")]
