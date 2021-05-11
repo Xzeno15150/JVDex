@@ -10,9 +10,10 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             //Test_Trier_Jeux();
-            Test_Rechercher_Jeu();
+            //Test_Rechercher_Jeu();
             //Test_Favoris();
             //Test_Franchise();
+            Test_Afficher_Détail_Jeu();
         }
 
         //test pour trier les jeux
@@ -39,6 +40,22 @@ namespace ConsoleTest
             MainApp app = Stub.Load();
             Console.WriteLine(UtilsListes.GetLesFavoris(app.TousLesJeux));
             Console.WriteLine("=============================");
+        }
+
+        private static void Test_Afficher_Détail_Jeu()
+        {
+            MainApp app = Stub.Load();
+            Console.WriteLine("Donnez le nom à rechercher :");
+            var recherche = Console.ReadLine();
+            IList<Jeu> listeJeu = UtilsListes.RechercheDesJeuxDeLaListe(app.TousLesJeux, recherche);
+            listeJeu = UtilsListes.GetLesJeuxTriés(listeJeu, TypeTri.A_Z); // méthode à modifier (return list au lieu de string)
+            Console.WriteLine(listeJeu);
+
+            Console.WriteLine($"Quel jeu choissisez vous? (1-{listeJeu.Count})");
+            var choix = Convert.ToInt32(Console.ReadLine())-1;
+
+            Console.WriteLine(listeJeu[choix]);
+
         }
 
         private static void Test_Franchise()
