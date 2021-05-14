@@ -20,3 +20,4 @@ namespace BibliothèqueApplication
         Sport
     }
 }
+//enum des différents genres des jeux

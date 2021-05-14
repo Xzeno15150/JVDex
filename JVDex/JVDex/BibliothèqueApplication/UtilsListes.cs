@@ -20,6 +20,8 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
+        //permet de retourner une liste de jeux triés. La méthode prend en paramettre la liste de tous les jeux non triés et le type de tri
+        //le type de tri se trouve dans un enum, il est associé à un tri dans la méthode TrierLesJeuxPar
 
         public static string GetLesFranchises(IList<Franchise> lesFranchises)
         {
@@ -30,6 +32,7 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
+        //retourne la liste des franchises
 
         public static string GetLesFavoris(IList<Jeu> lesJeux)
         {
@@ -40,6 +43,7 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
+        //retourne la liste des favoris
         private static IList<Jeu> TrierLesJeuxPar(IList<Jeu> lesJeux,TypeTri type)
         {
             switch (type)
@@ -68,6 +72,7 @@ namespace BibliothèqueApplication
 
             }
         }
+        //retourne une liste de jeux triés
 
         public static IList<Jeu> RechercheDesJeuxDeLaListe(IList<Jeu> lesJeux, string jeu)
         {
@@ -81,7 +86,7 @@ namespace BibliothèqueApplication
             }
             return JeuxRecherchés;
         }
-
+        //permet de faire une recherche pour trouver un jeu
             
         
     }

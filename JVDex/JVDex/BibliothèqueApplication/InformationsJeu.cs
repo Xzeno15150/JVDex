@@ -32,6 +32,8 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: ce genre est déjà dans la liste de genres");
             }
         }
+        //permet d'ajouter un genre correspondant au jeu, celui-ci ne peut pas être écrit deux fois
+        //utilisation d'un enum pour récupérer le genre
 
         public void AjouterPlateforme(Plateformes plateforme)
         {
@@ -40,6 +42,8 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette plateforme est déjà dans la liste des plateformes");
             }
         }
+        //permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois.
+        //utilisation d'un enum pour récupérer la plateforme
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";
@@ -97,10 +101,5 @@ namespace BibliothèqueApplication
         }
     }
 }
-// pour afficher le genre et les plateformes il faut pas d'abord faire une recherche? vu que c'est une liste il faut afficher le genre qu'on a attribué non?
-// je comprend pas la question la, on peut attribué plusieurs genres à un jeu, et ils sont stockés dans cette liste, c'est tout, comme pour les plateformes
-// la "liste" de tous les genres c'est l'enum Genres, elle est pas ici. LesGenres c'est la liste des genres attribués (parce qu'un jeu peut avoir plusieurs genres)
-
-
 
 

@@ -13,11 +13,10 @@ namespace BibliothèqueApplication
 
         //Propriétés
         public InformationsJeu Informations { get; set; }
-        public bool IsFavoris { get; private set; }
-
+        public bool IsFavoris { get; private set; } //permet de savoir si jeu est en favoris
         public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
         {
-            Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis);
+            Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis); //utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante
             LesVisuels = new HashSet<string>();
             LesMusiques = new HashSet<string>();
             LesTheories = new HashSet<Theorie>();
@@ -33,7 +32,7 @@ namespace BibliothèqueApplication
         {
             IsFavoris = false;
         }
-
+        //les deux méthodes (AjouterAuxFavoris et EnleverDesFavoris) permettent de mettre le jeu en favoris ou non
         public void AjouterVisuel(string visuel)
         {
             if (!LesVisuels.Add(visuel))
@@ -41,6 +40,7 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette image est déjà dans la liste des visuels");
             }
         }
+        //ajouter des visuels à la liste des visuels
         public void AjouterMusique(string musique)
         {
             if (!LesMusiques.Add(musique))
@@ -48,6 +48,7 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette musique est déjà dans la liste des musiques");
             }
         }
+        //ajouter des musiques à la liste des musiques
 
         public void AjouterTheorie(Theorie theorie)
         {
@@ -56,6 +57,7 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette théorie est déjà dans la liste des théories.");
             }
         }
+        //ajouter des théories à la liste des théories
         public override string ToString()
         {
             string mes = Informations.ToString();

@@ -9,11 +9,11 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            //Test_Trier_Jeux();
+            Test_Trier_Jeux();
             //Test_Rechercher_Jeu();
             //Test_Favoris();
             //Test_Franchise();
-            Test_Afficher_Détail_Jeu();
+            //Test_Afficher_Détail_Jeu();
         }
 
         //test pour trier les jeux
@@ -30,8 +30,8 @@ namespace ConsoleTest
             Console.WriteLine("5) Nom des créateur (A-Z)");
 
             var choix = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine(UtilsListes.GetLesJeuxTriés(app.TousLesJeux, (TypeTri)choix));
+            app.TypeTriJeu = (TypeTri)choix;
+            Console.WriteLine(app.TousLesJeux);
 
         }
 
@@ -46,15 +46,14 @@ namespace ConsoleTest
         {
             MainApp app = Stub.Load();
             Console.WriteLine("Donnez le nom à rechercher :");
-            var recherche = Console.ReadLine();
-            IList<Jeu> listeJeu = UtilsListes.RechercheDesJeuxDeLaListe(app.TousLesJeux, recherche);
-            listeJeu = UtilsListes.GetLesJeuxTriés(listeJeu, TypeTri.A_Z); // méthode à modifier (return list au lieu de string)
-            Console.WriteLine(listeJeu);
+            app.JeuRecherche = Console.ReadLine();
+            app.TypeTriJeu = TypeTri.A_Z;
+            Console.WriteLine(app.TousLesJeux);
 
-            Console.WriteLine($"Quel jeu choissisez vous? (1-{listeJeu.Count})");
+            Console.WriteLine($"Quel jeu choissisez vous? (1-{app.TousLesJeux.Count})");
             var choix = Convert.ToInt32(Console.ReadLine())-1;
 
-            Console.WriteLine(listeJeu[choix]);
+            Console.WriteLine(app.TousLesJeux[choix]);
 
         }
 
@@ -70,10 +69,9 @@ namespace ConsoleTest
         {
             MainApp app = Stub.Load();
             Console.WriteLine("Donnez le nom à rechercher :");
-            var recherche = Console.ReadLine();
-            IList<Jeu> listeJeu = UtilsListes.RechercheDesJeuxDeLaListe(app.TousLesJeux, recherche);
-
-            Console.WriteLine(UtilsListes.GetLesJeuxTriés(listeJeu, TypeTri.A_Z));
+            app.JeuRecherche = Console.ReadLine();
+            app.TypeTriJeu = TypeTri.A_Z;
+            Console.WriteLine(app.TousLesJeux);
         }
 
     }

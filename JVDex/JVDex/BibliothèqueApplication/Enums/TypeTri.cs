@@ -16,3 +16,4 @@ namespace BibliothèqueApplication
         NomCréateur 
     }
 }
+//enum des différents tri qui pourront être utilisé dans l'application

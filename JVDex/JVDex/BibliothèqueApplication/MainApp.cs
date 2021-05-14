@@ -7,23 +7,83 @@ namespace BibliothèqueApplication
 {
     public class MainApp
     {
-        public IList<Jeu> TousLesJeux { get; private set; }
-        public IList<Franchise> ToutesLesFranchises { get; private set; }
+        private IList<Jeu> tousLesJeux;
+        
+
+        //liste de tous les jeux de l'application
+        public IList<Jeu> TousLesJeux
+        {
+            get
+            {
+
+                IList<Jeu> JeuxRecherchés = new List<Jeu>();
+                if (String.IsNullOrEmpty(JeuRecherche))
+                {
+                    JeuxRecherchés = tousLesJeux;
+                }
+                else
+                {
+                    foreach (Jeu j in tousLesJeux)
+                    {
+                        if (j.Informations.Nom.ToLower().Contains(JeuRecherche.ToLower()))
+                        {
+                            JeuxRecherchés.Add(j);
+                        }
+                    }
+                }
+
+                switch (TypeTriJeu)
+                {
+                    case TypeTri.Z_A:
+                        return JeuxRecherchés.OrderByDescending(jeu => jeu.Informations.Nom).ToList();
+
+                    case TypeTri.Premier_Anciens:
+                        return JeuxRecherchés
+                           .OrderBy(jeu => jeu.Informations.DateCreation.Date)
+                           .ThenBy(jeu => jeu.Informations.Nom)
+                           .ToList();
+
+                    case TypeTri.Premier_Récents:
+                        return JeuxRecherchés
+                            .OrderByDescending(jeu => jeu.Informations.DateCreation.Date)
+                            .ThenBy(jeu => jeu.Informations.Nom)
+                            .ToList();
+                    case TypeTri.NomCréateur:
+                        return JeuxRecherchés
+                            .OrderBy(jeu => jeu.Informations.Createur.Nom)
+                            .ThenBy(jeu => jeu.Informations.Nom)
+                            .ToList();
+                    default:
+                        return JeuxRecherchés.OrderBy(jeu => jeu.Informations.Nom).ToList();
+
+                }
+
+            } 
+            
+           set => tousLesJeux = value;
+        }
+
+
+        //liste de toutes les franchises
+        public IList<Franchise> ToutesLesFranchises { get; set; }
+        public TypeTri TypeTriJeu { get; set; }
+        public string JeuRecherche { get;  set; }
 
         public MainApp()
         {
-            TousLesJeux = new List<Jeu>();
+            tousLesJeux = new List<Jeu>();
             ToutesLesFranchises = new List<Franchise>();
         }
 
         public void AjouterJeu(Jeu jeu)
         {
-            if (TousLesJeux.Contains(jeu))
+            if (tousLesJeux.Contains(jeu))
             {
                 throw new ArgumentException("PB: ce jeu est déjà dans la liste des jeux");
             }
-            TousLesJeux.Add(jeu);
+            tousLesJeux.Add(jeu);
         }
+        //permet d'ajouter un jeu à la liste de tous les jeux
         public void AjouterFranchise(Franchise franchise)
         {
             if (ToutesLesFranchises.Contains(franchise))
@@ -32,5 +92,6 @@ namespace BibliothèqueApplication
             }
             ToutesLesFranchises.Add(franchise);
         }
+        //permet d'ajouter une franchise à la liste de toutes les franchises
     }
 }

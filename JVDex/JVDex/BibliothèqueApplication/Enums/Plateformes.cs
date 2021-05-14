@@ -33,3 +33,4 @@ namespace BibliothèqueApplication
         Android
     }
 }
+//enum des différentes plateformes des jeux
