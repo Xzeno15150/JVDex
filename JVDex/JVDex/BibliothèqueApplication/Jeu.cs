@@ -7,6 +7,7 @@ namespace BibliothèqueApplication
 {
     public class Jeu : IEquatable<Jeu>
     {
+        public string Vignette { get; set; }
         public ISet<string> LesVisuels { get; private set;}
         public ISet<string> LesMusiques { get; private set; }
         public ISet<Theorie> LesTheories { get; private set; }
@@ -14,12 +15,13 @@ namespace BibliothèqueApplication
         //Propriétés
         public InformationsJeu Informations { get; set; }
         public bool IsFavoris { get; private set; } //permet de savoir si jeu est en favoris
-        public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis)
+        public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image)
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis); //utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante
             LesVisuels = new HashSet<string>();
             LesMusiques = new HashSet<string>();
             LesTheories = new HashSet<Theorie>();
+            Vignette = image;
         }
 
         //les deux méthodes (AjouterAuxFavoris et EnleverDesFavoris) permettent de mettre le jeu en favoris ou non
@@ -63,6 +65,7 @@ namespace BibliothèqueApplication
         public override string ToString()
         {
             string mes = Informations.ToString();
+            mes += $"Vignette du Jeu : {Vignette}\n";
             mes += "Liste des visuels : \n";
             foreach (string s in LesVisuels)
             {

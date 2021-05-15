@@ -5,12 +5,13 @@ namespace BibliothèqueApplication
 {
     public class Franchise : Nommable, IEquatable<Franchise>
     {
-
+        public string Background { get; set; }
         public ISet<Jeu> LesJeux { get; }
 
-        public Franchise(string nom) : base(nom)
+        public Franchise(string nom, string image) : base(nom)
         {
             LesJeux = new HashSet<Jeu>();
+            Background = image;
         }
            
         public void ajouterJeu(Jeu jeu) 
@@ -28,6 +29,7 @@ namespace BibliothèqueApplication
             {
                 mes += $"\t- {j.Informations.Nom}\n";
             }
+            mes += $"Image de background : {Background}\n";
             return mes;
         }
 
@@ -56,9 +58,6 @@ namespace BibliothèqueApplication
             hashCode = hashCode * -1521134295 + EqualityComparer<ISet<Jeu>>.Default.GetHashCode(LesJeux);
             return hashCode;
         }
-
-
-        //à voir ensemble
     }
 
 }

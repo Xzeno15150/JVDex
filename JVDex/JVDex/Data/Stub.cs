@@ -9,16 +9,16 @@ namespace Data
         {
             MainApp app = new MainApp();
 
-            Jeu jeu1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis");
-            Jeu jeu2 = new Jeu("Zelda", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1");
-            Jeu jeu3 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2");
-            Jeu jeu4 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis");
-            Jeu jeu5 = new Jeu("Super Mario", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu");
-            Franchise franchise1 = new Franchise("Mario");
-            Franchise franchise2 = new Franchise("The Legend of Zelda");
-            Franchise franchise3 = new Franchise("Dragon Quest");
-            Franchise franchise4 = new Franchise("Pokemon");
-            Franchise franchise5 = new Franchise("Professeur Layton");
+            Jeu jeu1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
+            Jeu jeu2 = new Jeu("Zelda", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "");
+            Jeu jeu3 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
+            Jeu jeu4 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis","");
+            Jeu jeu5 = new Jeu("Super Mario", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+            Franchise franchise1 = new Franchise("Mario", "");
+            Franchise franchise2 = new Franchise("The Legend of Zelda", "");
+            Franchise franchise3 = new Franchise("Dragon Quest", "");
+            Franchise franchise4 = new Franchise("Pokemon", "");
+            Franchise franchise5 = new Franchise("Professeur Layton", "");
 
             try
             {
