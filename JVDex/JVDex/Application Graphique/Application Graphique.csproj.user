@@ -10,10 +10,22 @@
     <Compile Update="Franchises_Favoris.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Informations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Jeu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Musique.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Nos_UC\UserControlMenuFranchise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Theorie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Nos_UC\UserControlInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Visuel.xaml.cs">
@@ -24,13 +36,25 @@
     <Page Update="Franchises_Favoris.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Informations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Jeu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Musique.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Nos_UC\UserControlMenuFranchise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Theorie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Nos_UC\UserControlInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Visuel.xaml">

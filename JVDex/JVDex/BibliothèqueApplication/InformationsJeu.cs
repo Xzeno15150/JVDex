@@ -24,7 +24,8 @@ namespace BibliothèqueApplication
             LesGenres = new HashSet<Genres>();
             LesPlateformes = new HashSet<Plateformes>();
         }
-
+        //permet d'ajouter un genre correspondant au jeu, celui-ci ne peut pas être écrit deux fois
+        //utilisation d'un enum pour récupérer le genre
         public void AjouterGenre(Genres genre)
         {
             if (!LesGenres.Add(genre))
@@ -32,9 +33,9 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: ce genre est déjà dans la liste de genres");
             }
         }
-        //permet d'ajouter un genre correspondant au jeu, celui-ci ne peut pas être écrit deux fois
-        //utilisation d'un enum pour récupérer le genre
 
+        //permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois.
+        //utilisation d'un enum pour récupérer la plateforme
         public void AjouterPlateforme(Plateformes plateforme)
         {
             if (!LesPlateformes.Add(plateforme))
@@ -42,8 +43,7 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette plateforme est déjà dans la liste des plateformes");
             }
         }
-        //permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois.
-        //utilisation d'un enum pour récupérer la plateforme
+        
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";

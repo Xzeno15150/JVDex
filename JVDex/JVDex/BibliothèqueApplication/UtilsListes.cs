@@ -9,6 +9,8 @@ namespace BibliothèqueApplication
 {
     public static class UtilsListes
     {
+        //permet de retourner une liste de jeux triés. La méthode prend en paramettre la liste de tous les jeux non triés et le type de tri
+        //le type de tri se trouve dans un enum, il est associé à un tri dans la méthode TrierLesJeuxPar
         public static string GetLesJeuxTriés(IList<Jeu> lesJeuxNonTries, TypeTri type)
         {
             IList<Jeu> lesJeux = TrierLesJeuxPar(lesJeuxNonTries, type);
@@ -20,9 +22,8 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
-        //permet de retourner une liste de jeux triés. La méthode prend en paramettre la liste de tous les jeux non triés et le type de tri
-        //le type de tri se trouve dans un enum, il est associé à un tri dans la méthode TrierLesJeuxPar
-
+        
+        //retourne la liste des franchises
         public static string GetLesFranchises(IList<Franchise> lesFranchises)
         {
             string mes = "Toutes les franchises\n";
@@ -32,8 +33,8 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
-        //retourne la liste des franchises
-
+        
+        //retourne la liste des favoris
         public static string GetLesFavoris(IList<Jeu> lesJeux)
         {
             string mes = "Tous les favoris\n";
@@ -43,7 +44,8 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
-        //retourne la liste des favoris
+
+        //retourne une liste de jeux triés
         private static IList<Jeu> TrierLesJeuxPar(IList<Jeu> lesJeux,TypeTri type)
         {
             switch (type)
@@ -72,8 +74,8 @@ namespace BibliothèqueApplication
 
             }
         }
-        //retourne une liste de jeux triés
-
+        
+        //permet de faire une recherche pour trouver un jeu
         public static IList<Jeu> RechercheDesJeuxDeLaListe(IList<Jeu> lesJeux, string jeu)
         {
             IList<Jeu> JeuxRecherchés = new List<Jeu>() ;
@@ -86,7 +88,7 @@ namespace BibliothèqueApplication
             }
             return JeuxRecherchés;
         }
-        //permet de faire une recherche pour trouver un jeu
+       
             
         
     }

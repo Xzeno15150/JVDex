@@ -22,7 +22,7 @@ namespace BibliothèqueApplication
             LesTheories = new HashSet<Theorie>();
         }
 
-        //Méthodes
+        //les deux méthodes (AjouterAuxFavoris et EnleverDesFavoris) permettent de mettre le jeu en favoris ou non
         public void AjouterAuxFavoris()
         {
             IsFavoris = true;
@@ -32,7 +32,8 @@ namespace BibliothèqueApplication
         {
             IsFavoris = false;
         }
-        //les deux méthodes (AjouterAuxFavoris et EnleverDesFavoris) permettent de mettre le jeu en favoris ou non
+
+        //ajouter des visuels à la liste des visuels
         public void AjouterVisuel(string visuel)
         {
             if (!LesVisuels.Add(visuel))
@@ -40,7 +41,8 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette image est déjà dans la liste des visuels");
             }
         }
-        //ajouter des visuels à la liste des visuels
+
+        //ajouter des musiques à la liste des musiques
         public void AjouterMusique(string musique)
         {
             if (!LesMusiques.Add(musique))
@@ -48,8 +50,8 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette musique est déjà dans la liste des musiques");
             }
         }
-        //ajouter des musiques à la liste des musiques
-
+        
+      //ajouter des théories à la liste des théories
         public void AjouterTheorie(Theorie theorie)
         {
             if (!LesTheories.Add(theorie))
@@ -57,14 +59,10 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette théorie est déjà dans la liste des théories.");
             }
         }
-        //ajouter des théories à la liste des théories
+        
         public override string ToString()
         {
             string mes = Informations.ToString();
-            // je comprends pas pourquoi on met Information et pas InformationsJeu
-            // on met Informations puisque ce que l'on cherche ce trouve dans la propriété (="variable", en gros) Informations, InformationsJeu est le type de cette propriété, donc rien à voir
-            // regarde en dessous, tu prend des valeurs de la liste LesVisuels, tu ne les prend pas dans le type string
-
             mes += "Liste des visuels : \n";
             foreach (string s in LesVisuels)
             {

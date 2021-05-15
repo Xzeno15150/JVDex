@@ -75,6 +75,7 @@ namespace BibliothèqueApplication
             ToutesLesFranchises = new List<Franchise>();
         }
 
+        //permet d'ajouter un jeu à la liste de tous les jeux
         public void AjouterJeu(Jeu jeu)
         {
             if (tousLesJeux.Contains(jeu))
@@ -83,7 +84,8 @@ namespace BibliothèqueApplication
             }
             tousLesJeux.Add(jeu);
         }
-        //permet d'ajouter un jeu à la liste de tous les jeux
+
+        //permet d'ajouter une franchise à la liste de toutes les franchises
         public void AjouterFranchise(Franchise franchise)
         {
             if (ToutesLesFranchises.Contains(franchise))
@@ -92,6 +94,6 @@ namespace BibliothèqueApplication
             }
             ToutesLesFranchises.Add(franchise);
         }
-        //permet d'ajouter une franchise à la liste de toutes les franchises
+        
     }
 }
