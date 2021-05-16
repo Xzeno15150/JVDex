@@ -34,6 +34,15 @@ namespace BibliothèqueApplication
             }
         }
 
+        //supprimer un genre à la liste
+        public void SupprimerGenre(Genres genre)
+        {
+            if (!LesGenres.Remove(genre))
+            {
+                throw new ArgumentException("PB: ce genre n'est plus sur la liste");
+            }
+        }
+
         //permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois.
         //utilisation d'un enum pour récupérer la plateforme
         public void AjouterPlateforme(Plateformes plateforme)
@@ -43,7 +52,16 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette plateforme est déjà dans la liste des plateformes");
             }
         }
-        
+
+        //supprimer une musique à la liste
+        public void SupprimerPlateforme(Plateformes plateforme)
+        {
+            if (!LesPlateformes.Remove(plateforme))
+            {
+                throw new ArgumentException("PB: cette plateforme n'est plus sur la liste");
+            }
+        }
+
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";

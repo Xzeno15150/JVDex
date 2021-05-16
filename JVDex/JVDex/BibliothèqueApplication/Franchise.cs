@@ -13,12 +13,22 @@ namespace BibliothèqueApplication
             LesJeux = new HashSet<Jeu>();
             Background = image;
         }
-           
+         
+        //permet d'ajouter un jeu dans la liste des franchises
         public void ajouterJeu(Jeu jeu) 
         {
             if (!LesJeux.Add(jeu))
             {
                 throw new ArgumentException("PB: le jeu est déjà dans la liste des jeux");
+            }
+        }
+
+        // permet de supprimer un jeu dans la liste des franchises
+        public void SupprimerJeu(Jeu jeu)
+        {
+            if (!LesJeux.Remove(jeu))
+            {
+                throw new ArgumentException("PB: ce jeu n'est plus sur la liste");
             }
         }
         public override string ToString()

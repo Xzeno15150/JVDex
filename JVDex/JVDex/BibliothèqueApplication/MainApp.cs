@@ -85,6 +85,16 @@ namespace BibliothèqueApplication
             tousLesJeux.Add(jeu);
         }
 
+        //permet de supprimer  un jeu à la liste de tous les jeux
+        public void SupprimerJeu(Jeu jeu)
+        {
+            if (!tousLesJeux.Contains(jeu))
+            {
+                throw new ArgumentException("PB: ce jeu n'est déjà plus dans la liste des jeux");
+            }
+            tousLesJeux.Remove(jeu);
+        }
+
         //permet d'ajouter une franchise à la liste de toutes les franchises
         public void AjouterFranchise(Franchise franchise)
         {
@@ -94,6 +104,15 @@ namespace BibliothèqueApplication
             }
             ToutesLesFranchises.Add(franchise);
         }
-        
+        //permet de supprimer  un jeu à la liste de tous les jeux
+        public void SupprimerFranchise(Franchise franchise)
+        {
+            if (!ToutesLesFranchises.Contains(franchise))
+            {
+                throw new ArgumentException("PB: ce jeu n'est déjà plus dans la liste des jeux");
+            }
+            ToutesLesFranchises.Remove(franchise);
+        }
+
     }
 }

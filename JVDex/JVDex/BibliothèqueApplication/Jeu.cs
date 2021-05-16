@@ -44,6 +44,15 @@ namespace BibliothèqueApplication
             }
         }
 
+        //supprimer un visuel à la liste
+        public void SupprimerVisuel(string visuel)
+        {
+            if (!LesVisuels.Remove(visuel))
+            {
+                throw new ArgumentException("PB: ce visuel n'est plus sur la liste");
+            }
+        }
+
         //ajouter des musiques à la liste des musiques
         public void AjouterMusique(string musique)
         {
@@ -52,13 +61,31 @@ namespace BibliothèqueApplication
                 throw new ArgumentException("PB: cette musique est déjà dans la liste des musiques");
             }
         }
-        
-      //ajouter des théories à la liste des théories
+
+        //supprimer une musique à la liste
+        public void SupprimerMusique(string musique)
+        {
+            if (!LesMusiques.Remove(musique))
+            {
+                throw new ArgumentException("PB: cette musique n'est plus sur la liste");
+            }
+        }
+
+        //ajouter des théories à la liste des théories
         public void AjouterTheorie(Theorie theorie)
         {
             if (!LesTheories.Add(theorie))
             {
                 throw new ArgumentException("PB: cette théorie est déjà dans la liste des théories.");
+            }
+        }
+
+        //supprimer une théorie à la liste
+        public void SupprimerTheorie(Theorie theorie)
+        {
+            if (!LesTheories.Remove(theorie))
+            {
+                throw new ArgumentException("PB: cette théorie n'est plus sur la liste");
             }
         }
         
