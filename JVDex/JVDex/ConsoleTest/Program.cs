@@ -2,6 +2,7 @@
 using Data;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleTest
 {
@@ -9,18 +10,20 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            Test_Trier_Jeux();
-            //Test_Rechercher_Jeu();
-            //Test_Favoris();
-            //Test_Franchise();
-            //Test_Afficher_Détail_Jeu();
+            MainApp app = Stub.Load();
+            //Test_Trier_Jeux(app);
+            //Test_Rechercher_Jeu(app);
+            Test_Afficher_Favoris(app);
+            Test_Ajouter_Favoris(app);
+            //Test_Afficher_Franchise(app);
+            //Test_Afficher_Détail_Jeu(app);
         }
 
         //test pour trier les jeux
 
-        private static void Test_Trier_Jeux() 
+        private static void Test_Trier_Jeux(MainApp app) 
         {
-            MainApp app = Stub.Load();
+            
 
             Console.WriteLine("Comment voulez vous trié? ");
             Console.WriteLine("1) A-Z");
@@ -31,20 +34,34 @@ namespace ConsoleTest
 
             var choix = Convert.ToInt32(Console.ReadLine());
             app.TypeTriJeu = (TypeTri)choix;
-            Console.WriteLine(app.TousLesJeux);
+            foreach(var jeu in app.TousLesJeux)
+            {
+                Console.WriteLine($"- {jeu.Informations.Nom}");
+            }
 
         }
 
-        private static void Test_Favoris()
+        private static void Test_Afficher_Favoris(MainApp app)
         {
-            MainApp app = Stub.Load();
-            Console.WriteLine(UtilsListes.GetLesFavoris(app.TousLesJeux));
-            Console.WriteLine("=============================");
+            app.TypeTriJeu = TypeTri.A_Z;
+            foreach (var jeu in app.TousLesJeux.Where(jeu => jeu.IsFavoris)) 
+            {
+                Console.WriteLine($"- {jeu.Informations.Nom}");
+            }
         }
 
-        private static void Test_Afficher_Détail_Jeu()
+        public static void Test_Ajouter_Favoris(MainApp app)
         {
-            MainApp app = Stub.Load();
+            Console.WriteLine($"Quel jeu ajouter aux favoris ? (1 à {app.TousLesJeux.Count})");
+
+            var choix = Convert.ToInt32(Console.ReadLine()) - 1;
+            app.TousLesJeux[choix].AjouterAuxFavoris();
+
+            Test_Afficher_Favoris(app);
+        }
+
+        private static void Test_Afficher_Détail_Jeu(MainApp app)
+        {
             Console.WriteLine("Donnez le nom à rechercher :");
             app.JeuRecherche = Console.ReadLine();
             app.TypeTriJeu = TypeTri.A_Z;
@@ -57,21 +74,23 @@ namespace ConsoleTest
 
         }
 
-        private static void Test_Franchise()
+        private static void Test_Afficher_Franchise(MainApp app)
         {
-            MainApp app = Stub.Load();
-            Console.WriteLine(UtilsListes.GetLesFranchises(app.ToutesLesFranchises));
-            Console.WriteLine(app.ToutesLesFranchises[0]);
+            //Console.WriteLine(UtilsListes.GetLesFranchises(app.ToutesLesFranchises));
+            //Console.WriteLine(app.ToutesLesFranchises[0]);
 
         }
 
-        private static void Test_Rechercher_Jeu()
+        private static void Test_Rechercher_Jeu(MainApp app)
         {
-            MainApp app = Stub.Load();
             Console.WriteLine("Donnez le nom à rechercher :");
             app.JeuRecherche = Console.ReadLine();
             app.TypeTriJeu = TypeTri.A_Z;
-            Console.WriteLine(app.TousLesJeux);
+
+            foreach (var jeu in app.TousLesJeux)
+            {
+                Console.WriteLine($"- {jeu.Informations.Nom}");
+            }
         }
 
     }

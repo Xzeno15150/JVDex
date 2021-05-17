@@ -51,23 +51,12 @@ namespace Data
                 jeu1.AjouterAuxFavoris();
                 jeu3.AjouterAuxFavoris();
 
-                franchise1.ajouterJeu(jeu1);
-                franchise1.ajouterJeu(jeu5);
-                franchise1.ajouterJeu(jeu3);
-                franchise2.ajouterJeu(jeu2);
-                franchise4.ajouterJeu(jeu4);
 
-                app.AjouterJeu(jeu1);
-                app.AjouterJeu(jeu2);
-                app.AjouterJeu(jeu3);
-                app.AjouterJeu(jeu4);
-                app.AjouterJeu(jeu5);
-
-                app.AjouterFranchise(franchise1);
-                app.AjouterFranchise(franchise2);
-                app.AjouterFranchise(franchise3);
-                app.AjouterFranchise(franchise4);
-                app.AjouterFranchise(franchise5);
+                app.AjouterJeu(jeu1, franchise1);
+                app.AjouterJeu(jeu2, franchise2);
+                app.AjouterJeu(jeu3, franchise2);
+                app.AjouterJeu(jeu4, franchise3);
+                app.AjouterJeu(jeu5, franchise5);
             }
             catch (ArgumentException e)
             {

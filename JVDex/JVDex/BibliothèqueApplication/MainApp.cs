@@ -8,7 +8,8 @@ namespace BibliothèqueApplication
     public class MainApp
     {
         private IList<Jeu> tousLesJeux;
-        
+        private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
+
 
         //liste de tous les jeux de l'application
         public IList<Jeu> TousLesJeux
@@ -58,61 +59,73 @@ namespace BibliothèqueApplication
 
                 }
 
-            } 
-            
-           set => tousLesJeux = value;
+            }
+
+            set => tousLesJeux = value;
         }
 
-
         //liste de toutes les franchises
-        public IList<Franchise> ToutesLesFranchises { get; set; }
+        public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
         public TypeTri TypeTriJeu { get; set; }
-        public string JeuRecherche { get;  set; }
+        public string JeuRecherche { get; set; }
 
         public MainApp()
         {
             tousLesJeux = new List<Jeu>();
-            ToutesLesFranchises = new List<Franchise>();
+            ToutesLesFranchises = new Dictionary<Franchise, List<Jeu>>();
         }
 
         //permet d'ajouter un jeu à la liste de tous les jeux
-        public void AjouterJeu(Jeu jeu)
+        public void AjouterJeu(Jeu jeu, Franchise franchise)
         {
             if (tousLesJeux.Contains(jeu))
             {
                 throw new ArgumentException("PB: ce jeu est déjà dans la liste des jeux");
             }
+            if (!toutesLesFranchises.ContainsKey(franchise))
+            {
+                toutesLesFranchises.Add(franchise, new List<Jeu>());
+            }
+            if (toutesLesFranchises[franchise].Contains(jeu))
+            {
+                throw new ArgumentException($"PB: ce jeu est déjà dans la franchise {franchise.Nom}");
+            }
+            
             tousLesJeux.Add(jeu);
+            toutesLesFranchises[franchise].Add(jeu);
         }
 
-        //permet de supprimer  un jeu à la liste de tous les jeux
-        public void SupprimerJeu(Jeu jeu)
+        //permet de supprimer un jeu à la liste de tous les jeux
+        public void SupprimerJeu(Jeu jeu, Franchise franchise)
         {
             if (!tousLesJeux.Contains(jeu))
             {
                 throw new ArgumentException("PB: ce jeu n'est déjà plus dans la liste des jeux");
             }
+            if (!toutesLesFranchises[franchise].Contains(jeu))
+            {
+                throw new ArgumentException($"PB: ce jeu n'est déjà plus dans la liste des jeux de la franchise {franchise.Nom}");
+            }
             tousLesJeux.Remove(jeu);
+            toutesLesFranchises[franchise].Remove(jeu);
         }
 
-        //permet d'ajouter une franchise à la liste de toutes les franchises
-        public void AjouterFranchise(Franchise franchise)
-        {
-            if (ToutesLesFranchises.Contains(franchise))
-            {
-                throw new ArgumentException("PB: cette franchise est déjà dans la liste des franchises");
-            }
-            ToutesLesFranchises.Add(franchise);
-        }
-        //permet de supprimer  un jeu à la liste de tous les jeux
+
+        // permet de supprimer une franchise ainsi que tous les jeux associés
         public void SupprimerFranchise(Franchise franchise)
         {
-            if (!ToutesLesFranchises.Contains(franchise))
+            if (!toutesLesFranchises.ContainsKey(franchise))
             {
-                throw new ArgumentException("PB: ce jeu n'est déjà plus dans la liste des jeux");
+                throw new ArgumentException("PB: cette franchise n'existe pas dans le dictionnaire, supression impossible");
             }
-            ToutesLesFranchises.Remove(franchise);
+            foreach (var jeu in toutesLesFranchises[franchise])
+            {
+                tousLesJeux.Remove(jeu);
+            }
+            toutesLesFranchises.Remove(franchise);
         }
+
+        
 
     }
 }
