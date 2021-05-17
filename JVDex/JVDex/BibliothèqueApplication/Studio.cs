@@ -28,7 +28,10 @@ namespace BibliothèqueApplication
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            int hashCode = -1167087637;
+            hashCode = hashCode * -1521134295 + base.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Nom);
+            return hashCode;
         }
 
         public override string ToString()
