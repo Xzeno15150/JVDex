@@ -121,15 +121,18 @@ namespace BibliothèqueApplication
             return Equals(other);
         }
 
-        public override int GetHashCode()
-        {
-            return -878831966 + EqualityComparer<InformationsJeu>.Default.GetHashCode(Informations);
-        }
-
         public bool Equals(Jeu other)
         {
             if (other is null) return false;
-            return Informations.Equals(other.Informations);
+            return Informations.Equals(other.Informations) && Vignette == other.Vignette;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = -74474083;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Vignette);
+            hashCode = hashCode * -1521134295 + EqualityComparer<InformationsJeu>.Default.GetHashCode(Informations);
+            return hashCode;
         }
     }
 }

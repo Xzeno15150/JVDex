@@ -5,15 +5,19 @@ namespace Data
 {
     public static class Stub 
     {
-        public static MainApp Load()
+        public static Manager Load()
         {
-            MainApp app = new MainApp();
+            Manager app = new Manager();
 
             Jeu jeu1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
+            Jeu jeu4 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
+
             Jeu jeu2 = new Jeu("Zelda", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "");
             Jeu jeu3 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
-            Jeu jeu4 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis","");
+           
             Jeu jeu5 = new Jeu("Super Mario", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+            Jeu jeu6 = new Jeu("New Super Mario Bros", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+
             Franchise franchise1 = new Franchise("Mario", "");
             Franchise franchise2 = new Franchise("The Legend of Zelda", "");
             Franchise franchise3 = new Franchise("Dragon Quest", "");
@@ -39,7 +43,7 @@ namespace Data
 
                 jeu4.Informations.AjouterGenre(Genres.FPS);
                 jeu4.Informations.AjouterGenre(Genres.RPG);
-                jeu4.Informations.AjouterPlateforme(Plateformes.PC);
+                jeu4.Informations.AjouterPlateforme(Plateformes.TroisDS);
                 jeu4.Informations.AjouterPlateforme(Plateformes.PS4);
 
                 jeu5.Informations.AjouterGenre(Genres.Plateforme);
@@ -52,11 +56,13 @@ namespace Data
                 jeu3.AjouterAuxFavoris();
 
 
-                app.AjouterJeu(jeu1, franchise1);
+                app.AjouterJeu(jeu1, franchise5);
                 app.AjouterJeu(jeu2, franchise2);
-                app.AjouterJeu(jeu3, franchise2);
-                app.AjouterJeu(jeu4, franchise3);
-                app.AjouterJeu(jeu5, franchise5);
+                app.AjouterJeu(jeu3, franchise4);
+                app.AjouterJeu(jeu4, franchise5);
+                app.AjouterJeu(jeu5, franchise1);
+                app.AjouterJeu(jeu6, franchise1);
+                
             }
             catch (ArgumentException e)
             {

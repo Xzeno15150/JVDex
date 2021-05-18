@@ -10,18 +10,20 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            MainApp app = Stub.Load();
+            Manager app = Stub.Load();
             //Test_Trier_Jeux(app);
             //Test_Rechercher_Jeu(app);
-            Test_Afficher_Favoris(app);
-            Test_Ajouter_Favoris(app);
+            //Test_Afficher_Jeux(app);
+            //Test_Afficher_Favoris(app);
+            //Test_Ajouter_Favoris(app);
+            //Test_Effacer_Favoris(app);
             //Test_Afficher_Franchise(app);
             //Test_Afficher_Détail_Jeu(app);
         }
 
         //test pour trier les jeux
 
-        private static void Test_Trier_Jeux(MainApp app) 
+        private static void Test_Trier_Jeux(Manager app) 
         {
             
 
@@ -34,14 +36,19 @@ namespace ConsoleTest
 
             var choix = Convert.ToInt32(Console.ReadLine());
             app.TypeTriJeu = (TypeTri)choix;
-            foreach(var jeu in app.TousLesJeux)
-            {
-                Console.WriteLine($"- {jeu.Informations.Nom}");
-            }
+            Test_Afficher_Jeux(app);
 
         }
 
-        private static void Test_Afficher_Favoris(MainApp app)
+        public static void Test_Afficher_Jeux(Manager mgr)
+        {
+            foreach(Jeu j in mgr.TousLesJeux)
+            {
+                Console.WriteLine($"- {j.Informations.Nom}");
+            }
+        }
+
+        private static void Test_Afficher_Favoris(Manager app)
         {
             app.TypeTriJeu = TypeTri.A_Z;
             foreach (var jeu in app.TousLesJeux.Where(jeu => jeu.IsFavoris)) 
@@ -50,7 +57,7 @@ namespace ConsoleTest
             }
         }
 
-        public static void Test_Ajouter_Favoris(MainApp app)
+        public static void Test_Ajouter_Favoris(Manager app)
         {
             Console.WriteLine($"Quel jeu ajouter aux favoris ? (1 à {app.TousLesJeux.Count})");
 
@@ -60,12 +67,19 @@ namespace ConsoleTest
             Test_Afficher_Favoris(app);
         }
 
-        private static void Test_Afficher_Détail_Jeu(MainApp app)
+        public static void Test_Effacer_Favoris(Manager app)
         {
-            Console.WriteLine("Donnez le nom à rechercher :");
-            app.JeuRecherche = Console.ReadLine();
-            app.TypeTriJeu = TypeTri.A_Z;
-            Console.WriteLine(app.TousLesJeux);
+            Console.WriteLine($"Quel jeu supprimer des favoris ? (1-{app.TousLesJeux.Where(jeu => jeu.IsFavoris).ToList().Count})");
+
+            var choix = Convert.ToInt32(Console.ReadLine()) - 1;
+            app.TousLesJeux.Where(jeu => jeu.IsFavoris).ToList()[choix].EnleverDesFavoris();
+            Test_Afficher_Favoris(app);
+        }
+
+        private static void Test_Afficher_Détail_Jeu(Manager app)
+        {
+            Test_Afficher_Jeux(app);
+            Test_Rechercher_Jeu(app);
 
             Console.WriteLine($"Quel jeu choissisez vous? (1-{app.TousLesJeux.Count})");
             var choix = Convert.ToInt32(Console.ReadLine())-1;
@@ -74,23 +88,33 @@ namespace ConsoleTest
 
         }
 
-        private static void Test_Afficher_Franchise(MainApp app)
+        private static void Test_Afficher_Franchise(Manager mgr)
         {
-            //Console.WriteLine(UtilsListes.GetLesFranchises(app.ToutesLesFranchises));
-            //Console.WriteLine(app.ToutesLesFranchises[0]);
+            foreach (var f in mgr.ToutesLesFranchises.Keys)
+            {
+                Console.WriteLine($"- {f.Nom}");
+            }
 
+            Console.WriteLine($"De quelle franchise voulez vous avoir le détail? (1-{mgr.ToutesLesFranchises.Keys.Count})");
+            var choix = Convert.ToInt32(Console.ReadLine()) - 1;
+
+            var franchise = mgr.ToutesLesFranchises.Keys.ToList()[choix];
+            Console.WriteLine(franchise);
+            Console.WriteLine("Liste des jeux : ");
+
+            foreach (var j in mgr.ToutesLesFranchises[franchise])
+            {
+                Console.WriteLine(j);
+            }
         }
 
-        private static void Test_Rechercher_Jeu(MainApp app)
+        private static void Test_Rechercher_Jeu(Manager app)
         {
             Console.WriteLine("Donnez le nom à rechercher :");
             app.JeuRecherche = Console.ReadLine();
             app.TypeTriJeu = TypeTri.A_Z;
 
-            foreach (var jeu in app.TousLesJeux)
-            {
-                Console.WriteLine($"- {jeu.Informations.Nom}");
-            }
+            Test_Afficher_Jeux(app);
         }
 
     }
