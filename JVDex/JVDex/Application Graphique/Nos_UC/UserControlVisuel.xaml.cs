@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Application_Graphique
+namespace Application_Graphique.Nos_UC
 {
     /// <summary>
     /// Logique d'interaction pour UserControlVisuel.xaml

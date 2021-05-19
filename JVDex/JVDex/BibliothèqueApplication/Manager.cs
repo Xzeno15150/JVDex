@@ -11,7 +11,9 @@ namespace BibliothèqueApplication
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
 
 
-        //liste de tous les jeux de l'application
+        /// <summary>
+        /// Propriété qui rend la liste des jeux, recherchés ou non, trié
+        /// </summary>
         public IList<Jeu> TousLesJeux
         {
             get
@@ -75,7 +77,11 @@ namespace BibliothèqueApplication
             ToutesLesFranchises = new Dictionary<Franchise, List<Jeu>>();
         }
 
-        //permet d'ajouter un jeu à la liste de tous les jeux
+        /// <summary>
+        /// Permet d'ajouter un jeu à la liste de tous les jeux
+        /// </summary>
+        /// <param name="jeu">jeu à ajouter</param>
+        /// <param name="franchise">franchise associée au jeu (créée si inexistante)</param>
         public void AjouterJeu(Jeu jeu, Franchise franchise)
         {
             bool contientJeu = false;

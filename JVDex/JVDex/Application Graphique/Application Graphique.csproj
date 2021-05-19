@@ -19,6 +19,7 @@
     <None Remove="Resources\Jeux\Zelda\pochette-jeu.jpg" />
     <None Remove="Resources\left-arrow.png" />
     <None Remove="Resources\logotest.png" />
+    <None Remove="Resources\recherche.PNG" />
   </ItemGroup>
 
 
@@ -34,6 +35,9 @@
     <Resource Include="Resources\Jeux\Zelda\pochette-jeu.jpg" />
     <Resource Include="Resources\left-arrow.png" />
     <Resource Include="Resources\logotest.png" />
+    <Resource Include="Resources\recherche.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

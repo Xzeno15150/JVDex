@@ -35,7 +35,6 @@
             </Border>
         </ListView>
 
-        <!-- <local:UserControlMenuFranchise Grid.Row="1" > </local:UserControlMenuFranchise>-->
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
 
         <Grid Grid.Column="1" Grid.Row="1">
@@ -43,15 +42,18 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0" TextWrapping="Wrap" Width="200" Height="45" Background="#FF3D3C3C" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA">
-                Rechercher
+            <TextBox Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0" TextWrapping="Wrap" Width="200" Height="45" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA" TextChanged="TextBoxRecherche_TextChanged">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Resources/recherche.PNG" />
+                </TextBox.Background>
             </TextBox>
+
             <ComboBox HorizontalAlignment="Left" Margin="465,0,0,0" VerticalAlignment="Center" Width="120">
-                <ComboBoxItem IsSelected="True" FontSize="15">A-Z</ComboBoxItem>
-                <ComboBoxItem FontSize="15">Z-A</ComboBoxItem>
-                <ComboBoxItem FontSize="15">Les plus récents</ComboBoxItem>
-                <ComboBoxItem FontSize="15">Les plus ancients</ComboBoxItem>
-                <ComboBoxItem FontSize="15">Les créateurs</ComboBoxItem>
+                <ComboBoxItem IsSelected="True" FontSize="20">A-Z</ComboBoxItem>
+                <ComboBoxItem FontSize="20">Z-A</ComboBoxItem>
+                <ComboBoxItem FontSize="20">Les plus récents</ComboBoxItem>
+                <ComboBoxItem FontSize="20">Les plus ancients</ComboBoxItem>
+                <ComboBoxItem FontSize="20">Les créateurs</ComboBoxItem>
             </ComboBox>
             <Label HorizontalAlignment="Left" Margin="324,0,0,0" VerticalAlignment="Center" Width="141" Height="55" Foreground="White" FontWeight="Bold" FontSize="30">
                 Trié par :

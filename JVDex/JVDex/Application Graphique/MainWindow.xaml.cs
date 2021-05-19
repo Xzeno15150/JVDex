@@ -25,5 +25,12 @@ namespace Application_Graphique
             InitializeComponent();
         }
 
+        private void TextBoxRecherche_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //if((sender as TextBox).Text == "Rechercher")
+            //{
+            //    (sender as TextBox).Text = "";
+            //}
+        }
     }
 }
