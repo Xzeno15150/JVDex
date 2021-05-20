@@ -112,7 +112,7 @@ namespace BibliothèqueApplication
         public bool Equals(InformationsJeu other)
         {
             if (other is null) return false;
-            return Nom == other.Nom &&
+            return Nom.Equals(other.Nom)&&
                    Createur.Equals(other.Createur) &&
                    DateCreation == other.DateCreation &&
                    LimiteAge.Equals(other.LimiteAge) &&

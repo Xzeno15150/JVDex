@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +22,8 @@ namespace Application_Graphique
         public Franchises_Favoris()
         {
             InitializeComponent();
+            Manager manager = Stub.Load();
+
         }
 
         private void Choix_Franchises(object sender, SelectionChangedEventArgs e)

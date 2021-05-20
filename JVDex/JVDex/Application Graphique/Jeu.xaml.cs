@@ -23,3 +23,4 @@ namespace Application_Graphique
         }
     }
 }
+// il faut peut-être utiliser BindingNavigator pour pouvoir naviguer entre les UC, j'arrive vraiment pas à voir comment je peux faire :/

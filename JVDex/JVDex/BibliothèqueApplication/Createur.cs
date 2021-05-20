@@ -23,9 +23,9 @@ namespace BibliothèqueApplication
         public bool Equals(Createur other)
         {
             if (other is null) return false;
-            return Nom == other.Nom &&
-                   Prenom == other.Prenom &&
-                   DateNaissance == other.DateNaissance;
+            return Nom.Equals(other.Nom) &&
+                   Prenom.Equals(other.Prenom) &&
+                   DateNaissance.Equals(other.DateNaissance);
         }
 
         public override bool Equals(object obj)

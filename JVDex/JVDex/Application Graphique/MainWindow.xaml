@@ -17,20 +17,20 @@
         </Grid.ColumnDefinitions>
         <Image Height="150" Width="150" Source="Resources\logotest.png" />
 
-        <ListView Grid.Row="1" Background="#3D3C3C">
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF14CB14" Background="#FF14CB14" Padding="10" CornerRadius="5" Height="100" Width="135" >
+        <ListView Grid.Row="1" Background="#3D3C3C" Name="ListView_Franchises" ItemsSource="{Binding ToutesLesFranchises}">
+            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF14CB14" Background="#FF14CB14" Padding="10" CornerRadius="5" Height="100" Width="135" Name="Zelda" >
                 <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" > The Legend of Zelda</TextBlock>
             </Border>
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FFE40F0F" Background="#FFE40F0F" Padding="30" CornerRadius="5" Height="100" Width="135" >
+            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FFE40F0F" Background="#FFE40F0F" Padding="30" CornerRadius="5" Height="100" Width="135" Name="Mario">
                 <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,3,0,-3" > Mario</TextBlock>
             </Border>
-            <Border  BorderThickness="2" BorderBrush="#FFFFE800" Background="#FFFFE800" Padding="30" CornerRadius="5" Height="100" Width="135" >
+            <Border  BorderThickness="2" BorderBrush="#FFFFE800" Background="#FFFFE800" Padding="30" CornerRadius="5" Height="100" Width="135" Name="Pokemon">
                 <TextBlock TextAlignment="Center"  FontSize="19" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="-27,7,-27,-29" > Pokemon</TextBlock>
             </Border>
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF8D6121" Background="#FF8D6121" Padding="10" CornerRadius="5" Height="100" Width="135" >
+            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF8D6121" Background="#FF8D6121" Padding="10" CornerRadius="5" Height="100" Width="135" Name="Layton">
                 <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="19" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,16,0,-23" Width="115" > Professeur Layton</TextBlock>
             </Border>
-            <Border  HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF40A9F1" Background="#FF40A9F1" Padding="20" CornerRadius="5" Height="100" Width="135" >
+            <Border  HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF40A9F1" Background="#FF40A9F1" Padding="20" CornerRadius="5" Height="100" Width="135" Name="DragonQuest">
                 <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,2,0,-2"> Dragon Quest</TextBlock>
             </Border>
         </ListView>

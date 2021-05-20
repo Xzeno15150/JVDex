@@ -30,7 +30,7 @@ namespace BibliothèqueApplication
         public bool Equals(Nommable other)
         {
             if (other is null) return false;
-            return Nom == other.Nom;
+            return Nom.Equals(other.Nom);
         }
     }
 

@@ -38,7 +38,7 @@ namespace BibliothèqueApplication
         public bool Equals(Theorie other)
         {
             if (other is null) return false;
-            return Nom == other.Nom &&
+            return Nom.Equals(other.Nom) &&
                    Texte.Equals(other.Texte);
         }
     }

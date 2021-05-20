@@ -66,6 +66,10 @@ namespace BibliothèqueApplication
             set => tousLesJeux = value;
         }
 
+       
+
+
+
         //liste de toutes les franchises
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
         public TypeTri TypeTriJeu { get; set; }
