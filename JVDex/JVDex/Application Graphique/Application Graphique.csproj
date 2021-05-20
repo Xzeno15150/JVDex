@@ -11,6 +11,7 @@
     <None Remove="Resources\fav-logo.png" />
     <None Remove="Resources\heart-plein.png" />
     <None Remove="Resources\heart-vide.png" />
+    <None Remove="Resources\icon_recherche.png" />
     <None Remove="Resources\Jeux\DragonQuest\fondDragon2.png" />
     <None Remove="Resources\Jeux\Layton\fondLayton.jpg" />
     <None Remove="Resources\Jeux\Mario\fondMario.png" />
@@ -22,11 +23,19 @@
     <None Remove="Resources\recherche.PNG" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BibliothèqueApplication\BibliothèqueApplication.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <Resource Include="Resources\fav-logo.png" />
     <Resource Include="Resources\heart-plein.png" />
     <Resource Include="Resources\heart-vide.png" />
+    <Resource Include="Resources\icon_recherche.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Jeux\DragonQuest\fondDragon2.png" />
     <Resource Include="Resources\Jeux\Layton\fondLayton.jpg" />
     <Resource Include="Resources\Jeux\Mario\fondMario.png" />

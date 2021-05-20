@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,8 @@ namespace Application_Graphique
         public MainWindow()
         {
             InitializeComponent();
+            Manager manager = Stub.Load();
+            ListBox_ListeJeu.DataContext = manager;
         }
 
         private void TextBoxRecherche_TextChanged(object sender, TextChangedEventArgs e)
@@ -31,6 +35,12 @@ namespace Application_Graphique
             //{
             //    (sender as TextBox).Text = "";
             //}
+        }
+
+        private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            
         }
     }
 }

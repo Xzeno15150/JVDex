@@ -6,11 +6,14 @@ namespace BibliothèqueApplication
 {
     public class InformationsJeu : Nommable, IEquatable<InformationsJeu>
     {
+        private DateTime dateCreation;
+
         public ISet<Genres> LesGenres { get; }
         public ISet<Plateformes> LesPlateformes { get; }
         //PROPRIÉTÉS
         public CreateurJeu Createur { get; set; }
-        public DateTime DateCreation { get; set; }
+
+        public DateTime DateCreation { get => dateCreation; set => dateCreation = value; }
         public int LimiteAge { get; set; }
         public string Synopsis { get; set; }
 
@@ -65,17 +68,17 @@ namespace BibliothèqueApplication
         public override string ToString()
         {
             string mes = $"Nom du jeu: {Nom}\n";
-            mes += $"Nom du créateur: {Createur}\n"; 
+            mes += $"Nom du créateur: {Createur}\n";
             mes += $"Date de création: {DateCreation.ToString("dd/MM/yyyy")}\n";
             mes += $"Limite d'âge: {LimiteAge} ans\n";
             mes += $"Synopsis: {Synopsis}\n";
             mes += "Genres : \n";
-            foreach(Genres g in LesGenres)
+            foreach (Genres g in LesGenres)
             {
                 mes += $"\t- {g}\n";
             }
             mes += "Plateformes : \n";
-            foreach(Plateformes p in LesPlateformes)
+            foreach (Plateformes p in LesPlateformes)
             {
                 mes += $"\t- {p}\n";
             }
