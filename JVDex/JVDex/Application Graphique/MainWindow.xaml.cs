@@ -32,7 +32,7 @@ namespace Application_Graphique
 
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+           
 
         }
 

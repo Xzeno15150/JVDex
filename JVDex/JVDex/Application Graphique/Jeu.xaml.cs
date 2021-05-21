@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Application_Graphique.Nos_UC;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,9 +18,33 @@ namespace Application_Graphique
     /// </summary>
     public partial class Jeu : Window
     {
+        static Dictionary<string, Func<UserControl>> factory = new Dictionary<string, Func<UserControl>>();
         public Jeu()
         {
             InitializeComponent();
+            /*factory.Add("informations", UserControlInformations);
+            factory.Add("visuels", UserControlVisuel);
+            factory.Add("theories", UserControlTheorie);
+            factory.Add("musiques", UserControlMusique);*/
+
+            //var content = ()
+
+
+        }
+
+        //pour pouvoir faire une ListBoxItems cliquable
+       /* private void ListBox_Selected(object sender, SelectionChangedEventArgs e)
+        {
+            ListBoxItem informations = e.Source as ListBoxItem;
+            if (informations != null)
+            {
+                MainGrid = UserControlInformations; // je sais pas du tout comment le faire
+            }
+        }*/
+
+        void Informations_Click (object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

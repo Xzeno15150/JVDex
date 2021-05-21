@@ -77,7 +77,7 @@
                          ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                          ScrollViewer.CanContentScroll="False"
                          SelectionChanged="ListBoxListeJeux_SelectionChanged" 
-                         ItemsSource="{Binding TousLesJeux}">
+                         ItemsSource="{Binding TousLesJeux}">  <!--je ne suis pas sûre de comprendre cette ligne-->
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>

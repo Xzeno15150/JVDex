@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +23,31 @@ namespace Application_Graphique.Nos_UC
         public UserControlInformations()
         {
             InitializeComponent();
+            Manager manager = Stub.Load();
+            StackPanel_Jeu.DataContext = manager;
+            TextBlockNom.DataContext = manager;
+            TextBlockCreateur.DataContext = manager;
+            TextBlockDateCreation.DataContext = manager;
+            TextBlockLimiteAge.DataContext = manager;
+            TextBlockGenres.DataContext = manager;
+            TextBlockPlateformes.DataContext = manager;
+            TextBlockSynopsis.DataContext = manager;
         }
+
+
+        public string Texte
+        {
+            get { return (string)GetValue(TexteProperty); }
+            set { SetValue(TexteProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Texte.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TexteProperty =
+            DependencyProperty.Register("Texte", typeof(string), typeof(UserControl), new PropertyMetadata(0));
+
+
     }
+    //alors ça j'ai un peu de mal à le coder. Mais en gros ça va ye permettre de changer les informations de ton UserControl en fonction d'un jeu, et pour cela on a besoin 
+    //d'une DependencyProprety. Les get et set il faut SURTOUT  pas les changer normalement. C'est expliquer dans la vidéo mais voilà à quoi ça sert
+    
 }

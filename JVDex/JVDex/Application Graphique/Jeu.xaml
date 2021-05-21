@@ -39,13 +39,13 @@
         <ListBox Grid.Column="1" VerticalAlignment="Bottom" Background="#3D3C3C" HorizontalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel IsItemsHost="True"/>
+                    <WrapPanel IsItemsHost="True"/> <!--c'est pour faire un événement pour cliquer sur les boutons?-->
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True">Informations</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold">Visuels</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold">Musiques</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold">Théories</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True" Name="informations" >Informations</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="visuels">Visuels</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="musiques">Musiques</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="theories">Théories</ListBoxItem>
         </ListBox>
         
     </Grid>
