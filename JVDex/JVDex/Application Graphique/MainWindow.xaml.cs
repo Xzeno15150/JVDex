@@ -27,20 +27,23 @@ namespace Application_Graphique
             InitializeComponent();
             Manager manager = Stub.Load();
             ListBox_ListeJeu.DataContext = manager;
-        }
-
-        private void TextBoxRecherche_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //if((sender as TextBox).Text == "Rechercher")
-            //{
-            //    (sender as TextBox).Text = "";
-            //}
+            TextBoxRecherche.DataContext = manager;
         }
 
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-            
+
+
+        }
+
+        private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxRecherche_LostFocus(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class Manager
+    public class Manager : INotifyPropertyChanged
     {
         private IList<Jeu> tousLesJeux;
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
+        private string jeuRecherche;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
 
         /// <summary>
@@ -18,7 +22,6 @@ namespace BibliothèqueApplication
         {
             get
             {
-
                 IList<Jeu> JeuxRecherchés = new List<Jeu>();
                 if (String.IsNullOrEmpty(JeuRecherche))
                 {
@@ -66,14 +69,26 @@ namespace BibliothèqueApplication
             set => tousLesJeux = value;
         }
 
-       
+
 
 
 
         //liste de toutes les franchises
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
         public TypeTri TypeTriJeu { get; set; }
-        public string JeuRecherche { get; set; }
+        public string JeuRecherche 
+        { 
+            get => jeuRecherche;
+            set
+            {
+                if(jeuRecherche != value)
+                {
+                    jeuRecherche = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuRecherche"));
+                }
+                
+            }
+        }
 
         public Manager()
         {
@@ -96,7 +111,8 @@ namespace BibliothèqueApplication
                     contientJeu = true;
                 }
             }
-            if (!tousLesJeux.Contains(jeu) && !contientJeu){
+            if (!tousLesJeux.Contains(jeu) && !contientJeu)
+            {
                 if (!toutesLesFranchises.ContainsKey(franchise))
                 {
                     toutesLesFranchises.Add(franchise, new List<Jeu>());

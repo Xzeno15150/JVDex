@@ -16,24 +16,19 @@
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
         <Image Height="150" Width="150" Source="Resources\logotest.png" />
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
 
-        <ListView Grid.Row="1" Background="#3D3C3C" Name="ListView_Franchises" ItemsSource="{Binding ToutesLesFranchises}">
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF14CB14" Background="#FF14CB14" Padding="10" CornerRadius="5" Height="100" Width="135" Name="Zelda" >
-                <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" > The Legend of Zelda</TextBlock>
-            </Border>
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FFE40F0F" Background="#FFE40F0F" Padding="30" CornerRadius="5" Height="100" Width="135" Name="Mario">
-                <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,3,0,-3" > Mario</TextBlock>
-            </Border>
-            <Border  BorderThickness="2" BorderBrush="#FFFFE800" Background="#FFFFE800" Padding="30" CornerRadius="5" Height="100" Width="135" Name="Pokemon">
-                <TextBlock TextAlignment="Center"  FontSize="19" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="-27,7,-27,-29" > Pokemon</TextBlock>
-            </Border>
-            <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF8D6121" Background="#FF8D6121" Padding="10" CornerRadius="5" Height="100" Width="135" Name="Layton">
-                <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="19" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,16,0,-23" Width="115" > Professeur Layton</TextBlock>
-            </Border>
-            <Border  HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF40A9F1" Background="#FF40A9F1" Padding="20" CornerRadius="5" Height="100" Width="135" Name="DragonQuest">
-                <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Margin="0,2,0,-2"> Dragon Quest</TextBlock>
-            </Border>
-        </ListView>
+        <!--TODO regarder pourquoi le binding ne se fait pas avec les key du dictionary -->
+        <ListBox Grid.Row="1" Background="#3D3C3C" 
+                 ItemsSource="{Binding ToutesLesFranchises.Keys}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF14CB14" Background="#FF14CB14" Padding="10" CornerRadius="5" Height="100" Width="135">
+                        <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Text="{Binding Nom}"/>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
 
@@ -42,12 +37,19 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+            
             <DockPanel Margin="50,0">
-                <Image Source="Resources/icon_recherche.png" Margin="10" Width="55" />
-                <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA" TextChanged="TextBoxRecherche_TextChanged"/>
+                <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
+                    <Image Source="Resources/icon_recherche.png"  />
+                </Button>
+
+                <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA" Text="{Binding JeuRecherche}" Name="TextBoxRecherche" LostFocus="TextBoxRecherche_LostFocus"/>
+                
                 <TextBlock DockPanel.Dock="Left" Margin="25,0,0,0" VerticalAlignment="Center" Width="141" Height="50" Foreground="White" FontWeight="Bold" FontSize="30">
                     Trié par :
                 </TextBlock>
+                <TextBlock DockPanel.Dock="Left" Text="{Binding JeuRecherche}"/>
+
                 <ComboBox DockPanel.Dock="Left" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <ComboBoxItem IsSelected="True" FontSize="20">A-Z</ComboBoxItem>
                     <ComboBoxItem FontSize="20">Z-A</ComboBoxItem>
@@ -59,31 +61,44 @@
             
             <Border Grid.Row="2" Margin="50,50,50,0" BorderBrush="#FFD4DAEA" BorderThickness="1"/>
             <StackPanel Grid.Row="2" Margin="50,70,50,0">
-                <DockPanel>
-                    <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Left" Height="50" Margin="150,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="30" Foreground="White" FontWeight="Bold">Noms</TextBlock>
-                    <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Left" Height="50" Margin="150,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="30" Foreground="White" FontWeight="Bold">Date</TextBlock>
-                    <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Left" Height="50" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="30" Foreground="White" FontWeight="Bold">Créateur</TextBlock>
-                </DockPanel>
-                <ListBox Background="Transparent" BorderThickness="0" SelectionChanged="ListBoxListeJeux_SelectionChanged" ItemsSource="{Binding TousLesJeux}" Name="ListBox_ListeJeu">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="380"/>
+                        <ColumnDefinition Width="220"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="133" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Noms</TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="74" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Date</TextBlock>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="124" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Créateur</TextBlock>
+                </Grid>
+
+                <ListBox Background="Transparent" BorderThickness="0" Name="ListBox_ListeJeu" MaxHeight="360"
+                         ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                         ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                         ScrollViewer.CanContentScroll="False"
+                         SelectionChanged="ListBoxListeJeux_SelectionChanged" 
+                         ItemsSource="{Binding TousLesJeux}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="380"/>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="350"/>
                                     <ColumnDefinition Width="220"/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{Binding Informations.Nom}" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Left"/>
-                                <TextBlock Grid.Column="1" Text="{Binding Informations.DateCreation}" Foreground="White" FontSize="20" Background="Transparent" />
-                                <TextBlock Grid.Column="2" Text="{Binding Informations.Createur}" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Right"/>
+
+                                <Image Grid.Column="0" Source="{Binding Vignette}"></Image>
+                                <TextBlock Grid.Column="1" Text="{Binding Informations.Nom}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Left"/>
+                                <TextBlock Grid.Column="2" Text="{Binding Informations.DateCreation, StringFormat='dd-MMM-yyyy'}" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" />
+                                <TextBlock Grid.Column="3" Text="{Binding Informations.Createur}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Right"/>
+                                
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-
-
         </Grid>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
+       
     </Grid>
 </Window>

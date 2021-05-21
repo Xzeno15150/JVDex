@@ -9,59 +9,64 @@ namespace Data
         {
             Manager app = new Manager();
 
-            Jeu jeu1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
-            Jeu jeu4 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
+            Jeu test1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
+            Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
-            Jeu jeu2 = new Jeu("Zelda", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "");
-            Jeu jeu3 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
+            Jeu zelda1 = new Jeu("The Legend Of Zelda Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Resources/Jeux/Zelda/pochette-jeu.jpg");
+            Jeu zeldaWindwaker = new Jeu("The Legend Of Zelda Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "");
+            Jeu test2 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
            
-            Jeu jeu5 = new Jeu("Super Mario", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
-            Jeu jeu6 = new Jeu("New Super Mario Bros", new Createur("Inés", "Orillon", new DateTime(2010, 06, 23)),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+            Jeu mario = new Jeu("Super Mario", new Studio("Nintendo"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+            Jeu new_mario = new Jeu("New Super Mario Bros", new Studio("Nintendo"), new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+            
+            Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
-            Franchise franchise1 = new Franchise("Mario", "");
-            Franchise franchise2 = new Franchise("The Legend of Zelda", "");
-            Franchise franchise3 = new Franchise("Dragon Quest", "");
-            Franchise franchise4 = new Franchise("Pokemon", "");
-            Franchise franchise5 = new Franchise("Professeur Layton", "");
+            Franchise fMario = new Franchise("Mario", "");
+            Franchise fZelda = new Franchise("The Legend of Zelda", "");
+            Franchise fDragonQuest = new Franchise("Dragon Quest", "");
+            Franchise fPokemon = new Franchise("Pokemon", "");
+            Franchise fProfLayton = new Franchise("Professeur Layton", "");
 
             try
             {
-                jeu1.Informations.AjouterGenre(Genres.FPS);
-                jeu1.Informations.AjouterGenre(Genres.RPG);
-                jeu1.Informations.AjouterPlateforme(Plateformes.TroisDS);
-                jeu1.Informations.AjouterPlateforme(Plateformes.PS4); 
+                test1.Informations.AjouterGenre(Genres.FPS);
+                test1.Informations.AjouterGenre(Genres.RPG);
+                test1.Informations.AjouterPlateforme(Plateformes.TroisDS);
+                test1.Informations.AjouterPlateforme(Plateformes.PS4); 
                 
-                jeu2.Informations.AjouterGenre(Genres.Plateforme);
-                jeu2.Informations.AjouterGenre(Genres.Reflexe);
-                jeu2.Informations.AjouterGenre(Genres.RPG);
-                jeu2.Informations.AjouterPlateforme(Plateformes.Gamecube);
-                jeu2.Informations.AjouterPlateforme(Plateformes.DS); 
+                zelda1.Informations.AjouterGenre(Genres.Plateforme);
+                zelda1.Informations.AjouterGenre(Genres.Reflexe);
+                zelda1.Informations.AjouterGenre(Genres.RPG);
+                zelda1.Informations.AjouterPlateforme(Plateformes.Gamecube);
+                zelda1.Informations.AjouterPlateforme(Plateformes.DS); 
                 
-                jeu3.Informations.AjouterGenre(Genres.Simulation);
-                jeu3.Informations.AjouterGenre(Genres.RPG);
-                jeu3.Informations.AjouterPlateforme(Plateformes.PC);
+                test2.Informations.AjouterGenre(Genres.Simulation);
+                test2.Informations.AjouterGenre(Genres.RPG);
+                test2.Informations.AjouterPlateforme(Plateformes.PC);
 
-                jeu4.Informations.AjouterGenre(Genres.FPS);
-                jeu4.Informations.AjouterGenre(Genres.RPG);
-                jeu4.Informations.AjouterPlateforme(Plateformes.TroisDS);
-                jeu4.Informations.AjouterPlateforme(Plateformes.PS4);
+                test1_bis.Informations.AjouterGenre(Genres.FPS);
+                test1_bis.Informations.AjouterGenre(Genres.RPG);
+                test1_bis.Informations.AjouterPlateforme(Plateformes.TroisDS);
+                test1_bis.Informations.AjouterPlateforme(Plateformes.PS4);
 
-                jeu5.Informations.AjouterGenre(Genres.Plateforme);
-                jeu5.Informations.AjouterPlateforme(Plateformes.PC);
-                jeu5.Informations.AjouterPlateforme(Plateformes.PS4);
-
-
-
-                jeu1.AjouterAuxFavoris();
-                jeu3.AjouterAuxFavoris();
+                mario.Informations.AjouterGenre(Genres.Plateforme);
+                mario.Informations.AjouterPlateforme(Plateformes.PC);
+                mario.Informations.AjouterPlateforme(Plateformes.PS4);
 
 
-                app.AjouterJeu(jeu1, franchise5);
-                app.AjouterJeu(jeu2, franchise2);
-                app.AjouterJeu(jeu3, franchise4);
-                app.AjouterJeu(jeu4, franchise5);
-                app.AjouterJeu(jeu5, franchise1);
-                app.AjouterJeu(jeu6, franchise1);
+
+                test1.AjouterAuxFavoris();
+                test2.AjouterAuxFavoris();
+
+
+                app.AjouterJeu(test1, fProfLayton);
+                app.AjouterJeu(zelda1, fZelda);
+                app.AjouterJeu(zeldaWindwaker, fZelda);
+                app.AjouterJeu(test2, fPokemon);
+                app.AjouterJeu(test1_bis, fDragonQuest);
+                app.AjouterJeu(mario, fMario);
+                app.AjouterJeu(new_mario, fMario);
+                app.AjouterJeu(dragonQuest, fDragonQuest);
                 
             }
             catch (ArgumentException e)
