@@ -114,7 +114,7 @@ namespace BibliothèqueApplication
             if (other is null) return false;
             return Nom.Equals(other.Nom)&&
                    Createur.Equals(other.Createur) &&
-                   DateCreation == other.DateCreation &&
+                   DateCreation.Equals(other.DateCreation) &&
                    LimiteAge.Equals(other.LimiteAge) &&
                    Synopsis.Equals(other.Synopsis) &&
                    LesGenres.SetEquals(other.LesGenres) &&
