@@ -113,13 +113,18 @@ namespace BibliothèqueApplication
             }
             if (!tousLesJeux.Contains(jeu) && !contientJeu)
             {
-                if (!toutesLesFranchises.ContainsKey(franchise))
-                {
-                    toutesLesFranchises.Add(franchise, new List<Jeu>());
-                }
+                AjouterFranchise(franchise);
 
                 tousLesJeux.Add(jeu);
                 toutesLesFranchises[franchise].Add(jeu);
+            }
+        }
+
+        public void AjouterFranchise(Franchise franchise)
+        {
+            if (!toutesLesFranchises.Keys.Contains(franchise))
+            {
+                toutesLesFranchises.Add(franchise, new List<Jeu>());
             }
         }
 

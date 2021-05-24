@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Application_Graphique"
         mc:Ignorable="d"
         Title="JVDex" Height="720" Width="1080">
+
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
@@ -18,13 +19,20 @@
         <Image Height="150" Width="150" Source="Resources\logotest.png" />
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
 
-        <!--TODO regarder pourquoi le binding ne se fait pas avec les key du dictionary -->
-        <ListBox Grid.Row="1" Background="#3D3C3C" 
+        <ListBox Grid.Row="1" Background="Transparent" MaxHeight="560"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden"
                  ItemsSource="{Binding ToutesLesFranchises.Keys}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border HorizontalAlignment="Center" BorderThickness="2" BorderBrush="#FF14CB14" Background="#FF14CB14" Padding="10" CornerRadius="5" Height="100" Width="135">
-                        <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="20" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Text="{Binding Nom}"/>
+                    <Border HorizontalAlignment="Center" BorderThickness="2" Padding="10" CornerRadius="5" Height="100" Width="135">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{Binding Couleur}"/>
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <SolidColorBrush Color="{Binding Couleur}"/>
+                        </Border.Background>
+                        <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="18" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Text="{Binding Nom}"/>
                     </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -50,11 +58,11 @@
                 </TextBlock>
                 <TextBlock DockPanel.Dock="Left" Text="{Binding JeuRecherche}"/>
 
-                <ComboBox DockPanel.Dock="Left" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <ComboBox DockPanel.Dock="Left" Width="112" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <ComboBoxItem IsSelected="True" FontSize="20">A-Z</ComboBoxItem>
                     <ComboBoxItem FontSize="20">Z-A</ComboBoxItem>
                     <ComboBoxItem FontSize="20">Les plus récents</ComboBoxItem>
-                    <ComboBoxItem FontSize="20">Les plus ancients</ComboBoxItem>
+                    <ComboBoxItem FontSize="20">Les plus anciens</ComboBoxItem>
                     <ComboBoxItem FontSize="20">Les créateurs</ComboBoxItem>
                 </ComboBox>
             </DockPanel>
@@ -73,11 +81,11 @@
                 </Grid>
 
                 <ListBox Background="Transparent" BorderThickness="0" Name="ListBox_ListeJeu" MaxHeight="360"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                         ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                          ScrollViewer.CanContentScroll="False"
                          SelectionChanged="ListBoxListeJeux_SelectionChanged" 
-                         ItemsSource="{Binding TousLesJeux}">  <!--je ne suis pas sûre de comprendre cette ligne-->
+                         ItemsSource="{Binding TousLesJeux}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>

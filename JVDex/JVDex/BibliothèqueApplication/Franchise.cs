@@ -6,10 +6,12 @@ namespace BibliothèqueApplication
     public class Franchise : Nommable, IEquatable<Franchise>
     {
         public string Background { get; set; }
+        public string Couleur { get; set; }
 
-        public Franchise(string nom, string image) : base(nom)
+        public Franchise(string nom, string image, string color) : base(nom)
         {
             Background = image;
+            Couleur = color;
         }
          
        
@@ -17,6 +19,7 @@ namespace BibliothèqueApplication
         {
             string mes = $"Nom de la franchise :{Nom}\n";
             mes += $"Image de background : {Background}\n";
+            mes += $"Couleur : {Couleur}\n";
             return mes;
         }
 

@@ -26,8 +26,7 @@ namespace Application_Graphique
         {
             InitializeComponent();
             Manager manager = Stub.Load();
-            ListBox_ListeJeu.DataContext = manager;
-            TextBoxRecherche.DataContext = manager;
+            DataContext = manager;
         }
 
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)

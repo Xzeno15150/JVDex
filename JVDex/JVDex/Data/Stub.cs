@@ -21,11 +21,12 @@ namespace Data
             
             Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
-            Franchise fMario = new Franchise("Mario", "");
-            Franchise fZelda = new Franchise("The Legend of Zelda", "");
-            Franchise fDragonQuest = new Franchise("Dragon Quest", "");
-            Franchise fPokemon = new Franchise("Pokemon", "");
-            Franchise fProfLayton = new Franchise("Professeur Layton", "");
+            Franchise fMario = new Franchise("Mario", "", "#DE1111");
+            Franchise fZelda = new Franchise("The Legend of Zelda","", "#1BC213");
+            Franchise fDragonQuest = new Franchise("Dragon Quest","", "#2092DC");
+            Franchise fPokemon = new Franchise("Pokemon", "", "#FFFB00");
+            Franchise fProfLayton = new Franchise("Professeur Layton", "", "#896335");
+            Franchise fTest = new Franchise("Test", "", "#FFFFFFFF");
 
             try
             {
@@ -58,16 +59,18 @@ namespace Data
                 test1.AjouterAuxFavoris();
                 test2.AjouterAuxFavoris();
 
-
-                app.AjouterJeu(test1, fProfLayton);
+                
                 app.AjouterJeu(zelda1, fZelda);
                 app.AjouterJeu(zeldaWindwaker, fZelda);
                 app.AjouterJeu(test2, fPokemon);
-                app.AjouterJeu(test1_bis, fDragonQuest);
                 app.AjouterJeu(mario, fMario);
                 app.AjouterJeu(new_mario, fMario);
                 app.AjouterJeu(dragonQuest, fDragonQuest);
-                
+                app.AjouterJeu(test1, fProfLayton);
+                app.AjouterJeu(test1_bis, fDragonQuest);
+
+                //app.AjouterFranchise(fTest);
+
             }
             catch (ArgumentException e)
             {
