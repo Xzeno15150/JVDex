@@ -22,10 +22,11 @@ namespace Application_Graphique
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Manager manager = Stub.Load();
         public MainWindow()
         {
             InitializeComponent();
-            Manager manager = Stub.Load();
+            
             DataContext = manager;
         }
 
@@ -37,12 +38,15 @@ namespace Application_Graphique
 
         private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
         {
-
+            manager.JeuRecherche = TextBoxRecherche.Text;
         }
 
-        private void TextBoxRecherche_LostFocus(object sender, RoutedEventArgs e)
+        private void TextBoxRecherche_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if(e.Key == Key.Enter)
+            {
+                (sender as TextBox).MoveFocus(new TraversalRequest(FocusNavigationDirection.Previous));
+            }
         }
     }
 }

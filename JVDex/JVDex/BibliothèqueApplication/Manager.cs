@@ -11,6 +11,7 @@ namespace BibliothèqueApplication
         private IList<Jeu> tousLesJeux;
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
         private string jeuRecherche;
+        private TypeTri typeTriJeu;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -69,26 +70,34 @@ namespace BibliothèqueApplication
             set => tousLesJeux = value;
         }
 
-
-
-
-
         //liste de toutes les franchises
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
-        public TypeTri TypeTriJeu { get; set; }
-        public string JeuRecherche 
+        public TypeTri TypeTriJeuSelected
         { 
+            get => typeTriJeu;
+            set
+            {
+                if(typeTriJeu != value)
+                {
+                    typeTriJeu = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
+                }
+            }
+        }
+        public string JeuRecherche
+        {
             get => jeuRecherche;
             set
             {
-                if(jeuRecherche != value)
+                if (jeuRecherche != value)
                 {
                     jeuRecherche = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuRecherche"));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
                 }
-                
+
             }
         }
+        public IList<TypeTri> ListTypeTriJeux => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());
 
         public Manager()
         {
