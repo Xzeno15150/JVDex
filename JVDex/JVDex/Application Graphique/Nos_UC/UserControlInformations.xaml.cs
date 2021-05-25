@@ -35,16 +35,7 @@ namespace Application_Graphique.Nos_UC
         }
 
 
-        public string Texte
-        {
-            get { return (string)GetValue(TexteProperty); }
-            set { SetValue(TexteProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for Texte.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty TexteProperty =
-            DependencyProperty.Register("Texte", typeof(string), typeof(UserControl), new PropertyMetadata(0));
-
+      
 
     }
     //alors ça j'ai un peu de mal à le coder. Mais en gros ça va ye permettre de changer les informations de ton UserControl en fonction d'un jeu, et pour cela on a besoin 

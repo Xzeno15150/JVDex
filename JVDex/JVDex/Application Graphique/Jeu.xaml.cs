@@ -22,10 +22,10 @@ namespace Application_Graphique
         public Jeu()
         {
             InitializeComponent();
-            /*factory.Add("informations", UserControlInformations);
-            factory.Add("visuels", UserControlVisuel);
-            factory.Add("theories", UserControlTheorie);
-            factory.Add("musiques", UserControlMusique);*/
+            /*factory.Add("UCinformations", UserControlInformations);
+            factory.Add("UCvisuels", UserControlVisuel);
+            factory.Add("UCtheories", UserControlTheorie);
+            factory.Add("UCmusiques", UserControlMusique);*/
 
             //var content = ()
 
@@ -46,6 +46,17 @@ namespace Application_Graphique
         {
 
         }
+
+        public string UCinformations
+        {
+            get { return (string)GetValue(TexteProperty); }
+            set { SetValue(TexteProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Texte.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TexteProperty =
+            DependencyProperty.Register("Texte", typeof(string), typeof(UserControl), new PropertyMetadata(0));
+
     }
 }
 // il faut peut-être utiliser BindingNavigator pour pouvoir naviguer entre les UC, j'arrive vraiment pas à voir comment je peux faire :/
