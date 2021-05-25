@@ -48,5 +48,10 @@ namespace Application_Graphique
                 (sender as TextBox).MoveFocus(new TraversalRequest(FocusNavigationDirection.Previous));
             }
         }
+
+        private void ComboBoxTri_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            manager.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
+        }
     }
 }

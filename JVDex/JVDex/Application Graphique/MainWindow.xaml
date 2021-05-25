@@ -61,11 +61,14 @@
                 </TextBlock>
                 <TextBlock DockPanel.Dock="Left" Text="{Binding JeuRecherche}"/>
 
-                <ComboBox DockPanel.Dock="Left" Width="112" VerticalAlignment="Center" HorizontalAlignment="Left" SelectedIndex="0"
-                          ItemsSource="{Binding ListTypeTriJeux}">
+                <ComboBox DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#3D3C3C"
+                          SelectedIndex="0"
+                          Name="ComboBoxTri"
+                          ItemsSource="{Binding ListTypeTriJeux}"
+                          SelectionChanged="ComboBoxTri_SelectionChanged">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding}"/>
+                            <TextBlock Text="{Binding}" FontWeight="Bold"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>

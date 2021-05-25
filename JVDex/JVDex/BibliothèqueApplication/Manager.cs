@@ -39,7 +39,7 @@ namespace BibliothèqueApplication
                     }
                 }
 
-                switch (TypeTriJeu)
+                switch (TypeTriJeuSelected)
                 {
                     case TypeTri.Z_A:
                         return JeuxRecherchés.OrderByDescending(jeu => jeu.Informations.Nom).ToList();
