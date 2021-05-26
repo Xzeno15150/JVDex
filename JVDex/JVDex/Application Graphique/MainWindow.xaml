@@ -64,7 +64,7 @@
                 <ComboBox DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#3D3C3C"
                           SelectedIndex="0"
                           Name="ComboBoxTri"
-                          ItemsSource="{Binding ListTypeTriJeux}"
+                          ItemsSource="{Binding ListTypeTriJeu}"
                           SelectionChanged="ComboBoxTri_SelectionChanged">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>

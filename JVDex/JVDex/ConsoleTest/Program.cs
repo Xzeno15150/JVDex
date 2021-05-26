@@ -35,7 +35,7 @@ namespace ConsoleTest
             Console.WriteLine("5) Nom des créateur (A-Z)");
 
             var choix = Convert.ToInt32(Console.ReadLine());
-            app.TypeTriJeu = (TypeTri)choix;
+            app.TypeTriJeuSelected = (TypeTri)choix;
             Test_Afficher_Jeux(app);
 
         }
@@ -50,7 +50,7 @@ namespace ConsoleTest
 
         private static void Test_Afficher_Favoris(Manager app)
         {
-            app.TypeTriJeu = TypeTri.A_Z;
+            app.TypeTriJeuSelected = TypeTri.A_Z;
             foreach (var jeu in app.TousLesJeux.Where(jeu => jeu.IsFavoris)) 
             {
                 Console.WriteLine($"- {jeu.Informations.Nom}");
@@ -112,7 +112,7 @@ namespace ConsoleTest
         {
             Console.WriteLine("Donnez le nom à rechercher :");
             app.JeuRecherche = Console.ReadLine();
-            app.TypeTriJeu = TypeTri.A_Z;
+            app.TypeTriJeuSelected = TypeTri.A_Z;
 
             Test_Afficher_Jeux(app);
         }

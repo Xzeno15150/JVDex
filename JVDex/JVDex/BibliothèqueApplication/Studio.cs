@@ -5,7 +5,6 @@ using System.Text;
 namespace BibliothèqueApplication
 {
     public class Studio : CreateurJeu, IEquatable<Studio>
-
     {
         public Studio(string nom) : base(nom)
         {

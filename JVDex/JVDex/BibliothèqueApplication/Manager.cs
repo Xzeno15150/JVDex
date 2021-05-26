@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliothèqueApplication.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace BibliothèqueApplication
         private IList<Jeu> tousLesJeux;
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
         private string jeuRecherche;
-        private TypeTri typeTriJeu;
+        private TypeTri typeTriJeuSelected;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -76,16 +77,19 @@ namespace BibliothèqueApplication
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
         public TypeTri TypeTriJeuSelected
         { 
-            get => typeTriJeu;
+            get => typeTriJeuSelected;
             set
             {
-                if(typeTriJeu != value)
+                if(typeTriJeuSelected != value)
                 {
-                    typeTriJeu = value;
+                    typeTriJeuSelected = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux")); //ça j'ai pas compris
                 }
             }
         }
+
+        public string DescriptionTypeTri => typeTriJeuSelected.ToDescription();
+
 
         /// <summary>
         /// propriété
@@ -103,7 +107,7 @@ namespace BibliothèqueApplication
 
             }
         }
-        public IList<TypeTri> ListTypeTriJeux => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());
+        public IList<TypeTri> ListTypeTriJeu => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());
 
         public Manager()
         {
