@@ -10,14 +10,14 @@ namespace BibliothèqueApplication
 
         public ISet<Genres> LesGenres { get; }
         public ISet<Plateformes> LesPlateformes { get; }
-        //PROPRIÉTÉS
+      
         public CreateurJeu Createur { get; set; }
 
         public DateTime DateCreation { get => dateCreation; set => dateCreation = value; }
         public int LimiteAge { get; set; }
         public string Synopsis { get; set; }
 
-        //Constructeur
+
         public InformationsJeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
         {
             this.Createur = createur;
@@ -27,8 +27,12 @@ namespace BibliothèqueApplication
             LesGenres = new HashSet<Genres>();
             LesPlateformes = new HashSet<Plateformes>();
         }
-        //permet d'ajouter un genre correspondant au jeu, celui-ci ne peut pas être écrit deux fois
-        //utilisation d'un enum pour récupérer le genre
+
+
+        /// <summary>
+        /// permet d'ajouter un genre correspondant au jeu, celui-ci ne peut pas être écrit deux fois. Nous utilisons un enum pour récupérer le genre 
+        /// </summary>
+        /// <param name="genre"> le genre à ajouter</param>
         public void AjouterGenre(Genres genre)
         {
             if (!LesGenres.Add(genre))
@@ -37,7 +41,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //supprimer un genre à la liste
+        /// <summary>
+        /// supprimer un genre à la liste des genres, il doit exister pour le supprimer
+        /// </summary>
+        /// <param name="genre">genre à supprimer</param>
         public void SupprimerGenre(Genres genre)
         {
             if (!LesGenres.Remove(genre))
@@ -46,8 +53,13 @@ namespace BibliothèqueApplication
             }
         }
 
-        //permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois.
-        //utilisation d'un enum pour récupérer la plateforme
+        //
+        //
+
+        /// <summary>
+        /// permet d'ajouter uns plateforme correspondante au jeu, celle-ci ne peut pas être écrite deux fois. Nous utilisons un enum pour récupérer la plateforme
+        /// </summary>
+        /// <param name="plateforme"> la plateforme à ajouter</param>
         public void AjouterPlateforme(Plateformes plateforme)
         {
             if (!LesPlateformes.Add(plateforme))
@@ -56,7 +68,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //supprimer une musique à la liste
+        /// <summary>
+        /// permet de supprimer une plateforme de la liste des plateformes, doit déjà exister pour être supprimé
+        /// </summary>
+        /// <param name="plateforme">la plateforme à supprimer</param>
         public void SupprimerPlateforme(Plateformes plateforme)
         {
             if (!LesPlateformes.Remove(plateforme))
@@ -84,6 +99,7 @@ namespace BibliothèqueApplication
             }
             return mes;
         }
+
 
         public override bool Equals(object obj)
         {

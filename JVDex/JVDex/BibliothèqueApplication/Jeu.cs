@@ -12,30 +12,52 @@ namespace BibliothèqueApplication
         public ISet<string> LesMusiques { get; private set; }
         public ISet<Theorie> LesTheories { get; private set; }
 
-        //Propriétés
+      
         public InformationsJeu Informations { get; set; }
-        public bool IsFavoris { get; private set; } //permet de savoir si jeu est en favoris
+
+        /// <summary>
+        /// ce boolean permet de savoir si le jeu est mis en favoris ou non: true quand il est en favoris, false quand il ne l'est pas
+        /// </summary>
+        public bool IsFavoris { get; private set; }
+
+        /// <summary>
+        /// utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante
+        /// </summary>
+        /// <param name="nom"> nom du jeu </param>
+        /// <param name="createur"> nom du créateur </param>
+        /// <param name="dateCreation"> la date de création du jeu </param>
+        /// <param name="limiteAge"> la limite d'âge attribué au jeu </param>
+        /// <param name="synopsis"> le synopsis du jeu </param>
+        /// <param name="image"> l'image associée au jeu </param>
         public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image)
         {
-            Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis); //utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante
+            Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis); //
             LesVisuels = new HashSet<string>();
             LesMusiques = new HashSet<string>();
             LesTheories = new HashSet<Theorie>();
             Vignette = image;
         }
 
-        //les deux méthodes (AjouterAuxFavoris et EnleverDesFavoris) permettent de mettre le jeu en favoris ou non
+        /// <summary>
+        /// permet de mettre un jeu en favoris
+        /// </summary>
         public void AjouterAuxFavoris()
         {
             IsFavoris = true;
         }
 
+        /// <summary>
+        /// permet d'enlever un jeu en favoris
+        /// </summary>
         public void EnleverDesFavoris()
         {
             IsFavoris = false;
         }
 
-        //ajouter des visuels à la liste des visuels
+        /// <summary>
+        /// ajoute des visuels, images, à la liste des visuels. Ne peut pas en ajouter deux identiques
+        /// </summary>
+        /// <param name="visuel"> visuels à ajouter </param>
         public void AjouterVisuel(string visuel)
         {
             if (!LesVisuels.Add(visuel))
@@ -44,7 +66,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //supprimer un visuel à la liste
+        /// <summary>
+        /// supprime un visuels à la liste des visuels
+        /// </summary>
+        /// <param name="visuel"> le visuel à supprimer </param>
         public void SupprimerVisuel(string visuel)
         {
             if (!LesVisuels.Remove(visuel))
@@ -53,7 +78,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //ajouter des musiques à la liste des musiques
+        /// <summary>
+        /// ajoute une musique à la liste des musiques, ne peut pas ajouter deux musiques identiques
+        /// </summary>
+        /// <param name="musique"> musique à ajouter </param>
         public void AjouterMusique(string musique)
         {
             if (!LesMusiques.Add(musique))
@@ -62,7 +90,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //supprimer une musique à la liste
+       /// <summary>
+       /// supprime une musique que de liste
+       /// </summary>
+       /// <param name="musique"> la musique à supprimer </param>
         public void SupprimerMusique(string musique)
         {
             if (!LesMusiques.Remove(musique))
@@ -72,6 +103,10 @@ namespace BibliothèqueApplication
         }
 
         //ajouter des théories à la liste des théories
+        /// <summary>
+        /// ajouter une théorie à la liste des théories, elle ne peut être qu'unique
+        /// </summary>
+        /// <param name="theorie"> la théorie à ajouter de type Théorie</param>
         public void AjouterTheorie(Theorie theorie)
         {
             if (!LesTheories.Add(theorie))
@@ -80,7 +115,10 @@ namespace BibliothèqueApplication
             }
         }
 
-        //supprimer une théorie à la liste
+       /// <summary>
+       /// supprime une théorie de la liste
+       /// </summary>
+       /// <param name="theorie"> la théorie correspondnate </param>
         public void SupprimerTheorie(Theorie theorie)
         {
             if (!LesTheories.Remove(theorie))

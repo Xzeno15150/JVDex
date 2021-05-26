@@ -17,7 +17,7 @@ namespace BibliothèqueApplication
 
 
         /// <summary>
-        /// Propriété qui rend la liste des jeux, recherchés ou non, trié
+        /// Propriété qui rend la liste des jeux, recherchés ou non, trié. Elle nous permet de faire une recherche et un tri sur la listes des jeux
         /// </summary>
         public IList<Jeu> TousLesJeux
         {
@@ -70,7 +70,9 @@ namespace BibliothèqueApplication
             set => tousLesJeux = value;
         }
 
-        //liste de toutes les franchises
+        /// <summary>
+        /// permet de savoir quel est le type de tri sélectionné 
+        /// </summary>
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises { get => toutesLesFranchises; set => toutesLesFranchises = value; }
         public TypeTri TypeTriJeuSelected
         { 
@@ -80,10 +82,14 @@ namespace BibliothèqueApplication
                 if(typeTriJeu != value)
                 {
                     typeTriJeu = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux")); //ça j'ai pas compris
                 }
             }
         }
+
+        /// <summary>
+        /// propriété
+        /// </summary>
         public string JeuRecherche
         {
             get => jeuRecherche;
@@ -129,6 +135,11 @@ namespace BibliothèqueApplication
             }
         }
 
+        /// <summary>
+        /// permet d'ajouter une franchise à la liste des franchises
+        /// </summary>
+        /// <param name="franchise">le nom de la franchise à ajouter si elle n'existe pas déjà</param>
+
         public void AjouterFranchise(Franchise franchise)
         {
             if (!toutesLesFranchises.Keys.Contains(franchise))
@@ -137,7 +148,11 @@ namespace BibliothèqueApplication
             }
         }
 
-        //permet de supprimer un jeu à la liste de tous les jeux
+        /// <summary>
+        /// permet de supprimer un jeu à la liste des jeux
+        /// </summary>
+        /// <param name="jeu"> le jeu qui sera supprimer</param>
+        /// <param name="franchise">la franchise correspondante au jeu supprimé</param>
         public void SupprimerJeu(Jeu jeu, Franchise franchise)
         {
             if (tousLesJeux.Contains(jeu) && toutesLesFranchises[franchise].Contains(jeu))
@@ -148,7 +163,10 @@ namespace BibliothèqueApplication
         }
 
 
-        // permet de supprimer une franchise ainsi que tous les jeux associés
+        /// <summary>
+        /// permet de supprimer une franchise de jeu ainsi que tous ses jeux correspondnat
+        /// </summary>
+        /// <param name="franchise">la franchise à supprimer </param>
         public void SupprimerFranchise(Franchise franchise)
         {
             if (toutesLesFranchises.ContainsKey(franchise))
