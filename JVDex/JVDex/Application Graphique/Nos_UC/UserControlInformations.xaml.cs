@@ -20,22 +20,13 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlInformations : UserControl
     {
+        public Manager manager = Stub.Load();
         public UserControlInformations()
         {
             InitializeComponent();
-            Manager manager = Stub.Load();
-            StackPanel_Jeu.DataContext = manager;
-            TextBlockNom.DataContext = manager;
-            TextBlockCreateur.DataContext = manager;
-            TextBlockDateCreation.DataContext = manager;
-            TextBlockLimiteAge.DataContext = manager;
-            TextBlockGenres.DataContext = manager;
-            TextBlockPlateformes.DataContext = manager;
-            TextBlockSynopsis.DataContext = manager;
+
+            MainGrid.DataContext = manager.JeuSelected;
         }
-
-
-      
 
     }
     //alors ça j'ai un peu de mal à le coder. Mais en gros ça va ye permettre de changer les informations de ton UserControl en fonction d'un jeu, et pour cela on a besoin 

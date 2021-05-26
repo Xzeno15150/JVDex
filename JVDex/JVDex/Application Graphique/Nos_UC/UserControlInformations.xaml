@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="920">
-    <Grid>
+    <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -16,18 +16,24 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="620"/>
             </Grid.ColumnDefinitions>
-            <Image Margin="30" Source="/Resources/logotest.png"/>
+            <Image Margin="30" Source= "{Binding Vignette}"/>
            
-                    <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu">
+            <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu"
+                                >
                 
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" Text="{Binding Informations.Nom}">Test</TextBlock>
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockCreateur" Text="{Binding Informations.Createur}">Test</TextBlock>
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockDateCreation" Text="{Binding Informations.DateCreation}">Test</TextBlock>
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" Text="{Binding Informations.LimiteAge}">Test</TextBlock>
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" Text="{Binding Informations.LesGenres}">Test</TextBlock>
-                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" Text="{Binding Informations.LesPlateformes}">Test</TextBlock>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" Text="{Binding Informations.Nom}">Test</TextBlock>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockCreateur" Text="{Binding Informations.Createur}">Test</TextBlock>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockDateCreation" Text="{Binding Informations.DateCreation}">Test</TextBlock>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" Text="{Binding Informations.LimiteAge}">Test</TextBlock>
+                <!--<StackPanel Orientation="Horizontal"
+                            Items>
+                   
+                </StackPanel>-->
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" Text="{Binding Informations.LesGenres}">Test</TextBlock>
+                        
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" Text="{Binding Informations.LesPlateformes}">Test</TextBlock>
                
-                    </StackPanel>
+            </StackPanel>
              
         </Grid>
         <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="{Binding Informations.Synopsis}">

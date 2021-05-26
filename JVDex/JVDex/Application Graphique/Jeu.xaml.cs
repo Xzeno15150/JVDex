@@ -47,16 +47,15 @@ namespace Application_Graphique
 
         }
 
-        public string UCinformations
+        public string UCinformation
         {
-            get { return (string)GetValue(TexteProperty); }
-            set { SetValue(TexteProperty, value); }
+            get { return (string)GetValue(UCInformationsProperty); }
+            set { SetValue(UCInformationsProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for Texte.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty TexteProperty =
-            DependencyProperty.Register("Texte", typeof(string), typeof(UserControl), new PropertyMetadata(0));
-
+        public static readonly DependencyProperty UCInformationsProperty =
+            DependencyProperty.Register("UCinformations", typeof(string), typeof(UserControl), new PropertyMetadata(0));
     }
 }
 // il faut peut-être utiliser BindingNavigator pour pouvoir naviguer entre les UC, j'arrive vraiment pas à voir comment je peux faire :/
