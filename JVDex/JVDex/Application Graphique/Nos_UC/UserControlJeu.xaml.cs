@@ -28,20 +28,30 @@ namespace Application_Graphique.Nos_UC
             ImageJeu.DataContext = manager.JeuSelected;
         }
 
-        public string ImagePath
+
+
+        public string Image
         {
-            set
-            {
-                ImageJeu.Source = new BitmapImage(new Uri(value, UriKind.Relative));  //ça sert à quoi?
-            }
+            get { return (string)GetValue(ImageProperty); }
+            set { SetValue(ImageProperty, value); }
         }
 
-        public string NomJeu
+        // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ImageProperty =
+            DependencyProperty.Register("Image", typeof(string), typeof(UserControlJeu));
+
+
+
+        public string Nom
         {
-            set
-            {
-                NomDuJeu.Text = value;
-            }
+            get { return (string)GetValue(NomProperty); }
+            set { SetValue(NomProperty, value); }
         }
+
+        // Using a DependencyProperty as the backing store for Nom.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NomProperty =
+            DependencyProperty.Register("Nom", typeof(string), typeof(UserControlJeu));
+
+
     }
 }

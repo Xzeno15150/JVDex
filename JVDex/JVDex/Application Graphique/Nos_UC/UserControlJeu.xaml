@@ -4,10 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Application_Graphique"
+             x:Name="root"
              mc:Ignorable="d" 
-             d:DesignHeight="205" d:DesignWidth="180">
-    <StackPanel Background="#3D3C3C">
-        <TextBlock Foreground="White" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" Name="NomDuJeu" TextWrapping="Wrap" Text="{Binding Informations.Nom}"></TextBlock>
-        <Image Margin="10" Source= "{Binding Vignette}" Name="ImageJeu"/>
+             Height="205" Width="180">
+    <StackPanel Background="#3D3C3C" >
+        <TextBlock Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" Text="{Binding Nom, ElementName=root}" Width="180"/>
+        <Image Margin="10" Source="{Binding Image, ElementName=root}" HorizontalAlignment="Center" MaxWidth="160"/> 
     </StackPanel>
 </UserControl>

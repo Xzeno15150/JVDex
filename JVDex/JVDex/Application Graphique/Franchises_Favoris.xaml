@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
+        xmlns:uc="clr-namespace:Application_Graphique.Nos_UC"
         mc:Ignorable="d"
         Height="720" Width="1080"
         ResizeMode="NoResize">
@@ -25,7 +26,8 @@
                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
                  ItemsSource="{Binding ToutesLesFranchises.Keys}"
                  SelectionChanged="ListBoxFranchises_SelectionChanged"
-                 Name="ListBoxFranchises">
+                 Name="ListBoxFranchises"
+                 SelectedItem="0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border HorizontalAlignment="Center" BorderThickness="2" Padding="10" CornerRadius="5" Height="100" Width="135">
@@ -37,6 +39,19 @@
                         </Border.Background>
                         <TextBlock  HorizontalAlignment="Center" TextAlignment="Center"  FontSize="18" FontWeight="Bold" FontFamily="Arial Black"  TextWrapping="Wrap" Text="{Binding Nom}"/>
                     </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Grid.Column="1" Grid.Row="1" Background="Transparent"
+                 ItemsSource="{Binding JeuxDeLaFranchiseSelected}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <uc:UserControlJeu Nom="{Binding Informations.Nom}" Image="{Binding Vignette}" Margin="20"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

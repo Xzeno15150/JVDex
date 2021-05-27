@@ -14,11 +14,13 @@
     <None Remove="Resources\icon_recherche.png" />
     <None Remove="Resources\Jeux\DragonQuest\background.jpg" />
     <None Remove="Resources\Jeux\Layton\background.jpg" />
+    <None Remove="Resources\Jeux\Mario\background.jpg" />
     <None Remove="Resources\Jeux\Mario\fondMario.png" />
     <None Remove="Resources\Jeux\Pokemon\background.jpg" />
     <None Remove="Resources\Jeux\Pokemon\fondPokemon2.jpg" />
+    <None Remove="Resources\Jeux\Zelda\.jpg" />
     <None Remove="Resources\Jeux\Zelda\background.jpg" />
-    <None Remove="Resources\Jeux\Zelda\pochette-jeu.jpg" />
+    <None Remove="Resources\Jeux\Zelda\BOTW\vignette.png" />
     <None Remove="Resources\left-arrow.png" />
     <None Remove="Resources\logotest.png" />
     <None Remove="Resources\recherche.PNG" />
@@ -39,11 +41,18 @@
     </Resource>
     <Resource Include="Resources\Jeux\DragonQuest\background.jpg" />
     <Resource Include="Resources\Jeux\Layton\background.jpg" />
+    <Resource Include="Resources\Jeux\Mario\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Jeux\Pokemon\background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Jeux\Zelda\background.jpg" />
-    <Resource Include="Resources\Jeux\Zelda\pochette-jeu.jpg" />
+    <Resource Include="Resources\Jeux\Zelda\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Jeux\Zelda\BOTW\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\left-arrow.png" />
     <Resource Include="Resources\logotest.png" />
     <Resource Include="Resources\recherche.PNG">

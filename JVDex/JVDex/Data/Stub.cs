@@ -12,8 +12,11 @@ namespace Data
             Jeu test1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
             Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
-            Jeu zelda1 = new Jeu("The Legend Of Zelda Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Resources/Jeux/Zelda/pochette-jeu.jpg");
-            Jeu zeldaWindwaker = new Jeu("The Legend Of Zelda Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "");
+            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
+            Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
+            Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
+            Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
+            Jeu zeldaWindwaker4 = new Jeu("Windwaker4", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
             Jeu test2 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
            
             Jeu mario = new Jeu("Super Mario", new Studio("Nintendo"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
@@ -61,6 +64,9 @@ namespace Data
                 
                 app.AjouterJeu(zelda1, fZelda);
                 app.AjouterJeu(zeldaWindwaker, fZelda);
+                app.AjouterJeu(zeldaWindwaker2, fZelda);
+                app.AjouterJeu(zeldaWindwaker3, fZelda);
+                app.AjouterJeu(zeldaWindwaker4, fZelda);
                 app.AjouterJeu(test2, fPokemon);
                 app.AjouterJeu(mario, fMario);
                 app.AjouterJeu(new_mario, fMario);
