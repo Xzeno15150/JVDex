@@ -8,7 +8,7 @@ namespace BibliothèqueApplication
     public class Jeu : IEquatable<Jeu>
     {
         public string Vignette { get; set; }
-        public ISet<string> LesVisuels { get; private set;}
+        public ISet<Visuel> LesVisuels { get; private set;}
         public ISet<string> LesMusiques { get; private set; }
         public ISet<Theorie> LesTheories { get; private set; }
 
@@ -32,7 +32,7 @@ namespace BibliothèqueApplication
         public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image)
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis); //
-            LesVisuels = new HashSet<string>();
+            LesVisuels = new HashSet<Visuel>();
             LesMusiques = new HashSet<string>();
             LesTheories = new HashSet<Theorie>();
             Vignette = image;
@@ -58,7 +58,7 @@ namespace BibliothèqueApplication
         /// ajoute des visuels, images, à la liste des visuels. Ne peut pas en ajouter deux identiques
         /// </summary>
         /// <param name="visuel"> visuels à ajouter </param>
-        public void AjouterVisuel(string visuel)
+        public void AjouterVisuel(Visuel visuel)  //problème de set je ne comprends pas 
         {
             if (!LesVisuels.Add(visuel))
             {
@@ -70,7 +70,7 @@ namespace BibliothèqueApplication
         /// supprime un visuels à la liste des visuels
         /// </summary>
         /// <param name="visuel"> le visuel à supprimer </param>
-        public void SupprimerVisuel(string visuel)
+        public void SupprimerVisuel(Visuel visuel)
         {
             if (!LesVisuels.Remove(visuel))
             {
@@ -132,7 +132,7 @@ namespace BibliothèqueApplication
             string mes = Informations.ToString();
             mes += $"Vignette du Jeu : {Vignette}\n";
             mes += "Liste des visuels : \n";
-            foreach (string s in LesVisuels)
+            foreach (Visuel s in LesVisuels)
             {
                 mes += $"\t- {s}\n";
             } 

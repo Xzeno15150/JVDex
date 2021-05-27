@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,16 +20,19 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlJeu : UserControl
     {
+        public Manager manager = Stub.Load();
+        
         public UserControlJeu()
         {
             InitializeComponent();
+            ImageJeu.DataContext = manager.JeuSelected;
         }
 
         public string ImagePath
         {
             set
             {
-                ImageJeu.Source = new BitmapImage(new Uri(value, UriKind.Relative));
+                ImageJeu.Source = new BitmapImage(new Uri(value, UriKind.Relative));  //ça sert à quoi?
             }
         }
 

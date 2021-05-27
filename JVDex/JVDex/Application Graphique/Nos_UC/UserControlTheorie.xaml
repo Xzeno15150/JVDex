@@ -8,8 +8,8 @@
              d:DesignHeight="720" d:DesignWidth="1080">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-
+            <ColumnDefinition Width="450"/>
+            
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -17,26 +17,26 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <StackPanel Background="Wheat" Width="300" HorizontalAlignment="Left" Margin="20">
-            <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Menu Théories</TextBlock>
-            <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 1</TextBlock>
-            <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 2</TextBlock>
-            <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 3</TextBlock>
-            <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 4</TextBlock>
-            <TextBlock Background="Wheat" Padding="10" FontSize="20">Théorie 5</TextBlock>
-        </StackPanel>
 
-        <ListBox Grid.Row="1" Background="Transparent">
-            <!--<TextBlock Foreground="Wheat" Padding="10" FontSize="20">Théorie 1</TextBlock>
-            <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Donec ac odio tempor orci dapibus ultrices. Sed faucibus turpis in eu mi. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Venenatis lectus magna fringilla urna. Elementum facilisis leo vel fringilla. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
-            </TextBlock>-->
+
+        <ListBox ItemsSource="{Binding LesTheories}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Background="Wheat" Width="300" HorizontalAlignment="Left" Margin="20">
+                        <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center ">Menu Théories</TextBlock>
+                        <TextBlock Background="Wheat" Padding="10" FontSize="20" Text="{Binding Theorie.Nom}">Théorie 1</TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
-
         
-        
-        
-          
+        <ListBox Grid.Row="2" Background="Transparent">
             
-    </Grid>
+                <TextBlock Foreground="Wheat" Padding="10" FontSize="20" Text="{Binding Theorie.Nom}"></TextBlock>
+            <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Text="{Binding Theorie.Texte}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Donec ac odio tempor orci dapibus ultrices. Sed faucibus turpis in eu mi. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Venenatis lectus magna fringilla urna. Elementum facilisis leo vel fringilla. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
+            </TextBlock>
+        </ListBox>
+</Grid>
+    
 </UserControl>

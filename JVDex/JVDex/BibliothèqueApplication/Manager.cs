@@ -208,3 +208,5 @@ namespace BibliothèqueApplication
 
     }
 }
+
+//pour faire un changement sur un dico, n'entend pas les notifsmettre à null le dataContetxt pour le re activer    return new Collection (d.keys) -> créé une autre collection (je prends en note ce que fais le prof je ne pense pas que ça nous sera utile)

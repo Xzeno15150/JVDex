@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,9 +20,12 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlVisuel : UserControl
     {
+        public Manager manager = Stub.Load();
+    
         public UserControlVisuel()
         {
             InitializeComponent();
+            SatckVisuel.DataContext = manager.JeuSelected;
         }
     }
 }

@@ -28,8 +28,18 @@ namespace Application_Graphique.Nos_UC
             MainGrid.DataContext = manager.JeuSelected;
         }
 
+
+       //UCinfoNav.UCinfo = "UserControlInformations";
+        public string UCinfo
+        {
+            get { return (string)GetValue(UCinfoProperty); }
+            set { SetValue(UCinfoProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for UCinfo.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty UCinfoProperty =
+            DependencyProperty.Register("UCinfoNav", typeof(string), typeof(UserControl), new PropertyMetadata(0));
+
     }
-    //alors ça j'ai un peu de mal à le coder. Mais en gros ça va ye permettre de changer les informations de ton UserControl en fonction d'un jeu, et pour cela on a besoin 
-    //d'une DependencyProprety. Les get et set il faut SURTOUT  pas les changer normalement. C'est expliquer dans la vidéo mais voilà à quoi ça sert
     
 }

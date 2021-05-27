@@ -33,29 +33,20 @@ namespace Application_Graphique
         }
 
         //pour pouvoir faire une ListBoxItems cliquable
-       /* private void ListBox_Selected(object sender, SelectionChangedEventArgs e)
-        {
-            ListBoxItem informations = e.Source as ListBoxItem;
-            if (informations != null)
-            {
-                MainGrid = UserControlInformations; // je sais pas du tout comment le faire
-            }
-        }*/
+        /* private void ListBox_Selected(object sender, SelectionChangedEventArgs e)
+         {
+             ListBoxItem informations = e.Source as ListBoxItem;
+             if (informations != null)
+             {
+                 MainGrid = UserControlInformations; // je sais pas du tout comment le faire
+             }
+         }*/
 
-        void Informations_Click (object sender, SelectionChangedEventArgs e)
+        void Informations_Click(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        public string UCinformation
-        {
-            get { return (string)GetValue(UCInformationsProperty); }
-            set { SetValue(UCInformationsProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for Texte.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty UCInformationsProperty =
-            DependencyProperty.Register("UCinformations", typeof(string), typeof(UserControl), new PropertyMetadata(0));
     }
 }
-// il faut peut-être utiliser BindingNavigator pour pouvoir naviguer entre les UC, j'arrive vraiment pas à voir comment je peux faire :/
+

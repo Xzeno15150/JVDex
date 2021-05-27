@@ -7,9 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="300">
     <Grid>
-        <StackPanel>
-            <Image  Source="Resources/Jeux/Layton/fondLayton.jpg" Height="150" HorizontalAlignment="Left"/>
-            <TextBlock Foreground="White" FontWeight="Bold"> Legende de la photo</TextBlock>
+        <StackPanel x:Name="SatckVisuel">
+            <Image  Source="{Binding Visuel.Vignette}" Height="150" HorizontalAlignment="Left"/>
+            <TextBlock Foreground="White" FontWeight="Bold" Text="{Binding Visuel.Legende}"></TextBlock>
         </StackPanel>
     </Grid>
 </UserControl>
