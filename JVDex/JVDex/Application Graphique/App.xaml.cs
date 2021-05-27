@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using Data;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,6 @@ namespace Application_Graphique
     /// </summary>
     public partial class App : Application
     {
+        public Manager LeManager { get; set; } = Stub.Load();
     }
 }

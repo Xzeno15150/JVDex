@@ -21,12 +21,11 @@ namespace Data
             
             Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
-            Franchise fMario = new Franchise("Mario", "", "#DE1111");
-            Franchise fZelda = new Franchise("The Legend of Zelda","", "#1BC213");
-            Franchise fDragonQuest = new Franchise("Dragon Quest","", "#2092DC");
-            Franchise fPokemon = new Franchise("Pokemon", "", "#FFFB00");
-            Franchise fProfLayton = new Franchise("Professeur Layton", "", "#896335");
-            Franchise fTest = new Franchise("Test", "", "#FFFFFFFF");
+            Franchise fMario = new Franchise("Mario", "Resources/Jeux/Mario/background.jpg", "#DE1111");
+            Franchise fZelda = new Franchise("The Legend of Zelda","Resources/Jeux/Zelda/background.jpg", "#1BC213");
+            Franchise fDragonQuest = new Franchise("Dragon Quest", "Resources/Jeux/DragonQuest/background.jpg", "#2092DC");
+            Franchise fPokemon = new Franchise("Pokemon", "Resources/Jeux/Pokemon/background.jpg", "#FFFB00");
+            Franchise fProfLayton = new Franchise("Professeur Layton", "Resources/Jeux/Layton/background.jpg", "#896335");
 
             try
             {

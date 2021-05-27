@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
         mc:Ignorable="d"
-        Title="Jeu" Height="720" Width="1080">
+        Title="Jeu" Height="720" Width="1080"
+        ResizeMode="NoResize">
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
@@ -42,10 +43,10 @@
                     <WrapPanel IsItemsHost="True"/> <!--c'est pour faire un événement pour cliquer sur les boutons?-->
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True" Name="UCinformation">Informations</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCvisuels">Visuels</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCmusiques">Musiques</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCtheories">Théories</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True">Informations</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold">Visuels</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold">Musiques</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold">Théories</ListBoxItem>
         </ListBox>
         
     </Grid>

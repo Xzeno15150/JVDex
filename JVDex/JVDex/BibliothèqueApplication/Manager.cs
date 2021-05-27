@@ -14,6 +14,7 @@ namespace BibliothèqueApplication
         private string jeuRecherche;
         private TypeTri typeTriJeuSelected;
         private Jeu jeuSelected;
+        private Franchise franchiseSelected;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -119,6 +120,16 @@ namespace BibliothèqueApplication
             }
         }
         public IList<TypeTri> ListTypeTriJeux => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());
+
+        public Franchise FranchiseSelected
+        {
+            get => franchiseSelected; 
+            set 
+            { 
+                franchiseSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FranchiseSelected"));
+            }
+        }
 
         public Manager()
         {

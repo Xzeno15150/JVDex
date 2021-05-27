@@ -19,16 +19,16 @@ namespace Application_Graphique
     /// </summary>
     public partial class Franchises_Favoris : Window
     {
+        public Manager mgr => (App.Current as App).LeManager;
         public Franchises_Favoris()
         {
             InitializeComponent();
-            Manager manager = Stub.Load();
-
+            DataContext = mgr;
         }
 
-        private void Choix_Franchises(object sender, SelectionChangedEventArgs e)
+        private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
         }
     }
 }

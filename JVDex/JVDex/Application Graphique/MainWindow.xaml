@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
         mc:Ignorable="d"
-        Title="JVDex" Height="720" Width="1080">
+        Title="JVDex" Height="720" Width="1080"
+        ResizeMode="NoResize">
 
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
         <Grid.RowDefinitions>
@@ -68,7 +69,7 @@
                           SelectionChanged="ComboBoxTri_SelectionChanged">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding DescriptionTypeTri}" FontWeight="Bold"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>

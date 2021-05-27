@@ -22,12 +22,12 @@ namespace Application_Graphique
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Manager manager = Stub.Load();
+        public Manager mgr => (App.Current as App).LeManager;
         public MainWindow()
         {
             InitializeComponent();
             
-            DataContext = manager;
+            DataContext = mgr;
         }
 
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -38,7 +38,7 @@ namespace Application_Graphique
 
         private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
         {
-            manager.JeuRecherche = TextBoxRecherche.Text;
+            mgr.JeuRecherche = TextBoxRecherche.Text;
         }
 
         private void TextBoxRecherche_KeyDown(object sender, KeyEventArgs e)
@@ -51,7 +51,7 @@ namespace Application_Graphique
 
         private void ComboBoxTri_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            manager.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
+            mgr.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
         }
     }
 }
