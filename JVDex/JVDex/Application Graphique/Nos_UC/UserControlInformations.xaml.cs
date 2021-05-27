@@ -29,17 +29,6 @@ namespace Application_Graphique.Nos_UC
         }
 
 
-       //UCinfoNav.UCinfo = "UserControlInformations";
-        public string UCinfo
-        {
-            get { return (string)GetValue(UCinfoProperty); }
-            set { SetValue(UCinfoProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for UCinfo.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty UCinfoProperty =
-            DependencyProperty.Register("UCinfoNav", typeof(string), typeof(UserControl), new PropertyMetadata(0));
-
     }
     
 }

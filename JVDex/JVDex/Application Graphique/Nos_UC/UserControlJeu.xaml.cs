@@ -25,7 +25,7 @@ namespace Application_Graphique.Nos_UC
         public UserControlJeu()
         {
             InitializeComponent();
-            ImageJeu.DataContext = manager.JeuSelected;
+            
         }
 
 

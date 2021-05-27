@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliothèqueApplication
 {
-    class Visuel : IEquatable<Visuel>
+    public class Visuel : IEquatable<Visuel>
     {
         public string Vignette { get; set; }
         public string Legende { get; set; }

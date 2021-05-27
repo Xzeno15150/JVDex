@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="920"
-             x:Name="UCinfo">
+             >
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,7 +17,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="620"/>
             </Grid.ColumnDefinitions>
-            <Image Margin="30" Source= "{Binding Vignette}"/>
+          <!--  <Image Margin="30" Source= "{Binding Vignette}"/>
            
             <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu"
                                 >
@@ -29,9 +29,9 @@
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" Text="{Binding Informations.LesGenres}"/>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" Text="{Binding Informations.LesPlateformes}">Test</TextBlock>
                
-            </StackPanel>
+            </StackPanel>-->
              
         </Grid>
-        <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="{Binding Informations.Synopsis}"/>
+       <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="coucou"/>
     </Grid>
 </UserControl>

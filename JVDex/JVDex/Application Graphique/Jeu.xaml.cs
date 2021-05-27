@@ -18,16 +18,17 @@ namespace Application_Graphique
     /// </summary>
     public partial class Jeu : Window
     {
-        static Dictionary<string, Func<UserControl>> factory = new Dictionary<string, Func<UserControl>>();
+        static Dictionary<string, Func<UserControl>> factory = new Dictionary<string, Func<UserControl>>()
+        {
+            ["Informations"] = () => new UserControlInformations(),
+            ["Visuels"] = () => new UserControlVisuel(),
+            ["Musiques"] = () => new UserControlMusique(),
+            ["Théories"] = () => new UserControlTheorie(),
+        };
+
         public Jeu()
         {
-            InitializeComponent();
-            /*factory.Add("UCinformations", UserControlInformations);
-            factory.Add("UCvisuels", UserControlVisuel);
-            factory.Add("UCtheories", UserControlTheorie);
-            factory.Add("UCmusiques", UserControlMusique);*/
-
-            //var content = ()
+            InitializeComponent();      
 
 
         }
@@ -47,6 +48,14 @@ namespace Application_Graphique
 
         }
 
+        private void ListBoxNavigation_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var content = (e.AddedItems[0] as ListBoxItem).Content as string;
+            if (factory.ContainsKey(content))
+            {
+                ContentControlNav.Content = factory[content]();
+            }
+        }
     }
 }
 

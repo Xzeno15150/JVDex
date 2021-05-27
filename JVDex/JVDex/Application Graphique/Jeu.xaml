@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
+        xmlns:uc ="clr-namespace:Application_Graphique.Nos_UC"
         mc:Ignorable="d"
         Title="Jeu" Height="720" Width="1080"
         ResizeMode="NoResize">
@@ -37,18 +38,34 @@
         </ListView>
         <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
-        <ListBox Grid.Column="1" VerticalAlignment="Bottom" Background="#3D3C3C" HorizontalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-            <ListBox.ItemsPanel>
+
+        <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
+            <uc:UserControlInformations/>
+        </ContentControl>
+
+        <ListBox Grid.Column="1" VerticalAlignment="Bottom" Background="#3D3C3C" HorizontalContentAlignment="Center" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListBoxNavigation"
+                 SelectionChanged="ListBoxNavigation_SelectionChanged"
+                 SelectedIndex="0">
+            
+            <ListBox.ItemsPanel >
                 <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True"/> <!--c'est pour faire un événement pour cliquer sur les boutons?-->
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
 
-            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True" x:Name="UCinfoNav"  >Informations</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCvisuNav">Visuels</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCmusNav">Musiques</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCtheNav">Théories</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCinfoNav"  >Informations</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCvisuelNav">Visuels</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCmusiqueNav">Musiques</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCtheorieNav">Théories</ListBoxItem>
         </ListBox>
-        <!--="{Binding UserControlInformations}"-->
+
+        
+        
+
     </Grid>
 </Window>
