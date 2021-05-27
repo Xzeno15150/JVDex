@@ -125,7 +125,7 @@ afficher les jeux d'une licence
 				4) jeu dans les favoris
 				5) jeu dans les favoris
 
-	Note: extends sur tous les cas 
+	Note: extends sur "Afficher un jeu" et "Afficher les détails d'un jeu"
 
 
 	
@@ -141,7 +141,7 @@ afficher les jeux d'une licence
 				1.1: affichage de la liste des jeux
 	Scénario altérnatif: /
 	Condition de fin:	1)affichage des favoris
-	Note: extends sur tous les cas 
+	Note: extends sur "Afficher un jeu" et "Afficher les détails d'un jeu"
 
 
 

@@ -43,12 +43,12 @@
                     <WrapPanel IsItemsHost="True"/> <!--c'est pour faire un événement pour cliquer sur les boutons?-->
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            <UserControl></UserControl>
-            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True" x:Name="UCinfoNav" UCinfo="{Binding UserControlInformations}" >Informations</ListBoxItem>
+
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" Foreground="White" FontWeight="Bold" IsSelected="True" x:Name="UCinfoNav"  >Informations</ListBoxItem>
             <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCvisuNav">Visuels</ListBoxItem>
             <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCmusNav">Musiques</ListBoxItem>
             <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" Foreground="White" FontWeight="Bold" x:Name="UCtheNav">Théories</ListBoxItem>
         </ListBox>
-        
+        <!--="{Binding UserControlInformations}"-->
     </Grid>
 </Window>
