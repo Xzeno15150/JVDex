@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
+        xmlns:uc ="clr-namespace:Application_Graphique.Nos_UC"
         mc:Ignorable="d"
         Title="JVDex" Height="720" Width="1080"
         ResizeMode="NoResize">
@@ -49,7 +50,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             
-            <DockPanel Margin="50,0">
+           <DockPanel Margin="50,0">
                 <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
                     <Image Source="Resources/icon_recherche.png"  />
                 </Button>
@@ -110,13 +111,21 @@
                                 <TextBlock Grid.Column="1" Text="{Binding Informations.Nom}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Left"/>
                                 <TextBlock Grid.Column="2" Text="{Binding Informations.DateCreation, StringFormat='dd-MMM-yyyy'}" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" />
                                 <TextBlock Grid.Column="3" Text="{Binding Informations.Createur}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Right"/>
-                                
+
                             </Grid>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-        </Grid>
-       
+
+        
+
+    </Grid> 
+        <!--<ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
+            <uc:UserControlMain/>
+        </ContentControl>-->
+
+
+
     </Grid>
 </Window>

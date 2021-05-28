@@ -1,5 +1,4 @@
 ﻿using BibliothèqueApplication;
-using Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,20 +15,17 @@ using System.Windows.Shapes;
 namespace Application_Graphique.Nos_UC
 {
     /// <summary>
-    /// Logique d'interaction pour Informations.xaml
+    /// Logique d'interaction pour UserControlMain.xaml
     /// </summary>
-    public partial class UserControlInformations : UserControl
+    public partial class UserControlMain : UserControl
     {
-        public Manager manager = Stub.Load();
-        public UserControlInformations()
+      
+        public UserControlMain()
         {
             InitializeComponent();
-
-            MainGrid.DataContext = manager;
+            
         }
 
-
+      
     }
-    
 }
-//j'arrive pas à trouver le data contexte, il faudrait le bind sur le manager je sais pas comment faire

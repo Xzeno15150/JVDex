@@ -19,6 +19,11 @@ namespace BibliothèqueApplication
             return Texte;
         }
 
+        public string AjouterTexte(string texte)
+        {
+            return texte;
+        }
+
         public override bool Equals(object obj)
         {
             if (this == obj) return true;
@@ -44,3 +49,5 @@ namespace BibliothèqueApplication
     }
 
 }
+
+//va falloir faire quelque chose pour ajouter des théories, ça ne fonctionne pas

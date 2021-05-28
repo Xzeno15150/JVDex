@@ -13,8 +13,8 @@ namespace BibliothèqueApplication
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
         private string jeuRecherche;
         private TypeTri typeTriJeuSelected;
-        private Jeu jeuSelected;
         private Franchise franchiseSelected;
+        private Jeu jeuSelected;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -117,6 +117,8 @@ namespace BibliothèqueApplication
             set
             {
                 jeuSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuSelected"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuxDeLaFranchiseSelected"));
             }
         }
         public IList<TypeTri> ListTypeTriJeux => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());

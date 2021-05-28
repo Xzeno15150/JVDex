@@ -56,6 +56,7 @@ namespace Data
                 mario.Informations.AjouterPlateforme(Plateformes.PC);
                 mario.Informations.AjouterPlateforme(Plateformes.PS4);
 
+                
 
 
                 test1.AjouterAuxFavoris();

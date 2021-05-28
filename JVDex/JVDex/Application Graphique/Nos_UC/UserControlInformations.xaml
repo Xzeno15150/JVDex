@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="920"
              >
-    <Grid x:Name="MainGrid">
+    <Grid x:Name="MainGrid" DataContext="{Binding Jeu }">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -17,8 +17,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="620"/>
             </Grid.ColumnDefinitions>
-          <!--  <Image Margin="30" Source= "{Binding Vignette}"/>
-           
+           <Image Margin="30" Source= "{Binding Vignette}"/>
+
             <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu"
                                 >
 
@@ -28,10 +28,10 @@
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" Text="{Binding Informations.LimiteAge}"/>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" Text="{Binding Informations.LesGenres}"/>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" Text="{Binding Informations.LesPlateformes}">Test</TextBlock>
-               
-            </StackPanel>-->
-             
+
+            </StackPanel>
+
         </Grid>
-       <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="coucou"/>
+       <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="{Binding Informations.Synopsis}"/>
     </Grid>
 </UserControl>

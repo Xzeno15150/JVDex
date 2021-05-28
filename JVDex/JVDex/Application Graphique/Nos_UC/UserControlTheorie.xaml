@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1080">
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450"/>
-            
+
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -19,7 +19,7 @@
 
 
 
-        <ListBox ItemsSource="{Binding LesTheories}">
+        <ListBox ItemsSource="{Binding TousLesJeux}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Background="Wheat" Width="300" HorizontalAlignment="Left" Margin="20">
@@ -29,14 +29,13 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        
-        <ListBox Grid.Row="2" Background="Transparent">
-            
-                <TextBlock Foreground="Wheat" Padding="10" FontSize="20" Text="{Binding Theorie.Nom}"></TextBlock>
+
+        <ListBox Grid.Row="1" Background="Transparent" Margin="0,0,-630,0">
+            <TextBlock Foreground="Wheat" Padding="10" FontSize="20" Text="{Binding Theorie.Nom}"></TextBlock>
             <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Text="{Binding Theorie.Texte}">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Donec ac odio tempor orci dapibus ultrices. Sed faucibus turpis in eu mi. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Venenatis lectus magna fringilla urna. Elementum facilisis leo vel fringilla. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
             </TextBlock>
         </ListBox>
-</Grid>
-    
+    </Grid>
+
 </UserControl>

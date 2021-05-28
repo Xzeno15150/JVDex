@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application_Graphique"
         xmlns:uc ="clr-namespace:Application_Graphique.Nos_UC"
+        
         mc:Ignorable="d"
         Title="Jeu" Height="720" Width="1080"
         ResizeMode="NoResize">

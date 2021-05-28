@@ -38,7 +38,7 @@ namespace Application_Graphique
 
         }
 
-        private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
+       private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
         {
             mgr.JeuRecherche = TextBoxRecherche.Text;
         }
