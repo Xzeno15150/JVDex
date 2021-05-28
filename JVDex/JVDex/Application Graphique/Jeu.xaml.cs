@@ -1,4 +1,5 @@
 ﻿using Application_Graphique.Nos_UC;
+using BibliothèqueApplication;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,6 +19,8 @@ namespace Application_Graphique
     /// </summary>
     public partial class Jeu : Window
     {
+        public Manager mgr = (App.Current as App).LeManager;
+
         static Dictionary<string, Func<UserControl>> factory = new Dictionary<string, Func<UserControl>>()
         {
             ["Informations"] = () => new UserControlInformations(),
@@ -28,9 +31,17 @@ namespace Application_Graphique
 
         public Jeu()
         {
-            InitializeComponent();      
+            InitializeComponent();
+            DataContext = mgr;
 
+        }
 
+        private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
+            mgr.JeuSelected = null;
+            new Franchises_Favoris().Show();
+            this.Close();
         }
 
         //pour pouvoir faire une ListBoxItems cliquable

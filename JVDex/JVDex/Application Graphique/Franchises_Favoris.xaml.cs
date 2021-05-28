@@ -29,6 +29,14 @@ namespace Application_Graphique
         private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
+            mgr.JeuSelected = null;
+        }
+
+        private void ListBoxJeuxDeLaFranchise_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
+            new Jeu().Show();
+            this.Close();
         }
     }
 }

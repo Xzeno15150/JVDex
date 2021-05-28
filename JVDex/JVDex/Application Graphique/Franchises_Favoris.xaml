@@ -43,7 +43,9 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <ListBox Grid.Column="1" Grid.Row="1" Background="Transparent"
-                 ItemsSource="{Binding JeuxDeLaFranchiseSelected}">
+                 ItemsSource="{Binding JeuxDeLaFranchiseSelected}"
+                 SelectionChanged="ListBoxJeuxDeLaFranchise_SelectionChanged"
+                 Name="ListBoxJeuxDeLaFranchise">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>

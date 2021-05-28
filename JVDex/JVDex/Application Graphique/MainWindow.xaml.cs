@@ -32,7 +32,9 @@ namespace Application_Graphique
 
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+            mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
+            new Jeu().Show();
+            this.Close();
 
         }
 
@@ -52,6 +54,14 @@ namespace Application_Graphique
         private void ComboBoxTri_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
+        }
+
+        private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
+            mgr.JeuSelected = null;
+            new Franchises_Favoris().Show();
+            this.Close();
         }
     }
 }

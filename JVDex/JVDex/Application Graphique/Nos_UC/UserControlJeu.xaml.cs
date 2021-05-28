@@ -27,20 +27,15 @@ namespace Application_Graphique.Nos_UC
             InitializeComponent();
             
         }
-
-
-
         public string Image
         {
             get { return (string)GetValue(ImageProperty); }
             set { SetValue(ImageProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+        // Using a DependencyProperty as the backing store for Image.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ImageProperty =
             DependencyProperty.Register("Image", typeof(string), typeof(UserControlJeu));
-
-
 
         public string Nom
         {

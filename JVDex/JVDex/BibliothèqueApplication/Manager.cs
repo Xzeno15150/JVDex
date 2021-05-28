@@ -126,14 +126,21 @@ namespace BibliothèqueApplication
             get => franchiseSelected; 
             set 
             { 
+
                 franchiseSelected = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FranchiseSelected"));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuxDeLaFranchiseSelected"));
             }
         }
 
-        public IList<Jeu> JeuxDeLaFranchiseSelected => ToutesLesFranchises[franchiseSelected];
-
+        public IList<Jeu> JeuxDeLaFranchiseSelected
+        {
+            get
+            {
+                 if(franchiseSelected != null) return ToutesLesFranchises[franchiseSelected];
+                return null;
+            }
+        }
 
         public Manager()
         {
