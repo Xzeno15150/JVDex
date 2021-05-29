@@ -17,8 +17,8 @@ namespace ConsoleTest
             //Test_Afficher_Favoris(app);
             //Test_Ajouter_Favoris(app);
             //Test_Effacer_Favoris(app);
-            Test_Afficher_Franchise(app);
-            //Test_Afficher_Détail_Jeu(app);
+            //Test_Afficher_Franchise(app);
+            Test_Afficher_Détail_Jeu(app);
         }
 
         //test pour trier les jeux
