@@ -19,11 +19,11 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlTheorie : UserControl
     {
-        public Manager mgr => (App.Current as App).LeManager;
+        public Manager mgr = (App.Current as App).LeManager;
         public UserControlTheorie()
         {
             InitializeComponent();
-            DataContext = mgr;
+            DataContext = mgr.JeuSelected;
         }
     }
 }

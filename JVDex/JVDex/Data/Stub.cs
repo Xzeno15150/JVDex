@@ -30,6 +30,7 @@ namespace Data
             Franchise fPokemon = new Franchise("Pokemon", "Resources/Jeux/Pokemon/background.jpg", "#FFFB00");
             Franchise fProfLayton = new Franchise("Professeur Layton", "Resources/Jeux/Layton/background.jpg", "#896335");
             Theorie thZelda1 = new Theorie("vie de Link", "link est un farfadet");
+            Theorie thZelda2 = new Theorie("vie de Link2", "link est un farfadet");
 
             try
             {
@@ -58,6 +59,7 @@ namespace Data
                 mario.Informations.AjouterPlateforme(Plateformes.PS4);
 
                 zelda1.AjouterTheorie(thZelda1);
+                zelda1.AjouterTheorie(thZelda2);
 
 
                 test1.AjouterAuxFavoris();

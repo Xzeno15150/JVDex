@@ -20,7 +20,7 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlInformations : UserControl
     {
-        public Manager manager = Stub.Load();
+        public Manager manager = (App.Current as App).LeManager; //instance de l'application
         public UserControlInformations()
         {
             InitializeComponent();

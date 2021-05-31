@@ -64,7 +64,9 @@ namespace Application_Graphique
             var content = (e.AddedItems[0] as ListBoxItem).Content as string;
             if (factory.ContainsKey(content))
             {
+                factory[content]().DataContext = mgr.JeuSelected;
                 ContentControlNav.Content = factory[content]();
+                
             }
         }
     }
