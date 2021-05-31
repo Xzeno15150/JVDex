@@ -1,4 +1,5 @@
-﻿using BibliothèqueApplication;
+﻿using Application_Graphique.Nos_UC;
+using BibliothèqueApplication;
 using Data;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,15 @@ namespace Application_Graphique
     public partial class MainWindow : Window
     {
         public Manager mgr => (App.Current as App).LeManager;
+
+        static Dictionary<string, Func<UserControl>> factory = new Dictionary<string, Func<UserControl>>()
+        {
+            [""] = () => new UserControlJeu(),
+            [""] = () => new UserControlMain(),
+            [""] = () => new UserControlFranchise(),
+            
+        };
+
         public MainWindow()
         {
             InitializeComponent();

@@ -118,7 +118,7 @@ namespace BibliothèqueApplication
             {
                 jeuSelected = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuSelected"));
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("JeuxDeLaFranchiseSelected"));
+               
             }
         }
         public IList<TypeTri> ListTypeTriJeux => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());

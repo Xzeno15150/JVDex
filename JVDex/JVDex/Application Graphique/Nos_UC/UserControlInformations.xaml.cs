@@ -24,9 +24,28 @@ namespace Application_Graphique.Nos_UC
         public UserControlInformations()
         {
             InitializeComponent();
+            DataContext = manager.JeuSelected;
 
-            MainGrid.DataContext = manager;
         }
+
+
+
+
+
+
+        public string SourceImage
+        {
+            get { return (string)GetValue(SourceImageProperty); }
+            set { SetValue(SourceImageProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for SourceImage.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty SourceImageProperty =
+            DependencyProperty.Register("SourceImage", typeof(string), typeof(UserControlInformations));
+
+
+
+
 
 
     }

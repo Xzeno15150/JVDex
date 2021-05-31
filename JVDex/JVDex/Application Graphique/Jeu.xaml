@@ -44,7 +44,7 @@
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Resources/left-arrow.png" Margin="10"/>
 
         <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
-            <uc:UserControlInformations/>
+            <uc:UserControlInformations SourceImage="{Binding JeuSelected.Vignette}"/>
         </ContentControl>
 
         <ListBox Grid.Column="1" VerticalAlignment="Bottom" Background="#3D3C3C" HorizontalContentAlignment="Center" 
