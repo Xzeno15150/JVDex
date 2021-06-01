@@ -7,16 +7,16 @@ namespace Data
     {
         public static Manager Load()
         {
-            Manager app = new Manager();
+            StockApp app = new StockApp();
 
             Jeu test1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
             Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
-            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
-            Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
-            Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
-            Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
-            Jeu zeldaWindwaker4 = new Jeu("Windwaker4", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "../Resources/Jeux/Zelda/BOTW/vignette.png");
+            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            Jeu zeldaWindwaker4 = new Jeu("Windwaker4", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu test2 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
            
             Jeu mario = new Jeu("Super Mario", new Studio("Nintendo"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
@@ -24,15 +24,15 @@ namespace Data
             
             Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
-            Franchise fMario = new Franchise("Mario", "Resources/Jeux/Mario/background.jpg", "#DE1111");
-            Franchise fZelda = new Franchise("The Legend of Zelda","Resources/Jeux/Zelda/background.jpg", "#1BC213");
-            Franchise fDragonQuest = new Franchise("Dragon Quest", "Resources/Jeux/DragonQuest/background.jpg", "#2092DC");
-            Franchise fPokemon = new Franchise("Pokemon", "Resources/Jeux/Pokemon/background.jpg", "#FFFB00");
-            Franchise fProfLayton = new Franchise("Professeur Layton", "Resources/Jeux/Layton/background.jpg", "#896335");
+            Franchise fMario = new Franchise("Mario", "Franchises\\Mario\\background.jpg", "#DE1111");
+            Franchise fZelda = new Franchise("The Legend of Zelda", "Franchises\\Zelda\\background.jpg", "#1BC213");
+            Franchise fDragonQuest = new Franchise("Dragon Quest", "Franchises\\DragonQuest\\background.jpg", "#2092DC");
+            Franchise fPokemon = new Franchise("Pokemon", "Franchises\\Pokemon\\background.jpg", "#FFFB00");
+            Franchise fProfLayton = new Franchise("Professeur Layton", "Franchises\\Layton\\background.jpg", "#896335");
             Theorie thZelda1 = new Theorie("vie de Link", "link est un farfadet");
             Theorie thZelda2 = new Theorie("vie de Link2", "link est un farfadet");
-            Visuel V1 = new Visuel("../Resources/Jeux/Zelda/BOTW/vignette.png","Image du jeu");
-            Visuel V2 = new Visuel("../Resources/Jeux/Zelda/BOTW/vignette.png","Image du jeu 2");
+            Visuel V1 = new Visuel("Franchises\\Zelda\\Jeux\\BOTW\\vignette.png","Image du jeu");
+            Visuel V2 = new Visuel("Franchises\\Zelda\\Jeux\\BOTW\\vignette.png","Image du jeu 2");
 
             try
             {
@@ -90,7 +90,8 @@ namespace Data
             {
                 Console.WriteLine(e.Message);
             }
-            return app;
+
+            return new Manager(app);
         }
     }
 }

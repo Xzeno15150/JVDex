@@ -10,7 +10,7 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <StackPanel>
-                    <Image  Source="{Binding Vignette}" Height="150" HorizontalAlignment="Left"/>
+                    <Image  Source="{Binding Vignette, Converter={StaticResource string2ImageConverter}}" Height="150" HorizontalAlignment="Left"/>
                     <TextBlock Foreground="White" FontWeight="Bold" Text="{Binding Legende}"></TextBlock>
                 </StackPanel>
             </DataTemplate>

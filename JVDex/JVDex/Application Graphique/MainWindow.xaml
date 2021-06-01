@@ -10,7 +10,7 @@
         ResizeMode="NoResize">
 
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
-       
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="930"/>
@@ -48,8 +48,8 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
-           <DockPanel Margin="50,0">
+
+            <DockPanel Margin="50,0">
                 <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
                     <Image Source="Resources/icon_recherche.png"  />
                 </Button>
@@ -58,7 +58,7 @@
                          Text="{Binding JeuRecherche}" 
                          Name="TextBoxRecherche"
                          KeyDown="TextBoxRecherche_KeyDown"/>
-                
+
                 <TextBlock DockPanel.Dock="Left" Margin="25,0,0,0" VerticalAlignment="Center" Width="141" Height="50" Foreground="White" FontWeight="Bold" FontSize="30">
                     Trié par :
                 </TextBlock>
@@ -76,7 +76,7 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
             </DockPanel>
-            
+
             <Border Grid.Row="2" Margin="50,50,50,0" BorderBrush="#FFD4DAEA" BorderThickness="1"/>
             <StackPanel Grid.Row="2" Margin="50,70,50,0">
                 <Grid>
@@ -106,7 +106,7 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Grid.Column="0" Source="{Binding Vignette}"></Image>
+                                <Image Grid.Column="0" Source="{Binding Vignette, Converter={StaticResource string2ImageConverter}}"></Image>
                                 <TextBlock Grid.Column="1" Text="{Binding Informations.Nom}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Left"/>
                                 <TextBlock Grid.Column="2" Text="{Binding Informations.DateCreation, StringFormat='dd-MMM-yyyy'}" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" />
                                 <TextBlock Grid.Column="3" Text="{Binding Informations.Createur}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Right"/>
@@ -117,14 +117,9 @@
                 </ListBox>
             </StackPanel>
 
-        
-
-    </Grid> 
-        <!--<ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
-            <uc:UserControlMain/>
-        </ContentControl>-->
 
 
+        </Grid>
 
     </Grid>
 </Window>

@@ -7,57 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\bureau\Cours\CSharp\JVDex\JVDex\JVDexBin\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
-    <None Remove="Resources\fav-logo.png" />
-    <None Remove="Resources\heart-plein.png" />
-    <None Remove="Resources\heart-vide.png" />
-    <None Remove="Resources\icon_recherche.png" />
-    <None Remove="Resources\Jeux\DragonQuest\background.jpg" />
-    <None Remove="Resources\Jeux\Layton\background.jpg" />
-    <None Remove="Resources\Jeux\Mario\background.jpg" />
-    <None Remove="Resources\Jeux\Mario\fondMario.png" />
-    <None Remove="Resources\Jeux\Pokemon\background.jpg" />
-    <None Remove="Resources\Jeux\Pokemon\fondPokemon2.jpg" />
-    <None Remove="Resources\Jeux\Zelda\.jpg" />
-    <None Remove="Resources\Jeux\Zelda\background.jpg" />
-    <None Remove="Resources\Jeux\Zelda\BOTW\vignette.png" />
-    <None Remove="Resources\left-arrow.png" />
-    <None Remove="Resources\logotest.png" />
-    <None Remove="Resources\recherche.PNG" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="Resources\**" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BibliothèqueApplication\BibliothèqueApplication.csproj" />
     <ProjectReference Include="..\Data\Data.csproj" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <Resource Include="Resources\fav-logo.png" />
-    <Resource Include="Resources\heart-plein.png" />
-    <Resource Include="Resources\heart-vide.png" />
-    <Resource Include="Resources\icon_recherche.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Jeux\DragonQuest\background.jpg" />
-    <Resource Include="Resources\Jeux\Layton\background.jpg" />
-    <Resource Include="Resources\Jeux\Mario\background.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Jeux\Pokemon\background.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Jeux\Zelda\background.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Jeux\Zelda\BOTW\vignette.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\left-arrow.png" />
-    <Resource Include="Resources\logotest.png" />
-    <Resource Include="Resources\recherche.PNG">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
 </Project>
