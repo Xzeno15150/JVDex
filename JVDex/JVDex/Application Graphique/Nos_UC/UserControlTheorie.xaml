@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1080">
-    <ScrollViewer>
+    
         <Grid>
 
             <Grid.RowDefinitions>
@@ -19,13 +19,19 @@
                     <ColumnDefinition Width="400"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
 
                 <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="140">Menu Théories</TextBlock>
-                <ListBox ItemsSource="{Binding LesTheories}"
+            
+                <ListBox Grid.Row="1" ItemsSource="{Binding LesTheories}"
                  ScrollViewer.CanContentScroll="False"
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                  ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                         Background="Transparent">
+                         Background="Transparent"
+                         >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
 
@@ -34,12 +40,15 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-            </Grid>
-
-            <ListBox Grid.Row="1" Background="Transparent"
-                 ItemsSource="{Binding LesTheories}"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                 ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            
+        </Grid>
+        <ScrollViewer Grid.Row="1" >
+            <ListBox Background="Transparent"
+                ItemsSource="{Binding LesTheories}"
+                ScrollViewer.CanContentScroll="False"
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                 
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -49,8 +58,9 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-        </Grid>
-    </ScrollViewer>
+        </ScrollViewer>
+    </Grid>
+    
 
 
 </UserControl>
