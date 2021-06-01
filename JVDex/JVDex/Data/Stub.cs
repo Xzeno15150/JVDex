@@ -31,6 +31,8 @@ namespace Data
             Franchise fProfLayton = new Franchise("Professeur Layton", "Resources/Jeux/Layton/background.jpg", "#896335");
             Theorie thZelda1 = new Theorie("vie de Link", "link est un farfadet");
             Theorie thZelda2 = new Theorie("vie de Link2", "link est un farfadet");
+            Visuel V1 = new Visuel("../Resources/Jeux/Zelda/BOTW/vignette.png","Image du jeu");
+            Visuel V2 = new Visuel("../Resources/Jeux/Zelda/BOTW/vignette.png","Image du jeu 2");
 
             try
             {
@@ -60,6 +62,9 @@ namespace Data
 
                 zelda1.AjouterTheorie(thZelda1);
                 zelda1.AjouterTheorie(thZelda2);
+
+                zelda1.AjouterVisuel(V1);
+                zelda1.AjouterVisuel(V2);
 
 
                 test1.AjouterAuxFavoris();

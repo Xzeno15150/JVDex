@@ -6,10 +6,20 @@
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="300">
-    <Grid>
-        <StackPanel x:Name="SatckVisuel">
-            <Image  Source="{Binding Visuel.Vignette}" Height="150" HorizontalAlignment="Left"/>
-            <TextBlock Foreground="White" FontWeight="Bold" Text="{Binding Visuel.Legende}"></TextBlock>
-        </StackPanel>
-    </Grid>
+    <ListView ItemsSource="{Binding LesVisuels}" Background="Transparent" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <Image  Source="{Binding Vignette}" Height="150" HorizontalAlignment="Left"/>
+                    <TextBlock Foreground="White" FontWeight="Bold" Text="{Binding Legende}"></TextBlock>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <UniformGrid Columns="4"/>
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+    </ListView>
+
 </UserControl>

@@ -10,15 +10,14 @@
         ResizeMode="NoResize">
 
     <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="560"/>
-        </Grid.RowDefinitions>
+       
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
-        <Image Height="150" Width="150" Source="Resources\logotest.png" />
+        <Button>
+            <Image Height="150" Width="150" Source="Resources\logotest.png" />
+        </Button>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
 
         <ListBox Grid.Row="1" Background="Transparent" MaxHeight="560"

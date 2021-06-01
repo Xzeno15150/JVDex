@@ -20,12 +20,18 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlVisuel : UserControl
     {
-        public Manager manager = Stub.Load();
-    
+        public Manager mgr = (App.Current as App).LeManager;
+
         public UserControlVisuel()
         {
             InitializeComponent();
-            SatckVisuel.DataContext = manager.JeuSelected;
+            DataContext = mgr.JeuSelected;
         }
+
+
+
+       
+
+
     }
 }

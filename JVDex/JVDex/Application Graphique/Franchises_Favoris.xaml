@@ -42,21 +42,24 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListBox Grid.Column="1" Grid.Row="1" Background="Transparent"
+        <ListView Grid.Column="1" Grid.Row="1" Background="Transparent"
                  ItemsSource="{Binding JeuxDeLaFranchiseSelected}"
+                  ScrollViewer.CanContentScroll="False"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
                  SelectionChanged="ListBoxJeuxDeLaFranchise_SelectionChanged"
                  Name="ListBoxJeuxDeLaFranchise">
-            <ListBox.ItemsPanel>
+            <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel/>
+                    <UniformGrid Columns="4"/>
                 </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-            <ListBox.ItemTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
                 <DataTemplate>
                     <uc:UserControlJeu Nom="{Binding Informations.Nom}" Image="{Binding Vignette}" Margin="20"/>
                 </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            </ListView.ItemTemplate>
+        </ListView>
         <Button Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100"  Margin="0,0,10,0" Background="Transparent" BorderBrush="Transparent">
             <Image  Source="Resources\fav-logo.png"/>
         </Button>
