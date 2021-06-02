@@ -16,7 +16,7 @@
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
         <Button>
-            <Image Height="150" Width="150" Source="Resources\logotest.png" />
+            <Image Height="150" Width="150" Source="Icons\logotest.png" />
         </Button>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="80,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
 
@@ -41,7 +41,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Resources\fav-logo.png" Margin="0,0,10,0" />
+        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Icons\fav-logo.png" Margin="0,0,10,0" />
 
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
@@ -51,7 +51,7 @@
 
             <DockPanel Margin="50,0">
                 <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
-                    <Image Source="Resources/icon_recherche.png"  />
+                    <Image Source="Icons/icon_recherche.png"  />
                 </Button>
 
                 <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA"

@@ -9,22 +9,15 @@ namespace Application_Graphique.Converters
 {
     class String2ImageConverter : IValueConverter
     {
-        private static string imagesPath;
-
-        public String2ImageConverter()
-        {
-            imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\images\\");
-        }
+        public static string imagesPathToAssembly = "pack://application:,,,/Images;component/images/";
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            string imageName = value as string;
+            string imagePath = value as string;
 
-            if (string.IsNullOrWhiteSpace(imageName)) return null;
+            if (string.IsNullOrWhiteSpace(imagePath)) return null;
 
-            string imagePath = Path.Combine(imagesPath, imageName);
-
-            return new Uri(imagePath, UriKind.RelativeOrAbsolute);
+            return new Uri(imagesPathToAssembly + imagePath, UriKind.RelativeOrAbsolute);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

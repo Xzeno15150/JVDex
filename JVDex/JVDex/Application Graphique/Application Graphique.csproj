@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\bureau\Cours\CSharp\JVDex\JVDex\JVDexBin\</OutputPath>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,8 +19,42 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Icons\fav-logo.png" />
+    <None Remove="Icons\heart-plein.png" />
+    <None Remove="Icons\heart-vide.png" />
+    <None Remove="Icons\icon_recherche.png" />
+    <None Remove="Icons\left-arrow.png" />
+    <None Remove="Icons\logotest.png" />
+    <None Remove="Icons\recherche.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BibliothèqueApplication\BibliothèqueApplication.csproj" />
     <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\fav-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\heart-plein.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\heart-vide.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\icon_recherche.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\left-arrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\logotest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\recherche.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
