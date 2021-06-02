@@ -5,15 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
-             d:DesignHeight="550" d:DesignWidth="920">
+             d:DesignHeight="720" d:DesignWidth="930">
 
     <Grid Grid.Column="1" Grid.Row="1">
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="75"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="-280,0,0,0" Text="JVDex" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="60" FontStyle="Normal" TextDecorations="{x:Null}" FontFamily="Showcard Gothic"/>
 
-        <DockPanel Margin="50,0">
+        <DockPanel Grid.Row="1" Margin="50,0">
             <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
                 <Image Source="../Icons/icon_recherche.png"/>
             </Button>

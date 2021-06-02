@@ -1,5 +1,4 @@
 ﻿using BibliothèqueApplication;
-using Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,7 +19,7 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlJeu : UserControl
     {
-        public Manager manager = Stub.Load();
+        public Manager manager => (App.Current as App).LeManager;
         
         public UserControlJeu()
         {

@@ -5,8 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="720" d:DesignWidth="930">
     <Grid>
-            
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic" x:Name="Titre"
+                   Text="{Binding FranchiseSelected.Nom}"/>
+        <Image Grid.Column="1" Grid.Row="1" Source="{Binding FranchiseSelected.Background}"/>
     </Grid>
 </UserControl>

@@ -30,8 +30,6 @@ namespace Application_Graphique.Nos_UC
         {
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
             
-            
-
         }
 
         private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
