@@ -44,7 +44,9 @@
         </StackPanel>
 
 
-        <Button Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Margin="0,0,10,0" Background="Transparent" BorderBrush="Transparent">
+        <Button Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Margin="0,0,10,0" Background="Transparent" BorderBrush="Transparent"
+                Name="Button_Favoris"
+                Click="Button_Favoris_Click">
             <Image Source="Icons\fav-logo.png" />
         </Button>
 

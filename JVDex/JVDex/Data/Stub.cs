@@ -67,7 +67,7 @@ namespace Data
                 zelda1.AjouterVisuel(V2);
 
 
-                test1.AjouterAuxFavoris();
+                zelda1.AjouterAuxFavoris();
                 test2.AjouterAuxFavoris();
 
                 

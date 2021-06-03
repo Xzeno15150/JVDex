@@ -6,17 +6,18 @@
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              xmlns:uc="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
-             d:DesignHeight="720" d:DesignWidth="930">
+             d:DesignHeight="720" d:DesignWidth="930"
+             Name="root">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic" x:Name="Titre"
-                   Text="{Binding FranchiseSelected.Nom}"/>
-        <Image Grid.Row="1" Source="{Binding FranchiseSelected.Background}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic"
+                   Text="{Binding TitrePage, ElementName=root}"/>
+        <Image Grid.Row="1" Source="{Binding BackgroundImage, ElementName=root}"/>
         <ListView Grid.Row="1" Background="Transparent"
-                 ItemsSource="{Binding JeuxDeLaFranchiseSelected}"
+                 ItemsSource="{Binding ListeJeuxToShow, ElementName=root}"
                   ScrollViewer.CanContentScroll="False"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"

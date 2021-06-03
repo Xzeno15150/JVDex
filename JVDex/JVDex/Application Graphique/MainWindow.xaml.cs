@@ -38,7 +38,7 @@ namespace Application_Graphique
         {
             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
             mgr.JeuSelected = null;
-            nav.CurrentMainUserControl = new UserControlFranchise();
+            nav.CurrentMainUserControl = new UserControlFranchise(mgr.FranchiseSelected.Nom, mgr.FranchiseSelected.Background, mgr.JeuxDeLaFranchiseSelected);
         }
 
         private void Button_RetourMain_Click(object sender, RoutedEventArgs e)
@@ -52,6 +52,13 @@ namespace Application_Graphique
         {
             mgr.JeuSelected = null;
             nav.CurrentMainUserControl = new UserControlVueJeu();
+        }
+
+        private void Button_Favoris_Click(object sender, RoutedEventArgs e)
+        {
+            mgr.FranchiseSelected = null;
+            mgr.JeuSelected = null;
+            nav.CurrentMainUserControl = new UserControlFranchise("Favoris", null, (mgr.TousLesJeux.Where(jeu => jeu.IsFavoris == true) as List<BibliothèqueApplication.Jeu>));
         }
     }
 }
