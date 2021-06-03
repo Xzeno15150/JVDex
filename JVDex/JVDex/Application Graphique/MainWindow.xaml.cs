@@ -50,7 +50,7 @@ namespace Application_Graphique
 
         private void ClickSurJeu(object sender, SelectedCellsChangedEventArgs e)
         {
-            mgr.JeuSelected = null;
+            mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
             nav.CurrentMainUserControl = new UserControlVueJeu();
         }
 

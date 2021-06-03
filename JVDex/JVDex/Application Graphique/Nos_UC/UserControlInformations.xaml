@@ -30,8 +30,9 @@
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" Text="{Binding Informations.LesPlateformes}">Test</TextBlock>
 
             </StackPanel>
-
+        
         </Grid>
        <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="{Binding Informations.Synopsis}"/>
     </Grid>
+    
 </UserControl>

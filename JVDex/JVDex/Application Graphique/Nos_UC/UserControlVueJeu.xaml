@@ -21,7 +21,7 @@
             <ListBox.ItemsPanel >
                 <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True"/>
-                    <!--c'est pour faire un événement pour cliquer sur les boutons?-->
+                  
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
 
@@ -36,7 +36,7 @@
         </ListBox>
 
         <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
-            <uc:UserControlInformations Content="{Binding JeuSelected}"/>
+             <uc:UserControlInformations />
         </ContentControl>
 
     </Grid>
