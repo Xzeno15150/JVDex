@@ -19,6 +19,9 @@
     <Compile Update="Nos_UC\UserControlMusique.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Nos_UC\UserControlVueJeu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Jeu.xaml">
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Nos_UC\UserControlMusique.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Nos_UC\UserControlVueJeu.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

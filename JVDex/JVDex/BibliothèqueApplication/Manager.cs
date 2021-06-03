@@ -85,7 +85,7 @@ namespace BibliothèqueApplication
                 if(typeTriJeuSelected != value)
                 {
                     typeTriJeuSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux")); //ça j'ai pas compris
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
                 }
             }
         }

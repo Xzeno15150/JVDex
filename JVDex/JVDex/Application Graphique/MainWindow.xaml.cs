@@ -47,5 +47,11 @@ namespace Application_Graphique
             mgr.JeuSelected = null;
             nav.CurrentMainUserControl = new UserControlMain();
         }
+
+        private void ClickSurJeu(object sender, SelectedCellsChangedEventArgs e)
+        {
+            mgr.JeuSelected = null;
+            nav.CurrentMainUserControl = new UserControlVueJeu();
+        }
     }
 }

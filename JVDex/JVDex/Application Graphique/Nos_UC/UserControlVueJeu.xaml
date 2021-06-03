@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Application_Graphique.Nos_UC.UserControlVueJeu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
+             xmlns:uc ="clr-namespace:Application_Graphique.Nos_UC"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="930">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Column="1" VerticalAlignment="Top" Background="#3D3C3C" HorizontalContentAlignment="Center" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListBoxNavigation"
+                 SelectionChanged="ListBoxNavigation_SelectionChanged"
+                 SelectedIndex="0">
+
+            <ListBox.ItemsPanel >
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True"/>
+                    <!--c'est pour faire un événement pour cliquer sur les boutons?-->
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCinfoNav"  >Informations</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCvisuelNav">Visuels</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCmusiqueNav">Musiques</ListBoxItem>
+            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" 
+                         Foreground="White" FontWeight="Bold" x:Name="UCtheorieNav">Théories</ListBoxItem>
+        </ListBox>
+
+        <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
+            <uc:UserControlInformations Content="{Binding JeuSelected}"/>
+        </ContentControl>
+
+    </Grid>
+</UserControl>
