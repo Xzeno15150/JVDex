@@ -24,19 +24,28 @@ namespace Application_Graphique
     public partial class MainWindow : Window
     {
         public Manager mgr => (App.Current as App).LeManager;
+        public Navigator nav => (App.Current as App).LeNavigateur;
 
         public MainWindow()
         {
             InitializeComponent();
-            
-            DataContext = mgr;
+            ListBoxFranchises.DataContext = mgr;
+            ContentControl_NavigationPage.DataContext = nav;
+            nav.CurrentMainUserControl = new UserControlMain();
         }
 
         private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
             mgr.JeuSelected = null;
-            ContentControl_NavigationPage.Content = new UserControlFranchise();
+            nav.CurrentMainUserControl = new UserControlFranchise();
+        }
+
+        private void Button_RetourMain_Click(object sender, RoutedEventArgs e)
+        {
+            mgr.FranchiseSelected = null;
+            mgr.JeuSelected = null;
+            nav.CurrentMainUserControl = new UserControlMain();
         }
     }
 }

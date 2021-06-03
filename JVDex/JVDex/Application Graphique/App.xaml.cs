@@ -1,4 +1,5 @@
-﻿using BibliothèqueApplication;
+﻿using Application_Graphique.Nos_UC;
+using BibliothèqueApplication;
 using Data;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Application_Graphique
 {
@@ -16,5 +18,6 @@ namespace Application_Graphique
     public partial class App : Application
     {
         public Manager LeManager { get; set; } = Stub.Load();
+        public Navigator LeNavigateur { get; set; } = new Navigator();
     }
 }

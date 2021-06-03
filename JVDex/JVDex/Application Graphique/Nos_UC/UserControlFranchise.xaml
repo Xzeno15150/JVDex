@@ -4,11 +4,34 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
+             xmlns:uc="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="930">
     <Grid>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic" x:Name="Titre"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic" x:Name="Titre"
                    Text="{Binding FranchiseSelected.Nom}"/>
-        <Image Grid.Column="1" Grid.Row="1" Source="{Binding FranchiseSelected.Background}"/>
+        <Image Grid.Row="1" Source="{Binding FranchiseSelected.Background}"/>
+        <ListView Grid.Row="1" Background="Transparent"
+                 ItemsSource="{Binding JeuxDeLaFranchiseSelected}"
+                  ScrollViewer.CanContentScroll="False"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                 SelectionChanged="ListBoxJeuxDeLaFranchise_SelectionChanged"
+                 Name="ListBoxJeuxDeLaFranchise">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="4"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <uc:UserControlJeu Nom="{Binding Informations.Nom}" Image="{Binding Vignette}" Margin="20"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,9 +19,17 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlFranchise : UserControl
     {
+        public Manager mgr => (App.Current as App).LeManager;
+        public Navigator nav => (App.Current as App).LeNavigateur;
         public UserControlFranchise()
         {
             InitializeComponent();
+            DataContext = mgr;
+        }
+
+        private void ListBoxJeuxDeLaFranchise_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
         }
     }
 }

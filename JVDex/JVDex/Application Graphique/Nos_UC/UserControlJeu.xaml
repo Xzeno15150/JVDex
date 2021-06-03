@@ -9,6 +9,6 @@
              Height="205" Width="180">
     <StackPanel Background="#3D3C3C" >
         <TextBlock Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" Text="{Binding Nom, ElementName=root}" Width="180"/>
-        <Image Margin="10" Source="{Binding Image, ElementName=root, Converter={StaticResource string2ImageConverter}}" HorizontalAlignment="Center" MaxWidth="160"/> 
+        <Image Margin="10" Source="{Binding Image, ElementName=root}" HorizontalAlignment="Center" MaxWidth="160"/> 
     </StackPanel>
 </UserControl>

@@ -20,6 +20,7 @@ namespace Application_Graphique.Nos_UC
     public partial class UserControlMain : UserControl
     {
         public Manager mgr => (App.Current as App).LeManager;
+        public Navigator nav => (App.Current as App).LeNavigateur;
         public UserControlMain()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace Application_Graphique.Nos_UC
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
-            
+            nav.CurrentMainUserControl = new UserControlJeu();
         }
 
         private void ButtonRecherche_Click(object sender, RoutedEventArgs e)

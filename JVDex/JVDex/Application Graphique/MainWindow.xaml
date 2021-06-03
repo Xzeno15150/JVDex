@@ -9,14 +9,14 @@
         Title="JVDex" Height="720" Width="1080"
         ResizeMode="NoResize">
 
-    <Grid x:Name="MainGrid" Background="#3D3C3C" HorizontalAlignment="Left" Width="1080">
+    <Grid x:Name="MainGrid" Background="#3D3C3C">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="930"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <Button Background="Transparent">
+            <Button Name="Button_RetourMain" Background="Transparent" Click="Button_RetourMain_Click">
                 <Image Source="Icons\logotest.png" />
             </Button>
 
@@ -42,91 +42,13 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-        
-
-        <Image Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Source="Icons\fav-logo.png" Margin="0,0,10,0" />
-
-        <!--<Grid Grid.Column="1" Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <DockPanel Margin="50,0">
-                <Button Width="45" Height="45" Margin="10" Click="ButtonRecherche_Click">
-                    <Image Source="Icons/icon_recherche.png"  />
-                </Button>
-
-                <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA"
-                         Text="{Binding JeuRecherche}" 
-                         Name="TextBoxRecherche"
-                         KeyDown="TextBoxRecherche_KeyDown"/>
-
-                <TextBlock DockPanel.Dock="Left" Margin="25,0,0,0" VerticalAlignment="Center" Width="141" Height="50" Foreground="White" FontWeight="Bold" FontSize="30">
-                    Trié par :
-                </TextBlock>
-                <TextBlock DockPanel.Dock="Left" Text="{Binding JeuRecherche}"/>
-
-                <ComboBox DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#3D3C3C"
-                          SelectedIndex="0"
-                          Name="ComboBoxTri"
-                          ItemsSource="{Binding ListTypeTriJeu}"
-                          SelectionChanged="ComboBoxTri_SelectionChanged">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding}" FontWeight="Bold"/>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                </ComboBox>
-            </DockPanel>
-
-            <Border Grid.Row="2" Margin="50,50,50,0" BorderBrush="#FFD4DAEA" BorderThickness="1"/>
-            <StackPanel Grid.Row="2" Margin="50,70,50,0">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="380"/>
-                        <ColumnDefinition Width="220"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="133" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Noms</TextBlock>
-                    <TextBlock Grid.Column="1" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="74" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Date</TextBlock>
-                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="124" FontSize="30" Foreground="White" FontWeight="Bold" TextAlignment="Center">Créateur</TextBlock>
-                </Grid>
-
-                <ListBox Background="Transparent" BorderThickness="0" Name="ListBox_ListeJeu" MaxHeight="360"
-                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                         ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                         ScrollViewer.CanContentScroll="False"
-                         SelectionChanged="ListBoxListeJeux_SelectionChanged" 
-                         ItemsSource="{Binding TousLesJeux}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="30"/>
-                                    <ColumnDefinition Width="350"/>
-                                    <ColumnDefinition Width="220"/>
-                                    <ColumnDefinition />
-                                </Grid.ColumnDefinitions>
-
-                                <Image Grid.Column="0" Source="{Binding Vignette, Converter={StaticResource string2ImageConverter}}"></Image>
-                                <TextBlock Grid.Column="1" Text="{Binding Informations.Nom}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Left"/>
-                                <TextBlock Grid.Column="2" Text="{Binding Informations.DateCreation, StringFormat='dd-MMM-yyyy'}" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" />
-                                <TextBlock Grid.Column="3" Text="{Binding Informations.Createur}" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" DockPanel.Dock="Right"/>
-
-                            </Grid>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </StackPanel>
 
 
+        <Button Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top"  Height="100"  Width="100" Margin="0,0,10,0" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="Icons\fav-logo.png" />
+        </Button>
 
-        </Grid>-->
-
-        <ContentControl Grid.Column="1" x:Name="ContentControl_NavigationPage">
-            <uc:UserControlMain/>
-        </ContentControl>
+        <ContentControl Grid.Column="1" x:Name="ContentControl_NavigationPage" Content="{Binding CurrentMainUserControl}"/>
 
     </Grid>
 </Window>

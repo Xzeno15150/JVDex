@@ -106,7 +106,6 @@ namespace BibliothèqueApplication
                     jeuRecherche = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
                 }
-
             }
         }
         public IList<TypeTri> ListTypeTriJeu => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());

@@ -7,9 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Franchises_Favoris.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Jeu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,9 +21,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Franchises_Favoris.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Jeu.xaml">
       <SubType>Designer</SubType>
     </Page>

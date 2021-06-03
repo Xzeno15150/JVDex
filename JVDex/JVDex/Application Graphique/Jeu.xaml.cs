@@ -40,8 +40,6 @@ namespace Application_Graphique
         {
             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
             mgr.JeuSelected = null;
-            new Franchises_Favoris().Show();
-            this.Close();
         }
 
         //pour pouvoir faire une ListBoxItems cliquable
