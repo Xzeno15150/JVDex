@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application Graphique", "Application Graphique\Application Graphique.csproj", "{B87C9077-9223-4477-BCD3-30A944929327}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E2E1FEB0-AE48-4028-9B01-1A8699DEE3B8} = {E2E1FEB0-AE48-4028-9B01-1A8699DEE3B8}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliothèqueApplication", "BibliothèqueApplication\BibliothèqueApplication.csproj", "{3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6}"
 EndProject
@@ -14,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", 
 		{3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6} = {3DD24DD0-815C-48DC-8E4D-FEB5987F5FC6}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Images", "Images\Images.csproj", "{E2E1FEB0-AE48-4028-9B01-1A8699DEE3B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Images", "Images\Images.csproj", "{E2E1FEB0-AE48-4028-9B01-1A8699DEE3B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

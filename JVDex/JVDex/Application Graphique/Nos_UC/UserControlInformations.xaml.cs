@@ -28,11 +28,6 @@ namespace Application_Graphique.Nos_UC
 
         }
 
-
-
-
-
-
         public string SourceImage
         {
             get { return (string)GetValue(SourceImageProperty); }

@@ -52,7 +52,15 @@ namespace Application_Graphique
         {
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
             nav.CurrentMainUserControl = new UserControlVueJeu();
+            //NavigateTo(VueJeu);
         }
+
+         /*private void ClickSurJeuFranchise(object sender, SelectedCellsChangedEventArgs e)
+         {
+             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
+             mgr.JeuSelected = (sender as ListView).SelectedItem as BibliothèqueApplication.Jeu;
+             nav.CurrentMainUserControl = new UserControlVueJeu();
+         }*/
 
         private void Button_Favoris_Click(object sender, RoutedEventArgs e)
         {

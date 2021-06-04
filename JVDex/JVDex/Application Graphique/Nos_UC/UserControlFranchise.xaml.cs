@@ -38,6 +38,11 @@ namespace Application_Graphique.Nos_UC
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
         }
 
+        private void ClickSurJeuFranchise(object sender, SelectedCellsChangedEventArgs e)
+        {
+            mgr.JeuSelected = (sender as ListView).SelectedItems as BibliothèqueApplication.Jeu; 
+            nav.CurrentMainUserControl = new UserControlVueJeu();
+        } // ça ne fonctionne pas!!!!!
 
 
         public string TitrePage
