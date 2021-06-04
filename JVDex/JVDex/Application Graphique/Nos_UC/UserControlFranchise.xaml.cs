@@ -21,9 +21,35 @@ namespace Application_Graphique.Nos_UC
     {
         public Manager mgr => (App.Current as App).LeManager;
         public Navigator nav => (App.Current as App).LeNavigateur;
+        private string titrePage;
+
+        public string TitrePage
+        {
+            get { return titrePage; }
+            set { titrePage = value; }
+        }
+
+        private string backgroundImage;
+
+        public string BackgroundImage
+        {
+            get { return backgroundImage; }
+            set { backgroundImage = value; }
+        }
+
+        private IList<BibliothèqueApplication.Jeu> listeJeuxToShow;
+
+        public IList<BibliothèqueApplication.Jeu> ListeJeuxToShow
+        {
+            get { return listeJeuxToShow; }
+            set { listeJeuxToShow = value; }
+        }
+
+
         public UserControlFranchise()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         public UserControlFranchise(string titre, string bg, IList<BibliothèqueApplication.Jeu> lj) : this()
@@ -36,48 +62,8 @@ namespace Application_Graphique.Nos_UC
         private void ListBoxJeuxDeLaFranchise_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
+            mgr.FranchiseSelected = null;
+            nav.NavigateTo("Jeu");
         }
-
-        private void ClickSurJeuFranchise(object sender, SelectedCellsChangedEventArgs e)
-        {
-            mgr.JeuSelected = (sender as ListView).SelectedItems as BibliothèqueApplication.Jeu; 
-            nav.CurrentMainUserControl = new UserControlVueJeu();
-        } // ça ne fonctionne pas!!!!!
-
-
-        public string TitrePage
-        {
-            get { return (string)GetValue(TitrePageProperty); }
-            set { SetValue(TitrePageProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for Titre.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty TitrePageProperty =
-            DependencyProperty.Register("Titre", typeof(string), typeof(UserControlFranchise));
-
-
-
-        public string BackgroundImage
-        {
-            get { return (string)GetValue(BackgroundImageProperty); }
-            set { SetValue(BackgroundImageProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for BackgroundImage.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty BackgroundImageProperty =
-            DependencyProperty.Register("BackgroundImage", typeof(string), typeof(UserControlFranchise));
-
-
-
-        public IList<BibliothèqueApplication.Jeu> ListeJeuxToShow
-        {
-            get { return (IList<BibliothèqueApplication.Jeu>)GetValue(ListeJeuxToShowProperty); }
-            set { SetValue(ListeJeuxToShowProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for ListeJeuxToShow.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty ListeJeuxToShowProperty =
-            DependencyProperty.Register("ListeJeuxToShow", typeof(IList<BibliothèqueApplication.Jeu>), typeof(UserControlFranchise));
-
     }
 }

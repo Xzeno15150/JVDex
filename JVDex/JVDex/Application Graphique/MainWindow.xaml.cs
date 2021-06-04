@@ -31,42 +31,28 @@ namespace Application_Graphique
             InitializeComponent();
             ListBoxFranchises.DataContext = mgr;
             ContentControl_NavigationPage.DataContext = nav;
-            nav.CurrentMainUserControl = new UserControlMain();
+            nav.NavigateTo("Main");
         }
 
         private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
             mgr.JeuSelected = null;
-            nav.CurrentMainUserControl = new UserControlFranchise(mgr.FranchiseSelected.Nom, mgr.FranchiseSelected.Background, mgr.JeuxDeLaFranchiseSelected);
+            nav.NavigateTo("Franchise");
         }
 
         private void Button_RetourMain_Click(object sender, RoutedEventArgs e)
         {
             mgr.FranchiseSelected = null;
             mgr.JeuSelected = null;
-            nav.CurrentMainUserControl = new UserControlMain();
+            nav.NavigateTo("Main");
         }
-
-        private void ClickSurJeu(object sender, SelectedCellsChangedEventArgs e)
-        {
-            mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
-            nav.CurrentMainUserControl = new UserControlVueJeu();
-            //NavigateTo(VueJeu);
-        }
-
-         /*private void ClickSurJeuFranchise(object sender, SelectedCellsChangedEventArgs e)
-         {
-             mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
-             mgr.JeuSelected = (sender as ListView).SelectedItem as BibliothèqueApplication.Jeu;
-             nav.CurrentMainUserControl = new UserControlVueJeu();
-         }*/
 
         private void Button_Favoris_Click(object sender, RoutedEventArgs e)
         {
             mgr.FranchiseSelected = null;
             mgr.JeuSelected = null;
-            nav.CurrentMainUserControl = new UserControlFranchise("Favoris", null, (mgr.TousLesJeux.Where(jeu => jeu.IsFavoris == true) as List<BibliothèqueApplication.Jeu>));
+            nav.NavigateTo("Favoris");
         }
     }
 }

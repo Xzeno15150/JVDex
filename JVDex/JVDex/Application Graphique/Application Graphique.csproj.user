@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Jeu.xaml.cs">
+    <Compile Update="Nos_UC\UserControlFranchise.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Nos_UC\UserControlFranchise.xaml.cs">
+    <Compile Update="Nos_UC\UserControlJeu4ListeBoxMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Nos_UC\UserControlMain.xaml.cs">
@@ -24,13 +24,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Jeu.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Nos_UC\UserControlFranchise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Nos_UC\UserControlJeu4ListeBoxMain.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Nos_UC\UserControlMain.xaml">

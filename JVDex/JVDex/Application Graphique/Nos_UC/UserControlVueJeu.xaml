@@ -13,7 +13,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <ListBox Grid.Column="1" VerticalAlignment="Top" Background="#3D3C3C" HorizontalContentAlignment="Center" 
+        <ListBox Grid.Column="1" Background="Transparent" HorizontalAlignment="Left" BorderBrush="Transparent" VerticalAlignment="Center" 
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" x:Name="ListBoxNavigation"
                  SelectionChanged="ListBoxNavigation_SelectionChanged"
                  SelectedIndex="0">
@@ -25,19 +25,17 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
 
-            <ListBoxItem Width="Auto" Padding="20,0" Margin="40,0,20,0" Background="MidnightBlue" FontSize="30" 
+            <ListBoxItem Width="Auto" Padding="20,0" Margin="10,0" Background="MidnightBlue" FontSize="30" 
                          Foreground="White" FontWeight="Bold" x:Name="UCinfoNav"  >Informations</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="20,0" FontSize="30" 
+            <ListBoxItem Width="Auto" Padding="20,0" Background="DarkCyan" Margin="10,0" FontSize="30" 
                          Foreground="White" FontWeight="Bold" x:Name="UCvisuelNav">Visuels</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="20,0" FontSize="30" 
+            <ListBoxItem Width="Auto" Padding="20,0" Background="SeaGreen"  Margin="10,0" FontSize="30" 
                          Foreground="White" FontWeight="Bold" x:Name="UCmusiqueNav">Musiques</ListBoxItem>
-            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="20,0,40,0" FontSize="30" 
+            <ListBoxItem Width="Auto" Padding="20,0" Background="Crimson"  Margin="10,0" FontSize="30" 
                          Foreground="White" FontWeight="Bold" x:Name="UCtheorieNav">Théories</ListBoxItem>
         </ListBox>
 
-        <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav">
-             <uc:UserControlInformations />
-        </ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="1" x:Name="ContentControlNav" Content="{Binding CurrentTabJeu}"/>
 
     </Grid>
 </UserControl>

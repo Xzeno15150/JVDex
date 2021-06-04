@@ -1,13 +1,23 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace BibliothèqueApplication
 {
-    public class Jeu : IEquatable<Jeu>
+    public class Jeu : IEquatable<Jeu>, INotifyPropertyChanged
     {
         public string Vignette { get; set; }
+
+        public string LogoFavoris
+        {
+            get
+            {
+                if (IsFavoris) return "..\\Icons\\heart-plein.png";
+                return "..\\Icons\\heart-vide.png";
+            }
+        }
         public ISet<Visuel> LesVisuels { get; private set;}
         public ISet<string> LesMusiques { get; private set; }
         public ISet<Theorie> LesTheories { get; private set; }
@@ -38,12 +48,15 @@ namespace BibliothèqueApplication
             Vignette = image;
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         /// <summary>
         /// permet de mettre un jeu en favoris
         /// </summary>
         public void AjouterAuxFavoris()
         {
             IsFavoris = true;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("LogoFavoris"));
         }
 
         /// <summary>
@@ -52,6 +65,7 @@ namespace BibliothèqueApplication
         public void EnleverDesFavoris()
         {
             IsFavoris = false;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("LogoFavoris"));
         }
 
         /// <summary>

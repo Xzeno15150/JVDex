@@ -6,18 +6,17 @@
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              xmlns:uc="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
-             d:DesignHeight="720" d:DesignWidth="930"
-             Name="root">
+             d:DesignHeight="720" d:DesignWidth="930">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" FontStyle="Normal" FontFamily="Showcard Gothic"
-                   Text="{Binding TitrePage, ElementName=root}"/>
-        <Image Grid.Row="1" Source="{Binding BackgroundImage, ElementName=root}"/>
+                   Text="{Binding TitrePage}"/>
+        <Image Grid.Row="1" Source="{Binding BackgroundImage}"/>
         <ListView Grid.Row="1" Background="Transparent"
-                 ItemsSource="{Binding ListeJeuxToShow, ElementName=root}"
+                 ItemsSource="{Binding ListeJeuxToShow}"
                   ScrollViewer.CanContentScroll="False"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -30,7 +29,7 @@
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <uc:UserControlJeu Nom="{Binding Informations.Nom}" Image="{Binding Vignette}" Margin="20"/>
+                    <uc:UserControlJeu Nom="{Binding Informations.Nom}" Image="{Binding Vignette}" LogoFavori="{Binding LogoFavoris}" Margin="20"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

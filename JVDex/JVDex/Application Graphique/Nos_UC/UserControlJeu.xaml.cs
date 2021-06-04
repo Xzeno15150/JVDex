@@ -24,7 +24,13 @@ namespace Application_Graphique.Nos_UC
         public UserControlJeu()
         {
             InitializeComponent();
-            
+        }
+        private void Button_JeuFavori_Click(object sender, RoutedEventArgs e)
+        {
+            Jeu j = (DataContext as Jeu);
+            if (!j.IsFavoris) j.AjouterAuxFavoris();
+            else j.EnleverDesFavoris();
+
         }
         public string Image
         {
@@ -45,6 +51,18 @@ namespace Application_Graphique.Nos_UC
         // Using a DependencyProperty as the backing store for Nom.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NomProperty =
             DependencyProperty.Register("Nom", typeof(string), typeof(UserControlJeu));
+
+
+
+        public string LogoFavori
+        {
+            get { return (string)GetValue(LogoFavoriProperty); }
+            set { SetValue(LogoFavoriProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for LogoFavori.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty LogoFavoriProperty =
+            DependencyProperty.Register("LogoFavori", typeof(string), typeof(UserControlJeu));
 
 
     }

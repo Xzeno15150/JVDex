@@ -20,7 +20,7 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlInformations : UserControl
     {
-        public Manager manager = (App.Current as App).LeManager; //instance de l'application
+        public Manager manager => (App.Current as App).LeManager; //instance de l'application
         public UserControlInformations()
         {
             InitializeComponent();
@@ -37,12 +37,6 @@ namespace Application_Graphique.Nos_UC
         // Using a DependencyProperty as the backing store for SourceImage.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SourceImageProperty =
             DependencyProperty.Register("SourceImage", typeof(string), typeof(UserControlInformations));
-
-
-
-
-
-
     }
     
 }

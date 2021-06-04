@@ -25,12 +25,12 @@ namespace Application_Graphique.Nos_UC
         {
             InitializeComponent();
             DataContext = mgr;
-
         }
         private void ListBoxListeJeux_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mgr.JeuSelected = (sender as ListBox).SelectedItem as BibliothèqueApplication.Jeu;
-            nav.CurrentMainUserControl = new UserControlJeu();
+            mgr.FranchiseSelected = null;
+            nav.NavigateTo("Jeu");
         }
 
         private void ButtonRecherche_Click(object sender, RoutedEventArgs e)
@@ -51,5 +51,9 @@ namespace Application_Graphique.Nos_UC
             mgr.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
         }
 
+        private void Button_JeuFavori_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
