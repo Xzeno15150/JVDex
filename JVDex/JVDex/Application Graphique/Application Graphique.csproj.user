@@ -10,9 +10,6 @@
     <Compile Update="Nos_UC\UserControlFranchise.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Nos_UC\UserControlJeu4ListeBoxMain.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Nos_UC\UserControlMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,9 +25,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Nos_UC\UserControlFranchise.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Nos_UC\UserControlJeu4ListeBoxMain.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Nos_UC\UserControlMain.xaml">
