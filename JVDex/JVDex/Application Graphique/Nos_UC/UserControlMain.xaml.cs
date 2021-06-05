@@ -50,10 +50,4 @@ namespace Application_Graphique.Nos_UC
         {
             mgr.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
         }
-
-        private void Button_JeuFavori_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-    }
 }
