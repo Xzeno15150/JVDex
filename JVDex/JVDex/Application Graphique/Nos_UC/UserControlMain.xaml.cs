@@ -50,4 +50,5 @@ namespace Application_Graphique.Nos_UC
         {
             mgr.TypeTriJeuSelected = (TypeTri)ComboBoxTri.SelectedItem;
         }
+    }
 }

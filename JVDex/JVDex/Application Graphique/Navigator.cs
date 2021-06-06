@@ -22,6 +22,7 @@ namespace Application_Graphique
             ["Favoris"] = () => new UserControlFranchise("Favoris", null, mgr.TousLesJeux.Where(jeu => jeu.IsFavoris == true).ToList()),
             ["Jeu"] = () => new UserControlVueJeu(),
             ["Main"] = () => new UserControlMain(),
+            
         };
 
         static Dictionary<string, Func<UserControl>> ucNavigationTabJeu = new Dictionary<string, Func<UserControl>>()
@@ -30,6 +31,7 @@ namespace Application_Graphique
             ["Visuels"] = () => new UserControlVisuel(),
             ["Musiques"] = () => new UserControlMusique(),
             ["Théories"] = () => new UserControlTheorie(),
+            
         };
 
         public void NavigateTo(string nomUC)
