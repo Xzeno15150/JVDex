@@ -2,9 +2,10 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Application_Graphique"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml"
+             xmlns:conv="clr-namespace:Application_Graphique.Converters">
     <Application.Resources>
-
+        <conv:String2ImageConverter x:Key="string2Image"/>
     </Application.Resources>
 
 </Application>
