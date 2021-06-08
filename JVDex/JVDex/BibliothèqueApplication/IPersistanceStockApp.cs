@@ -6,8 +6,8 @@ namespace BibliothèqueApplication
 {
     public interface IPersistanceStockApp
     {
-        (IEnumerable<Jeu> jeux, IEnumerable<Franchise> franchise) ChargeDonnees();
+        (IList<Jeu> jeux, Dictionary<Franchise,List<Jeu>> franchises) ChargeDonnees();
 
-        void SauvegardeDonnees(IEnumerable<Jeu> jeux, IEnumerable<Franchise> franchise);
+        void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises);
     }
 }

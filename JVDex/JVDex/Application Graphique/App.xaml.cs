@@ -17,7 +17,7 @@ namespace Application_Graphique
     /// </summary>
     public partial class App : Application
     {
-        public Manager LeManager { get; set; } = Stub.Load();
+       public Manager LeManager { get; set; } = new Manager(new StockApp ( new Stub()));
         public Navigator LeNavigateur { get; set; } = new Navigator();
     }
 }

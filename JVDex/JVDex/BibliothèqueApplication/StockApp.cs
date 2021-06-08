@@ -25,19 +25,13 @@ namespace BibliothèqueApplication
         public void ChargeDonnees()
         {
             var donnees = Persistance.ChargeDonnees(); // dépendance
-            foreach(var j in donnees.jeux)
-            {
-                TousLesJeux.Add(j);
-            }
-            foreach(var f in donnees.franchise)
-            {
-                //ToutesLesFranchises.Add(f,);  voir comment faire le add
-            }
+            TousLesJeux = donnees.jeux;
+            ToutesLesFranchises = donnees.franchises;
         }
 
         public void SauvegardeDonnees()
         {
-           // Persistance.SauvegardeDonnees(jeux, franchise); erreur aussi
+           
         }
 
 

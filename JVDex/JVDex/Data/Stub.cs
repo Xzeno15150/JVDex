@@ -1,29 +1,38 @@
 ﻿using BibliothèqueApplication;
 using System;
+using System.Collections.Generic;
 
 namespace Data
 {
-    public static class Stub 
+    public class Stub : IPersistanceStockApp 
     {
         public static Manager Load()
         {
             StockApp app = new StockApp();
 
+           
+
+            return new Manager(app);
+        }
+
+        public (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees()
+        {
+            
             Jeu test1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
             Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
-           // Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            // Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", @"pack://application:,,,Images;Compnent/images/Franchise/Zelda/Jeux/BOTW/vignette.png");
             Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker4 = new Jeu("Windwaker4", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu test2 = new Jeu("Test2", new Createur("Victor", "Gaillard", new DateTime(2020, 10, 14)), new DateTime(2020, 05, 04), 7, "Ceci est un test de synopsis 2", "");
-           
-            Jeu mario = new Jeu("Super Mario", new Studio("Nintendo"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+
+            Jeu mario = new Jeu("Super Mario", new Studio("Nintendo"), new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
             Jeu new_mario = new Jeu("New Super Mario Bros", new Studio("Nintendo"), new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
-            
-            Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
+
+            Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"), new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
             //Franchise fMario = new Franchise("Mario", "\\Images;Component\\images\\Franchises\\Mario\\background.jpg", "#DE1111");
             Franchise fMario = new Franchise("Mario", @"pack://application:,,,/Images;Componment/images/Franchises/Mario/background.jpg", "#DE1111");
@@ -41,14 +50,14 @@ namespace Data
                 test1.Informations.AjouterGenre(Genres.FPS);
                 test1.Informations.AjouterGenre(Genres.RPG);
                 test1.Informations.AjouterPlateforme(Plateformes.TroisDS);
-                test1.Informations.AjouterPlateforme(Plateformes.PS4); 
-                
+                test1.Informations.AjouterPlateforme(Plateformes.PS4);
+
                 zelda1.Informations.AjouterGenre(Genres.Plateforme);
                 zelda1.Informations.AjouterGenre(Genres.Reflexe);
                 zelda1.Informations.AjouterGenre(Genres.RPG);
                 zelda1.Informations.AjouterPlateforme(Plateformes.Gamecube);
-                zelda1.Informations.AjouterPlateforme(Plateformes.DS); 
-                
+                zelda1.Informations.AjouterPlateforme(Plateformes.DS);
+
                 test2.Informations.AjouterGenre(Genres.Simulation);
                 test2.Informations.AjouterGenre(Genres.RPG);
                 test2.Informations.AjouterPlateforme(Plateformes.PC);
@@ -72,18 +81,8 @@ namespace Data
                 zelda1.AjouterAuxFavoris();
                 test2.AjouterAuxFavoris();
 
+
                 
-                app.AjouterJeu(zelda1, fZelda);
-                app.AjouterJeu(zeldaWindwaker, fZelda);
-                app.AjouterJeu(zeldaWindwaker2, fZelda);
-                app.AjouterJeu(zeldaWindwaker3, fZelda);
-                app.AjouterJeu(zeldaWindwaker4, fZelda);
-                app.AjouterJeu(test2, fPokemon);
-                app.AjouterJeu(mario, fMario);
-                app.AjouterJeu(new_mario, fMario);
-                app.AjouterJeu(dragonQuest, fDragonQuest);
-                app.AjouterJeu(test1, fProfLayton);
-                app.AjouterJeu(test1_bis, fDragonQuest);
 
                 //app.AjouterFranchise(fTest);
 
@@ -92,8 +91,59 @@ namespace Data
             {
                 Console.WriteLine(e.Message);
             }
+            List<Jeu> ListeJeux = new List<Jeu>() 
+            { 
+                zelda1,
+                zeldaWindwaker,
+                zeldaWindwaker2,
+                zeldaWindwaker3,
+                zeldaWindwaker4,
+                test2,
+                mario,
+                new_mario,
+                dragonQuest,
+                test1,
+                
+            };
+            Dictionary<Franchise, List<Jeu>> DicoFranchises = new Dictionary<Franchise, List<Jeu>>()
+            {
+                [fZelda] = new List<Jeu>()
+                {
+                    zelda1,
+                    zeldaWindwaker,
+                    zeldaWindwaker2,
+                    zeldaWindwaker3,
+                    zeldaWindwaker4,
+                },
+                [fMario] = new List<Jeu>()
+                {
 
-            return new Manager(app);
+                    mario,
+                    new_mario,
+
+                },
+                [fPokemon] = new List<Jeu>()
+                {
+                    test2,
+                },
+
+                [fDragonQuest] = new List<Jeu>()
+                {
+                    dragonQuest,
+                },
+                [fProfLayton] = new List<Jeu>()
+                {
+                    test1,
+
+                },
+
+            };
+            return (ListeJeux, DicoFranchises);
+        }
+
+        public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
+        {
+            throw new NotImplementedException();
         }
     }
 }
