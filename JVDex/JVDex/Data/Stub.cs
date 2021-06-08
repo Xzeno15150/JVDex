@@ -12,7 +12,8 @@ namespace Data
             Jeu test1 = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
             Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
-            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+           // Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
+            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", @"pack://application:,,,Images;Compnent/images/Franchise/Zelda/Jeux/BOTW/vignette.png");
             Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
@@ -24,7 +25,8 @@ namespace Data
             
             Jeu dragonQuest = new Jeu("Dragon Quest", new Studio("Enix"),new DateTime(2012, 05, 04), 7, "Test du synopsis jeu", "");
 
-            Franchise fMario = new Franchise("Mario", "\\Images;Component\\images\\Franchises\\Mario\\background.jpg", "#DE1111");
+            //Franchise fMario = new Franchise("Mario", "\\Images;Component\\images\\Franchises\\Mario\\background.jpg", "#DE1111");
+            Franchise fMario = new Franchise("Mario", @"pack://application:,,,/Images;Componment/images/Franchises/Mario/background.jpg", "#DE1111");
             Franchise fZelda = new Franchise("The Legend of Zelda", "\\Images;Component\\images\\Franchises\\Zelda\\background.jpg", "#1BC213");
             Franchise fDragonQuest = new Franchise("Dragon Quest", "\\Images;Component\\images\\Franchises\\DragonQuest\\background.jpg", "#2092DC");
             Franchise fPokemon = new Franchise("Pokemon", "\\Images;Component\\images\\Franchises\\Pokemon\\background.jpg", "#FFFB00");

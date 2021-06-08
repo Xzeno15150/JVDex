@@ -17,14 +17,39 @@ namespace BibliothèqueApplication
 
         private Dictionary<Franchise, List<Jeu>> toutesLesFranchises;
 
+        /// <summary>
+        /// dépendance vers le gestionnaire de la persistance
+        /// </summary>
+        public IPersistanceStockApp Persistance { get; private set; }
+
+        public void ChargeDonnees()
+        {
+            var donnees = Persistance.ChargeDonnees(); // dépendance
+            foreach(var j in donnees.jeux)
+            {
+                TousLesJeux.Add(j);
+            }
+            foreach(var f in donnees.franchise)
+            {
+                //ToutesLesFranchises.Add(f,);  voir comment faire le add
+            }
+        }
+
+        public void SauvegardeDonnees()
+        {
+           // Persistance.SauvegardeDonnees(jeux, franchise); erreur aussi
+        }
+
+
         public Dictionary<Franchise, List<Jeu>> ToutesLesFranchises
         {
             get { return toutesLesFranchises; }
             set { toutesLesFranchises = value; }
         }
 
-        public StockApp()
+        public StockApp(IPersistanceStockApp persistance)
         {
+            Persistance = persistance;
             tousLesJeux = new List<Jeu>();
             toutesLesFranchises = new Dictionary<Franchise, List<Jeu>>();
         }
