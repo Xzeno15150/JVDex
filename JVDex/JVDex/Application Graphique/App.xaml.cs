@@ -17,7 +17,15 @@ namespace Application_Graphique
     /// </summary>
     public partial class App : Application
     {
-       public Manager LeManager { get; set; } = new Manager(new StockApp ( new Stub()));
+        private static IPersistanceStockApp pers = new PersistanceFichierTexte();
+        private static StockApp sa = new StockApp(pers);
+        public Manager LeManager { get; set; } 
         public Navigator LeNavigateur { get; set; } = new Navigator();
+
+        public App()
+        {
+            sa.ChargeDonnees();
+            LeManager = new Manager(sa);
+        }
     }
 }

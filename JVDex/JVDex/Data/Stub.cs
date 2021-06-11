@@ -6,15 +6,6 @@ namespace Data
 {
     public class Stub : IPersistanceStockApp 
     {
-        public static Manager Load()
-        {
-            StockApp app = new StockApp();
-
-           
-
-            return new Manager(app);
-        }
-
         public (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees()
         {
             

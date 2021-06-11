@@ -28,7 +28,7 @@ namespace BibliothèqueApplication
         /// <summary>
         /// ce boolean permet de savoir si le jeu est mis en favoris ou non: true quand il est en favoris, false quand il ne l'est pas
         /// </summary>
-        public bool IsFavoris { get; private set; }
+        public bool IsFavoris { get;  set; }
 
         /// <summary>
         /// utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante

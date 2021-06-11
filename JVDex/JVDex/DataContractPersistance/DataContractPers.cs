@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Serialization;
 
 namespace DataContractPersistance
 {
@@ -9,7 +10,7 @@ namespace DataContractPersistance
 
     {
         public string FilePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "..//XML");
-        public string FileName { get; set; } = "infoJVDX.xml";
+        public string FileName { get; set; } = "infoJVDex.xml";
        // (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees();
         public (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees()
         {
@@ -21,21 +22,18 @@ namespace DataContractPersistance
             var serializer = new DataContractSerializer(typeof(IList<Jeu>));
             //using (Stream s = )
 
+            return (null, null);
+
+
         }
 
-            
-        
-            //throw new NotImplementedException();
-        }
 
         public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
         {
             throw new NotImplementedException();
         }
-
-
-       
-
+        //throw new NotImplementedException();
     }
+}
          
 

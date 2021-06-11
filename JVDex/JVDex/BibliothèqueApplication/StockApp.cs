@@ -31,7 +31,7 @@ namespace BibliothèqueApplication
 
         public void SauvegardeDonnees()
         {
-            Persistance.SauvegardeDonnees(jeux, franchises);
+            Persistance.SauvegardeDonnees(tousLesJeux, toutesLesFranchises);
         }
 
 
