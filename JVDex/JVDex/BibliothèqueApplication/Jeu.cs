@@ -25,10 +25,21 @@ namespace BibliothèqueApplication
       
         public InformationsJeu Informations { get; set; }
 
+        private bool isFavoris;
+
         /// <summary>
         /// ce boolean permet de savoir si le jeu est mis en favoris ou non: true quand il est en favoris, false quand il ne l'est pas
         /// </summary>
-        public bool IsFavoris { get;  set; }
+        public bool IsFavoris 
+        {
+            get => isFavoris;
+            set
+            {
+                isFavoris = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsFavoris"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("LogoFavoris"));
+            }      
+        }
 
         /// <summary>
         /// utilisation de la class InformationsJeu pour récupérer les informations du jeu correspondante

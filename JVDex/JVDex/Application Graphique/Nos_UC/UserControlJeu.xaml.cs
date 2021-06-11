@@ -29,8 +29,7 @@ namespace Application_Graphique.Nos_UC
         private void Button_JeuFavori_Click(object sender, RoutedEventArgs e)
         {
             Jeu j = (DataContext as Jeu);
-            if (!j.IsFavoris) j.AjouterAuxFavoris();
-            else j.EnleverDesFavoris();
+            j.IsFavoris = !j.IsFavoris;
         }
         public string Image
         {

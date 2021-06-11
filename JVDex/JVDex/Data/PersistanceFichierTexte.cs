@@ -46,8 +46,8 @@ namespace Data
                                 j.AjouterTheorie(t);
                             }
 
-                            j.IsFavoris = bool.TryParse(reader.ReadLine(), out bool isFavori);
-
+                            bool.TryParse(reader.ReadLine(), out bool isFavori);
+                            j.IsFavoris = isFavori;
                             lJeux.Add(j);
                             dFranchise.TryGetValue(f, out var lFranchise);
                             lFranchise.Add(j);
