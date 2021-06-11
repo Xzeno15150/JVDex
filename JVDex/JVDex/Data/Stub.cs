@@ -13,7 +13,7 @@ namespace Data
             Jeu test1_bis = new Jeu("Test1", new Createur("Matt", "Orillon", new DateTime(2020, 1, 1)), new DateTime(2020, 04, 30), 3, "Ceci est un test de synopsis", "");
 
             // Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
-            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", @"pack://application:,,,Images;Compnent/images/Franchise/Zelda/Jeux/BOTW/vignette.png");
+            Jeu zelda1 = new Jeu("Breath of the Wild", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", @"/Ressources;Component/images/Franchise/Zelda/Jeux/BOTW/vignette.png");
             Jeu zeldaWindwaker = new Jeu("Windwaker", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker2 = new Jeu("Windwaker2", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");
             Jeu zeldaWindwaker3 = new Jeu("Windwaker3", new Studio("Nintendo"), new DateTime(2020, 03, 30), 3, "Ceci est un test de synopsis 1", "\\Images;Component\\images\\Franchises\\Zelda\\Jeux\\BOTW\\vignette.png");

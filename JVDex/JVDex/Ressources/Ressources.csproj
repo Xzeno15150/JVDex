@@ -3,7 +3,36 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
-	<RootNamespace>Application_Graphique</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\Franchises\DragonQuest\background.jpg" />
+    <None Remove="images\Franchises\Layton\background.jpg" />
+    <None Remove="images\Franchises\Mario\background.jpg" />
+    <None Remove="images\Franchises\Pokemon\background.jpg" />
+    <None Remove="images\Franchises\Zelda\background.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\BOTW\vignette.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\Franchises\DragonQuest\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\BOTW\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
 
 </Project>

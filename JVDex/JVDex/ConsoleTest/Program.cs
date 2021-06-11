@@ -10,7 +10,9 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            Manager app = Stub.Load();
+            StockApp sa = new StockApp(new Stub());
+            sa.ChargeDonnees();
+            Manager app = new Manager(sa);
             //Test_Trier_Jeux(app);
             //Test_Rechercher_Jeu(app);
             //Test_Afficher_Jeux(app);

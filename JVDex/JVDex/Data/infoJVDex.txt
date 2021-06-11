@@ -1,7 +1,7 @@
 1
-Mario
-pack://application:,,,/Images;Componment/images/Franchises/Mario/background.jpg
-#DE1111
+Zelda
+/Ressources;Component/images/Franchises/Zelda/background.jpg
+#1BC213
 1
 Breath of the Wild
 Nintendo
@@ -9,7 +9,7 @@ s
 30/03/2020
 3
 Ceci est un test de synopsis 1
-pack://application:,,,Images;Compnent/images/Franchise/Zelda/Jeux/BOTW/vignette.png
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png
 0
 0
 0
