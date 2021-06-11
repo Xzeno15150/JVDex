@@ -1,8 +1,8 @@
-﻿1
+﻿2
 Zelda
 /Ressources;Component/images/Franchises/Zelda/background.jpg
 #1BC213
-2
+5
 Breath of the Wild
 Nintendo
 s
@@ -19,9 +19,13 @@ Breath of the Wild propose d'incarner Link, amnésique, réveillé après un lon
 14
 4
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel1.jpg
+Dans la forêt
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel2.jpg
+Dans la pleine d'Hyrule
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel3.jpg
+Dans les airs
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel4.jpg
+La cité Guerudo
 0
 5
 A la recherche d'un ancêtre de Ganon
@@ -41,13 +45,21 @@ s
 23/06/2007
 7
 Link et l'équipage des pirates de Tetra naviguent sur la Grande Mer et rencontrent un nuage de brouillard, dans lequel se trouve un navire abandonné, soupçonné par le groupe d'être un navire fantôme. Tetra se décide à explorer ce vaisseau, mais est transportée dans une autre dimension peu de temps après avoir abordé le navirea 2. Link tente de la secourir, mais tombe à l'eau et échoue inconscient sur une plage voisinea 2. Riche en forces vitales, cette dimension est victime de raids de la part de Bellum, un spectre maléfique se nourrissant de ces ressources. Celui-ci capture ainsi les esprits tutélaires de la Force et de la Sagesse, et force le Roi des Mers et l'esprit du Courage à fuir en dissimulant leur identité.
-/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png
+/Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/Vignette.jpg
 2
 3
 4
 1
 10
-0
+4
+/Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/visuel1.jpg
+Au bord du navire
+/Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/visuel2.jpg
+Le Navire Fantôme
+/Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/visuel3.png
+Lindebeck et Link
+/Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/visuel4.jpg
+L'île du froid
 0
 3
 Quatre chevaliers du royaume de galets
@@ -57,5 +69,126 @@ deux
 Le Navire fantôme
 trois
 false
+Spirit Track
+Nintendo
+s
+07/12/2009
+7
+The Legend of Zelda: Spirit TracksNote est le quinzième opus de la saga The Legend of Zelda. Le jeu se situe chronologiquement dans la temporalité où Link a réussi à vaincre Ganon dans l'épisode The Legend of Zelda: Ocarina of Time et reste à l'âge adulte. L'intrigue de The Legend of Zelda: Spirit Tracks se déroule cent ans après les événements de Phantom Hourglassa, dans le nouveau Royaume d'Hyrule fondé à la fin du jeu précédenta. En effet, Hyrule est inondé et scellé au fond des eaux avant le déroulement de The Wind Waker et puis le sceau est détruit, les derniers vestiges d'Hyrule sont définitivement engloutis à la fin de cet épisodea 3. Les habitants sont ainsi des descendants des protagonistes du précédent jeu, et certains des personnages secondaires ayant vieillis
+/Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/vignette.jpg
+2
+3
+4
+1
+10
+4
+/Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/visuel1.jpeg
+Dans le train
+/Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/visuel2.jpg
+Link et l'esprit de la Princesse
+/Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/visuel3.jpg
+La flûte de pan
+/Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/visuel4.png
+La tour des Dieux
+0
+2
+Lokomos
+un
+Princesse du Crépuscule
+deux
+false
+Wind Waker
+Nintendo
+s
+13/12/2002
+7
+L'intrigue de The Wind Waker se déroule un siècle après les événements survenant dans l'épisode Ocarina of Time. Dans cette branche de la temporalité appelée « Le Nouveau Monde », Link a réussi à vaincre Ganondorf et reste à l'âge adulte. L'antagoniste de la série est scellé dans la Triforce de la force, celle du courage est divisée en huit et dispersée. Cependant, Ganondorf réussit à se libérer et revenir, mais Link ne réapparaît pas. Ainsi, les déesses immergent le monde d'Hyrule, puis l'emprisonnent dans un sceau magique sous les eaux de la Grande Mer recouvrant alors le royaume. La Triforce de la sagesse est à ce moment-là scindée en deux, le roi d'Hyrule Daphnès Nohansen Hyrule III, également scellé, en conserve un élément, alors que l'autre est attribué à la princesse Zelda. Pourtant, Ganondorf, qui semblait être piégé, réussit à se libérer une centaine d'années plus tard.
+/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/vignette.jpg
+2
+3
+4
+2
+9
+12
+4
+/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel1.jpg
+Sur le beateau
+/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel2.jpg
+Dans la pleine
+/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel3.jpg
+Link et la Princesse Zelda
+/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png
+Sur la plage
+0
+2
+Voix Pols
+un 
+Fado
+deux
+false
+Ocarina Of Time
+Nintendo
+s
+21/11/1998
+12
+Le royaume d'Hyrule est le résultat de l'unification de plusieurs contrées où vivent différents peuples, avec lesquels Link peut interagir. Les Kokiris sont des enfants semblables à des Hyliens mais qui ne grandissent jamais. Ils reçoivent à leur naissance une fée chargée de veiller sur chacun d'eux et ne peuvent pas quitter la forêt. Les Gorons, êtres robustes dotés d'une force phénoménale et semblables à un rocher une fois repliés sur eux-mêmes, sont insensibles à la lave et se déplacent en roulant. Ils ont à leur tête Darunia. Les Zoras sont des êtres marins mi-hommes, mi-poissons avec à leur tête le roi Zora. Les Sheikahs sont un peuple quasiment éteint puisqu'on ne dénombre plus qu'un seul individu : Impa, la nourrice de Zelda. Enfin, les Gerudos ont la grande particularité de n'être composés que de femmes. Un seul homme Gerudo naît par siècle et le dernier en date n'est autre que Ganondorf. 
+/Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/vignette.png
+2
+3
+4
+5
+21
+9
+11
+13
+12
+4
+/Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel.jpg
+Linke et la princesse Zelda enfants
+/Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel2.jpg
+Link et Saria enfants
+/Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel3.jpg
+Le Temple du Temps
+/Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel4.jpg
+Epona
+0
+3
+Navi
+un
+Temple Sheika
+deux
+Gardien du temple
+trois
+false
+Mario
+/Ressources;Component/images/Franchises/Mario/background.jpg
+#DE1111
+1
+Nom
+Studio
+s
+21/05/56
+3
+synopsis
+1
+3
+1
+21
+0
+0
+0
+false
+
+
+
+
+
+
+
+
+
+
+
+
 
 

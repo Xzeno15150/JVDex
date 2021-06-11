@@ -12,6 +12,30 @@
     <None Remove="images\Franchises\Pokemon\background.jpg" />
     <None Remove="images\Franchises\Zelda\background.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\BOTW\vignette.png" />
+    <None Remove="images\Franchises\Zelda\Jeux\BOTW\visuel1.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\BOTW\visuel2.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\BOTW\visuel3.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\BOTW\visuel4.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\OcarinaOfTime\vignette.png" />
+    <None Remove="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel2.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel3.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel4.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\PhantomHourglass\Vignette.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel1.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel2.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel3.png" />
+    <None Remove="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel4.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\SpiritTrack\vignette.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\SpiritTrack\visuel1.jpeg" />
+    <None Remove="images\Franchises\Zelda\Jeux\SpiritTrack\visuel2.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\SpiritTrack\visuel3.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\SpiritTrack\visuel4.png" />
+    <None Remove="images\Franchises\Zelda\Jeux\WindWaker\vignette.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel1.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel2.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel3.jpg" />
+    <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +55,78 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Zelda\Jeux\BOTW\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\BOTW\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\BOTW\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\BOTW\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\BOTW\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\OcarinaOfTime\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\OcarinaOfTime\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\PhantomHourglass\Vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\PhantomHourglass\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\SpiritTrack\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\SpiritTrack\visuel1.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\SpiritTrack\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\SpiritTrack\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\SpiritTrack\visuel4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\visuel4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

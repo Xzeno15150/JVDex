@@ -32,7 +32,9 @@ namespace BibliothèqueApplication
         [EnumDescription("Xbox Serie X")]
         XboxSerieX, //19
         IOS, //20
-        Android //21
+        Android,//21
+        [EnumDescription("Nintendo 64")]
+        Nintendo64
     }
 }
 //enum des différentes plateformes des jeux
