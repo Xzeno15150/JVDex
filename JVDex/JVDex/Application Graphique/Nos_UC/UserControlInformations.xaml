@@ -22,7 +22,7 @@
             <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu"
                                 >
 
-                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" Text="{Binding Informations.Nom}"/>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" Text="{Binding Informations.Nom}"></TextBlock>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockCreateur" Text="{Binding Informations.Createur}"/>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockDateCreation" Text="{Binding Informations.DateCreation}"/>
                 <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" Text="{Binding Informations.LimiteAge}"/>
