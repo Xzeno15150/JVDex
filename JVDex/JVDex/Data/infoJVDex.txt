@@ -17,7 +17,11 @@ Breath of the Wild propose d'incarner Link, amnésique, réveillé après un lon
 2
 12
 14
-0
+4
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel1.jpg
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel2.jpg
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel3.jpg
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/visuel4.jpg
 0
 5
 A la recherche d'un ancêtre de Ganon
@@ -30,7 +34,7 @@ Un parallèle avec Wind Walker?
 Wind Waker se déroule dans un Hyrule qui a été complètement inondé par les dieux dans le but de contenir Ganon.
 BOTW n'appartient pas à la chronologie?
 Hyrule Historia  propose trois chronologies officielles pour le monde de Zelda. 
-true
+false
 Phantom Hourglass
 Nintendo
 s
@@ -45,7 +49,13 @@ Link et l'équipage des pirates de Tetra naviguent sur la Grande Mer et rencontr
 10
 0
 0
-0
-true
+3
+Quatre chevaliers du royaume de galets
+un
+Lindebeck
+deux
+Le Navire fantôme
+trois
+false
 
 
