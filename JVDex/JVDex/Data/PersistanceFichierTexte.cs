@@ -24,23 +24,23 @@ namespace Data
                         Franchise f = LireFranchise(reader);
                         dFranchise.Add(f, new List<Jeu>());
                         int.TryParse(reader.ReadLine(), out int nbJeux);
-                        for(i = 0; i<nbJeux; i++)
+                        for(int k = 0; k<nbJeux; k++)
                         {
                             Jeu j = LireJeu(reader);
                             int.TryParse(reader.ReadLine(), out int nbVisuels);
-                            for(i = 0; i < nbVisuels; i++) 
+                            for(int z = 0;  z < nbVisuels; z++) 
                             {
                                 Visuel v = LireVisuel(reader);
                                 j.AjouterVisuel(v);
                             }
                             int.TryParse(reader.ReadLine(), out int nbMusiques);
-                            for (i = 0; i < nbMusiques; i++)
+                            for (int z = 0; z < nbMusiques; z++)
                             {
                                 string m = reader.ReadLine();
                                 j.AjouterMusique(m);
                             }
                             int.TryParse(reader.ReadLine(), out int nbTheories);
-                            for (i = 0; i < nbTheories; i++)
+                            for (int z  = 0; z < nbTheories; z++)
                             {
                                 Theorie t = LireTheorie(reader);
                                 j.AjouterTheorie(t);

@@ -2,13 +2,13 @@
 Zelda
 /Ressources;Component/images/Franchises/Zelda/background.jpg
 #1BC213
-1
+2
 Breath of the Wild
 Nintendo
 s
 30/03/2020
-3
-Breath of the Wild propose d'incarner Link, amnésique, réveillé après un long sommeil d'une centaine d'années par une mystérieuse voix qui le guide afin d'éliminer Ganon, « Le Fléau », et restaurer la paix dans le royaume d'Hyrule. 
+12
+Breath of the Wild propose d'incarner Link, amnésique, réveillé après un long sommeil d'une centaine d'années par une mystérieuse voix qui le guide afin d'éliminer Ganon, « Le Fléau », et restaurer la paix dans le royaume d'Hyrule. Link va alors explorer l'univers étendu et sauvage qu'est devenu le royaume d'Hyrule. Il devra à lui seul trouvé le secret autour de son réveil. 
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png
 3
 1
@@ -19,5 +19,33 @@ Breath of the Wild propose d'incarner Link, amnésique, réveillé après un lon
 14
 0
 0
+5
+A la recherche d'un ancêtre de Ganon
+Elle explique que dans la vidéo, Zelda 
+Le secret des Sheika?
+Cette race mentionnée dans Skyward Sword , 
+La chronologie de BOTW
+La chronologie "Failed Hero" est précisément ce à quoi elle ressemble: 
+Un parallèle avec Wind Walker?
+Wind Waker se déroule dans un Hyrule qui a été complètement inondé par les dieux dans le but de contenir Ganon.
+BOTW n'appartient pas à la chronologie?
+Hyrule Historia  propose trois chronologies officielles pour le monde de Zelda. 
+true
+Phantom Hourglass
+Nintendo
+s
+23/06/2007
+7
+Link et l'équipage des pirates de Tetra naviguent sur la Grande Mer et rencontrent un nuage de brouillard, dans lequel se trouve un navire abandonné, soupçonné par le groupe d'être un navire fantôme. Tetra se décide à explorer ce vaisseau, mais est transportée dans une autre dimension peu de temps après avoir abordé le navirea 2. Link tente de la secourir, mais tombe à l'eau et échoue inconscient sur une plage voisinea 2. Riche en forces vitales, cette dimension est victime de raids de la part de Bellum, un spectre maléfique se nourrissant de ces ressources. Celui-ci capture ainsi les esprits tutélaires de la Force et de la Sagesse, et force le Roi des Mers et l'esprit du Courage à fuir en dissimulant leur identité.
+/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png
+2
+3
+4
+1
+10
+0
+0
 0
 true
+
+
