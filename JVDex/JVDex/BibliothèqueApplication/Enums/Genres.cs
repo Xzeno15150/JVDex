@@ -5,10 +5,11 @@ namespace BibliothèqueApplication
 {
     public enum Genres
     {
-        
         Plateforme,
         RPG,
         FPS,
+        Action,
+        Aventure,
         Infiltration,
         Espionnage,
         Reflexe,

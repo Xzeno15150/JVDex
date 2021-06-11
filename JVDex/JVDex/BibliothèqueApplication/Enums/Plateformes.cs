@@ -18,6 +18,8 @@ namespace BibliothèqueApplication
         Gamecube,
         DS,
         Wii,
+        [EnumDescription("Wii U")]
+        Wii_U,
         [EnumDescription("3DS")]
         TroisDS,
         [EnumDescription("Nintendo Switch")]

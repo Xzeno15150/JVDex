@@ -45,6 +45,7 @@ namespace Data
                                 Theorie t = LireTheorie(reader);
                                 j.AjouterTheorie(t);
                             }
+
                             j.IsFavoris = bool.TryParse(reader.ReadLine(), out bool isFavori);
 
                             lJeux.Add(j);
@@ -85,15 +86,28 @@ namespace Data
             {
                 string prenom = reader.ReadLine();
                 DateTime.TryParse(reader.ReadLine(), out var dateNaissance);
-                cj = new Createur(nom, prenom, dateNaissance);
+                cj = new Createur(nomCreateurJeu, prenom, dateNaissance);
             }
-            else { cj = new Studio(nom); }
+            else { cj = new Studio(nomCreateurJeu); }
             DateTime.TryParse(reader.ReadLine(), out var dateCreation);
             int.TryParse(reader.ReadLine(), out var limiteAge);
             string synopsis = reader.ReadLine();
             string image = reader.ReadLine();
-
-            return new Jeu(nom, cj, dateCreation, limiteAge, synopsis, image);
+            int.TryParse(reader.ReadLine(), out var nbGenres);
+            ISet<Genres> genres = new HashSet<Genres>();
+            for(int i=0; i<nbGenres; i++)
+            {
+                int.TryParse(reader.ReadLine(), out var genre);
+                genres.Add((Genres)genre);
+            }
+            int.TryParse(reader.ReadLine(), out var nbPlateformes);
+            ISet<Plateformes> plateformes = new HashSet<Plateformes>();
+            for (int i = 0; i < nbPlateformes; i++)
+            {
+                int.TryParse(reader.ReadLine(), out var plateforme);
+                plateformes.Add((Plateformes)plateforme);
+            }
+            return new Jeu(nom, cj, dateCreation, limiteAge, synopsis, image, genres, plateformes);
         }
 
         private Visuel LireVisuel(TextReader reader)

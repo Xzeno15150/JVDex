@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliothèqueApplication.Enums;
+using System;
 using System.Collections.Generic;
 
 
@@ -9,6 +10,31 @@ namespace BibliothèqueApplication
         private DateTime dateCreation;
 
         public ISet<Genres> LesGenres { get; }
+        public List<string> LesGenresToString
+        {
+            get
+            {
+                List<string> lSGenres = new List<string>();
+                foreach(Genres g in LesGenres)
+                {
+                    lSGenres.Add(g.ToDescription() + " ");
+                }
+                return lSGenres;
+            }
+        }
+
+        public List<string> LesPlateformesToString
+        {
+            get
+            {
+                List<string> lSPlateformes = new List<string>();
+                foreach (Plateformes p in LesPlateformes)
+                {
+                    lSPlateformes.Add(p.ToDescription() + " ");
+                }
+                return lSPlateformes;
+            }
+        }
         public ISet<Plateformes> LesPlateformes { get; }
       
         public CreateurJeu Createur { get; set; }
@@ -18,14 +44,18 @@ namespace BibliothèqueApplication
         public string Synopsis { get; set; }
 
 
-        public InformationsJeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) : base(nom)
+        public InformationsJeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis) 
+            : this(nom, createur, dateCreation, limiteAge, synopsis, new HashSet<Genres>(), new HashSet<Plateformes>())
+        {
+        }
+        public InformationsJeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, ISet<Genres> genres, ISet<Plateformes> plateformes) : base(nom)
         {
             this.Createur = createur;
             this.DateCreation = dateCreation;
             this.LimiteAge = limiteAge;
             this.Synopsis = synopsis;
-            LesGenres = new HashSet<Genres>();
-            LesPlateformes = new HashSet<Plateformes>();
+            LesGenres = genres;
+            LesPlateformes = plateformes;
         }
 
 

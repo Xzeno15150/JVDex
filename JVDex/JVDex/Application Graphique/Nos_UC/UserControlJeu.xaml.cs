@@ -1,6 +1,7 @@
 ﻿using BibliothèqueApplication;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,7 +18,7 @@ namespace Application_Graphique.Nos_UC
     /// <summary>
     /// Logique d'interaction pour UserControlJeu.xaml
     /// </summary>
-    public partial class UserControlJeu : UserControl
+    public partial class UserControlJeu : UserControl, INotifyPropertyChanged
     {
         public Manager manager => (App.Current as App).LeManager;
         
@@ -30,7 +31,6 @@ namespace Application_Graphique.Nos_UC
             Jeu j = (DataContext as Jeu);
             if (!j.IsFavoris) j.AjouterAuxFavoris();
             else j.EnleverDesFavoris();
-
         }
         public string Image
         {
@@ -64,6 +64,6 @@ namespace Application_Graphique.Nos_UC
         public static readonly DependencyProperty LogoFavoriProperty =
             DependencyProperty.Register("LogoFavori", typeof(string), typeof(UserControlJeu));
 
-
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
