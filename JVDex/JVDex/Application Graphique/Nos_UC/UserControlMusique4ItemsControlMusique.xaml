@@ -30,7 +30,7 @@
                 Command="Stop">
             <Image Source="/Icons/stop-button.png"></Image>
         </Button>
-        <MediaElement Name="player" LoadedBehavior="Manual" Source="{Binding Path=Path}" Volume="2"/>
+        <!--<MediaElement Name="player" LoadedBehavior="Manual" Source="{Binding Path=Path}" Volume="2"/>-->
         <StatusBar Background="Transparent" Margin="10,0,0,0" >
 
             <Slider Background="Transparent" 

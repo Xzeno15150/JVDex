@@ -36,7 +36,8 @@ namespace Application_Graphique
 
         private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
+            if(ListBoxFranchises.SelectedItem != null)
+                mgr.FranchiseSelected = ListBoxFranchises.SelectedItem as Franchise;
             mgr.JeuSelected = null;
             nav.NavigateTo("Franchise");
         }
@@ -53,6 +54,11 @@ namespace Application_Graphique
             mgr.FranchiseSelected = null;
             mgr.JeuSelected = null;
             nav.NavigateTo("Favoris");
+        }
+
+        private void ListBoxFranchises_LostFocus(object sender, RoutedEventArgs e)
+        {
+            (sender as ListBox).SelectedItem = null;
         }
     }
 }

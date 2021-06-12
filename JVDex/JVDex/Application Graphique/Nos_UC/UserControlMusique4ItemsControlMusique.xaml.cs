@@ -2,6 +2,7 @@
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,10 +24,11 @@ namespace Application_Graphique.Nos_UC
     {
         public Manager mgr = (App.Current as App).LeManager;
         private bool mediaPlayerIsPlaying, userIsDraggingSlider;
+        MediaPlayer player = new MediaPlayer();
         public UserControlMusique4ItemsControlMusique()
         {
             InitializeComponent();
-
+            player.Open(new Uri(@"/Ressources;component/musiques/botw-OST1.mp3", UriKind.RelativeOrAbsolute));
             DispatcherTimer timer = new DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(1)

@@ -16,7 +16,7 @@ namespace Data
             Franchise fLayton = new Franchise("Professeur Layton", @"/Ressources;Component/images/Franchises/Layton/background.jpg", "#896335");
 
 
-            Jeu BOTW = new Jeu("Breath Of The Wild", new Studio("Nintendo"), new DateTime(2017, 03, 03), 12, "synospsis", @"/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png",
+            Jeu BOTW = new Jeu("Breath Of The Wild", new Studio("Nintendo"), new DateTime(2017, 03, 03), 12, "Breath of the Wild propose d'incarner Link, amnésique, réveillé après un long sommeil d'une centaine d'années par une mystérieuse voix qui le guide afin d'éliminer Ganon, « Le Fléau », et restaurer la paix dans le royaume d'Hyrule. Link va alors explorer l'univers étendu et sauvage qu'est devenu le royaume d'Hyrule. Il devra à lui seul trouvé le secret autour de son réveil. ", @"/Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png",
                 new HashSet<Genres>() {
                 Genres.Aventure,
                 Genres.RPG,
@@ -44,14 +44,18 @@ namespace Data
 
 
 
-            Dictionary<Franchise, List<Jeu>> lesFranchises = new Dictionary<Franchise, List<Jeu>>() 
+            Dictionary<Franchise, List<Jeu>> lesFranchises = new Dictionary<Franchise, List<Jeu>>()
             {
                 [fZelda] = new List<Jeu>()
                 {
                     BOTW,
-                   
                 },
-            };
+                [fMario] = new List<Jeu>(),
+                [fPokemon] = new List<Jeu>(),
+                [fDragon] = new List<Jeu>(),
+                [fLayton] = new List<Jeu>(),
+
+        };
 
             IList<Jeu> lesJeux = new List<Jeu>()
             {

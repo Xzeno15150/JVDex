@@ -7,7 +7,8 @@
         xmlns:uc ="clr-namespace:Application_Graphique.Nos_UC"
         mc:Ignorable="d"
         Title="JVDex" Height="720" Width="1080"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        Icon="/Icons/logo-app.png">
 
     <Grid x:Name="MainGrid" Background="#3D3C3C">
 
@@ -17,7 +18,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel>
             <Button Name="Button_RetourMain" Background="Transparent" Click="Button_RetourMain_Click">
-                <Image Source="Icons\logotest.png" />
+                <Image Source="/Icons/logo-app.png" />
             </Button>
 
 
@@ -25,6 +26,7 @@
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
                  SelectionChanged="ListBoxFranchises_SelectionChanged"
+                 LostFocus="ListBoxFranchises_LostFocus"
                  Name="ListBoxFranchises"
                  ItemsSource="{Binding ToutesLesFranchises.Keys}">
                 <ListBox.ItemTemplate>

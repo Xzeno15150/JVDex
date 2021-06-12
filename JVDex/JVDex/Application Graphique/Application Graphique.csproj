@@ -24,6 +24,7 @@
     <None Remove="Icons\heart-vide.png" />
     <None Remove="Icons\icon_recherche.png" />
     <None Remove="Icons\left-arrow.png" />
+    <None Remove="Icons\logo-app.png" />
     <None Remove="Icons\logotest.png" />
     <None Remove="Icons\pause-button.png" />
     <None Remove="Icons\play-button.png" />
@@ -51,6 +52,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\left-arrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\logo-app.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\logotest.png">

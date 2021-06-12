@@ -61,6 +61,7 @@
     <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel2.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel3.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\WindWaker\visuel4.jpg" />
+    <None Remove="musiques\botw-OST1.mp3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -228,6 +229,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Zelda\Jeux\WindWaker\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="musiques\botw-OST1.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
