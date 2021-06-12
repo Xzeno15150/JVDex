@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Application_Graphique.Nos_UC.UserControlMusique4ItemsControlMusique"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
+             mc:Ignorable="d" 
+             d:DesignHeight="50">
+    <UserControl.CommandBindings>
+        <CommandBinding x:Name="Play" Command="Play" CanExecute="Play_CanExecute" Executed="Play_Executed"/>
+        <CommandBinding x:Name="Pause" Command="Pause" CanExecute="Pause_CanExecute" Executed="Pause_Executed"/>
+        <CommandBinding x:Name="Stop" Command="Stop" CanExecute="Stop_CanExecute" Executed="Stop_Executed"/>
+    </UserControl.CommandBindings>
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="{Binding Nom}" Width="170" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Left"/>
+        <TextBlock Text="{Binding NomCreateur}" Width="200" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Center"/>
+        <TextBlock Text="{Binding DateCreation, StringFormat='dd/MM/yyyy'}" Width="150" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Center"/>
+        <Button Background="Transparent" BorderBrush="Transparent" Height="30" Margin="10,0,0,0" 
+                Name="ButtonPlay"
+                Command="Play">
+            <Image Source="/Icons/play-button.png" ></Image>
+        </Button>
+        <Button Background="Transparent" BorderBrush="Transparent" Height="30" Margin="10,0,0,0" 
+                Name="ButtonPause"
+                Command="Pause">
+            <Image Source="/Icons/pause-button.png"></Image>
+        </Button>
+        <Button Background="Transparent" BorderBrush="Transparent" Height="30" Margin="10,0,0,0" 
+                Name="ButtonStop"
+                Command="Stop">
+            <Image Source="/Icons/stop-button.png"></Image>
+        </Button>
+        <MediaElement Name="player" LoadedBehavior="Manual" Source="{Binding Path=Path}" Volume="2"/>
+        <StatusBar Background="Transparent" Margin="10,0,0,0" >
+
+            <Slider Background="Transparent" 
+                    x:Name="SliderTemps"
+                    Thumb.DragStarted="SliderTemps_DragStarted"
+                    Thumb.DragCompleted="SliderTemps_DragCompleted"
+                    ValueChanged="SliderTemps_ValueChanged"
+                    Width="100"></Slider>
+            <TextBlock VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" FontWeight="Bold" Margin="10,0,0,0" 
+                   Name="TextBoxTimer">
+                00:00
+            </TextBlock>
+        </StatusBar>
+    </StackPanel>
+</UserControl>

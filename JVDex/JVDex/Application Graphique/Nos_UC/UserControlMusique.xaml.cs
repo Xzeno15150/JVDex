@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliothèqueApplication;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,9 +19,16 @@ namespace Application_Graphique.Nos_UC
     /// </summary>
     public partial class UserControlMusique : UserControl
     {
+        public Manager mgr = (App.Current as App).LeManager;
         public UserControlMusique()
         {
             InitializeComponent();
+            DataContext = mgr.JeuSelected;
+        }
+
+        private void ListBoxMusique_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

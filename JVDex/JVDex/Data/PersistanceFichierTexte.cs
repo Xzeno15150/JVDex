@@ -34,11 +34,11 @@ namespace Data
                                 j.AjouterVisuel(v);
                             }
                             int.TryParse(reader.ReadLine(), out int nbMusiques);
-                            for (int z = 0; z < nbMusiques; z++)
+                           /* for (int z = 0; z < nbMusiques; z++)
                             {
                                 string m = reader.ReadLine();
                                 j.AjouterMusique(m);
-                            }
+                            }*/
                             int.TryParse(reader.ReadLine(), out int nbTheories);
                             for (int z  = 0; z < nbTheories; z++)
                             {

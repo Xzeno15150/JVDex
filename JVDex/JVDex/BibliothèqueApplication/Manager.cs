@@ -90,6 +90,14 @@ namespace BibliothèqueApplication
             }
         }
 
+        public string TypeTriJeuSelectedToString 
+        {
+            get
+            {
+                return typeTriJeuSelected.ToDescription();
+            }
+        }
+
         public string DescriptionTypeTri => typeTriJeuSelected.ToDescription();
 
 

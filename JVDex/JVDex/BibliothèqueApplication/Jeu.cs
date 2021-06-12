@@ -19,7 +19,7 @@ namespace BibliothèqueApplication
             }
         }
         public ISet<Visuel> LesVisuels { get; private set;}
-        public ISet<string> LesMusiques { get; private set; }
+        public ISet<Musique> LesMusiques { get; private set; }
         public ISet<Theorie> LesTheories { get; private set; }
 
       
@@ -59,7 +59,7 @@ namespace BibliothèqueApplication
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis, genres, plateformes); //
             LesVisuels = new HashSet<Visuel>();
-            LesMusiques = new HashSet<string>();
+            LesMusiques = new HashSet<Musique>();
             LesTheories = new HashSet<Theorie>();
             Vignette = image;
         }
@@ -112,7 +112,7 @@ namespace BibliothèqueApplication
         /// ajoute une musique à la liste des musiques, ne peut pas ajouter deux musiques identiques
         /// </summary>
         /// <param name="musique"> musique à ajouter </param>
-        public void AjouterMusique(string musique)
+        public void AjouterMusique(Musique musique)
         {
             if (!LesMusiques.Add(musique))
             {
@@ -124,7 +124,7 @@ namespace BibliothèqueApplication
        /// supprime une musique que de liste
        /// </summary>
        /// <param name="musique"> la musique à supprimer </param>
-        public void SupprimerMusique(string musique)
+        public void SupprimerMusique(Musique musique)
         {
             if (!LesMusiques.Remove(musique))
             {
@@ -164,12 +164,12 @@ namespace BibliothèqueApplication
             mes += "Liste des visuels : \n";
             foreach (Visuel s in LesVisuels)
             {
-                mes += $"\t- {s}\n";
+                mes += $"\t- {s.Legende}\n";
             } 
             mes += "Liste des musiques : \n";
-            foreach (string s in LesMusiques)
+            foreach (Musique s in LesMusiques)
             {
-                mes += $"\t- {s}\n";
+                mes += $"\t- {s.Nom}\n";
             }
             mes += "Théories : \n";
             foreach (Theorie s in LesTheories)

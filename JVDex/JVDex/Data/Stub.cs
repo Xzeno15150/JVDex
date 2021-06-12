@@ -68,6 +68,8 @@ namespace Data
                 zelda1.AjouterVisuel(V1);
                 zelda1.AjouterVisuel(V2);
 
+                zelda1.LesMusiques.Add(new Musique("Main Theme ", @"/Ressources;Component/musiques/botw-OST1.mp3", "Nintendo", new DateTime(2017, 3, 3)));
+
 
                 zelda1.AjouterAuxFavoris();
                 test2.AjouterAuxFavoris();

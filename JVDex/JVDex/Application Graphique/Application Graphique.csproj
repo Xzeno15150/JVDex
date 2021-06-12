@@ -25,7 +25,10 @@
     <None Remove="Icons\icon_recherche.png" />
     <None Remove="Icons\left-arrow.png" />
     <None Remove="Icons\logotest.png" />
+    <None Remove="Icons\pause-button.png" />
+    <None Remove="Icons\play-button.png" />
     <None Remove="Icons\recherche.PNG" />
+    <None Remove="Icons\stop-button.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,7 +56,16 @@
     <Resource Include="Icons\logotest.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Icons\pause-button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\play-button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Icons\recherche.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\stop-button.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

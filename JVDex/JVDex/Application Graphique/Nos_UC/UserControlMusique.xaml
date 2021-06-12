@@ -6,8 +6,14 @@
              xmlns:local="clr-namespace:Application_Graphique.Nos_UC"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="920">
-    <Grid>
-        <TextBlock Width="133" FontSize="30" Foreground="White" FontWeight="Bold"> Page sur la musique</TextBlock>
-            
-    </Grid>
+    <ItemsControl Background="Transparent" Margin="50"
+             ItemsSource="{Binding LesMusiques}"
+             Name="ItemsControlMusique">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <local:UserControlMusique4ItemsControlMusique/>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+
+    </ItemsControl>
 </UserControl>

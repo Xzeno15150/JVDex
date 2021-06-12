@@ -13,7 +13,7 @@ namespace BibliothèqueApplication
         [EnumDescription("Les plus anciens d'abord")]
         Premier_Anciens, 
         [EnumDescription("Ordre alphabétique des noms de créateur")]
-        NomCréateur 
+        NomCréateur,
     }
 }
 //enum des différents tri qui pourront être utilisé dans l'application

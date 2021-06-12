@@ -6,10 +6,11 @@
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="300">
-    <ListView ItemsSource="{Binding LesVisuels}" Background="Transparent" >
+    <ListView ItemsSource="{Binding LesVisuels}" Background="Transparent" 
+              HorizontalContentAlignment="Center">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <StackPanel>
+                <StackPanel >
                     <Image  Source="{Binding Vignette}" Height="150" HorizontalAlignment="Left"/>
                     <TextBlock Foreground="White" FontWeight="Bold" Text="{Binding Legende}"></TextBlock>
                 </StackPanel>
@@ -17,7 +18,7 @@
         </ListView.ItemTemplate>
         <ListView.ItemsPanel>
             <ItemsPanelTemplate>
-                <UniformGrid Columns="4"/>
+                <UniformGrid Columns="3"/>
             </ItemsPanelTemplate>
         </ListView.ItemsPanel>
     </ListView>

@@ -17,7 +17,7 @@ namespace Application_Graphique
     /// </summary>
     public partial class App : Application
     {
-        private static IPersistanceStockApp pers = new PersistanceFichierTexte();
+        private static IPersistanceStockApp pers = new Stub();
         private static StockApp sa = new StockApp(pers);
         public Manager LeManager { get; set; } 
         public Navigator LeNavigateur { get; set; } = new Navigator();

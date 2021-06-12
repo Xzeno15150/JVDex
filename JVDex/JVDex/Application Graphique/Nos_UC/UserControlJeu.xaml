@@ -14,6 +14,6 @@
             <Image Source="{Binding LogoFavori, ElementName=root}"/>
         </Button>
         <TextBlock Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" Text="{Binding Nom, ElementName=root}"/>
-        <Image Margin="10" Source="{Binding Vignette}" HorizontalAlignment="Center" Width="auto" Height="auto"/>
+        <Image Margin="10" Source="{Binding Vignette}" HorizontalAlignment="Center" Width="auto" Height="auto" MaxHeight="100"/>
     </StackPanel>
 </UserControl>
