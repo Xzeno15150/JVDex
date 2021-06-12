@@ -9,6 +9,31 @@
     <None Remove="images\Franchises\DragonQuest\background.jpg" />
     <None Remove="images\Franchises\Layton\background.jpg" />
     <None Remove="images\Franchises\Mario\background.jpg" />
+    <None Remove="images\Franchises\Mario\MarioBros\vignette.png" />
+    <None Remove="images\Franchises\Mario\MarioBros\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\MarioBros\visuel2.png" />
+    <None Remove="images\Franchises\Mario\MarioBros\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\MarioBros\visuel4.jpg" />
+    <None Remove="images\Franchises\Mario\MarioGalaxy\vignette.jpeg" />
+    <None Remove="images\Franchises\Mario\MarioGalaxy\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\MarioGalaxy\visuel2.jpg" />
+    <None Remove="images\Franchises\Mario\MarioGalaxy\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\MarioGalaxy\visuel4.jpeg" />
+    <None Remove="images\Franchises\Mario\MarioKart\vignette.jpg" />
+    <None Remove="images\Franchises\Mario\MarioKart\visuel.jpg" />
+    <None Remove="images\Franchises\Mario\MarioKart\visuel1.bmp" />
+    <None Remove="images\Franchises\Mario\MarioKart\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\MarioKart\visuel4.jpg" />
+    <None Remove="images\Franchises\Mario\MarioOdyssey\vignette.png" />
+    <None Remove="images\Franchises\Mario\MarioOdyssey\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\MarioOdyssey\visuel2.jpg" />
+    <None Remove="images\Franchises\Mario\MarioOdyssey\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\MarioOdyssey\visuel4.jpg" />
+    <None Remove="images\Franchises\Mario\MarioPartnersTime\vignette.jpg" />
+    <None Remove="images\Franchises\Mario\MarioPartnersTime\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\MarioPartnersTime\visuel2.jpg" />
+    <None Remove="images\Franchises\Mario\MarioPartnersTime\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\MarioPartnersTime\visuel4.jpg" />
     <None Remove="images\Franchises\Pokemon\background.jpg" />
     <None Remove="images\Franchises\Zelda\background.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\BOTW\vignette.png" />
@@ -39,6 +64,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\Franchises\Mario\MarioKart\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="images\Franchises\DragonQuest\background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -46,6 +77,76 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Mario\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioBros\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioBros\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioBros\visuel2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioBros\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioBros\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioGalaxy\vignette.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioGalaxy\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioGalaxy\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioGalaxy\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioGalaxy\visuel4.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioKart\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioKart\visuel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioKart\visuel1.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioKart\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioOdyssey\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioOdyssey\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioOdyssey\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioOdyssey\visuel3.jpg" />
+    <Resource Include="images\Franchises\Mario\MarioOdyssey\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioPartnersTime\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioPartnersTime\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioPartnersTime\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioPartnersTime\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\MarioPartnersTime\visuel4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Pokemon\background.jpg">

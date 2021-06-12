@@ -163,22 +163,147 @@ false
 Mario
 /Ressources;Component/images/Franchises/Mario/background.jpg
 #DE1111
-1
-Nom
-Studio
+5
+Mario Kart DS
+Nintendo
 s
-21/05/56
+14/11/2005
 3
-synopsis
+Mario Kart DS est un jeu de courses reprenant l'univers de Mario et de ses amis (et ennemis). Sur de nombreux circuits, choisissez votre personnage préféré et lancez-vous dans des courses de folie. Balancez divers objets comme des carapaces ou des peaux de bananes sur vos concurrents afin de prendre la tête. Un mode multi permet, en wi-fi ou en local, d'affronter ses amis pour de grands moments d'anthologie.
+/Ressources;Component/images/Franchises/Mario/MarioKart/vignette.jpg
 1
-3
+13
+2
+10
+12
+4
+/Ressources;Component/images/Franchises/Mario/MarioKart/visuel.jpg
+circuit plage Cheep Cheep
+/Ressources;Component/images/Franchises/Mario/MarioKart/visuel1.bmp
+circuit Mario
+/Ressources;Component/images/Franchises/Mario/MarioKart/visuel3.jpg
+circuit Cascades Yoshi
+/Ressources;Component/images/Franchises/Mario/MarioKart/visuel4.jpg
+les caractéristiques du kart
+0
 1
-21
-0
-0
-0
+un
+Ce jeu ne comporte aucunes théories
 false
-
+Mario Odyssey
+Nintendo
+s
+27/10/2017
+3
+Bowser enlève Peach pour se marier avec elle. Mario rencontre une créature ressemblant à un chapeau, un Chapiforme, portant le nom de Cappy. Bowser a aussi enlevé sa sœur, Tiara. Mario et Cappy récupèrent un vaisseau abandonné, l'Odyssée, et voyagent de pays en pays à la poursuite de Bowser. Dans la majorité des mondes, ils doivent combattre les Broodals, une bande de lapins anthropomorphiques organisateurs de mariage qui essaie de les empêcher de rattraper Bowser et d'arrêter le mariage.
+/Ressources;Component/images/Franchises/Mario/MarioOdyssey/vignette.png
+3
+0
+4
+3
+1
+14
+4
+/Ressources;Component/images/Franchises/Mario/MarioOdyssey/visuel1.jpg
+Mario avec Cappy à bord de l'Odyssée
+/Ressources;Component/images/Franchises/Mario/MarioOdyssey/visuel2.jpg
+Mario découvre une lune
+/Ressources;Component/images/Franchises/Mario/MarioOdyssey/visuel3.jpg
+Mario en tenue d'explorateur
+/Ressources;Component/images/Franchises/Mario/MarioOdyssey/visuel4.jpg
+Mario au Pays des Sables
+0
+3
+Donkey Kong a sa propre ville?
+un
+La mort de Mario?
+deux
+Mario et Cappy
+trois
+false
+Super Mario Galaxy
+Nintendo
+s
+01/11/2007
+3
+Tous les cent ans, une comète traverse le ciel du Royaume Champignon et y déverse des milliers de fragments d'étoile. Les Toads, gardiens du royaume, s'arment alors de courage et ramassent les fragments d'étoile puis les rassemblent près du château Champignon, où ils fusionnent pour donner naissance à une super étoile. Pour souligner ce don du ciel, une fête est organisée. Dans sa grande bonté, la princesse Peach invite Mario et lui confie au passage qu'elle a quelque chose à lui donner. Fort de cette invitation, Mario se rend au château. Lorsqu'il arrive il est émerveillé par la fête qui bat son plein. Tout semble se passer pour le mieux. Malheureusement pour les invités, les navires volants de Bowser arrivent et attaquent le village des Toads. Des boulets de feu détruisent la ville et des rayons de glace enferment les Toads dans des cristaux. Mario remarque le navire de Bowser qui se dirige vers le château. Le monstre kidnappe Peach ainsi que le château tout entier. Mario tente en vain de sauver Peach, mais
+/Ressources;Component/images/Franchises/Mario/MarioGalaxy/vignette.jpeg
+2
+0
+4
+3
+11
+12
+14
+4
+/Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel1.jpg
+Mario contre Bowesr
+/Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel2.jpg
+La princesse Harmonie
+/Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel3.jpg
+La carte des différentes galaxies
+/Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel4.jpg
+GamePlay
+0
+2
+La famille de la princesse Harmonie
+un
+Les véritables parents d'Harmonie
+deux
+false
+Super Mario Bros
+Nintendo
+s
+13/09/1985
+3
+L'action se déroule dans un univers fictif nommé le Royaume Champignon où habitent la princesse Toadstool et ses serviteurs, les Toads. Un jour, une horde de Koopas maléfiques et de résistants Goombas envahit le Royaume Champignon et transforme tous ses habitants en briques, engendrant la chute du royaume. Seule la princesse Toadstool peut inverser le sort et restaurer la paix dans le royaume, mais malheureusement, elle se fait kidnapper par Bowser, le roi des Koopas. Mario, le héros de l'histoire, est mis au courant de la situation catastrophique du royaume et de ses habitants, et décide de partir à l'aventure pour libérer la princesse Toadstool des griffes de Bowser.
+/Ressources;Component/images/Franchises/Mario/MarioBros/vignette.jpg
+1
+0
+2
+7
+8
+4
+/Ressources;Component/images/Franchises/Mario/MarioBros/visuel1.jpg
+GamePlay du jeu
+/Ressources;Component/images/Franchises/Mario/MarioBros/visuel2.png
+Menu principal
+/Ressources;Component/images/Franchises/Mario/MarioBros/visuel3.jpg
+  
+/Ressources;Component/images/Franchises/Mario/MarioBros/visuel4.jpg
+  
+0
+2
+Mario le gentil de l'histoire?
+un
+La profession de Mario
+trois
+false
+Partners in Time
+Nintendo
+s
+28/11/2005
+3
+Le professeur K. Tastroff a inventé une machine permettant de voyager dans le temps. La princesse Peach, enthousiaste, décide d'aller visiter le Royaume Champignon d'antan. Au même moment, dans le passé, celui-ci est envahi par les Xhampis, sortes d'extraterrestre mycéliformes violets, et la princesse va une fois de plus se faire enlever. La machine, fortement endommagée à la suite de l'attaque, est inutilisable. Mario et Luigi partent alors à sa rescousse dans le passé, au moyen de failles spatiotemporelles apparues dans le château, où ils retrouveront leurs alter ego du passé (bébés). Les deux frères les prennent alors sur le dos et l'aventure se poursuit désormais à quatre.
+/Ressources;Component/images/Franchises/Mario/MarioPartnersTime/vignette.jpg
+1
+3
+1
+10
+4
+/Ressources;Component/images/Franchises/Mario/MarioPartnersTime/visuel1.jpg
+Yoshi Géant
+/Ressources;Component/images/Franchises/Mario/MarioPartnersTime/visuel2.jpg
+Château de Bowser
+/Ressources;Component/images/Franchises/Mario/MarioPartnersTime/visuel3.jpg
+Dans le territoire des Xhampis 
+/Ressources;Component/images/Franchises/Mario/MarioPartnersTime/visuel4.jpg
+GamePlay
+0
+1
+  
+Pas de théories pour ce jeu
+false
 
 
 
