@@ -60,8 +60,29 @@ namespace Data
 
         private Theorie LireTheorie(TextReader reader)
         {
-            return new Theorie(reader.ReadLine(), reader.ReadLine());
+            string nom = reader.ReadLine();
+            string texte = "";
+            string lecture = reader.ReadLine();
+            while (lecture != "$$$")
+            {
+                texte += lecture;
+                lecture = reader.ReadLine();
+            }
+            return new Theorie(nom, texte);
         }
+
+        private string LireSynopsis(TextReader reader)
+        {
+            string texte = "";
+            string lecture = reader.ReadLine();
+            while (lecture != "***")
+            {
+                texte += lecture;
+                lecture = reader.ReadLine();
+            }
+            return texte;
+        }
+
 
         public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
         {
@@ -91,7 +112,7 @@ namespace Data
             else { cj = new Studio(nomCreateurJeu); }
             DateTime.TryParse(reader.ReadLine(), out var dateCreation);
             int.TryParse(reader.ReadLine(), out var limiteAge);
-            string synopsis = reader.ReadLine();
+            string synopsis = LireSynopsis(reader);
             string image = reader.ReadLine();
             int.TryParse(reader.ReadLine(), out var nbGenres);
             ISet<Genres> genres = new HashSet<Genres>();
@@ -107,7 +128,28 @@ namespace Data
                 int.TryParse(reader.ReadLine(), out var plateforme);
                 plateformes.Add((Plateformes)plateforme);
             }
-            return new Jeu(nom, cj, dateCreation, limiteAge, synopsis, image, genres, plateformes);
+            int.TryParse(reader.ReadLine(), out var nbVisuel);
+            ISet<Visuel> visuels = new HashSet<Visuel>();
+            for (int i = 0; i < nbVisuel; i++)
+            {
+                visuels.Add(LireVisuel(reader));
+            }
+
+            int.TryParse(reader.ReadLine(), out var nbMusique);
+            ISet<Musique> musiques = new HashSet<Musique>();
+            for (int i = 0; i < nbMusique; i++)
+            {
+                musiques.Add(LireMusique(reader));
+            }
+
+            int.TryParse(reader.ReadLine(), out var nbTheorie);
+            ISet<Theorie> theories = new HashSet<Theorie>();
+            for (int i = 0; i < nbTheorie; i++)
+            {
+                theories.Add(LireTheorie(reader));
+            }
+
+            return new Jeu(nom, cj, dateCreation, limiteAge, synopsis, image, genres, plateformes,visuels, musiques, theories);
         }
 
         private Visuel LireVisuel(TextReader reader)
@@ -115,6 +157,14 @@ namespace Data
             string image = reader.ReadLine();
             string legende = reader.ReadLine();
             return new Visuel(image, legende);
+        }
+        private Musique LireMusique(TextReader reader)
+        {
+            string nom = reader.ReadLine();
+            string path = reader.ReadLine();
+            string nomcreateur = reader.ReadLine();
+            DateTime.TryParse(reader.ReadLine(), out var dateCreation);
+            return new Musique(nom, path, nomcreateur, dateCreation);
         }
     }
 }

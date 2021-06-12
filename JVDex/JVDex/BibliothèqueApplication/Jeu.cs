@@ -51,16 +51,16 @@ namespace BibliothèqueApplication
         /// <param name="synopsis"> le synopsis du jeu </param>
         /// <param name="image"> l'image associée au jeu </param>
         public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image) 
-            : this(nom, createur, dateCreation, limiteAge, synopsis, image, new HashSet<Genres>(), new HashSet<Plateformes>())
+            : this(nom, createur, dateCreation, limiteAge, synopsis, image, new HashSet<Genres>(), new HashSet<Plateformes>(), new HashSet<Visuel>(), new HashSet<Musique>(), new HashSet<Theorie>())
         {
         }
 
-        public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image, ISet<Genres> genres, ISet<Plateformes> plateformes)
+        public Jeu(string nom, CreateurJeu createur, DateTime dateCreation, int limiteAge, string synopsis, string image, ISet<Genres> genres, ISet<Plateformes> plateformes, ISet<Visuel> visuels, ISet<Musique> musiques, ISet<Theorie> theories )
         {
             Informations = new InformationsJeu(nom, createur, dateCreation, limiteAge, synopsis, genres, plateformes); //
-            LesVisuels = new HashSet<Visuel>();
-            LesMusiques = new HashSet<Musique>();
-            LesTheories = new HashSet<Theorie>();
+            LesVisuels = visuels;
+            LesMusiques = musiques;
+            LesTheories = theories;
             Vignette = image;
         }
 

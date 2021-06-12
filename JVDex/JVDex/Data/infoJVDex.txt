@@ -9,6 +9,7 @@ s
 30/03/2020
 12
 Breath of the Wild propose d'incarner Link, amnésique, réveillé après un long sommeil d'une centaine d'années par une mystérieuse voix qui le guide afin d'éliminer Ganon, « Le Fléau », et restaurer la paix dans le royaume d'Hyrule. Link va alors explorer l'univers étendu et sauvage qu'est devenu le royaume d'Hyrule. Il devra à lui seul trouvé le secret autour de son réveil. 
+***
 /Ressources;Component/images/Franchises/Zelda/Jeux/BOTW/vignette.png
 3
 1
@@ -30,14 +31,19 @@ La cité Guerudo
 5
 A la recherche d'un ancêtre de Ganon
 Elle explique que dans la vidéo, Zelda 
+$$$
 Le secret des Sheika?
 Cette race mentionnée dans Skyward Sword , 
+$$$
 La chronologie de BOTW
 La chronologie "Failed Hero" est précisément ce à quoi elle ressemble: 
+$$$
 Un parallèle avec Wind Walker?
 Wind Waker se déroule dans un Hyrule qui a été complètement inondé par les dieux dans le but de contenir Ganon.
+$$$
 BOTW n'appartient pas à la chronologie?
 Hyrule Historia  propose trois chronologies officielles pour le monde de Zelda. 
+$$$
 false
 Phantom Hourglass
 Nintendo
@@ -45,6 +51,7 @@ s
 23/06/2007
 7
 Link et l'équipage des pirates de Tetra naviguent sur la Grande Mer et rencontrent un nuage de brouillard, dans lequel se trouve un navire abandonné, soupçonné par le groupe d'être un navire fantôme. Tetra se décide à explorer ce vaisseau, mais est transportée dans une autre dimension peu de temps après avoir abordé le navirea 2. Link tente de la secourir, mais tombe à l'eau et échoue inconscient sur une plage voisinea 2. Riche en forces vitales, cette dimension est victime de raids de la part de Bellum, un spectre maléfique se nourrissant de ces ressources. Celui-ci capture ainsi les esprits tutélaires de la Force et de la Sagesse, et force le Roi des Mers et l'esprit du Courage à fuir en dissimulant leur identité.
+***
 /Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/Vignette.jpg
 2
 3
@@ -64,10 +71,13 @@ L'île du froid
 3
 Quatre chevaliers du royaume de galets
 un
+$$$
 Lindebeck
 deux
+$$$
 Le Navire fantôme
 trois
+$$$
 false
 Spirit Track
 Nintendo
@@ -75,6 +85,7 @@ s
 07/12/2009
 7
 The Legend of Zelda: Spirit TracksNote est le quinzième opus de la saga The Legend of Zelda. Le jeu se situe chronologiquement dans la temporalité où Link a réussi à vaincre Ganon dans l'épisode The Legend of Zelda: Ocarina of Time et reste à l'âge adulte. L'intrigue de The Legend of Zelda: Spirit Tracks se déroule cent ans après les événements de Phantom Hourglassa, dans le nouveau Royaume d'Hyrule fondé à la fin du jeu précédenta. En effet, Hyrule est inondé et scellé au fond des eaux avant le déroulement de The Wind Waker et puis le sceau est détruit, les derniers vestiges d'Hyrule sont définitivement engloutis à la fin de cet épisodea 3. Les habitants sont ainsi des descendants des protagonistes du précédent jeu, et certains des personnages secondaires ayant vieillis
+***
 /Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/vignette.jpg
 2
 3
@@ -94,8 +105,10 @@ La tour des Dieux
 2
 Lokomos
 un
+$$$
 Princesse du Crépuscule
 deux
+$$$
 false
 Wind Waker
 Nintendo
@@ -103,6 +116,7 @@ s
 13/12/2002
 7
 L'intrigue de The Wind Waker se déroule un siècle après les événements survenant dans l'épisode Ocarina of Time. Dans cette branche de la temporalité appelée « Le Nouveau Monde », Link a réussi à vaincre Ganondorf et reste à l'âge adulte. L'antagoniste de la série est scellé dans la Triforce de la force, celle du courage est divisée en huit et dispersée. Cependant, Ganondorf réussit à se libérer et revenir, mais Link ne réapparaît pas. Ainsi, les déesses immergent le monde d'Hyrule, puis l'emprisonnent dans un sceau magique sous les eaux de la Grande Mer recouvrant alors le royaume. La Triforce de la sagesse est à ce moment-là scindée en deux, le roi d'Hyrule Daphnès Nohansen Hyrule III, également scellé, en conserve un élément, alors que l'autre est attribué à la princesse Zelda. Pourtant, Ganondorf, qui semblait être piégé, réussit à se libérer une centaine d'années plus tard.
+***
 /Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/vignette.jpg
 2
 3
@@ -122,9 +136,11 @@ Sur la plage
 0
 2
 Voix Pols
-un 
+un
+$$$ 
 Fado
 deux
+$$$
 false
 Ocarina Of Time
 Nintendo
@@ -132,6 +148,7 @@ s
 21/11/1998
 12
 Le royaume d'Hyrule est le résultat de l'unification de plusieurs contrées où vivent différents peuples, avec lesquels Link peut interagir. Les Kokiris sont des enfants semblables à des Hyliens mais qui ne grandissent jamais. Ils reçoivent à leur naissance une fée chargée de veiller sur chacun d'eux et ne peuvent pas quitter la forêt. Les Gorons, êtres robustes dotés d'une force phénoménale et semblables à un rocher une fois repliés sur eux-mêmes, sont insensibles à la lave et se déplacent en roulant. Ils ont à leur tête Darunia. Les Zoras sont des êtres marins mi-hommes, mi-poissons avec à leur tête le roi Zora. Les Sheikahs sont un peuple quasiment éteint puisqu'on ne dénombre plus qu'un seul individu : Impa, la nourrice de Zelda. Enfin, les Gerudos ont la grande particularité de n'être composés que de femmes. Un seul homme Gerudo naît par siècle et le dernier en date n'est autre que Ganondorf. 
+***
 /Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/vignette.png
 2
 3
@@ -144,7 +161,7 @@ Le royaume d'Hyrule est le résultat de l'unification de plusieurs contrées où
 12
 4
 /Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel.jpg
-Linke et la princesse Zelda enfants
+Link et la princesse Zelda enfants
 /Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel2.jpg
 Link et Saria enfants
 /Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel3.jpg
@@ -155,10 +172,13 @@ Epona
 3
 Navi
 un
+$$$
 Temple Sheika
 deux
+$$$
 Gardien du temple
 trois
+$$$
 false
 Mario
 /Ressources;Component/images/Franchises/Mario/background.jpg
@@ -170,6 +190,7 @@ s
 14/11/2005
 3
 Mario Kart DS est un jeu de courses reprenant l'univers de Mario et de ses amis (et ennemis). Sur de nombreux circuits, choisissez votre personnage préféré et lancez-vous dans des courses de folie. Balancez divers objets comme des carapaces ou des peaux de bananes sur vos concurrents afin de prendre la tête. Un mode multi permet, en wi-fi ou en local, d'affronter ses amis pour de grands moments d'anthologie.
+***
 /Ressources;Component/images/Franchises/Mario/MarioKart/vignette.jpg
 1
 13
@@ -189,6 +210,7 @@ les caractéristiques du kart
 1
 un
 Ce jeu ne comporte aucunes théories
+$$$
 false
 Mario Odyssey
 Nintendo
@@ -196,6 +218,7 @@ s
 27/10/2017
 3
 Bowser enlève Peach pour se marier avec elle. Mario rencontre une créature ressemblant à un chapeau, un Chapiforme, portant le nom de Cappy. Bowser a aussi enlevé sa sœur, Tiara. Mario et Cappy récupèrent un vaisseau abandonné, l'Odyssée, et voyagent de pays en pays à la poursuite de Bowser. Dans la majorité des mondes, ils doivent combattre les Broodals, une bande de lapins anthropomorphiques organisateurs de mariage qui essaie de les empêcher de rattraper Bowser et d'arrêter le mariage.
+***
 /Ressources;Component/images/Franchises/Mario/MarioOdyssey/vignette.png
 3
 0
@@ -216,10 +239,13 @@ Mario au Pays des Sables
 3
 Donkey Kong a sa propre ville?
 un
+$$$
 La mort de Mario?
 deux
+$$$
 Mario et Cappy
 trois
+$$$
 false
 Super Mario Galaxy
 Nintendo
@@ -227,6 +253,7 @@ s
 01/11/2007
 3
 Tous les cent ans, une comète traverse le ciel du Royaume Champignon et y déverse des milliers de fragments d'étoile. Les Toads, gardiens du royaume, s'arment alors de courage et ramassent les fragments d'étoile puis les rassemblent près du château Champignon, où ils fusionnent pour donner naissance à une super étoile. Pour souligner ce don du ciel, une fête est organisée. Dans sa grande bonté, la princesse Peach invite Mario et lui confie au passage qu'elle a quelque chose à lui donner. Fort de cette invitation, Mario se rend au château. Lorsqu'il arrive il est émerveillé par la fête qui bat son plein. Tout semble se passer pour le mieux. Malheureusement pour les invités, les navires volants de Bowser arrivent et attaquent le village des Toads. Des boulets de feu détruisent la ville et des rayons de glace enferment les Toads dans des cristaux. Mario remarque le navire de Bowser qui se dirige vers le château. Le monstre kidnappe Peach ainsi que le château tout entier. Mario tente en vain de sauver Peach, mais
+***
 /Ressources;Component/images/Franchises/Mario/MarioGalaxy/vignette.jpeg
 2
 0
@@ -248,8 +275,10 @@ GamePlay
 2
 La famille de la princesse Harmonie
 un
+$$$
 Les véritables parents d'Harmonie
 deux
+$$$
 false
 Super Mario Bros
 Nintendo
@@ -257,6 +286,7 @@ s
 13/09/1985
 3
 L'action se déroule dans un univers fictif nommé le Royaume Champignon où habitent la princesse Toadstool et ses serviteurs, les Toads. Un jour, une horde de Koopas maléfiques et de résistants Goombas envahit le Royaume Champignon et transforme tous ses habitants en briques, engendrant la chute du royaume. Seule la princesse Toadstool peut inverser le sort et restaurer la paix dans le royaume, mais malheureusement, elle se fait kidnapper par Bowser, le roi des Koopas. Mario, le héros de l'histoire, est mis au courant de la situation catastrophique du royaume et de ses habitants, et décide de partir à l'aventure pour libérer la princesse Toadstool des griffes de Bowser.
+***
 /Ressources;Component/images/Franchises/Mario/MarioBros/vignette.jpg
 1
 0
@@ -269,15 +299,17 @@ GamePlay du jeu
 /Ressources;Component/images/Franchises/Mario/MarioBros/visuel2.png
 Menu principal
 /Ressources;Component/images/Franchises/Mario/MarioBros/visuel3.jpg
-  
+pas de légende
 /Ressources;Component/images/Franchises/Mario/MarioBros/visuel4.jpg
-  
+pas de légende
 0
 2
 Mario le gentil de l'histoire?
 un
+$$$
 La profession de Mario
-trois
+deux
+$$$
 false
 Partners in Time
 Nintendo
@@ -285,6 +317,7 @@ s
 28/11/2005
 3
 Le professeur K. Tastroff a inventé une machine permettant de voyager dans le temps. La princesse Peach, enthousiaste, décide d'aller visiter le Royaume Champignon d'antan. Au même moment, dans le passé, celui-ci est envahi par les Xhampis, sortes d'extraterrestre mycéliformes violets, et la princesse va une fois de plus se faire enlever. La machine, fortement endommagée à la suite de l'attaque, est inutilisable. Mario et Luigi partent alors à sa rescousse dans le passé, au moyen de failles spatiotemporelles apparues dans le château, où ils retrouveront leurs alter ego du passé (bébés). Les deux frères les prennent alors sur le dos et l'aventure se poursuit désormais à quatre.
+***
 /Ressources;Component/images/Franchises/Mario/MarioPartnersTime/vignette.jpg
 1
 3
@@ -301,8 +334,9 @@ Dans le territoire des Xhampis
 GamePlay
 0
 1
-  
+un
 Pas de théories pour ce jeu
+$$$
 false
 
 
