@@ -10,7 +10,7 @@ namespace Data
     {
         public (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees()
         {
-            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//..//Data"));
+            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//Data"));
             List<Jeu> lJeux = new List<Jeu>();
             Dictionary<Franchise, List<Jeu>> dFranchise = new Dictionary<Franchise, List<Jeu>>();
 

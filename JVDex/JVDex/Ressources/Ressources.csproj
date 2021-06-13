@@ -109,6 +109,31 @@
     <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel3.jpg" />
     <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel4.jpg" />
     <None Remove="images\Franchises\Pokemon\background.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Diamant\vignette.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Diamant\visuel1.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Diamant\visuel2.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Diamant\visuel3.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Diamant\visuel4.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Perle\vignette.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Perle\visuel1.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Perle\visuel2.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Perle\visuel3.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Perle\visuel4.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Rubis\vignette.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Rubis\visuel1.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Rubis\visuel2.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Rubis\visuel3.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Rubis\visuel4.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Saphir\vignette.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Saphir\visuel1.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Saphir\visuel2.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Saphir\visuel3.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\Saphir\visuel4.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\X\vignette.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\X\visuel1.png" />
+    <None Remove="images\Franchises\Pokemon\Jeux\X\visuel2.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\X\visuel3.jpg" />
+    <None Remove="images\Franchises\Pokemon\Jeux\X\visuel4.jpg" />
     <None Remove="images\Franchises\Zelda\background.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\BOTW\vignette.png" />
     <None Remove="images\Franchises\Zelda\Jeux\BOTW\visuel1.jpg" />
@@ -377,6 +402,81 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Pokemon\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Diamant\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Diamant\visuel1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Diamant\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Diamant\visuel3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Diamant\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Perle\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Perle\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Perle\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Perle\visuel3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Perle\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Rubis\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Rubis\visuel1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Rubis\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Rubis\visuel3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Rubis\visuel4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Saphir\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Saphir\visuel1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Saphir\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Saphir\visuel3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\Saphir\visuel4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\X\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\X\visuel1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\X\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\X\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Pokemon\Jeux\X\visuel4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Zelda\background.jpg">

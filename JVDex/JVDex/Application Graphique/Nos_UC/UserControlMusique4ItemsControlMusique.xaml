@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="50">
     <StackPanel Orientation="Horizontal">
-        <TextBlock Text="{Binding Nom}" Width="170" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Left"/>
+        <TextBlock Text="{Binding Nom}" Width="300" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Left" TextWrapping="Wrap"/>
         <TextBlock Text="{Binding NomCreateur}" Width="200" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Center"/>
         <TextBlock Text="{Binding DateCreation, StringFormat='dd/MM/yyyy'}" Width="150" FontWeight="Bold" Foreground="White" FontSize="20" TextAlignment="Center"/>
         <Button Background="Transparent" BorderBrush="Transparent" Height="30" Margin="10,0,0,0" 
@@ -25,17 +25,7 @@
                 Click="ButtonStop_Click">
             <Image Source="/Icons/stop-button.png"></Image>
         </Button>
-        <StatusBar Background="Transparent" Margin="10,0,0,0" >
-
-            <Slider Background="Transparent" 
-                    x:Name="SliderTemps"
-                    Width="100"></Slider>
-            <TextBlock VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="20" Background="Transparent" FontWeight="Bold" Margin="10,0,0,0" 
-                   Name="TextBoxTimer">
-                00:00
-            </TextBlock>
-        </StatusBar>
-        <MediaElement x:Name="player" LoadedBehavior="Manual"  Visibility="Hidden" Source="musique/botw-OST1.mp3" />
+        <MediaElement x:Name="player" LoadedBehavior="Manual"  Visibility="Hidden" Source="{Binding Path = Path}" />
        
 
 

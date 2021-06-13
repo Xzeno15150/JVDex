@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="920"
              >
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid x:Name="MainGrid" >
         <Grid.RowDefinitions>
             <RowDefinition Height="300"/>
@@ -53,5 +54,6 @@
         </Grid>
        <TextBlock Grid.Row="1" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Name="TextBlockSynopsis" Text="{Binding Informations.Synopsis}"/>
     </Grid>
-    
+    </ScrollViewer>
+
 </UserControl>

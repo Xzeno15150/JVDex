@@ -692,10 +692,10 @@ namespace Data
                 Plateformes.TroisDS,
               },
               new HashSet<Visuel>() {
-                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel1.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel2.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel3.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel4.png","")
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel1.png", "Pokémon Légendaire"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel2.jpg", "Dans la plaine"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel3.jpg", "Combat"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel4.jpg","Dans une ville")
               },
               new HashSet<Musique>(){
                     new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))

@@ -29,7 +29,7 @@ Dans les airs
 La cité Guerudo
 1
 Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+musique/botw-OST1.mp3
 Nintendo
 03/03/2017 00:00:00
 5
@@ -72,8 +72,8 @@ Lindebeck et Link
 /Ressources;Component/images/Franchises/Zelda/Jeux/PhantomHourglass/visuel4.jpg
 L'île du froid
 1
-Main theme
-/musiques/botw-OST1.mp3
+Great Sea
+musique/great-seaPh.mp3
 Nintendo
 03/03/2017 00:00:00
 3
@@ -86,7 +86,7 @@ $$$
 Le Navire fantôme
 Il est possible que la conception du Ghost Ship soit basée sur le Ferry to the Other World de The Legende de Zelda : Ocarina of Time. Les deux navires ont une figure de proue avec deux mains tenant des cloches en dessous, et les deux navires sont structurés autour du thème de la mort.
 $$$
-False
+True
 Spirit Track
 Nintendo
 s
@@ -110,8 +110,8 @@ La flûte de pan
 /Ressources;Component/images/Franchises/Zelda/Jeux/SpiritTrack/visuel4.png
 La tour des Dieux
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Realm Overworld
+musique/reamOverworldSt.mp3
 Nintendo
 03/03/2017 00:00:00
 2
@@ -146,8 +146,8 @@ Le Temple du Temps
 /Ressources;Component/images/Franchises/Zelda/Jeux/OcarinaOfTime/visuel4.jpg
 Epona
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Gerudo Valley
+musique/gerudo-valleyOt.mp3
 Nintendo
 03/03/2017 00:00:00
 3
@@ -184,8 +184,8 @@ Link et la Princesse Zelda
 /Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png
 Sur la plage
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Dragon Roost Island
+musique/dragon-roost-islandWw.mp3
 Nintendo
 03/03/2017 00:00:00
 2
@@ -207,7 +207,7 @@ s
 3
 L'action se déroule dans un univers fictif nommé le Royaume Champignon où habitent la princesse Toadstool et ses serviteurs, les Toads. Un jour, une horde de Koopas maléfiques et de résistants Goombas envahit le Royaume Champignon et transforme tous ses habitants en briques, engendrant la chute du royaume. Seule la princesse Toadstool peut inverser le sort et restaurer la paix dans le royaume, mais malheureusement, elle se fait kidnapper par Bowser, le roi des Koopas. Mario, le héros de l'histoire, est mis au courant de la situation catastrophique du royaume et de ses habitants, et décide de partir à l'aventure pour libérer la princesse Toadstool des griffes de Bowser.
 ***
-/Ressources;Component/images/Franchises/Mario/Jeux/MarioBros/vignette.jpg
+/Ressources;Component/images/Franchises/Mario/Jeux/MarioBros/vignette.png
 1
 0
 2
@@ -223,8 +223,8 @@ Menu principal
 /Ressources;Component/images/Franchises/Mario/Jeux/MarioBros/visuel4.jpg
 
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Overworld Theme
+musique/super-mario-bros-theme.mp3
 Nintendo
 03/03/2017 00:00:00
 2
@@ -257,12 +257,12 @@ Circuit Cascades Yoshi
 /Ressources;Component/images/Franchises/Mario/Jeux/MarioKart/visuel4.jpg
 Les caractéristiques du kart
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Screen Theme 
+musique/title-screen-mario-kart-ds.mp3
 Nintendo
 03/03/2017 00:00:00
 0
-True
+False
 Partners in Time
 Nintendo
 s
@@ -286,12 +286,12 @@ Dans le territoire des Xhampis a
 /Ressources;Component/images/Franchises/Mario/Jeux/MarioPartnersTime/visuel4.jpg
 GamePlay
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Title Theme
+musique/title-themepartners-in-time-ost.mp3
 Nintendo
 03/03/2017 00:00:00
 0
-False
+True
 Mario Odyssey
 Nintendo
 s
@@ -316,8 +316,8 @@ Mario en tenue d'explorateur
 /Ressources;Component/images/Franchises/Mario/Jeux/MarioOdyssey/visuel4.jpg
 Mario au Pays des Sables
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Main Theme
+musique/bonneton-super-mario-odyssey.mp3
 Nintendo
 03/03/2017 00:00:00
 3
@@ -330,7 +330,7 @@ $$$
 Mario et Cappy
 Une théorie suggère que Mario et Cappy sont le même être... C'est fou, mais il y a quelques indices que celui-ci pourrait être vrai. D'une part, comment se fait-il que Mario perde sa forme physique lorsqu'il jette son chapeau pour posséder des objets dans le jeu ? S'il s'avère que Mario et Cappy sont des entités distinctes, le héros ne devrait-il pas garder son propre corps lorsqu'il possède des choses ? La théorie postule que le Mario que nous rencontrons dans ce jeu n'est pas du tout Mario mais un power-up sensible qui a pris la forme du personnage comme un vaisseau pour sa grande aventure. Fondamentalement, cette théorie répondrait à la question : « Où vont les bonus de Mario après leur suppression ? »
 $$$
-True
+False
 Mario Galaxy
 Nintendo
 s
@@ -356,8 +356,8 @@ La carte des différentes galaxies
 /Ressources;Component/images/Franchises/Mario/Jeux/MarioGalaxy/visuel4.jpg
 GamePlay
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Gusty Garden Theme
+musique/super-mario-galaxy-ost-gusty-garden-galaxy.mp3
 Nintendo
 03/03/2017 00:00:00
 2
@@ -367,7 +367,7 @@ $$$
 Les véritables parents d'Harmonie
 En 2007, les fans de Mario font la connaissance d’un tout nouveau personnage, Harmonie. Un personnage complètement inédit mais qui va soulever très vite de nombreuses questions, à commencer par celle qui demeure encore inconnue : qui est-elle vraiment ? Certains éléments nous permettent d’appuyer une théorie très populaire : ce personnage est en réalité la fille… de Mario et Peach. Premier point important : le personnage ressemble assez étrangement à Peach. En plus d’être blonde, elle a aussi les mêmes yeux que cette dernière. On peut alors penser, grâce au physique, qu’il existe un lien de parenté avec Peach (soeur, mère, ou encore fille). D’où vient Harmonie ? Dans Super Mario Galaxy, on découvre petit à petit son histoire dans la bibliothèque de l'observatoire, mais l’histoire de sa naissance ainsi que de ses parents sont totalement restés secrets. La seule chose que nous savons est que son père possède une moustache longue (tiens, tiens), et que sa mère est morte il y a déjà longtemps. On sait aussi au début de son histoire qu'elle adore regarder les étoiles depuis une colline très haute, une passion qui pourrait très bien avoir été transmise par un père qui adorait lui aussi collectionner les étoiles (ça ne vous rappelle pas quelqu’un ?). De plus, on voit sur l'image qui illustre cette page un château ressemblant énormément à celui du royaume Champignon, celui où réside bien souvent Peach. Très vite devenue populaire chez les fans, la théorie faisant d’Harmonie la fille de Mario et Peach, qui aurait donc pu rencontrer ses parents grâce à une histoire de voyage dans le temps, donnerait un peu plus de magie et d’émotions à cet univers...en tout cas nous on y croit.
 $$$
-True
+False
 Pokemon
 /Ressources;Component/images/Franchises/Pokemon/background.jpg
 #FFFB00
@@ -395,8 +395,8 @@ Duel
 /Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/visuel4.jpg
 La Pokémontre
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Cynthia's Theme
+musique/pokemon-diamondpearlplatinum-battle-champion-cynthia-music-hq.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -427,15 +427,15 @@ Dans un champ de fleurs
 /Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/visuel4.jpg
 Le centre de soin
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Intro Theme
+musique/pokemon-pearl-version-intro.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-False
+True
 Pokémon X
 Game Freak
 s
@@ -459,8 +459,8 @@ L'action se situe dans la région fictive de Kalos, inspirée de la France1,2. E
 /Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel4.png
 
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Emotion Theme
+musique/pokemon-xy-bw-emotion-theme-hd-official.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -492,7 +492,7 @@ Centre de soin
 Pokémon Légendaire
 1
 Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+musique/pokemon-sapphire-version-intro.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -523,8 +523,8 @@ Lecture sur une pierre
 /Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/visuel4.png
 Pokémon Légendaire 2
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Team Magma Battle Theme
+musique/pokemon-rubysapphireemerald-battle-team-aquamagma-leader-music-hq.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -559,8 +559,8 @@ GamePlay
 /Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/visuel4.jpg
 Combat
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Toward Sky Theme
+musique/dragon-quest-ix-toward-the-starry-sky.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -595,17 +595,17 @@ Personnalisation d'un personnage
 /Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/visuel4.jpg
 Image du jeu
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Villager Theme
+musique/dragon-quest-x-tmso-wii-u-suite-gossiping-villagers.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-True
+False
 Dragon Quest XI : Les Combattants de la destinée
-	Square Enix
+Square Enix
 s
 29/07/2017 00:00:00
 12
@@ -630,15 +630,15 @@ Dans une ville
 /Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/visuel4.jpg
 Combat
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Dundrasil Ruins
+musique/dundrasilD11.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-True
+False
 Dragon Quest IV: L'Épopée des élus
 Chunsoft
 s
@@ -665,15 +665,15 @@ Dans l'église
 /Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/visuel4.jpg
 Les différents personnages
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Gypsy's Dance Theme
+musique/dragon-quest-iv-ds-music-gypsys-dance.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-True
+False
 Dragon Quest Builders 2
 Square Enix
 s
@@ -698,15 +698,15 @@ La ville
 /Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/visuel4.jpg
 Le village construit
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Main Theme
+musique/dragon-quest-builders-main-theme.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-True
+False
 Professeur Layton
 /Ressources;Component/images/Franchises/Layton/background.jpg
 #896335
@@ -738,8 +738,8 @@ Enigme 1
 /Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel5.jpg
 Enigme 2
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Professor Layton's Theme
+musique/professeur-layton-et-letrange-village-ost-01-theme-of-professor-layton.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -772,8 +772,8 @@ Fans le train
 /Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/visuel4.png
 Mini jeu
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+Pandoras Box Theme
+musique/professeur-layton-et-la-boite-de-pandore-ost-01-theme-of-pandoras-box.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -807,8 +807,8 @@ Professeur Layton jeune et Claire
 /Ressources;Component/images/Franchises/Layton/Jeux/Destin/visuel4.jpg
 Mini jeu
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+The Last Time Travel Theme
+musique/professeur-layton-et-le-destin-perdu-ost-01-theme-of-the-last-time-travel.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -839,15 +839,15 @@ Luc et Arianna
 /Ressources;Component/images/Franchises/Layton/Jeux/Spectre/visuel4.jpg
 La découverte de la brume
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+The Spectre's melody
+musique/professeur-layton-et-lappel-du-spectre-ost-02-the-melody-of-the-specters-flute.mp3
 Nintendo
 03/03/2017 00:00:00
 1
 
 
 $$$
-False
+True
 Professeur Layton et l'Héritage des Aslantes
 Nintendo/Level-5
 s
@@ -871,8 +871,8 @@ Enigme 2
 /Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/visuel4.jpg
 Professeur Layton, Emma, Luc et l'archéologue Desmond Sycamore
 1
-Main theme
-Ressources;Component/musiques/botw-OST1.mp3
+The Lake Side Town
+musique/professeur-layton-et-lheritage-des-aslantes-06-the-lake-side-town-of-kodh.mp3
 Nintendo
 03/03/2017 00:00:00
 1
@@ -880,7 +880,6 @@ Jean Descol?
 Jean Descole est un éminent scientifique, notamment dans le domaine de l'archéologie. Il est âgé de quelques années de plus que Layton et porte un costume noir, agrémenté d'un boa de plumes blanches, un masque totalement blanc, un chapeau de type un peu "pirate" (de très loin) et une grande cape noire. Son nom de naissance est Hershel Bronev, il est le fils de Rachel Bronev et Léon Bronev. Son petit frère, Théodore Bronev est plus connu sous le nom d'Hershel Layton. Ils furent séparés peu après l'enlèvement de leurs parents par l'organisation TARGET. C'est à ce moment qu'il abandonna ce nom contre Desmond Sycamore. Il tira ainsi un trait sur son passé. Il aurai pu rester ainsi si un second drame n'avait pas secoué sa vie: La disparition de sa femme et de sa fille. Il jette alors son nom et l'humanité qu'il lui restait pour devenir un monstre : Jean Descole. Il ne vit alors plus que pour sa vengeance contre TARGET et les Aslantes, qu'il estime responsables de son malheur. Une phrase de Gaïa sème cependant le doute dans son esprit :  "Vous vous cachez derrière ce masque, mais je vous sais capable d'aimer et d'espérer" Ce qui lui arrive après l'héritage des Aslantes est flou. 
 $$$
 False
-e
 
 
 False
