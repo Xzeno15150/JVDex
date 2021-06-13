@@ -6,65 +6,33 @@
              xmlns:local="clr-namespace:Application_Graphique"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1080">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                  Name="ScrollViewerMain">
+        <StackPanel>
+            <StackPanel HorizontalAlignment="Left">
+                <TextBlock FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="140">Menu Théories</TextBlock>
 
-    <ScrollViewer
-        VerticalScrollBarVisibility="Auto" >
-      
-        <Grid>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="300" ></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="400"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="140">Menu Théories</TextBlock>
-                
                 <ListBox Grid.Row="1" ItemsSource="{Binding LesTheories}"
-                        ScrollViewer.CanContentScroll="False"
-                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                        ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                
-                         Background="Wheat"
-                         >
+                         ScrollViewer.CanContentScroll="False"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                         Name="ListBoxNomTheories"
+                         SelectionChanged="ListBoxNomTheories_SelectionChanged"
+                         
+                         Width="500">
+                    <ListBox.Template>
+                        <ControlTemplate>
+                            <ItemsPresenter/>
+                        </ControlTemplate>
+                    </ListBox.Template>
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-
-                            <TextBlock  Height="Auto" Width="Auto" TextWrapping="Wrap" Padding="10" FontSize="20" Text="{Binding Nom}"></TextBlock>
-
+                            <TextBlock  Height="Auto" Width="500" Padding="10" Text="{Binding Nom}" Background="Wheat" FontSize="20" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-           
-
-            </Grid>
-        
-           <!-- <ListBox Background="Transparent"
-                ItemsSource="{Binding LesTheories}"
-                ScrollViewer.CanContentScroll="False"
-                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                ScrollViewer.VerticalScrollBarVisibility="Disabled">
-                 
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Foreground="Wheat" Padding="10" FontSize="20" Text="{Binding Nom}"></TextBlock>
-                            <TextBlock Width="300" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Text="{Binding Texte}"> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</TextBlock>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>-->
-
-            <ItemsControl Grid.Row="1" ItemsSource="{Binding LesTheories}">
+            </StackPanel>
+            <ItemsControl Grid.Row="1" ItemsSource="{Binding LesTheories}"
+                          x:Name="ItemsControlTexteTheories">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -74,8 +42,9 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+        </StackPanel>
+        
 
-        </Grid>
     </ScrollViewer>
 
 

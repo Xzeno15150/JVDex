@@ -25,5 +25,16 @@ namespace Application_Graphique.Nos_UC
             InitializeComponent();
             DataContext = mgr.JeuSelected;
         }
+
+        private void ListBoxNomTheories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(ListBoxNomTheories.SelectedItem != null)
+            {
+                var uiElement = ItemsControlTexteTheories.ItemContainerGenerator.ContainerFromItem(ListBoxNomTheories.SelectedItem) as ContentPresenter;
+                ListBoxNomTheories.SelectedItem = null;
+                Point p = uiElement.TranslatePoint(new Point(), this);
+                ScrollViewerMain.ScrollToVerticalOffset(p.Y + 300);
+            }
+        }
     }
 }

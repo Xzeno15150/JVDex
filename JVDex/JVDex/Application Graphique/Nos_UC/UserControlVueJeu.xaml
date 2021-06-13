@@ -21,7 +21,6 @@
             <ListBox.ItemsPanel >
                 <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True"/>
-                  
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
 

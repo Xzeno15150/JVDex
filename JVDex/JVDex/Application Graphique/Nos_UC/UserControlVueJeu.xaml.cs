@@ -32,8 +32,13 @@ namespace Application_Graphique.Nos_UC
 
         private void ListBoxNavigation_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var content = (e.AddedItems[0] as ListBoxItem).Content as string;
-            nav.NavigateToTabJeu(content);
+            if (ListBoxNavigation.SelectedItem != null)
+            {
+                var content = (ListBoxNavigation.SelectedItem as ListBoxItem).Content as string;
+                ListBoxNavigation.SelectedItem = null;
+                nav.NavigateToTabJeu(content);
+            }
+            
         }
     }
 }
