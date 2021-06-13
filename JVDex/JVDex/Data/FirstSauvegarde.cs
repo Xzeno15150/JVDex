@@ -257,7 +257,7 @@ namespace Data
             //
 
             Jeu Bros = new Jeu("Super Mario Bros", new Studio("Nintendo"), new DateTime(1985, 09, 13), 3, "L'action se déroule dans un univers fictif nommé le Royaume Champignon où habitent la princesse Toadstool et ses serviteurs, les Toads. Un jour, une horde de Koopas maléfiques et de résistants Goombas envahit le Royaume Champignon et transforme tous ses habitants en briques, engendrant la chute du royaume. Seule la princesse Toadstool peut inverser le sort et restaurer la paix dans le royaume, mais malheureusement, elle se fait kidnapper par Bowser, le roi des Koopas. Mario, le héros de l'histoire, est mis au courant de la situation catastrophique du royaume et de ses habitants, et décide de partir à l'aventure pour libérer la princesse Toadstool des griffes de Bowser.",
-               @"/Ressources;Component/images/Franchises/Mario/Jeux/MarioBros/vignette.jpg",
+               @"/Ressources;Component/images/Franchises/Mario/Jeux/MarioBros/vignette.png",
               new HashSet<Genres>() {
                 Genres.Plateforme,
               },
@@ -730,7 +730,14 @@ namespace Data
                     Odyssey,
                     Galaxy,
                 },
-                [fPokemon] = new List<Jeu>(),
+                [fPokemon] = new List<Jeu>() 
+                {
+                    Perle,
+                    Diamant,
+                    X,
+                    Saphire,
+                    Rubis
+                },
                 [fDragon] = new List<Jeu>() 
                 {
                     Neuf,
@@ -772,6 +779,11 @@ namespace Data
                 Onze,
                 Quatre,
                 Builder,
+                Perle,
+                Diamant,
+                X,
+                Saphire,
+                Rubis
             };
 
             return (lesJeux, lesFranchises);
