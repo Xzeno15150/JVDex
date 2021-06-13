@@ -164,6 +164,11 @@ namespace Data
 
         public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
         {
+
+        }
+
+        /*public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
+        {
             Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//..//Data"));
             using(FileStream fs = File.OpenWrite("infoJVDex.txt"))
             {
@@ -202,6 +207,6 @@ namespace Data
             writer.WriteLine(f.Nom);
             writer.WriteLine(f.Background);
             writer.WriteLine(f.Couleur);
-        }
+        }*/
     }
 }

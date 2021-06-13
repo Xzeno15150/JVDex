@@ -32,7 +32,7 @@ namespace Data
                     new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png","")
               },
               new HashSet<Musique>(){
-                    new Musique("Main theme",@"/Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+                    new Musique("Main theme","botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
               },
               new HashSet<Theorie>()
               {
