@@ -74,7 +74,7 @@ un
 $$$
 Lindebeck
 deux
-$$$
+$$$(
 Le Navire fantôme
 trois
 $$$
@@ -264,7 +264,7 @@ Tous les cent ans, une comète traverse le ciel du Royaume Champignon et y déve
 14
 4
 /Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel1.jpg
-Mario contre Bowesr
+Mario contre Bowser
 /Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel2.jpg
 La princesse Harmonie
 /Ressources;Component/images/Franchises/Mario/MarioGalaxy/visuel3.jpg

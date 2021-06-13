@@ -305,6 +305,280 @@ namespace Data
              
               });
 
+            // Layton
+
+            Jeu Village = new Jeu("Professeur Layton l'étrange village", new Studio("Nintendo/Level-5"), new DateTime(2007, 02, 15), 7, "Le professeur Layton et son assistant Luke se rendent au petit village de Saint-Mystère à la demande de Dahlia Reinhold, deuxième femme de feu le baron Reinhold, qui souhaite leur aide pour résoudre une énigme laissée par son défunt époux. Le baron avait écrit dans son testament que quiconque retrouverait la Pomme d'Or, cachée dans le village, hériterait de toute sa fortune.Les deux investigateurs parviennent aux abords de la ville et constatent rapidement que la majorité des habitants est passionnée d'énigmes et de casse-tête en tout genre, desquels le professeur et le jeune garçon sont aussi férus. Ils peuvent également voir au loin une mystérieuse tour située au centre du village...",
+               @"/Ressources;Component/images/Franchises/Layton/Jeux/Village/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.Reflexe
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+                Plateformes.Android,
+                Plateformes.IOS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel1.jpg", "L'entrée du village"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel2.jpg", "Mini Jeu"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel3.jpg", "Menu principal"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel4.jpg","Enigme 1"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Village/visuel5.jpg","Enigme 2")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu BoitePandore = new Jeu("Professeur Layton et la Boîte de Pandore", new Studio("Nintendo/Level-5"), new DateTime(2007, 11, 29), 7, "Les événements de ce jeu se déroulent un an après Professeur Layton et l'Étrange Village.Le professeur Hershel Layton et son apprenti, Luke, reçoivent une lettre d'Andrew Schrader, savant respecté, mentor et ami du professeur, qui contient des informations sur le coffret céleste, communément appelé la \"Boîte de Pandore\". Inquiets, Layton et Luke décident d'aller voir Andrew, mais une fois sur place ces derniers le trouvent mort et le coffret a disparu.Dans le bureau du défunt, Layton et Luke trouvent un ticket pour le Molentary Express et une photo déchirée.Ils décident de prendre le train pour retrouver la Boîte de Pandore.Une fois arrivés à Dropstone, les deux héros découvrent une destination mystère du Molentary Express: Folsense, une ville fantôme.",
+               @"/Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.Reflexion
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+                Plateformes.Android,
+                Plateformes.IOS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/visuel1.jpg", "L'écran d'acceuil"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/visuel2.png", "Les deux amants"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/visuel3.jpg", "Fans le train"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/BoitePandore/visuel4.png","Mini jeu")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu Destin = new Jeu("Professeur Layton et le Destin Perdu", new Studio("Nintendo/Level-5"), new DateTime(2008, 12, 13), 7, "Les évènements de ce jeu se déroulent un an après Professeur Layton et la Boîte de Pandore.Le Professeur Layton et Luke, reçoivent une lettre leur demandant de l\'aide envoyée par...Luke, 10 ans après. Le professeur croyant à une farce de son jeune assistant n\'y accordera pas d\'importance mais part enquêter une semaine plus tard après la disparition de Bill Hawks, le premier ministre de Londres, dans l\'explosion d\'une hypothétique machine à remonter le temps. La lettre lui disant de se rendre à une horlogerie, Layton et Luke découvriront une horloge qui les propulsera 10 ans dans le futur. Retrouvez un Luke adulte mais aussi Flora, l\'inspecteur Chelmey et Don Paolo dans 165 nouvelles énigmes et casses - tête où l\'adversaire de Hershel Layton sera...Hershel Layton lui-même, son futur puis son passé ",
+               @"/Ressources;Component/images/Franchises/Layton/Jeux/Destin/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.Reflexion
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+                Plateformes.TroisDS,
+                Plateformes.Android,
+                Plateformes.IOS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Destin/visuel1.jpg", "Professeur Layton, Luke, Luke du Futur et Flora"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Destin/visuel2.jpg", "Dans le futur"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Destin/visuel3.png", "Professeur Layton jeune et Claire"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Destin/visuel4.jpg","Mini jeu")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu Spectre = new Jeu("Professeur Layton et L'appel du Spectre", new Studio("Nintendo/Level-5"), new DateTime(2009, 11, 26), 7, "Les évènements de ce jeu se déroulent trois ans avant Professeur Layton et l'étrange village. Le professeur Hershel Layton est un archéologue respecté par ses pairs, grand amateur d'énigmes, casse-tête, rébus et autres mystères. Ses capacités de réflexion font de lui un homme hors du commun lui permettant de faire la lumière sur toutes les affaires qu'on lui soumet, même les plus déroutantes. Un jour, le professeur Layton reçoit une missive des plus surprenantes de la part de Clark Triton, l'un de ses vieux amis : \"La nuit, un effroyable géant nimbé de brume rase nos maisons !\" Guidés par un message caché dans la lettre, le professeur Layton et Emmy, sa nouvelle assistante, se rendent dans la ville de Misthallery afin de faire toute la lumière sur ce mystère. Dans cette ville, ils rencontreront Luke, un petit garçon qui affirme savoir quand la fin du monde arrivera. \"Lorsque le son de la flûte résonnera dans toute la ville, le spectre apparaîtra...\" Voilà un extrait de la légende du spectre, transmise de génération en génération à Misthallery.Serait - il la cause de la vague de destruction qui déferle sur la ville ? Cette question est au cœur d'autres mystères que le professeur Layton est bien déterminé à résoudre. Quelle est cette sombre menace qui pèse sur la ville ? Nos héros découvrirons-ils la vérité sur le spectre ?",
+               @"/Ressources;Component/images/Franchises/Layton/Jeux/Spectre/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.Reflexion
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Spectre/visuel1.jpg", "Professeur Layton et Emmy"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Spectre/visuel2.jpg", "GamePlay"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Spectre/visuel3.jpg", "Luc et Arianna"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Spectre/visuel4.jpg","La découverte de la brume")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu Aslante = new Jeu("Professeur Layton et l'Héritage des Aslantes", new Studio("Nintendo/Level-5"), new DateTime(2013, 02, 28), 7, "Un an après les événements du Masque des Miracles, le Docteur Sycamore découvre les vestiges d'une ancienne civilisation, les Aslantes. Au coeur de ces vestiges se cacherait la momie d'une fille à la beauté enivrante qui - malgré les années - serait toujours en vie.Accompagnez le Professeur Layton et Luke son apprenti vers 5 destinations et menez l'enquête à travers 500 énigmes inédites pour percer le secret de cette momie et de sa civilisation. Ces 500 épreuves comprennent plus de 150 casse-tête ponctuant le long de l'aventure, et plus de 365 à télécharger gratuitement chaque jour pendant un an après le lancement du jeu.",
+               @"/Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/vignette.png",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.Reflexion
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.TroisDS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/visuel1.jpg", "Enigme 1"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/visuel2.png", "Gaïa"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/visuel3.jpg", "Enigme 2"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Layton/Jeux/Aslantes/visuel4.jpg","Professeur Layton, Emma, Luc et l'archéologue Desmond Sycamore")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("Jean Descol?","Jean Descole est un éminent scientifique, notamment dans le domaine de l'archéologie. Il est âgé de quelques années de plus que Layton et porte un costume noir, agrémenté d'un boa de plumes blanches, un masque totalement blanc, un chapeau de type un peu \"pirate\" (de très loin) et une grande cape noire. Son nom de naissance est Hershel Bronev, il est le fils de Rachel Bronev et Léon Bronev. Son petit frère, Théodore Bronev est plus connu sous le nom d'Hershel Layton. Ils furent séparés peu après l'enlèvement de leurs parents par l'organisation TARGET. C'est à ce moment qu'il abandonna ce nom contre Desmond Sycamore. Il tira ainsi un trait sur son passé. Il aurai pu rester ainsi si un second drame n'avait pas secoué sa vie: La disparition de sa femme et de sa fille. Il jette alors son nom et l'humanité qu'il lui restait pour devenir un monstre : Jean Descole. Il ne vit alors plus que pour sa vengeance contre TARGET et les Aslantes, qu'il estime responsables de son malheur. Une phrase de Gaïa sème cependant le doute dans son esprit :  \"Vous vous cachez derrière ce masque, mais je vous sais capable d\'aimer et d\'espérer\" Ce qui lui arrive après l'héritage des Aslantes est flou. "),
+              });
+
+            //DragonQuest
+
+            //
+            Jeu Neuf = new Jeu("Dragon Quest IX: Les Sentinelles du firmament", new Studio("Level-5"), new DateTime(2009, 07, 11), 12, "L'Observatoire est le foyer de l'Yggdrasil, le grand arbre du monde, ainsi que des Célestelliens, des êtres chargés par le Tout-Puissant de surveiller et de protéger le monde des mortels. D'après la légende, quand les fyggs sacrées pousseront enfin sur les branches de l'Yggdrasil, un train doré céleste du nom d'Orion Express viendra chercher les Célestelliens pour les emmener au royaume du Tout-Puissant. Dans le but de faire pousser les fyggs, les Célestelliens recueillent depuis la nuit des temps la bienveillessence, matérialisation de la reconnaissance des humains, et l'offrent au grand arbre du monde. Mais aujourd'hui, alors que les fyggs sont sur le point de naître, une histoire incroyable va se dérouler, au cours de laquelle les Célestelliens vont plus que jamais partager le sort de leurs mortels protégés.",
+             @"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/vignette.jpg",
+            new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+            },
+            new HashSet<Plateformes>(){
+                Plateformes.DS,
+            },
+            new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/visuel1.jpg", "L'Observatoir"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/visuel2.jpg", "Entrée d'un village"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/visuel3.jpg", "GamePlay"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Neuf/visuel4.jpg","Combat")
+            },
+            new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+            },
+            new HashSet<Theorie>()
+            {
+                  new Theorie("",""),
+            });
+
+            //
+
+            Jeu Dix = new Jeu("Dragon Quest X", new Studio("Square Enix"), new DateTime(2012, 08, 02), 12, "Dragon Quest X est un MMO dans l'univers de Dragon Quest. Le jeu offre la possibilité d'incarner six races différentes : les humains, les ogres, les elfes, les nains, les pukuripos et les wedis. Elles sont réparties sur les cinq continents du nouveau monde appelé Astortia. En plus de ces six races, six vocations sont disponibles dès le début du jeu : guerrier, mage, prêtre, artiste martial, voleur et troubadour.",
+          @"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/vignette.jpg",
+         new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+         },
+         new HashSet<Plateformes>(){
+                Plateformes.Wii,
+                Plateformes.Wii_U,
+                Plateformes.TroisDS,
+                Plateformes.NintendoSwitch,
+                Plateformes.PS4,
+         },
+         new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/visuel1.jpg", "Les différents personnages"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/visuel2.jpg", "Combat"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/visuel3.jpg", "Personnalisation d'un personnage"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Dix/visuel4.jpg","Image du jeu")
+         },
+         new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+         },
+         new HashSet<Theorie>()
+         {
+                  new Theorie("",""),
+         });
+
+            //
+
+            Jeu Onze = new Jeu("Dragon Quest XI : Les Combattants de la destinée", new Studio("	Square Enix"), new DateTime(2017, 07, 29), 12, "Partez à l’aventure dans l’édition définitive de Dragon Quest XI S : les combattants de la destinée. Incarnez l'Éclairé, un jeune héros qu'on accuse d'être l’enfant de l'Ombre, et réunissez une attachante bande d'aventuriers dessinés par le célèbre mangaka Akira Toriyama. Voyagez aux confins du monde, prenez part à des combats en tour par tour, guidez vos compagnons dans des quêtes épiques pour découvrir vos origines et celle du mal qui plane sur le monde…",
+          @"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/vignette.jpg",
+         new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+         },
+         new HashSet<Plateformes>(){
+                Plateformes.PS4,
+                Plateformes.NintendoSwitch,
+                Plateformes.TroisDS,
+                Plateformes.XboxOne,
+         },
+         new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/visuel1.jpg", "Les différents personnages"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/visuel2.jpg", "Le mode \"rétro\""),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/visuel3.jpg", "Dans une ville"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Onze/visuel4.jpg","Combat")
+         },
+         new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+         },
+         new HashSet<Theorie>()
+         {
+                  new Theorie("",""),
+         });
+
+            //
+
+            Jeu Quatre = new Jeu("Dragon Quest IV: L'Épopée des élus", new Studio("Chunsoft"), new DateTime(1990, 02, 11), 12, "Tout commence par l'étrange disparition de tous les enfants du royaume de Bastione. Le roi, inquiet, décide alors d'envoyer son meilleur et plus fidèle élément, Ragnar, le capitaine des soldats royaux, enquêter sur cette tragédie. À l'autre bout du continent, la jeune tsarine de Zamoksva, Alina, veut quitter le château de son père et partir à l'aventure. À Lakanabe, Torneko rêve d'ouvrir un magasin d'armes: il travaille chez un marchand et connaît tout de ce commerce mais n'a pas assez d'argent pour créer son entreprise et travailler à son propre compte. Il décide de quitter sa femme et son fils pour partir dans le désert dans l'espoir de devenir le plus grand marchand d'armes du monde. Mina et Maya, deux sœurs, filles de Mahabala, un alchimiste renommé, assassiné mystérieusement, décident de quitter leur cabaret pour venger la mort de leur père. Mina est diseuse de bonne aventure et Maya est une danseuse hors pair. Dans le dernier chapitre du jeu, le héros -vous-, après la dévastation de votre village, retrouve progressivement tous les personnages dont on a vécu les aventures dans les chapitres précédents. Ainsi, Ragnar, Alina (ainsi que Borya le magicien et Kiryl le prêtre, qui accompagnent Alina), Torneko, Mina et Maya vont unir leurs forces pour combattre un ennemi commun, Psaro l'Exterminateur, le maître du Mal.",
+          @"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/vignette.png",
+         new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+         },
+         new HashSet<Plateformes>(){
+                Plateformes.NES,
+                Plateformes.PS1,
+                Plateformes.IOS,
+                Plateformes.Android,
+         },
+         new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/visuel1.jpg", "GamePlay"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/visuel2.jpg", "L'extérieur de la ville"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/visuel3.jpg", "Dans l'église"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Quatre/visuel4.jpg","Les différents personnages")
+         },
+         new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+         },
+         new HashSet<Theorie>()
+         {
+                  new Theorie("",""),
+         });
+
+            //
+
+            Jeu Builder = new Jeu("Dragon Quest Builders 2", new Studio("Square Enix"), new DateTime(2018, 12, 20), 7, "Dragon Quest Builders 2 est un jeu vidéo d'action-RPG et bac-à-sable développé et édité par Square Enix. Il s'agit d'une série dérivée de la franchise Dragon Quest et de la suite de Dragon Quest Builders. Il est sorti sur Nintendo Switch et PlayStation 4 le 20 décembre 2018 au Japon et le 12 juillet 2019 dans le reste du monde. Le jeu dispose d'un style graphique en blocs et introduit un système de collecte et de construction comparable au jeu Minecraft2. Contrairement à son prédécesseur, cet opus à la particularité de pouvoir être joué à plusieurs adoptant ainsi une dimension multijoueur. Aussi l'histoire n'est plus divisée en chapitres représentés par des îles, mais constituée d'un seul vaste monde.",
+          @"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/vignette.jpg",
+         new HashSet<Genres>() {
+                Genres.RPG,
+                Genres.Action
+         },
+         new HashSet<Plateformes>(){
+                Plateformes.PS4,
+                Plateformes.NintendoSwitch,
+         },
+         new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/visuel1.jpg", "Mode construction"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/visuel2.jpg", "Récupération de ressources"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/visuel3.jpg", "La ville"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/DragonQuest/Jeux/Builder/visuel4.jpg","Le village construit")
+         },
+         new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+         },
+         new HashSet<Theorie>()
+         {
+                  new Theorie("",""),
+         });
+
+
+
+
+
 
 
             Dictionary<Franchise, List<Jeu>> lesFranchises = new Dictionary<Franchise, List<Jeu>>()
@@ -327,8 +601,22 @@ namespace Data
                     Galaxy,
                 },
                 [fPokemon] = new List<Jeu>(),
-                [fDragon] = new List<Jeu>(),
-                [fLayton] = new List<Jeu>(),
+                [fDragon] = new List<Jeu>() 
+                {
+                    Neuf,
+                    Dix,
+                    Onze,
+                    Quatre,
+                    Builder,
+                },
+                [fLayton] = new List<Jeu>() 
+                {
+                    Village,
+                    BoitePandore,
+                    Destin,
+                    Spectre,
+                    Aslante,
+                },
 
         };
 
@@ -344,6 +632,16 @@ namespace Data
                 Time,
                 Odyssey,
                 Galaxy,
+                Village,
+                BoitePandore,
+                Destin,
+                Spectre,
+                Aslante,
+                Neuf,
+                Dix,
+                Onze,
+                Quatre,
+                Builder,
             };
 
             return (lesJeux, lesFranchises);

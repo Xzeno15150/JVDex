@@ -30,7 +30,58 @@
 
   <ItemGroup>
     <None Remove="images\Franchises\DragonQuest\background.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Builder\vignette.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Builder\visuel1.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Builder\visuel2.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Builder\visuel3.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Builder\visuel4.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Dix\vignette.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Dix\visuel1.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Dix\visuel2.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Dix\visuel3.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Dix\visuel4.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Neuf\vignette.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Neuf\visuel1.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Neuf\visuel2.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Neuf\visuel3.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Neuf\visuel4.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Onze\vignette.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Onze\visuel1.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Onze\visuel2.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Onze\visuel3.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Onze\visuel4.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Quatre\vignette.png" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Quatre\visuel1.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Quatre\visuel2.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Quatre\visuel3.jpg" />
+    <None Remove="images\Franchises\DragonQuest\Jeux\Quatre\visuel4.jpg" />
     <None Remove="images\Franchises\Layton\background.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Aslantes\vignette.png" />
+    <None Remove="images\Franchises\Layton\Jeux\Aslantes\visuel1.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Aslantes\visuel2.png" />
+    <None Remove="images\Franchises\Layton\Jeux\Aslantes\visuel3.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Aslantes\visuel4.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\BoitePandore\vignette.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\BoitePandore\visuel1.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\BoitePandore\visuel2.png" />
+    <None Remove="images\Franchises\Layton\Jeux\BoitePandore\visuel3.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\BoitePandore\visuel4.png" />
+    <None Remove="images\Franchises\Layton\Jeux\Destin\vignette.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Destin\visuel1.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Destin\visuel2.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Destin\visuel3.png" />
+    <None Remove="images\Franchises\Layton\Jeux\Destin\visuel4.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Spectre\vignette.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Spectre\visuel1.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Spectre\visuel2.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Spectre\visuel3.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Spectre\visuel4.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\vignette.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\visuel1.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\visuel2.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\visuel3.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\visuel4.jpg" />
+    <None Remove="images\Franchises\Layton\Jeux\Village\visuel5.jpg" />
     <None Remove="images\Franchises\Mario\background.jpg" />
     <None Remove="images\Franchises\Mario\Jeux\MarioBros\vignette.png" />
     <None Remove="images\Franchises\Mario\Jeux\MarioBros\visuel1.jpg" />
@@ -41,6 +92,22 @@
     <None Remove="images\Franchises\Mario\Jeux\MarioGalaxy\visuel1.jpg" />
     <None Remove="images\Franchises\Mario\Jeux\MarioGalaxy\visuel2.jpg" />
     <None Remove="images\Franchises\Mario\Jeux\MarioGalaxy\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioGalaxy\visuel4.jpeg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioKart\vignette.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioKart\visuel.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioKart\visuel1.bmp" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioKart\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioKart\visuel4.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioOdyssey\vignette.png" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioOdyssey\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioOdyssey\visuel2.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioOdyssey\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioOdyssey\visuel4.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\vignette.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel1.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel2.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel3.jpg" />
+    <None Remove="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel4.jpg" />
     <None Remove="images\Franchises\Pokemon\background.jpg" />
     <None Remove="images\Franchises\Zelda\background.jpg" />
     <None Remove="images\Franchises\Zelda\Jeux\BOTW\vignette.png" />
@@ -75,7 +142,160 @@
     <Resource Include="images\Franchises\DragonQuest\background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Builder\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Builder\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Builder\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Builder\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Builder\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Dix\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Dix\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Dix\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Dix\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Dix\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Neuf\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Neuf\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Neuf\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Neuf\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Neuf\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Onze\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Onze\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Onze\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Onze\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Onze\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Quatre\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Quatre\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Quatre\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Quatre\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\DragonQuest\Jeux\Quatre\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\Franchises\Layton\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Aslantes\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Aslantes\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Aslantes\visuel2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Aslantes\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Aslantes\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\BoitePandore\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\BoitePandore\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\BoitePandore\visuel2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\BoitePandore\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\BoitePandore\visuel4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Destin\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Destin\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Destin\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Destin\visuel3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Destin\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Spectre\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Spectre\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Spectre\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Spectre\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Spectre\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Layton\Jeux\Village\visuel5.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Mario\background.jpg">
@@ -106,6 +326,54 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Mario\Jeux\MarioGalaxy\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioGalaxy\visuel4.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioKart\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioKart\visuel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioKart\visuel1.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioKart\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioKart\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioOdyssey\vignette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioOdyssey\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioOdyssey\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioOdyssey\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioOdyssey\visuel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioPartnersTime\vignette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Franchises\Mario\Jeux\MarioPartnersTime\visuel4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Franchises\Pokemon\background.jpg">

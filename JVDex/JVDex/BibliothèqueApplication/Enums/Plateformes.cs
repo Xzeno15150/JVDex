@@ -34,7 +34,8 @@ namespace BibliothèqueApplication
         IOS, //20
         Android,//21
         [EnumDescription("Nintendo 64")]
-        Nintendo64
+        Nintendo64,
+        NES
     }
 }
 //enum des différentes plateformes des jeux

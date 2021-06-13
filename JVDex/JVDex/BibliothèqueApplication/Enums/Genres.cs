@@ -19,7 +19,8 @@ namespace BibliothèqueApplication
         Simulation,//10
         Stratégie,//11
         Sport,//12
-        Course//13
+        Course,
+        Reflexion
     }
 }
 //enum des différents genres des jeux
