@@ -84,11 +84,6 @@ namespace Data
         }
 
 
-        public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
-        {
-            throw new NotImplementedException();
-        }
-
         private Franchise LireFranchise(TextReader reader)
         {
             string nom = reader.ReadLine();
@@ -165,6 +160,48 @@ namespace Data
             string nomcreateur = reader.ReadLine();
             DateTime.TryParse(reader.ReadLine(), out var dateCreation);
             return new Musique(nom, path, nomcreateur, dateCreation);
+        }
+
+        public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
+        {
+            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//..//Data"));
+            using(FileStream fs = File.OpenWrite("infoJVDex.txt"))
+            {
+                using (TextWriter writer = new StreamWriter(fs)) 
+                {
+                    writer.WriteLine(franchises.Keys.Count);
+                    foreach(Franchise f in franchises.Keys)
+                    {
+                        SauvegardeFranchise(f, writer);
+                        writer.WriteLine(franchises[f].Count);
+                        foreach(Jeu j in franchises[f])
+                        {
+                            SauvegardeJeu(j, writer);
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        private void SauvegardeJeu(Jeu j, TextWriter writer)
+        {
+            writer.WriteLine(j.Informations.Nom);
+            writer.WriteLine(j.Informations.Createur.Nom);
+            if (j.Informations.Createur.GetType() == Studio)
+            {
+
+            }
+            //writer.WriteLine(j.Nom);
+            //writer.WriteLine(j.Nom);
+        }
+
+        private void SauvegardeFranchise(Franchise f, TextWriter writer)
+        {
+            writer.WriteLine(f.Nom);
+            writer.WriteLine(f.Background);
+            writer.WriteLine(f.Couleur);
         }
     }
 }

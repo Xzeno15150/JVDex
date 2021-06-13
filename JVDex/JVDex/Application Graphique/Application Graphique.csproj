@@ -30,6 +30,7 @@
     <None Remove="Icons\play-button.png" />
     <None Remove="Icons\recherche.PNG" />
     <None Remove="Icons\stop-button.png" />
+    <None Remove="Musiques\botw-OST1.mp3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,6 +71,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\stop-button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Musiques\botw-OST1.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

@@ -32,7 +32,7 @@ namespace Data
                     new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png","")
               },
               new HashSet<Musique>(){
-                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+                    new Musique("Main theme",@"/Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
               },
               new HashSet<Theorie>()
               {
@@ -575,8 +575,138 @@ namespace Data
                   new Theorie("",""),
          });
 
+            //Pokemon
+
+            //
+
+            Jeu Diamant = new Jeu("Pokémon version Diamant", new Studio("Game Freak"), new DateTime(2006, 09, 28), 3, "L'action de Pokémon Diamant et Perle se déroule à Sinnoh, basée sur la région japonaise d'Hokkaido. Insulaire, elle est constituée de quatorze villes peuplées par des humains et de routes terrestres et maritimes qui les relient entre elles. Chaque zone géographique de la région est habitée par différentes espèces de créatures appelées Pokémon. Si le joueur prend le personnage masculin, Louka de Bonaugure est le protagoniste de Pokémon Diamant et Perle, sinon ce sera Aurore, le protagoniste féminin et personnage important de la série.Louka ou Aurore vit à Bonaugure(Twinleaf TownN 1), dans la région de Sinnoh.Un jour, alors qu'il/elle se promenait avec son meilleur ami Barry, il/elle tombe sur une mallette contenant des Poké Balls. Tout d'un coup, des Étourmi les attaquent, lui / elle et Barry.Les deux enfants se servent d'un des Pokémon dans la mallette pour vaincre les Étourmi. Les Pokémon sont Tortipouss, Ouisticram et Tiplouf (Turtwig, Chimchar et Piplup). Le professeur Sorbier (Rowan), qui est le propriétaire des Pokémon, décide de le leur confier comme « Pokémon de départ »1. Tout au long du jeu, les deux personnages devront déjouer les plans maléfiques de la Team Galaxy, qui tente de s'approprier le Pokémon légendaire Dialga ou Palkia, selon la version, afin de créer un nouvel univers.",
+               @"/Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/visuel1.png", "Pokémon légendaire"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/visuel2.jpg", "Combat"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/visuel3.png", "Duel"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Diamant/visuel4.jpg","La Pokémontre")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu Perle = new Jeu("Pokémon version Perle", new Studio("Game Freak"), new DateTime(2002, 12, 13), 7, "L'action de Pokémon Diamant et Perle se déroule à Sinnoh, basée sur la région japonaise d'Hokkaido. Insulaire, elle est constituée de quatorze villes peuplées par des humains et de routes terrestres et maritimes qui les relient entre elles. Chaque zone géographique de la région est habitée par différentes espèces de créatures appelées Pokémon. Si le joueur prend le personnage masculin, Louka de Bonaugure est le protagoniste de Pokémon Diamant et Perle, sinon ce sera Aurore, le protagoniste féminin et personnage important de la série.Louka ou Aurore vit à Bonaugure(Twinleaf TownN 1), dans la région de Sinnoh.Un jour, alors qu'il/elle se promenait avec son meilleur ami Barry, il/elle tombe sur une mallette contenant des Poké Balls. Tout d'un coup, des Étourmi les attaquent, lui / elle et Barry.Les deux enfants se servent d'un des Pokémon dans la mallette pour vaincre les Étourmi. Les Pokémon sont Tortipouss, Ouisticram et Tiplouf (Turtwig, Chimchar et Piplup). Le professeur Sorbier (Rowan), qui est le propriétaire des Pokémon, décide de le leur confier comme « Pokémon de départ ». Tout au long du jeu, les deux personnages devront déjouer les plans maléfiques de la Team Galaxy, qui tente de s'approprier le Pokémon légendaire Dialga ou Palkia, selon la version, afin de créer un nouvel univers.",
+               @"/Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.DS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/visuel1.jpg", "Pokémon Légendaire"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/visuel2.jpg", "La Pokémontre"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/visuel3.jpg", "Dans un champ de fleurs"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Perle/visuel4.jpg","Le centre de soin")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+            //
+
+            Jeu Rubis = new Jeu("Pokémon version Rubis", new Studio("Game Freak"), new DateTime(2002, 11, 21), 3, "L'action de Pokémon Rubis et Saphir se déroule dans la région fictive de Hoenn. Insulaire, elle est constituée de six villes et neuf villages peuplés par des humains et de routes terrestres, maritimes et sous-marines qui les relient entre elles. Chaque zone géographique de la région est habitée par différentes espèces de créatures appelées Pokémon. Le protagoniste de Pokémon Rubis et Saphir est un jeune garçon appelé Ruby ou Brice ou une jeune fille nommée Sapphire ou Flora qui vient d'emménager à Bourg-en-Vol2 (Littleroot TownN 1). Le père du héros ou de l'héroïne est champion d'arène. Au début du jeu, il ou elle va aider le professeur Seko (Birch) attaqué par une espèce de Pokémon. Le professeur demande au protagoniste de lui venir en aide en choisissant un Pokémon parmi les trois proposés : Arcko, Poussifeu et Gobou (Treecko, Torchic et Mudkip). Afin de le remercier, le professeur donnera au joueur le Pokémon choisi comme « Pokémon de départ ». Après avoir traversé la première ville, le rival défie le joueur dans un combat où s'affrontent leurs deux Pokémon de départ ; il continuera de combattre le héros tout au long de son aventure. Le joueur entame alors une quête à travers Hoenn, capturant les Pokémon sauvages, les entraînant et combattant avec ceux des autres dresseurs Pokémon, avec pour but de d'obtenir le titre de « Maître Pokémon », comme pour les opus précédents. Pour cela, il rencontrera dans certaines villes des établissements spéciaux appelées « arènes », à l'intérieur desquelles demeure un champion que le joueur devra battre dans un combat Pokémon pour obtenir un badge. Une fois les huit badges acquis, le joueur sera autorisé à combattre la Ligue Pokémon, qui se compose des meilleurs dresseurs de Pokémon de la région. Le héros devra défaire les quatre membres de la Ligue et le maître ultime afin de devenir Maître Pokémon2. Au cours de l'aventure, le joueur rencontrera plusieurs fois deux organisations criminelles : la Team Magma et la Team Aqua. La Team Magma souhaite contrôler Groudon, afin d'agrandir les terres et la Team Aqua souhaite contrôler Kyogre, afin d'étendre les mers. Dans Pokémon Rubis, la Team Magma est l'adversaire du joueur, dans Pokémon Saphir, il s'agit de la Team Aqua. L'autre organisation est alliée.",
+               @"/Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.Gameboy_Advance,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/visuel1.png", "Pokémon Légendaire"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/visuel2.jpg", "Dans le vilage au bord de l'eau"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/visuel3.png", "Lecture sur une pierre"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Rubis/visuel4.png","Pokémon Légendaire 2")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
 
 
+            //
+
+
+            Jeu Saphire = new Jeu("Pokémon version Saphir", new Studio("Game Freak"), new DateTime(2002, 11, 21), 3, "L'action de Pokémon Rubis et Saphir se déroule dans la région fictive de Hoenn. Insulaire, elle est constituée de six villes et neuf villages peuplés par des humains et de routes terrestres, maritimes et sous-marines qui les relient entre elles. Chaque zone géographique de la région est habitée par différentes espèces de créatures appelées Pokémon. Le protagoniste de Pokémon Rubis et Saphir est un jeune garçon appelé Ruby ou Brice ou une jeune fille nommée Sapphire ou Flora qui vient d'emménager à Bourg-en-Vol2 (Littleroot TownN 1). Le père du héros ou de l'héroïne est champion d'arène. Au début du jeu, il ou elle va aider le professeur Seko (Birch) attaqué par une espèce de Pokémon. Le professeur demande au protagoniste de lui venir en aide en choisissant un Pokémon parmi les trois proposés : Arcko, Poussifeu et Gobou (Treecko, Torchic et Mudkip). Afin de le remercier, le professeur donnera au joueur le Pokémon choisi comme « Pokémon de départ ». Après avoir traversé la première ville, le rival défie le joueur dans un combat où s'affrontent leurs deux Pokémon de départ ; il continuera de combattre le héros tout au long de son aventure. Le joueur entame alors une quête à travers Hoenn, capturant les Pokémon sauvages, les entraînant et combattant avec ceux des autres dresseurs Pokémon, avec pour but de d'obtenir le titre de « Maître Pokémon », comme pour les opus précédents. Pour cela, il rencontrera dans certaines villes des établissements spéciaux appelées « arènes », à l'intérieur desquelles demeure un champion que le joueur devra battre dans un combat Pokémon pour obtenir un badge. Une fois les huit badges acquis, le joueur sera autorisé à combattre la Ligue Pokémon, qui se compose des meilleurs dresseurs de Pokémon de la région. Le héros devra défaire les quatre membres de la Ligue et le maître ultime afin de devenir Maître Pokémon2. Au cours de l'aventure, le joueur rencontrera plusieurs fois deux organisations criminelles : la Team Magma et la Team Aqua. La Team Magma souhaite contrôler Groudon, afin d'agrandir les terres et la Team Aqua souhaite contrôler Kyogre, afin d'étendre les mers. Dans Pokémon Rubis, la Team Magma est l'adversaire du joueur, dans Pokémon Saphir, il s'agit de la Team Aqua. L'autre organisation est alliée.",
+               @"/Ressources;Component/images/Franchises/Pokemon/Jeux/Saphir/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.Gameboy_Advance,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Saphir/visuel1.png", "Combat"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Saphir/visuel2.jpg", "Au bord de l'eau"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Saphir/visuel3.png", "Centre de soin"),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/Saphir/visuel4.png","Pokémon Légendaire")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+
+            //
+
+            Jeu X = new Jeu("Pokémon X", new Studio("Game Freak"), new DateTime(2013, 10, 12),3, "L'action se situe dans la région fictive de Kalos, inspirée de la France1,2. Elle est constituée de plusieurs villes peuplées par des humains et de routes terrestres ou maritimes qui les relient entre elles. Chaque zone géographique de la région est habitée par différentes espèces de créatures appelées Pokémon, chacune des espèces possédant une zone de répartition différente ; il en existe trois, le centre, la côte et les monts3. Le ou la protagoniste débute dans la ville de Bourg Croquis.Le joueur aura à choisir entre le protagoniste masculin(Kalem) ou le protagoniste féminin(Serena).Il ou elle part avec quatre compagnons4.Parmi eux, Tierno proposera au joueur de choisir entre trois Pokémon de départ, Marisson, Feunnec et Grenousse, puis Trovato lui distribuera un Pokédex, l'encyclopédie fictive recensant les différentes espèces de Pokémon. Le joueur entame alors une quête à travers Kalos, capturant les Pokémon sauvages, les entraînant et combattant avec ceux des autres dresseurs Pokémon, avec pour but de d'obtenir le titre de « Maître Pokémon ». Pour cela, il rencontrera dans certaines villes des établissements spéciaux appelées « arènes », à l'intérieur desquelles demeure un Champion que le joueur devra battre dans un combat Pokémon pour obtenir un badge.Une fois les huit badges acquis, le joueur sera autorisé à combattre la Ligue Pokémon, qui se compose des meilleurs dresseurs de Pokémon de la région.Le héros devra défaire les quatre membres de la Ligue puis, in fine, le maître de la Ligue pour devenir Maître Pokémon5. Tout au long du jeu, le joueur devra combattre les forces de la Team Flare",
+               @"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/vignette.jpg",
+              new HashSet<Genres>() {
+                Genres.Aventure,
+                Genres.RPG
+              },
+              new HashSet<Plateformes>(){
+                Plateformes.TroisDS,
+              },
+              new HashSet<Visuel>() {
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel1.jpg", ""),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel2.jpg", ""),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel3.jpg", ""),
+                    new Visuel(@"/Ressources;Component/images/Franchises/Pokemon/Jeux/X/visuel4.png","")
+              },
+              new HashSet<Musique>(){
+                    new Musique("Main theme",@"Ressources;Component/musiques/botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+              },
+              new HashSet<Theorie>()
+              {
+                  new Theorie("",""),
+              });
+
+
+            
 
 
 

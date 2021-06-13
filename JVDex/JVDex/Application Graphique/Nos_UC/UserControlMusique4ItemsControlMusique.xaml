@@ -35,5 +35,10 @@
                 00:00
             </TextBlock>
         </StatusBar>
+        <MediaElement x:Name="player" LoadedBehavior="Manual"  Visibility="Hidden" Source="../../Musiques/botw-OST1.mp3" />
+       
+
+
     </StackPanel>
+    
 </UserControl>

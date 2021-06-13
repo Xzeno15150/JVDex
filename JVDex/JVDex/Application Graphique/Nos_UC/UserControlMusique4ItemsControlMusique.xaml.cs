@@ -24,12 +24,13 @@ namespace Application_Graphique.Nos_UC
     public partial class UserControlMusique4ItemsControlMusique : UserControl
     {
         public Manager mgr = (App.Current as App).LeManager;
-        MediaPlayer player = new MediaPlayer();
+        //MediaElement player = new MediaElement();
         public UserControlMusique4ItemsControlMusique()
         {
             InitializeComponent();
 
-           // player.Open(new Uri(@"../musiques/botw-OST1.mp3", UriKind.Relative));
+            //player.Open(new Uri(@"../musiques/botw-OST1.mp3", UriKind.Relative));
+           // player.Source = new Uri(@"../musiques/botw-OST1.mp3", UriKind.Relative);
         }
 
         private void ButtonPlay_Click(object sender, RoutedEventArgs e)
