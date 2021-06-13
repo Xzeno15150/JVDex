@@ -28,23 +28,25 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="140">Menu Théories</TextBlock>
-            
+                
                 <ListBox Grid.Row="1" ItemsSource="{Binding LesTheories}"
-                 ScrollViewer.CanContentScroll="False"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                        ScrollViewer.CanContentScroll="False"
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                        ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                
                          Background="Wheat"
                          >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
 
-                            <TextBlock  Padding="10" FontSize="20" Text="{Binding Nom}"></TextBlock>
+                            <TextBlock  Height="Auto" Width="Auto" TextWrapping="Wrap" Padding="10" FontSize="20" Text="{Binding Nom}"></TextBlock>
 
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-            
-        </Grid>
+           
+
+            </Grid>
         
            <!-- <ListBox Background="Transparent"
                 ItemsSource="{Binding LesTheories}"
@@ -63,23 +65,14 @@
             </ListBox>-->
 
             <ItemsControl Grid.Row="1" ItemsSource="{Binding LesTheories}">
-                <!--<ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel />
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>-->
-
                 <ItemsControl.ItemTemplate>
-                   
                     <DataTemplate>
                         <StackPanel>
                             <TextBlock Foreground="Wheat" Padding="10" FontSize="20" Text="{Binding Nom}"></TextBlock>
                             <TextBlock Width="auto" Height="auto" Background="DarkCyan" Foreground="White" Padding="30" TextWrapping="Wrap" FontSize="20" FontStretch="ExtraExpanded" Text="{Binding Texte}"></TextBlock>
                         </StackPanel>
                     </DataTemplate>
-
                 </ItemsControl.ItemTemplate>
-
             </ItemsControl>
 
         </Grid>
