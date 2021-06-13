@@ -27,25 +27,6 @@ namespace Data
                         for(int k = 0; k<nbJeux; k++)
                         {
                             Jeu j = LireJeu(reader);
-                            int.TryParse(reader.ReadLine(), out int nbVisuels);
-                            for(int z = 0;  z < nbVisuels; z++) 
-                            {
-                                Visuel v = LireVisuel(reader);
-                                j.AjouterVisuel(v);
-                            }
-                            int.TryParse(reader.ReadLine(), out int nbMusiques);
-                           /* for (int z = 0; z < nbMusiques; z++)
-                            {
-                                string m = reader.ReadLine();
-                                j.AjouterMusique(m);
-                            }*/
-                            int.TryParse(reader.ReadLine(), out int nbTheories);
-                            for (int z  = 0; z < nbTheories; z++)
-                            {
-                                Theorie t = LireTheorie(reader);
-                                j.AjouterTheorie(t);
-                            }
-
                             bool.TryParse(reader.ReadLine(), out bool isFavori);
                             j.IsFavoris = isFavori;
                             lJeux.Add(j);
@@ -164,13 +145,8 @@ namespace Data
 
         public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
         {
-
-        }
-
-        /*public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
-        {
-            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//..//Data"));
-            using(FileStream fs = File.OpenWrite("infoJVDex.txt"))
+            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//Data"));
+            using (FileStream fs = File.OpenWrite("infoJVDex.txt"))
             {
                 using (TextWriter writer = new StreamWriter(fs)) 
                 {
@@ -193,13 +169,63 @@ namespace Data
         private void SauvegardeJeu(Jeu j, TextWriter writer)
         {
             writer.WriteLine(j.Informations.Nom);
-            writer.WriteLine(j.Informations.Createur.Nom);
-            if (j.Informations.Createur.GetType() == Studio)
-            {
+            writer.WriteLine(j.Informations.Createur);
+            writer.WriteLine(j.Informations.DateCreation);
+            writer.WriteLine(j.Informations.LimiteAge);
+            writer.WriteLine(j.Informations.Synopsis);
+            writer.WriteLine("***");
+            writer.WriteLine(j.Vignette);
+            //genres, plateformes, visuels, musiques, theories
 
+            writer.WriteLine(j.Informations.LesGenres.Count);
+            foreach (Genres g in j.Informations.LesGenres)
+            {
+                writer.WriteLine((int) g);
             }
-            //writer.WriteLine(j.Nom);
-            //writer.WriteLine(j.Nom);
+            writer.WriteLine(j.Informations.LesPlateformes.Count);
+            foreach(Plateformes p in j.Informations.LesPlateformes)
+            {
+                writer.WriteLine((int)p);
+            }
+            writer.WriteLine(j.LesVisuels.Count);
+            foreach(Visuel v in j.LesVisuels)
+            {
+                SauvegardeVisuel(v, writer);
+            }
+            writer.WriteLine(j.LesMusiques.Count);
+            foreach (Musique m in j.LesMusiques)
+            {
+                SauvegardeMusique(m, writer);
+            }
+            writer.WriteLine(j.LesTheories.Count);
+            foreach (Theorie t in j.LesTheories)
+            {
+                SauvegardeTheorie(t, writer);
+            }
+            writer.WriteLine(j.IsFavoris);
+
+        }
+
+        private void SauvegardeTheorie(Theorie t, TextWriter writer)
+        {
+            writer.WriteLine(t.Nom);
+            writer.WriteLine(t.Texte);
+            writer.WriteLine("$$$");
+        }
+
+        private void SauvegardeVisuel(Visuel v, TextWriter writer)
+        {
+            writer.WriteLine(v.Vignette);
+            writer.WriteLine(v.Legende);
+        }
+
+        private void SauvegardeMusique(Musique m, TextWriter writer)
+        {
+            //nom, path, nomc, date
+            writer.WriteLine(m.Nom);
+            writer.WriteLine(m.Path);
+            writer.WriteLine(m.NomCreateur);
+            writer.WriteLine(m.DateCreation);
         }
 
         private void SauvegardeFranchise(Franchise f, TextWriter writer)
@@ -207,6 +233,6 @@ namespace Data
             writer.WriteLine(f.Nom);
             writer.WriteLine(f.Background);
             writer.WriteLine(f.Couleur);
-        }*/
+        }
     }
 }

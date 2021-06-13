@@ -25,6 +25,7 @@ namespace Application_Graphique
     {
         public Manager mgr => (App.Current as App).LeManager;
         public Navigator nav => (App.Current as App).LeNavigateur;
+        public IPersistanceStockApp pers => (App.Current as App).Pers;
 
         public MainWindow()
         {
@@ -59,6 +60,11 @@ namespace Application_Graphique
         private void ListBoxFranchises_LostFocus(object sender, RoutedEventArgs e)
         {
             (sender as ListBox).SelectedItem = null;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            new PersistanceFichierTexte().SauvegardeDonnees(mgr.TousLesJeux, mgr.ToutesLesFranchises);
         }
     }
 }

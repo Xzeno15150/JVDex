@@ -17,7 +17,7 @@ namespace BibliothèqueApplication
 
         public override string ToString()
         {
-            return $"{Nom} {Prenom}";
+            return $"{Nom}\nc \n{Prenom}\n{DateNaissance}";
         }
 
         public bool Equals(Createur other)

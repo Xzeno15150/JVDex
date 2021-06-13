@@ -33,13 +33,7 @@ namespace BibliothèqueApplication
                 }
                 else
                 {
-                    foreach (Jeu j in tousLesJeux)
-                    {
-                        if (j.Informations.Nom.ToLower().Contains(JeuRecherche.ToLower()))
-                        {
-                            JeuxRecherchés.Add(j);
-                        }
-                    }
+                    JeuxRecherchés = tousLesJeux.Where(j =>j.Informations.Nom.ToLower().Contains(JeuRecherche.ToLower())).ToList();
                 }
 
                 switch (TypeTriJeuSelected)

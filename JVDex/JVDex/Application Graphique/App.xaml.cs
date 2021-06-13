@@ -18,13 +18,14 @@ namespace Application_Graphique
     public partial class App : Application
     {
         //private static IPersistanceStockApp pers = new PersistanceFichierTexte();
-        private static IPersistanceStockApp pers = new FirstSauvegarde();
-        private static StockApp sa = new StockApp(pers);
+        public IPersistanceStockApp Pers { get; } = new PersistanceFichierTexte();
+        private static StockApp sa;
         public Manager LeManager { get; set; } 
         public Navigator LeNavigateur { get; set; } = new Navigator();
 
         public App()
         {
+            sa = new StockApp(Pers);
             sa.ChargeDonnees();
             LeManager = new Manager(sa);
         }
