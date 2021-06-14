@@ -83,6 +83,18 @@ namespace BibliothèqueApplication
                 }
             }
         }
+        public string JeuRecherche
+        {
+            get => jeuRecherche;
+            set
+            {
+                if (jeuRecherche != value)
+                {
+                    jeuRecherche = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
+                }
+            }
+        }
 
         public string TypeTriJeuSelectedToString 
         {
@@ -98,18 +110,7 @@ namespace BibliothèqueApplication
         /// <summary>
         /// propriété
         /// </summary>
-        public string JeuRecherche
-        {
-            get => jeuRecherche;
-            set
-            {
-                if (jeuRecherche != value)
-                {
-                    jeuRecherche = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TousLesJeux"));
-                }
-            }
-        }
+       
         public IList<TypeTri> ListTypeTriJeu => new List<TypeTri>(Enum.GetValues(typeof(TypeTri)).Cast<TypeTri>());
 
         public Jeu JeuSelected

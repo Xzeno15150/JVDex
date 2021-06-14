@@ -4,35 +4,35 @@ namespace BibliothèqueApplication
 {
     public enum Plateformes
     {
-        PC, //1
-        PS1, //2
-        PS2, //3
-        PS3, //4
-        PS4, //5
-        PS5, //6
-        Gameboy, //7
+        PC,
+        PS1, 
+        PS2, 
+        PS3, 
+        PS4, 
+        PS5, 
+        Gameboy, 
         [EnumDescription("Gameboy Color")]
-        Gameboy_Color, //8
+        Gameboy_Color,
         [EnumDescription("Gameboy Advance")]
-        Gameboy_Advance, //9
-        Gamecube, //10
-        DS, //11
-        Wii, //12
+        Gameboy_Advance, 
+        Gamecube, 
+        DS,
+        Wii,
         [EnumDescription("Wii U")]
-        Wii_U, //13
+        Wii_U,
         [EnumDescription("3DS")]
-        TroisDS, //14
+        TroisDS,
         [EnumDescription("Nintendo Switch")]
-        NintendoSwitch, //15
-        Xbox,//16
+        NintendoSwitch,
+        Xbox,
         [EnumDescription("Xbox 360")]
-        Xbox360, //17
+        Xbox360, 
         [EnumDescription("Xbox One")]
-        XboxOne, //18
+        XboxOne,
         [EnumDescription("Xbox Serie X")]
-        XboxSerieX, //19
-        IOS, //20
-        Android,//21
+        XboxSerieX, 
+        IOS, 
+        Android,
         [EnumDescription("Nintendo 64")]
         Nintendo64,
         NES
