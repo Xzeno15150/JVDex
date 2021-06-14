@@ -25,10 +25,5 @@ namespace Application_Graphique.Nos_UC
             InitializeComponent();
             DataContext = mgr.JeuSelected;
         }
-
-        private void ListBoxMusique_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

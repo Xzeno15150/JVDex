@@ -20,7 +20,9 @@
                 <Image Source="../Icons/icon_recherche.png"/>
             </Button>
 
-            <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="30" BorderBrush="#FFD4DAEA"
+            <TextBox DockPanel.Dock="Left" VerticalAlignment="Center"  Width="200" Height="45" 
+                         Background="Transparent" Foreground="White" BorderBrush="#FFD4DAEA"
+                         FontWeight="Bold" FontSize="30" 
                          Text="{Binding JeuRecherche}" 
                          Name="TextBoxRecherche"
                          KeyDown="TextBoxRecherche_KeyDown"/>
@@ -30,7 +32,8 @@
             </TextBlock>
             <TextBlock DockPanel.Dock="Left" Text="{Binding JeuRecherche}"/>
 
-            <ComboBox DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#3D3C3C"
+            <ComboBox DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                          Background="#3D3C3C"
                           SelectedIndex="0"
                           Name="ComboBoxTri"
                           ItemsSource="{Binding ListTypeTriJeu}"

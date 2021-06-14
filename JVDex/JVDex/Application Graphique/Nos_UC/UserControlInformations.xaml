@@ -21,16 +21,21 @@
             <Image Margin="30" Source= "{Binding Vignette}"/>
 
             <StackPanel Grid.Column="1" Margin="20" Name="StackPanel_Jeu"  Background="Wheat">
-                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" Text="{Binding Informations.Nom, StringFormat=Nom : {0:#}}"></TextBlock>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockNom" 
+                           Text="{Binding Informations.Nom, StringFormat=Nom : {0:#}}"></TextBlock>
                 <StackPanel Orientation="Horizontal" >
-                    <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockCreateur" Text="{Binding Informations.Createur, StringFormat=Créateur : {0:#}}"/>
-                    <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" Text="{Binding Informations.LimiteAge, StringFormat=Limite d\'âge : {0:#}}"/>
+                    <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockCreateur" 
+                               Text="{Binding Informations.Createur.Nom, StringFormat=Créateur : {0:#}}"/>
+                    <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockLimiteAge" 
+                               Text="{Binding Informations.LimiteAge, StringFormat=Limite d\'âge : {0:#}}"/>
 
                 </StackPanel>
-                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockDateCreation" Text="{Binding Informations.DateCreation, StringFormat=Date de création : {0:dd/MM/yyyy}}"/>
+                <TextBlock Background="Wheat" Padding="10" FontSize="20" Name="TextBlockDateCreation" 
+                           Text="{Binding Informations.DateCreation, StringFormat=Date de création : {0:dd/MM/yyyy}}"/>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="20" Padding="10">Genres : </TextBlock>
-                    <ItemsControl Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" ItemsSource="{Binding Informations.LesGenresToString}">
+                    <ItemsControl Background="Wheat" Padding="10" FontSize="20" Name="TextBlockGenres" 
+                                  ItemsSource="{Binding Informations.LesGenresToString}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapPanel />
@@ -40,7 +45,8 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="20" Padding="10">Plateformes : </TextBlock>
-                    <ItemsControl Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" ItemsSource="{Binding Informations.LesPlateformesToString}">
+                    <ItemsControl Background="Wheat" Padding="10" FontSize="20" Name="TextBlockPlateformes" 
+                                  ItemsSource="{Binding Informations.LesPlateformesToString}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapPanel />
