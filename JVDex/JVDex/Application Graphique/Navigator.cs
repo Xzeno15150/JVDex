@@ -12,28 +12,46 @@ namespace Application_Graphique
 {
     public class Navigator : INotifyPropertyChanged
     {
-        public static Manager mgr => (App.Current as App).LeManager; 
+        /// <summary>
+        /// Instance du manager de l'App lancée
+        /// </summary>
+        public static Manager mgr => (App.Current as App).LeManager;
 
+        /// <summary>
+        /// Champ privé contenant le UserControl courant dans le ContentControl de MainWindow 
+        /// </summary>
         private UserControl currentMainUserControl;
-        /**/
+
+        /// <summary>
+        /// Dictionnaire qui contient une string comme clé, et un Func<UserControl>() comme value.
+        /// Chaque Func<UserControl>() retourne le UserControl souhaité en fonction du string (clé) voulu
+        /// </summary>
         static Dictionary<string, Func<UserControl>> ucNavigation = new Dictionary<string, Func<UserControl>>()
         {
             ["Franchise"] = () => new UserControlFranchise(mgr.FranchiseSelected.Nom, mgr.FranchiseSelected.Background, mgr.JeuxDeLaFranchiseSelected),
             ["Favoris"] = () => new UserControlFranchise("Favoris", null, mgr.TousLesJeux.Where(jeu => jeu.IsFavoris == true).ToList()),
             ["Jeu"] = () => new UserControlVueJeu(),
             ["Main"] = () => new UserControlMain(),
-            
         };
 
+        /// <summary>
+        /// Dictionnaire qui contient un string comme clé, et un Func<UserControl>() comme value
+        /// Chaque Func<UserControl>() retourne le UserControl souhaité en fonction du string (clé) voulu qui sont égaux
+        /// aux noms des items de la ListBox dans UserControlVueJeu
+        /// </summary>
         static Dictionary<string, Func<UserControl>> ucNavigationTabJeu = new Dictionary<string, Func<UserControl>>()
         {
             ["Informations"] = () => new UserControlInformations(),
             ["Visuels"] = () => new UserControlVisuel(),
             ["Musiques"] = () => new UserControlMusique(),
             ["Théories"] = () => new UserControlTheorie(),
-            
+
         };
 
+        /// <summary>
+        /// Permet de naviguer entre les UserControl dans MainWindow
+        /// </summary>
+        /// <param name="nomUC">String qui correspond à une clé de ucNavigation</param>
         public void NavigateTo(string nomUC)
         {
             if (ucNavigation.ContainsKey(nomUC))
@@ -41,19 +59,28 @@ namespace Application_Graphique
                 CurrentMainUserControl = ucNavigation[nomUC]();
             }
         }
-
-         public UserControl CurrentMainUserControl
-         {
-             get => currentMainUserControl;
-             set
-             {
-                 currentMainUserControl = value;
-                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentMainUserControl"));
-             }
-         }
-
+        /// <summary>
+        /// Propriété associé au champ privé currentMainUserControl
+        /// retourne le UserControl contenu dans ce champ privé
+        /// </summary>
+        public UserControl CurrentMainUserControl
+        {
+            get => currentMainUserControl;
+            set
+            {
+                currentMainUserControl = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentMainUserControl"));
+            }
+        }
+        /// <summary>
+        /// Champ privé contenant le UserControl courant dans le ContentControl de UserControlVueJeu 
+        /// </summary>
         private UserControl currentTabJeu;
 
+        /// <summary>
+        /// Propriété associé au champ privé currentTabJeu
+        /// retourne le UserControl contenu dans ce champ privé
+        /// </summary>
         public UserControl CurrentTabJeu
         {
             get { return currentTabJeu; }
@@ -64,6 +91,10 @@ namespace Application_Graphique
             }
         }
 
+        /// <summary>
+        /// Permet de naviguer entre les UserControl dans UserControlVueJeu
+        /// </summary>
+        /// <param name="nomUC">String qui correspond à une clé de ucNavigationTabJeu</param>
         public void NavigateToTabJeu(string nomUC)
         {
             if (ucNavigationTabJeu.ContainsKey(nomUC))
@@ -74,7 +105,5 @@ namespace Application_Graphique
 
         public event PropertyChangedEventHandler PropertyChanged;
     }
-    
+
 }
-// il faut refaire un navigator celui là ne convient pas: faire un tableau des UC pour les associer à des String, méthode NavigateTo(String). D'après le prof c'est plus facile et rapide de faire ça
-// c'est pour éviter la dépendance aux UC

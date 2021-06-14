@@ -23,8 +23,17 @@ namespace Application_Graphique
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Instance de Manager de l'App lancée
+        /// </summary>
         public Manager mgr => (App.Current as App).LeManager;
+        /// <summary>
+        /// Instance de Navigator de l'App lancée
+        /// </summary>
         public Navigator nav => (App.Current as App).LeNavigateur;
+        /// <summary>
+        /// Instance de PersistanceFichierTexte de l'App lancée
+        /// </summary>
         public IPersistanceStockApp pers => (App.Current as App).Pers;
 
         public MainWindow()
@@ -35,6 +44,12 @@ namespace Application_Graphique
             nav.NavigateTo("Main");
         }
 
+        /// <summary>
+        /// Permet d'afficher la page de la franchise sélectionnée.
+        /// On affiche UserControlFranchise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ListBoxFranchises_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(ListBoxFranchises.SelectedItem != null)
@@ -43,6 +58,12 @@ namespace Application_Graphique
             nav.NavigateTo("Franchise");
         }
 
+        /// <summary>
+        /// Permet de revenir à la page principale.
+        /// On affiche UserControlMain.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_RetourMain_Click(object sender, RoutedEventArgs e)
         {
             mgr.FranchiseSelected = null;
@@ -50,18 +71,28 @@ namespace Application_Graphique
             nav.NavigateTo("Main");
         }
 
+        /// <summary>
+        /// Permet d'afficher la page des favoris.
+        /// On affiche UserControlFranchise mais en utilisant des données différente d'une franchise
+        /// (voir Navigator.ucNavigation)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Favoris_Click(object sender, RoutedEventArgs e)
         {
             mgr.FranchiseSelected = null;
             mgr.JeuSelected = null;
             nav.NavigateTo("Favoris");
         }
-
         private void ListBoxFranchises_LostFocus(object sender, RoutedEventArgs e)
         {
             (sender as ListBox).SelectedItem = null;
         }
-
+        /// <summary>
+        /// Permet de sauvegarder les favoris ajoutés dans le fichier texte
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             new PersistanceFichierTexte().SauvegardeDonnees(mgr.TousLesJeux, mgr.ToutesLesFranchises);
