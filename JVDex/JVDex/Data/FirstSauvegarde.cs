@@ -16,28 +16,28 @@ namespace Data
             Franchise fLayton = new Franchise("Professeur Layton", @"/Ressources;Component/images/Franchises/Layton/background.jpg", "#896335");
 
             // Jeu type
-            Jeu Nom = new Jeu("", new Studio("Nintendo"), new DateTime(2002, 12, 13), 7, "",
-               @"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/vignette.jpg",
-              new HashSet<Genres>() {
-                Genres.Aventure,
-                Genres.Action
-              },
-              new HashSet<Plateformes>(){
-                Plateformes.Gamecube,
-              },
-              new HashSet<Visuel>() {
-                    new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel1.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel2.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel3.jpg", ""),
-                    new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png","")
-              },
-              new HashSet<Musique>(){
-                    new Musique("Main theme","botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
-              },
-              new HashSet<Theorie>()
-              {
-                  new Theorie("",""),
-              });
+            //Jeu Nom = new Jeu("", new Studio("Nintendo"), new DateTime(2002, 12, 13), 7, "",
+            //   @"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/vignette.jpg",
+            //  new HashSet<Genres>() {
+            //    Genres.Aventure,
+            //    Genres.Action
+            //  },
+            //  new HashSet<Plateformes>(){
+            //    Plateformes.Gamecube,
+            //  },
+            //  new HashSet<Visuel>() {
+            //        new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel1.jpg", ""),
+            //        new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel2.jpg", ""),
+            //        new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel3.jpg", ""),
+            //        new Visuel(@"/Ressources;Component/images/Franchises/Zelda/Jeux/WindWaker/visuel4.png","")
+            //  },
+            //  new HashSet<Musique>(){
+            //        new Musique("Main theme","botw-OST1.mp3","Nintendo",new DateTime(2017, 03, 03))
+            //  },
+            //  new HashSet<Theorie>()
+            //  {
+            //      new Theorie("",""),
+            //  });
 
 
             //
