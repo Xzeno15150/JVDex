@@ -10,7 +10,6 @@ namespace Data
     {
         public (IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises) ChargeDonnees()
         {
-            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//..//Data"));
             List<Jeu> lJeux = new List<Jeu>();
             Dictionary<Franchise, List<Jeu>> dFranchise = new Dictionary<Franchise, List<Jeu>>();
 
@@ -145,7 +144,6 @@ namespace Data
 
         public void SauvegardeDonnees(IList<Jeu> jeux, Dictionary<Franchise, List<Jeu>> franchises)
         {
-            Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "..//Data"));
             using (FileStream fs = File.OpenWrite("infoJVDex.txt"))
             {
                 using (TextWriter writer = new StreamWriter(fs)) 
